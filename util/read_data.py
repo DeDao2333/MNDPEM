@@ -58,7 +58,7 @@ def read_football():
     res['adj_real'] = B
     res['labels'] = labels
     res['is_unknown'] = is_unknown
-    res['num_del_edges'] = 10
+    res['num_del_edges'] = 100
     return res
 
 

@@ -4,6 +4,7 @@ import pandas as pd
 import networkx as nx
 import random
 from community import community_louvain
+from util import draw_graph
 from util import base_method as tools
 from method.community_detection import MNDP
 from util import read_data as Read
@@ -134,7 +135,7 @@ class Strategy(object):
         labels = data['labels']
         is_unknown = data['is_unknown']
         num_nodes = len(observe_graph.nodes)
-        model = BigClam(num_of_nodes=num_nodes, dimensions=4, iterations=200, learning_rate=0.002, seed=42)
+        model = BigClam(num_of_nodes=num_nodes, dimensions=8, iterations=300, learning_rate=0.003, seed=42)
         model.fit(observe_graph)
         F_ = model.get_memberships()
         F_ = np.array(list(F_.values()))
@@ -162,7 +163,7 @@ class Strategy(object):
             for rate in missing_rate:
                 print("Missing rate -> {}".format(rate))
                 data = cls.prepare_data(data_read, rate)
-                cls.train_byBigClam(data)
+                cls.train_byLouvain(data)
 
     @classmethod
     def Experiment_DBLP_case(cls):
