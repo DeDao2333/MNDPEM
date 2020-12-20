@@ -1,0 +1,4331 @@
+Thomas S. Huang , Xiang Sean Zhou
+Arnold W. M. Smeulders , Theo Gevers
+Dionysius P. Huijsmans , Nicu Sebe
+Anil K. Jain , M&aacute;rio A. T. Figueiredo
+Amnon Shashua , Anat Levin
+Ross J. Micheals , Terrance E. Boult
+Douglas R. Heisterkamp , Jing Peng
+H. K. Dai , Jing Peng
+Douglas R. Heisterkamp , H. K. Dai
+Gerardo Hermosillo , Olivier D. Faugeras
+Charles V. Stewart , Hong Shen
+Badrinath Roysam , Hong Shen
+Gang Lin , Hong Shen
+Hong Shen , Howard L. Tanenbaum
+Badrinath Roysam , Charles V. Stewart
+Charles V. Stewart , Gang Lin
+Charles V. Stewart , Howard L. Tanenbaum
+Badrinath Roysam , Gang Lin
+Badrinath Roysam , Howard L. Tanenbaum
+Gang Lin , Howard L. Tanenbaum
+Anthony J. Yezzi , Jerry L. Prince
+Carlo Tomasi , Salih Burak G&ouml;kt&uuml;rk
+Richard Szeliski , Sing Bing Kang
+Jinxiang Chai , Sing Bing Kang
+Jinxiang Chai , Richard Szeliski
+Joshua Gluckman , Shree K. Nayar
+Hai Tao , Harpreet S. Sawhney
+Hai Tao , Rakesh Kumar
+Harpreet S. Sawhney , Rakesh Kumar
+Christophe Vestri , Frederic Devernay
+Antonio Robles-Kelly , Edwin R. Hancock
+Nikos Canterakis , Stefan Rahmann
+Edmond Boyer , Svetlana Lazebnik
+Jean Ponce , Svetlana Lazebnik
+Edmond Boyer , Jean Ponce
+Andreas Koschan , David L. Page
+David L. Page , Yiyong Sun
+David L. Page , Joon Ki Paik
+David L. Page , Mongi A. Abidi
+Andreas Koschan , Yiyong Sun
+Andreas Koschan , Joon Ki Paik
+Andreas Koschan , Mongi A. Abidi
+Joon Ki Paik , Yiyong Sun
+Mongi A. Abidi , Yiyong Sun
+Joon Ki Paik , Mongi A. Abidi
+Asi Elad (Elbaz) , Ron Kimmel
+Chi-Keung Tang , Wai-Shun Tong
+G&eacute;rard G. Medioni , Wai-Shun Tong
+Chi-Keung Tang , G&eacute;rard G. Medioni
+Ce Liu , Heung-Yeung Shum
+Ce Liu , Changshui Zhang
+Changshui Zhang , Heung-Yeung Shum
+Brendan J. Frey , Nebojsa Jojic
+Stan Z. Li , XinWen Hou
+HongJiang Zhang , Stan Z. Li
+QianSheng Cheng , Stan Z. Li
+HongJiang Zhang , XinWen Hou
+QianSheng Cheng , XinWen Hou
+HongJiang Zhang , QianSheng Cheng
+Andrea Selinger , Randal C. Nelson
+Chris Stauffer , W. Eric L. Grimson
+Charless Fowlkes , Serge Belongie
+Charless Fowlkes , Jitendra Malik
+Jitendra Malik , Serge Belongie
+Padmanabhan Soundararajan , Sudeep Sarkar
+Andreas Turina , Tinne Tuytelaars
+Andreas Turina , Luc J. Van Gool
+Luc J. Van Gool , Tinne Tuytelaars
+Qifa Ke , Takeo Kanade
+Amnon Shashua , Lior Wolf
+Christopher Geyer , Kostas Daniilidis
+Adrien Bartoli , Peter F. Sturm
+Guang Jiang , Hung-Tat Tsui
+Guang Jiang , Long Quan
+Guang Jiang , Shang-Qian Liu
+Hung-Tat Tsui , Long Quan
+Hung-Tat Tsui , Shang-Qian Liu
+Long Quan , Shang-Qian Liu
+Gerald Sommer , Weichuan Yu
+Kostas Daniilidis , Weichuan Yu
+Gerald Sommer , Kostas Daniilidis
+David E. DiFranco , Tat-Jen Cham
+David E. DiFranco , James M. Rehg
+James M. Rehg , Tat-Jen Cham
+Matthew Brand , Rahul Bhotika
+Srinivasa G. Narasimhan , Yoav Y. Schechner
+Shree K. Nayar , Yoav Y. Schechner
+Shree K. Nayar , Srinivasa G. Narasimhan
+Bryan S. Morse , Duane Schwartzwald
+Heung-Yeung Shum , Stephen Lin
+Lifeng Wang , Sing Bing Kang
+Lifeng Wang , Richard Szeliski
+Heung-Yeung Shum , Lifeng Wang
+Richard Szeliski , Sing Bing Kang
+Heung-Yeung Shum , Sing Bing Kang
+Heung-Yeung Shum , Richard Szeliski
+A. L. Bertozzi , Marcelo Bertalm&iacute;o
+Guillermo Sapiro , Marcelo Bertalm&iacute;o
+A. L. Bertozzi , Guillermo Sapiro
+Dirk Schulz , Wolfram Burgard
+Dieter Fox , Dirk Schulz
+Armin B. Cremers , Dirk Schulz
+Dieter Fox , Wolfram Burgard
+Armin B. Cremers , Wolfram Burgard
+Armin B. Cremers , Dieter Fox
+Camillo J. Taylor , John R. Spletzer
+Andrew J. Davison , Nobuyuki Kita
+Clark F. Olson , Yalin Xiong
+Larry Matthies , Yalin Xiong
+Clark F. Olson , Larry Matthies
+Matthew E. Antone , Seth J. Teller
+Gregory Dudek , Robert Sim
+Allan D. Jepson , David J. Fleet
+Allan D. Jepson , Thomas F. El-Maraghi
+David J. Fleet , Thomas F. El-Maraghi
+Aaron F. Bobick , Amos Y. Johnson
+Ismail Haritaoglu , Myron Flickner
+Gregory Shakhnarovich , Lily Lee
+Gregory Shakhnarovich , Trevor Darrell
+Lily Lee , Trevor Darrell
+Bill Triggs , Cristian Sminchisescu
+Ivana Mikic , Mohan M. Trivedi
+Edward Hunter , Ivana Mikic
+Ivana Mikic , Pamela C. Cosman
+Edward Hunter , Mohan M. Trivedi
+Mohan M. Trivedi , Pamela C. Cosman
+Edward Hunter , Pamela C. Cosman
+Andy Tsai , Anthony J. Yezzi
+Andy Tsai , William M. Wells III
+Andy Tsai , Clare M. Tempany
+Andy Tsai , Dewey Tucker
+Andy Tsai , Ayres C. Fan
+Andy Tsai , W. Eric L. Grimson
+Alan S. Willsky , Andy Tsai
+Anthony J. Yezzi , William M. Wells III
+Anthony J. Yezzi , Clare M. Tempany
+Anthony J. Yezzi , Dewey Tucker
+Anthony J. Yezzi , Ayres C. Fan
+Anthony J. Yezzi , W. Eric L. Grimson
+Alan S. Willsky , Anthony J. Yezzi
+Clare M. Tempany , William M. Wells III
+Dewey Tucker , William M. Wells III
+Ayres C. Fan , William M. Wells III
+W. Eric L. Grimson , William M. Wells III
+Alan S. Willsky , William M. Wells III
+Clare M. Tempany , Dewey Tucker
+Ayres C. Fan , Clare M. Tempany
+Clare M. Tempany , W. Eric L. Grimson
+Alan S. Willsky , Clare M. Tempany
+Ayres C. Fan , Dewey Tucker
+Dewey Tucker , W. Eric L. Grimson
+Alan S. Willsky , Dewey Tucker
+Ayres C. Fan , W. Eric L. Grimson
+Alan S. Willsky , Ayres C. Fan
+Alan S. Willsky , W. Eric L. Grimson
+Achi Brandt , Eitan Sharon
+Eitan Sharon , Ronen Basri
+Achi Brandt , Ronen Basri
+Eric N. Mortensen , William A. Barrett
+Cristian Sminchisescu , Dimitris N. Metaxas
+Cristian Sminchisescu , Sven J. Dickinson
+Dimitris N. Metaxas , Sven J. Dickinson
+Danny B. Yang , Lorenzo Torresani
+Eugene J. Alexander , Lorenzo Torresani
+Christoph Bregler , Lorenzo Torresani
+Danny B. Yang , Eugene J. Alexander
+Christoph Bregler , Danny B. Yang
+Christoph Bregler , Eugene J. Alexander
+Patrick Bouthemy , Ronan Fablet
+Michael J. Jones , Paul A. Viola
+Jeffrey Ho , Kuang-Chih Lee
+David J. Kriegman , Kuang-Chih Lee
+David J. Kriegman , Jeffrey Ho
+Diego A. Socolinsky , Lawrence B. Wolff
+Diego A. Socolinsky , Joshua D. Neuheisel
+Christopher K. Eveland , Diego A. Socolinsky
+Joshua D. Neuheisel , Lawrence B. Wolff
+Christopher K. Eveland , Lawrence B. Wolff
+Christopher K. Eveland , Joshua D. Neuheisel
+J. Ross Beveridge , Kai She
+Bruce A. Draper , J. Ross Beveridge
+Geof H. Givens , J. Ross Beveridge
+Bruce A. Draper , Kai She
+Geof H. Givens , Kai She
+Bruce A. Draper , Geof H. Givens
+Yong Rui , Yunqiang Chen
+Thomas S. Huang , Yunqiang Chen
+Thomas S. Huang , Yong Rui
+Martial Hebert , Shyjan Mahamud
+Jianbo Shi , Shyjan Mahamud
+Jianbo Shi , Martial Hebert
+Tien-Tsin Wong , Zhouchen Lin
+Heung-Yeung Shum , Zhouchen Lin
+Heung-Yeung Shum , Tien-Tsin Wong
+Melissa L. Koudelka , Peter N. Belhumeur
+Melissa L. Koudelka , Sebastian Magda
+David J. Kriegman , Melissa L. Koudelka
+Peter N. Belhumeur , Sebastian Magda
+David J. Kriegman , Peter N. Belhumeur
+David J. Kriegman , Sebastian Magda
+Cornelia Ferm&uuml;ller , Patrick Baker
+Patrick Baker , Yiannis Aloimonos
+Patrick Baker , Robert Pless
+Cornelia Ferm&uuml;ller , Yiannis Aloimonos
+Cornelia Ferm&uuml;ller , Robert Pless
+Robert Pless , Yiannis Aloimonos
+R. Andrew Hicks , Ronald K. Perline
+Charles R. Dyer , Russell A. Manning
+Gerald Schaefer , Graham D. Finlayson
+Alexander C. Berg , Jitendra Malik
+Alexey Zalesny , Luc J. Van Gool
+Anat Levin , Lior Wolf
+Amnon Shashua , Anat Levin
+Amnon Shashua , Lior Wolf
+Ariel Tankus , Yehezkel Yeshurun
+Arno Sch&ouml;dl , Irfan A. Essa
+Alex Rav-Acha , Assaf Zomet
+Assaf Zomet , Shmuel Peleg
+Alex Rav-Acha , Shmuel Peleg
+Behrooz Kamgar-Parsi , Behzad Kamgar-Parsi
+Bernd Heisele , Thomas Serre
+Bernd Heisele , Massimiliano Pontil
+Bernd Heisele , Tomaso Poggio
+Massimiliano Pontil , Thomas Serre
+Thomas Serre , Tomaso Poggio
+Massimiliano Pontil , Tomaso Poggio
+Caihua Wang , Hideki Tanahashi
+Caihua Wang , Hidekazu Hirayu
+Caihua Wang , Yoshinori Niwa
+Caihua Wang , Kazuhiko Yamamoto
+Hidekazu Hirayu , Hideki Tanahashi
+Hideki Tanahashi , Yoshinori Niwa
+Hideki Tanahashi , Kazuhiko Yamamoto
+Hidekazu Hirayu , Yoshinori Niwa
+Hidekazu Hirayu , Kazuhiko Yamamoto
+Kazuhiko Yamamoto , Yoshinori Niwa
+Daming Shi , Steve R. Gunn
+Daming Shi , Robert I. Damper
+Robert I. Damper , Steve R. Gunn
+Dariu Gavrila , Jan Giebel
+Dennis Strelow , Jeffrey Mishler
+David Koes , Dennis Strelow
+Dennis Strelow , Sanjiv Singh
+David Koes , Jeffrey Mishler
+Jeffrey Mishler , Sanjiv Singh
+David Koes , Sanjiv Singh
+Anders Heyden , Du Q. Huynh
+Efstathios Hadjidemetriou , Michael D. Grossberg
+Efstathios Hadjidemetriou , Shree K. Nayar
+Michael D. Grossberg , Shree K. Nayar
+Feng Su , Jiqiang Song
+Chiew-Lan Tai , Feng Su
+Feng Su , Shijie Cai
+Chiew-Lan Tai , Jiqiang Song
+Jiqiang Song , Shijie Cai
+Chiew-Lan Tai , Shijie Cai
+Greg Mori , Serge Belongie
+Greg Mori , Jitendra Malik
+Jitendra Malik , Serge Belongie
+Anil K. Jain , Guodong Guo
+Guodong Guo , Wei-Ying Ma
+Guodong Guo , HongJiang Zhang
+Anil K. Jain , Wei-Ying Ma
+Anil K. Jain , HongJiang Zhang
+HongJiang Zhang , Wei-Ying Ma
+Alfred M. Bruckstein , Ilya Blayvas
+Ilya Blayvas , Ron Kimmel
+Alfred M. Bruckstein , Ron Kimmel
+Ira Cohen , Nemanja Petrovic
+Brendan J. Frey , Nemanja Petrovic
+Nemanja Petrovic , Ralf Koetter
+Nemanja Petrovic , Thomas S. Huang
+Brendan J. Frey , Ira Cohen
+Ira Cohen , Ralf Koetter
+Ira Cohen , Thomas S. Huang
+Brendan J. Frey , Ralf Koetter
+Brendan J. Frey , Thomas S. Huang
+Ralf Koetter , Thomas S. Huang
+Jie Zhou , Le-ping Xin
+Dashan Gao , Jie Zhou
+Changshui Zhang , Jie Zhou
+David Zhang , Jie Zhou
+Dashan Gao , Le-ping Xin
+Changshui Zhang , Le-ping Xin
+David Zhang , Le-ping Xin
+Changshui Zhang , Dashan Gao
+Dashan Gao , David Zhang
+Changshui Zhang , David Zhang
+Josef Kittler , Reza Ghaderi
+Josef Kittler , Terry Windeatt
+Jiri Matas , Josef Kittler
+Reza Ghaderi , Terry Windeatt
+Jiri Matas , Reza Ghaderi
+Jiri Matas , Terry Windeatt
+Christoph von der Malsburg , Kazunori Okada
+Linda G. Shapiro , Salvador Ruiz-Correa
+Marina Meila , Salvador Ruiz-Correa
+Linda G. Shapiro , Marina Meila
+Liyuan Li , Maylor K. H. Leung
+Long Quan , Maxime Lhuillier
+Harry Shum , Maxime Lhuillier
+Hung-Tat Tsui , Maxime Lhuillier
+Harry Shum , Long Quan
+Hung-Tat Tsui , Long Quan
+Harry Shum , Hung-Tat Tsui
+Fr&eacute;d&eacute;ric Jurie , Michel Dhome
+Salil Prabhakar , Sharath Pankanti
+Anil K. Jain , Sharath Pankanti
+Anil K. Jain , Salil Prabhakar
+Matthew E. Antone , Seth J. Teller
+Seth J. Teller , Zachary Bodnar
+Michael Bosse , Seth J. Teller
+Satyan R. Coorg , Seth J. Teller
+Manish Jethwa , Seth J. Teller
+Neel Master , Seth J. Teller
+Matthew E. Antone , Zachary Bodnar
+Matthew E. Antone , Michael Bosse
+Matthew E. Antone , Satyan R. Coorg
+Manish Jethwa , Matthew E. Antone
+Matthew E. Antone , Neel Master
+Michael Bosse , Zachary Bodnar
+Satyan R. Coorg , Zachary Bodnar
+Manish Jethwa , Zachary Bodnar
+Neel Master , Zachary Bodnar
+Michael Bosse , Satyan R. Coorg
+Manish Jethwa , Michael Bosse
+Michael Bosse , Neel Master
+Manish Jethwa , Satyan R. Coorg
+Neel Master , Satyan R. Coorg
+Manish Jethwa , Neel Master
+Matheen Siddiqui , R&oacute;mer Rosales
+Jonathan Alon , R&oacute;mer Rosales
+R&oacute;mer Rosales , Stan Sclaroff
+Jonathan Alon , Matheen Siddiqui
+Matheen Siddiqui , Stan Sclaroff
+Jonathan Alon , Stan Sclaroff
+Stan Z. Li , XinWen Hou
+HongJiang Zhang , XinWen Hou
+QianSheng Cheng , XinWen Hou
+HongJiang Zhang , Stan Z. Li
+QianSheng Cheng , Stan Z. Li
+HongJiang Zhang , QianSheng Cheng
+Richard Mann , Steve Mann
+Gabriella Sanniti di Baja , Stina Svensson
+Sven J. Dickinson , Yakov Keselman
+Kazuma Shigenari , Takeshi Shakunaga
+Robert T. Collins , Yanxi Liu
+Anders Heyden , Yongduek Seo
+Roberto Cipolla , Yongduek Seo
+Anders Heyden , Roberto Cipolla
+Amir Averbuch , Yaakov Tsaig
+Anand Rangarajan , Haili Chui
+Anand Rangarajan , Eric Mjolsness
+Eric Mjolsness , Haili Chui
+Andrea Selinger , Randal C. Nelson
+Antonio Robles-Kelly , Bin Luo
+Andrea Torsello , Bin Luo
+Bin Luo , Richard C. Wilson
+Bin Luo , Edwin R. Hancock
+Andrea Torsello , Antonio Robles-Kelly
+Antonio Robles-Kelly , Richard C. Wilson
+Antonio Robles-Kelly , Edwin R. Hancock
+Andrea Torsello , Richard C. Wilson
+Andrea Torsello , Edwin R. Hancock
+Edwin R. Hancock , Richard C. Wilson
+Brett C. Jones , D. M. Wilkes
+Chi-Keung Tang , Wai-Shun Tong
+G&eacute;rard G. Medioni , Wai-Shun Tong
+Chi-Keung Tang , G&eacute;rard G. Medioni
+Dara Koozekanani , Kim L. Boyer
+Cynthia Roberts , Dara Koozekanani
+Dara Koozekanani , Steven Katz
+Cynthia Roberts , Kim L. Boyer
+Kim L. Boyer , Steven Katz
+Cynthia Roberts , Steven Katz
+David Guillamet , Marco Bressan
+David Guillamet , Jordi Vitri&agrave;
+Jordi Vitri&agrave; , Marco Bressan
+David Tschumperl&eacute; , Rachid Deriche
+Guo-Qing Wei , Jian Zhong Qian
+Guo-Qing Wei , Helmuth Schramm
+Helmuth Schramm , Jian Zhong Qian
+Hong Hua , Narendra Ahuja
+Hong Hua , Huaxin You
+Huaxin You , Narendra Ahuja
+Edward Y. Chang , Huaxin You
+Hong Hua , Narendra Ahuja
+Edward Y. Chang , Hong Hua
+Edward Y. Chang , Narendra Ahuja
+Isidro Robledo Vega , Sudeep Sarkar
+Jacques Bride , Peter Meer
+Guillaume Dugas-Phocion , Li Zhang
+Jean-Sebastien Samson , Li Zhang
+Li Zhang , Steven M. Seitz
+Guillaume Dugas-Phocion , Jean-Sebastien Samson
+Guillaume Dugas-Phocion , Steven M. Seitz
+Jean-Sebastien Samson , Steven M. Seitz
+David Guillamet , Marco Bressan
+Jordi Vitri&agrave; , Marco Bressan
+David Guillamet , Jordi Vitri&agrave;
+Kristen Grauman , Margrit Betke
+James Gips , Kristen Grauman
+Gary R. Bradski , Kristen Grauman
+James Gips , Margrit Betke
+Gary R. Bradski , Margrit Betke
+Gary R. Bradski , James Gips
+Martial Hebert , Shyjan Mahamud
+Shyjan Mahamud , Yasuhiro Omori
+Jean Ponce , Shyjan Mahamud
+Martial Hebert , Yasuhiro Omori
+Jean Ponce , Martial Hebert
+Jean Ponce , Yasuhiro Omori
+Daphna Weinshall , Mi-Suen Lee
+Eric Cohen-Solal , Mi-Suen Lee
+Daphna Weinshall , Eric Cohen-Solal
+Nikos Paragios , Visvanathan Ramesh
+Kristin J. Dana , Oana G. Cula
+Ohad Ben-Shahar , Steven W. Zucker
+John M. Hannah , P. Hillman
+David S. Renshaw , P. Hillman
+David S. Renshaw , John M. Hannah
+Haifeng Chen , Peter Meer
+David E. Tyler , Haifeng Chen
+David E. Tyler , Peter Meer
+Jan-Olof Eklundh , Peter Nillius
+Chew Lim Tan , Qian Wang
+Iain Matthews , Simon Baker
+Christian Vogler , Siome Goldenstein
+Dimitris N. Metaxas , Siome Goldenstein
+Christian Vogler , Dimitris N. Metaxas
+Koichiro Deguchi , Takayuki Okatani
+Christopher J. Taylor , Timothy F. Cootes
+Koji Tsuda , Volker Roth
+Lie Gu , Xiangrong Chen
+Stan Z. Li , Xiangrong Chen
+HongJiang Zhang , Xiangrong Chen
+Lie Gu , Stan Z. Li
+HongJiang Zhang , Lie Gu
+HongJiang Zhang , Stan Z. Li
+Robert T. Collins , Yanghai Tsin
+Visvanathan Ramesh , Yanghai Tsin
+Takeo Kanade , Yanghai Tsin
+Robert T. Collins , Visvanathan Ramesh
+Robert T. Collins , Takeo Kanade
+Takeo Kanade , Visvanathan Ramesh
+Tao Wang , Yong Rui
+Shi-Min Hu , Tao Wang
+Shi-Min Hu , Yong Rui
+Ki-Sang Hong , Yongduek Seo
+Fran&ccedil;ois Chaumette , Youcef Mezouar
+Denis Gingras , Yves B&eacute;rub&eacute; Lauzi&egrave;re
+Frank P. Ferrie , Yves B&eacute;rub&eacute; Lauzi&egrave;re
+Denis Gingras , Frank P. Ferrie
+Heung-Yeung Shum , Zhouchen Lin
+Antonis A. Argyros , Kostas E. Bekris
+Antonis A. Argyros , Stelios C. Orphanoudakis
+Kostas E. Bekris , Stelios C. Orphanoudakis
+Atsuto Maki , Hiroshi Hattori
+Bernd Heisele , Thomas Serre
+Bernd Heisele , Sayan Mukherjee
+Bernd Heisele , Tomaso Poggio
+Sayan Mukherjee , Thomas Serre
+Thomas Serre , Tomaso Poggio
+Sayan Mukherjee , Tomaso Poggio
+Bisser Raytchev , Hiroshi Murase
+Avideh Zakhor , Christian Fr&uuml;h
+Daniel Keren , Margarita Osadchy
+Margarita Osadchy , Yaniv Gal
+Daniel Keren , Yaniv Gal
+Alessandro Bissacco , Alessandro Chiuso
+Alessandro Bissacco , Yi Ma
+Alessandro Bissacco , Stefano Soatto
+Alessandro Chiuso , Yi Ma
+Alessandro Chiuso , Stefano Soatto
+Stefano Soatto , Yi Ma
+Gianfranco Doretto , Payam Saisan
+Payam Saisan , Ying Nian Wu
+Payam Saisan , Stefano Soatto
+Gianfranco Doretto , Ying Nian Wu
+Gianfranco Doretto , Stefano Soatto
+Stefano Soatto , Ying Nian Wu
+Hiroshi Kawasaki , Katsushi Ikeuchi
+Hiroshi Kawasaki , Masao Sakauchi
+Katsushi Ikeuchi , Masao Sakauchi
+Hynek Bakstein , Tom&aacute;s Pajdla
+Jezekiel Ben-Arie , Purvin Pandit
+Jezekiel Ben-Arie , ShyamSundar Rajaram
+Purvin Pandit , ShyamSundar Rajaram
+Jiang Gao , Jie Yang
+Kazunori Kato , Kenji Shoji
+Fubito Toyama , Kenji Shoji
+Fubito Toyama , Kazunori Kato
+Krystian Mikolajczyk , Ragini Choudhury
+Cordelia Schmid , Krystian Mikolajczyk
+Cordelia Schmid , Ragini Choudhury
+Laurent D. Cohen , Thomas Deschamps
+Ankush Mittal , Loong Fah Cheong
+Ankush Mittal , Leung Tung Sing
+Leung Tung Sing , Loong Fah Cheong
+Lie Gu , Stan Z. Li
+HongJiang Zhang , Lie Gu
+HongJiang Zhang , Stan Z. Li
+Lihi Zelnik-Manor , Michal Irani
+Masaki Onishi , Takehiko Kagebayashi
+Kunio Fukunaga , Masaki Onishi
+Kunio Fukunaga , Takehiko Kagebayashi
+Masatoshi Okutomi , Yasuhiro Katayama
+Masatoshi Okutomi , Setsuko Oka
+Setsuko Oka , Yasuhiro Katayama
+Rahul Sukthankar , Tat-Jen Cham
+Gita Sukthankar , Rahul Sukthankar
+Gita Sukthankar , Tat-Jen Cham
+Fredrik Kahl , Richard I. Hartley
+Fredrik Kahl , Kalle &Aring;str&ouml;m
+Kalle &Aring;str&ouml;m , Richard I. Hartley
+Ron O. Dror , Thomas K. Leung
+Edward H. Adelson , Ron O. Dror
+Alan S. Willsky , Ron O. Dror
+Edward H. Adelson , Thomas K. Leung
+Alan S. Willsky , Thomas K. Leung
+Alan S. Willsky , Edward H. Adelson
+Ko Nishino , Ryusuke Sagawa
+Katsushi Ikeuchi , Ryusuke Sagawa
+Katsushi Ikeuchi , Ko Nishino
+David A. Forsyth , Sergey Ioffe
+Shree K. Nayar , Srinivasa G. Narasimhan
+Ramakant Nevatia , Tao Zhao
+Fengjun Lv , Tao Zhao
+Fengjun Lv , Ramakant Nevatia
+Chandra Kambhamettu , Thitiwan Srinark
+Horng-Horng Lin , Hwann-Tzong Chen
+Hwann-Tzong Chen , Tyng-Luh Liu
+Horng-Horng Lin , Tyng-Luh Liu
+Tinne Tuytelaars , Vittorio Ferrari
+Luc J. Van Gool , Vittorio Ferrari
+Luc J. Van Gool , Tinne Tuytelaars
+Rui Li , Wee Kheng Leow
+Song Wang , Weiyu Zhu
+Ruei-Sung Lin , Weiyu Zhu
+Stephen E. Levinson , Weiyu Zhu
+Ruei-Sung Lin , Song Wang
+Song Wang , Stephen E. Levinson
+Ruei-Sung Lin , Stephen E. Levinson
+P. M. D. S. Pallawala , Wynne Hsu
+Mong-Li Lee , Wynne Hsu
+Kah-Guan Au Eong , Wynne Hsu
+Mong-Li Lee , P. M. D. S. Pallawala
+Kah-Guan Au Eong , P. M. D. S. Pallawala
+Kah-Guan Au Eong , Mong-Li Lee
+Ying Wu , Zhengyou Zhang
+Thomas S. Huang , Ying Wu
+John Y. Lin , Ying Wu
+Thomas S. Huang , Zhengyou Zhang
+John Y. Lin , Zhengyou Zhang
+John Y. Lin , Thomas S. Huang
+Shaogang Gong , Yongmin Li
+Heather M. Liddell , Yongmin Li
+Heather M. Liddell , Shaogang Gong
+Brian Curless , Yung-Yu Chuang
+David Salesin , Yung-Yu Chuang
+Richard Szeliski , Yung-Yu Chuang
+Brian Curless , David Salesin
+Brian Curless , Richard Szeliski
+David Salesin , Richard Szeliski
+Andres Huertas , Zu Whan Kim
+Ramakant Nevatia , Zu Whan Kim
+Andres Huertas , Ramakant Nevatia
+A. A. Clark , Barry T. Thomas
+Aziz Umit Batur , Monson H. Hayes III
+Kevin D. Petersen , William A. Barrett
+Bjoern Stenger , Paulo R. S. Mendon&ccedil;a
+Bjoern Stenger , Roberto Cipolla
+Paulo R. S. Mendon&ccedil;a , Roberto Cipolla
+Cen Rao , Mubarak Shah
+&Ccedil;igdem Eroglu Erdem , B&uuml;lent Sankur
+&Ccedil;igdem Eroglu Erdem , A. Murat Tekalp
+A. Murat Tekalp , B&uuml;lent Sankur
+Daniel Berwick , Sang Wook Lee
+Daniel D. Morris , Ken-ichi Kanatani
+Daniel D. Morris , Takeo Kanade
+Ken-ichi Kanatani , Takeo Kanade
+Danny Roobaert , Michael Zillich
+Danny Roobaert , Jan-Olof Eklundh
+Jan-Olof Eklundh , Michael Zillich
+David J. Fleet , Oscar Nestares
+Bogdan Matei , David J. Hirvonen
+David J. Hirvonen , Richard P. Wildes
+David J. Hirvonen , Steven C. Hsu
+Bogdan Matei , Richard P. Wildes
+Bogdan Matei , Steven C. Hsu
+Richard P. Wildes , Steven C. Hsu
+David W. Jacobs , Ronen Basri
+Dimitri A. Chernyak , Lawrence W. Stark
+Douglas R. Heisterkamp , Jing Peng
+Douglas R. Heisterkamp , H. K. Dai
+H. K. Dai , Jing Peng
+Bastian Leibe , G&uuml;nter Hetzel
+G&uuml;nter Hetzel , Paul Levi
+Bernt Schiele , G&uuml;nter Hetzel
+Bastian Leibe , Paul Levi
+Bastian Leibe , Bernt Schiele
+Bernt Schiele , Paul Levi
+Imari Sato , Yoichi Sato
+Imari Sato , Katsushi Ikeuchi
+Katsushi Ikeuchi , Yoichi Sato
+Amnon Krupnik , James H. Elder
+Helder Ara&uacute;jo , Jo&atilde;o P. Barreto
+Joost van de Weijer , Rein van den Boomgaard
+Kobus Barnard , Pinar Duygulu
+David A. Forsyth , Kobus Barnard
+David A. Forsyth , Pinar Duygulu
+Joachim M. Buhmann , Lothar Hermes
+Eran Naftali , Margrit Betke
+Margrit Betke , Nicholas C. Makris
+Eran Naftali , Nicholas C. Makris
+Maurice Ringer , Tom Drummond
+Joan Lasenby , Maurice Ringer
+Joan Lasenby , Tom Drummond
+Larry S. Davis , Motilal Agrawal
+Aly A. Farag , Moumen T. Ahmed
+Camillo Gentile , Octavia I. Camps
+Camillo Gentile , Mario Sznaier
+Mario Sznaier , Octavia I. Camps
+Min-Hwan Kim , Pong-Sik Ho
+Paul A. Beardsley , Ramesh Raskar
+Ashley Eden , Matthew Uyttendaele
+Matthew Uyttendaele , Richard Szeliski
+Ashley Eden , Richard Szeliski
+Stephan Heuel , Wolfgang F&ouml;rstner
+Richard Harvey , Stuart Gibson
+John R. Kender , Tiecheng Liu
+Yanghai Tsin , Yanxi Liu
+Visvanathan Ramesh , Yanghai Tsin
+Visvanathan Ramesh , Yanxi Liu
+Harpreet S. Sawhney , Yanlin Guo
+Rakesh Kumar , Yanlin Guo
+Steven C. Hsu , Yanlin Guo
+Harpreet S. Sawhney , Rakesh Kumar
+Harpreet S. Sawhney , Steven C. Hsu
+Rakesh Kumar , Steven C. Hsu
+Dorin Comaniciu , Ying Zhu
+Visvanathan Ramesh , Ying Zhu
+Stuart C. Schwartz , Ying Zhu
+Dorin Comaniciu , Visvanathan Ramesh
+Dorin Comaniciu , Stuart C. Schwartz
+Stuart C. Schwartz , Visvanathan Ramesh
+Ahmed M. Elgammal , Ramani Duraiswami
+Ahmed M. Elgammal , Larry S. Davis
+Larry S. Davis , Ramani Duraiswami
+Andrea Prati , Rita Cucchiara
+Andrea Prati , Ivana Mikic
+Andrea Prati , Mohan M. Trivedi
+Ivana Mikic , Rita Cucchiara
+Mohan M. Trivedi , Rita Cucchiara
+Ivana Mikic , Mohan M. Trivedi
+Max Mignotte , Said Benameur
+Said Benameur , Stefan Parent
+Hubert Labelle , Said Benameur
+Said Benameur , Wafa Skalli
+Jacques A. de Guise , Said Benameur
+Max Mignotte , Stefan Parent
+Hubert Labelle , Max Mignotte
+Max Mignotte , Wafa Skalli
+Jacques A. de Guise , Max Mignotte
+Hubert Labelle , Stefan Parent
+Stefan Parent , Wafa Skalli
+Jacques A. de Guise , Stefan Parent
+Hubert Labelle , Wafa Skalli
+Hubert Labelle , Jacques A. de Guise
+Jacques A. de Guise , Wafa Skalli
+Benjamin B. Kimia , Weixin Kong
+Bir Bhanu , Xuejun Tan
+Chi-Ren Shyu , Pascal Matsakis
+Chris Buehler , Michael Bosse
+Chris Buehler , Leonard McMillan
+Leonard McMillan , Michael Bosse
+Christopher E. Smith , Douglas P. Perrin
+Datong Chen , Herv&eacute; Bourlard
+Datong Chen , Jean-Philippe Thiran
+Herv&eacute; Bourlard , Jean-Philippe Thiran
+Andrew Zisserman , David P. Capel
+Elli Angelopoulou , Rana Molana
+Elli Angelopoulou , Kostas Daniilidis
+Kostas Daniilidis , Rana Molana
+Fernando De la Torre , Michael J. Black
+Guido Gerig , Martin Styner
+Anders Heyden , Henrik Malm
+Huei-Yung Lin , Murali Subbarao
+Andrew J. Davison , Jonathan Deutscher
+Ian D. Reid , Jonathan Deutscher
+Andrew J. Davison , Ian D. Reid
+Kar-Han Tan , Narendra Ahuja
+Nitesh V. Chawla , Thomas E. Moore
+Kevin W. Bowyer , Nitesh V. Chawla
+Lawrence O. Hall , Nitesh V. Chawla
+Clayton Springer , Nitesh V. Chawla
+Nitesh V. Chawla , W. Philip Kegelmeyer
+Kevin W. Bowyer , Thomas E. Moore
+Lawrence O. Hall , Thomas E. Moore
+Clayton Springer , Thomas E. Moore
+Thomas E. Moore , W. Philip Kegelmeyer
+Kevin W. Bowyer , Lawrence O. Hall
+Clayton Springer , Kevin W. Bowyer
+Kevin W. Bowyer , W. Philip Kegelmeyer
+Clayton Springer , Lawrence O. Hall
+Lawrence O. Hall , W. Philip Kegelmeyer
+Clayton Springer , W. Philip Kegelmeyer
+Kirk L. Duffin , William A. Barrett
+Lilla Z&ouml;llei , W. Eric L. Grimson
+Alexander Norbash , Lilla Z&ouml;llei
+Lilla Z&ouml;llei , William M. Wells III
+Alexander Norbash , W. Eric L. Grimson
+W. Eric L. Grimson , William M. Wells III
+Alexander Norbash , William M. Wells III
+Michael Greiffenhagen , Visvanathan Ramesh
+Heinrich Niemann , Michael Greiffenhagen
+Heinrich Niemann , Visvanathan Ramesh
+Ming Ye , Robert M. Haralick
+Hansen F. Chen , Patrick S. Huggins
+Patrick S. Huggins , Peter N. Belhumeur
+Patrick S. Huggins , Steven W. Zucker
+Hansen F. Chen , Peter N. Belhumeur
+Hansen F. Chen , Steven W. Zucker
+Peter N. Belhumeur , Steven W. Zucker
+Aaron F. Bobick , Rawesak Tanawongsuwan
+Camillo J. Taylor , Sang-Hack Jung
+Pietro Perona , Silvio Savarese
+Mubarak Shah , Sohaib Khan
+Jianbo Shi , Stella X. Yu
+Aaron F. Bobick , Vivek Kwatra
+Amos Y. Johnson , Vivek Kwatra
+Aaron F. Bobick , Amos Y. Johnson
+Chenyang Xu , Xiao Han
+Jerry L. Prince , Xiao Han
+Chenyang Xu , Jerry L. Prince
+Luis Goncalves , Yang Song
+Pietro Perona , Yang Song
+Luis Goncalves , Pietro Perona
+Chandra Kambhamettu , Ye Zhang
+Yong Rui , Yunqiang Chen
+Ying Shan , Zicheng Liu
+Ying Shan , Zhengyou Zhang
+Zhengyou Zhang , Zicheng Liu
+Manoj Aggarwal , Narendra Ahuja
+Coloma Ballester , Vicent Caselles
+Coloma Ballester , Joan Verdera
+Coloma Ballester , Marcelo Bertalm&iacute;o
+Coloma Ballester , Guillermo Sapiro
+Joan Verdera , Vicent Caselles
+Marcelo Bertalm&iacute;o , Vicent Caselles
+Guillermo Sapiro , Vicent Caselles
+Joan Verdera , Marcelo Bertalm&iacute;o
+Guillermo Sapiro , Joan Verdera
+Guillermo Sapiro , Marcelo Bertalm&iacute;o
+Shree K. Nayar , Yoav Y. Schechner
+Ren&eacute; Vidal , Yi Ma
+Ren&eacute; Vidal , Shawn Hsu
+Ren&eacute; Vidal , Shankar Sastry
+Shawn Hsu , Yi Ma
+Shankar Sastry , Yi Ma
+Shankar Sastry , Shawn Hsu
+Carsten Rother , Stefan Carlsson
+Jianbo Shi , Stella X. Yu
+Anthony J. Yezzi , Stefano Soatto
+Nikos Paragios , Olivier Mellina-Gottardo
+Nikos Paragios , Visvanathan Ramesh
+Olivier Mellina-Gottardo , Visvanathan Ramesh
+Alin C. Popescu , Hany Farid
+Manoj Aggarwal , Narendra Ahuja
+Masao Shimizu , Masatoshi Okutomi
+Lifeng Liu , Stan Sclaroff
+Marie-Pierre Jolly , Yuri Boykov
+Deepu Rajan , Subhasis Chaudhuri
+Chi-Keung Tang , Yin Li
+Heung-Yeung Shum , Yin Li
+Chi-Keung Tang , Heung-Yeung Shum
+Assaf Zomet , Lior Wolf
+Amnon Shashua , Assaf Zomet
+Amnon Shashua , Lior Wolf
+Edmond Boyer , Marta Wilczkowiak
+Marta Wilczkowiak , Peter F. Sturm
+Edmond Boyer , Peter F. Sturm
+Alexander Vasilevskiy , Kaleem Siddiqi
+Michael S. Langer , Richard Mann
+Mei Han , Takeo Kanade
+Hans-Hellmut Nagel , Markus Middendorf
+Fredrik Kahl , Kalle &Aring;str&ouml;m
+Holly E. Rushmeier , Silvio Savarese
+Fausto Bernardini , Silvio Savarese
+Pietro Perona , Silvio Savarese
+Fausto Bernardini , Holly E. Rushmeier
+Holly E. Rushmeier , Pietro Perona
+Fausto Bernardini , Pietro Perona
+Jean-Philippe Tarel , Kongbin Kang
+Kongbin Kang , Richard Fishman
+David B. Cooper , Kongbin Kang
+Jean-Philippe Tarel , Richard Fishman
+David B. Cooper , Jean-Philippe Tarel
+David B. Cooper , Richard Fishman
+Ben Southall , Camillo J. Taylor
+David Demirdjian , Trevor Darrell
+Kiichi Urahama , Kohei Inoue
+Andrew Lundberg , Lawrence B. Wolff
+Andrew Lundberg , Diego A. Socolinsky
+Diego A. Socolinsky , Lawrence B. Wolff
+Horst Bischof , Horst Wildenauer
+Ales Leonardis , Horst Bischof
+Ales Leonardis , Horst Wildenauer
+Charles R. Rosenberg , Martial Hebert
+Charles R. Rosenberg , Sebastian Thrun
+Martial Hebert , Sebastian Thrun
+Rahul Sukthankar , Robert G. Stockton
+Matthew D. Mullin , Rahul Sukthankar
+Matthew D. Mullin , Robert G. Stockton
+Benjamin B. Kimia , Christopher M. Cyr
+Glenn Healey , Pei-hsiu Suen
+Anthony R. Dick , Philip H. S. Torr
+Anthony R. Dick , Simon J. Ruffle
+Anthony R. Dick , Roberto Cipolla
+Philip H. S. Torr , Simon J. Ruffle
+Philip H. S. Torr , Roberto Cipolla
+Roberto Cipolla , Simon J. Ruffle
+Thomas S. Huang , Ying Wu
+Kentaro Toyama , Ying Wu
+Kentaro Toyama , Thomas S. Huang
+Ce Liu , Song Chun Zhu
+Ce Liu , Heung-Yeung Shum
+Heung-Yeung Shum , Song Chun Zhu
+Bjoern Stenger , Visvanathan Ramesh
+Bjoern Stenger , Nikos Paragios
+Bjoern Stenger , Frans Coetzee
+Bjoern Stenger , Joachim M. Buhmann
+Nikos Paragios , Visvanathan Ramesh
+Frans Coetzee , Visvanathan Ramesh
+Joachim M. Buhmann , Visvanathan Ramesh
+Frans Coetzee , Nikos Paragios
+Joachim M. Buhmann , Nikos Paragios
+Frans Coetzee , Joachim M. Buhmann
+Michael J. Brooks , Wojciech Chojnacki
+Darren Gawley , Michael J. Brooks
+Anton van den Hengel , Michael J. Brooks
+Darren Gawley , Wojciech Chojnacki
+Anton van den Hengel , Wojciech Chojnacki
+Anton van den Hengel , Darren Gawley
+Hans-Hellmut Nagel , Holger Leuck
+Ali Rahimi , Louis-Philippe Morency
+Ali Rahimi , Trevor Darrell
+Louis-Philippe Morency , Trevor Darrell
+Jens Rittscher , Josephine Sullivan
+Omar Javed , Sohaib Khan
+Sohaib Khan , Zeeshan Rasheed
+Mubarak Shah , Sohaib Khan
+Omar Javed , Zeeshan Rasheed
+Mubarak Shah , Omar Javed
+Mubarak Shah , Zeeshan Rasheed
+Kar-Han Tan , Narendra Ahuja
+Edward M. Riseman , Zhigang Zhu
+Allen R. Hanson , Zhigang Zhu
+Allen R. Hanson , Edward M. Riseman
+Michel Barlaud , St&eacute;phanie Jehan-Besson
+Gilles Aubert , St&eacute;phanie Jehan-Besson
+Gilles Aubert , Michel Barlaud
+Fernando De la Torre , Michael J. Black
+Cheng-en Guo , Song Chun Zhu
+Cheng-en Guo , Ying Nian Wu
+Song Chun Zhu , Ying Nian Wu
+R&oacute;mer Rosales , Vassilis Athitsos
+Leonid Sigal , R&oacute;mer Rosales
+R&oacute;mer Rosales , Stan Sclaroff
+Leonid Sigal , Vassilis Athitsos
+Stan Sclaroff , Vassilis Athitsos
+Leonid Sigal , Stan Sclaroff
+Adrian Broadhurst , Tom Drummond
+Adrian Broadhurst , Roberto Cipolla
+Roberto Cipolla , Tom Drummond
+Pascal Fua , Ralf Pl&auml;nkers
+Hong Qin , Ye Duan
+Amnon Shashua , Lior Wolf
+Richard I. Hartley , Robert Kaucic
+Nicolas Y. Dano , Robert Kaucic
+Nicolas Y. Dano , Richard I. Hartley
+Simon Baker , Terence Sim
+Simon Baker , Takeo Kanade
+Takeo Kanade , Terence Sim
+Dorin Comaniciu , Visvanathan Ramesh
+Dorin Comaniciu , Peter Meer
+Peter Meer , Visvanathan Ramesh
+Yi-Ping Hung , Yong-Sheng Chen
+Chiou-Shann Fuh , Yong-Sheng Chen
+Chiou-Shann Fuh , Yi-Ping Hung
+Jitendra Malik , Serge Belongie
+Jan Puzicha , Serge Belongie
+Jan Puzicha , Jitendra Malik
+Leslie Wang , Sing Bing Kang
+Heung-Yeung Shum , Leslie Wang
+Guangyou Xu , Leslie Wang
+Heung-Yeung Shum , Sing Bing Kang
+Guangyou Xu , Sing Bing Kang
+Guangyou Xu , Heung-Yeung Shum
+Hong Hua , Manoj Aggarwal
+Manoj Aggarwal , Narendra Ahuja
+Hong Hua , Narendra Ahuja
+Visvanathan Ramesh , Yanghai Tsin
+Takeo Kanade , Yanghai Tsin
+Takeo Kanade , Visvanathan Ramesh
+Subhasis Chaudhuri , Sundeep Singh Bhasin
+Charles R. Dyer , Russell A. Manning
+Marie-Pierre Jolly , Nicolae Duta
+Gareth Funka-Lea , Marie-Pierre Jolly
+Gareth Funka-Lea , Nicolae Duta
+Hiroshi Ishikawa , Ian Jermyn
+Jeffrey Mark Siskind , Song Wang
+Cordelia Schmid , Krystian Mikolajczyk
+Hai Tao , Harpreet S. Sawhney
+Hai Tao , Rakesh Kumar
+Harpreet S. Sawhney , Rakesh Kumar
+Tom&aacute;s Pajdla , Tom&aacute;s Werner
+Shaogang Gong , Yongmin Li
+Heather M. Liddell , Yongmin Li
+Heather M. Liddell , Shaogang Gong
+Fay Huang , Shou Kang Wei
+Fay Huang , Reinhard Klette
+Reinhard Klette , Shou Kang Wei
+Michael Kaus , Vladimir Pekar
+Cristian Lorenz , Michael Kaus
+Michael Kaus , Roel Truyen
+Michael Kaus , Steven Lobregt
+Jens A. Richolt , Michael Kaus
+J&uuml;rgen Weese , Michael Kaus
+Cristian Lorenz , Vladimir Pekar
+Roel Truyen , Vladimir Pekar
+Steven Lobregt , Vladimir Pekar
+Jens A. Richolt , Vladimir Pekar
+J&uuml;rgen Weese , Vladimir Pekar
+Cristian Lorenz , Roel Truyen
+Cristian Lorenz , Steven Lobregt
+Cristian Lorenz , Jens A. Richolt
+Cristian Lorenz , J&uuml;rgen Weese
+Roel Truyen , Steven Lobregt
+Jens A. Richolt , Roel Truyen
+J&uuml;rgen Weese , Roel Truyen
+Jens A. Richolt , Steven Lobregt
+J&uuml;rgen Weese , Steven Lobregt
+J&uuml;rgen Weese , Jens A. Richolt
+Pascal Fua , Richard Lengagne
+Ondrej Drbohlav , Radim S&aacute;ra
+Hagen Spies , Hanno Scharr
+Adrien Bartoli , Peter F. Sturm
+Adrien Bartoli , Radu Horaud
+Peter F. Sturm , Radu Horaud
+Ko Nishino , Zhengyou Zhang
+Katsushi Ikeuchi , Ko Nishino
+Katsushi Ikeuchi , Zhengyou Zhang
+Erik G. Miller , Kinh Tieu
+David A. Casta&ntilde;on , Zhengrong Ying
+Kalle &Aring;str&ouml;m , Magnus Oskarsson
+Magnus Oskarsson , Niels Chr. Overgaard
+Kalle &Aring;str&ouml;m , Niels Chr. Overgaard
+Jie Yan , Stan Z. Li
+Stan Z. Li , XinWen Hou
+Stan Z. Li , ZeYu Li
+HongJiang Zhang , Stan Z. Li
+Jie Yan , XinWen Hou
+Jie Yan , ZeYu Li
+HongJiang Zhang , Jie Yan
+XinWen Hou , ZeYu Li
+HongJiang Zhang , XinWen Hou
+HongJiang Zhang , ZeYu Li
+Allan D. Jepson , Chakra Chennubhotla
+Kah Kay Sung , Terence Tay
+Antonio Robles-Kelly , Edwin R. Hancock
+Matt Bell , William T. Freeman
+Hieu Tat Nguyen , Marcel Worring
+Hieu Tat Nguyen , Rein van den Boomgaard
+Marcel Worring , Rein van den Boomgaard
+Hailin Jin , Paolo Favaro
+Hailin Jin , Stefano Soatto
+Paolo Favaro , Stefano Soatto
+David A. Forsyth , Sergey Ioffe
+Ramakant Nevatia , Tao Zhao
+Peter R&ouml;sch , Thomas Netsch
+Arianne van Muiswinkel , Thomas Netsch
+J&uuml;rgen Weese , Thomas Netsch
+Arianne van Muiswinkel , Peter R&ouml;sch
+J&uuml;rgen Weese , Peter R&ouml;sch
+Arianne van Muiswinkel , J&uuml;rgen Weese
+Elke Braun , Jannik Fritsch
+Elke Braun , Gerhard Sagerer
+Gerhard Sagerer , Jannik Fritsch
+Daniel Gutchess , Miroslav Trajkovic
+Daniel Gutchess , Eric Cohen-Solal
+Damian M. Lyons , Daniel Gutchess
+Anil K. Jain , Daniel Gutchess
+Eric Cohen-Solal , Miroslav Trajkovic
+Damian M. Lyons , Miroslav Trajkovic
+Anil K. Jain , Miroslav Trajkovic
+Damian M. Lyons , Eric Cohen-Solal
+Anil K. Jain , Eric Cohen-Solal
+Anil K. Jain , Damian M. Lyons
+Jaco Vermaak , Michel Gangnet
+Andrew Blake , Jaco Vermaak
+Jaco Vermaak , Patrick P&eacute;rez
+Andrew Blake , Michel Gangnet
+Michel Gangnet , Patrick P&eacute;rez
+Andrew Blake , Patrick P&eacute;rez
+Christopher J. Taylor , Timothy F. Cootes
+Philip N. Klein , Thomas B. Sebastian
+Benjamin B. Kimia , Thomas B. Sebastian
+Benjamin B. Kimia , Philip N. Klein
+Antonio Torralba , Pawan Sinha
+Michael D. Grossberg , Rahul Swaminathan
+Rahul Swaminathan , Shree K. Nayar
+Michael D. Grossberg , Shree K. Nayar
+Manoj Aggarwal , Narendra Ahuja
+Jeong-Hun Jang , Ki-Sang Hong
+Thomas S. Huang , Ying Wu
+John MacCormick , Michael Isard
+Jamie Sherrah , Shaogang Gong
+Andrew Blake , Kentaro Toyama
+Kiriakos N. Kutulakos , Rodrigo L. Carceroni
+Michal Irani , Yaron Caspi
+Ramakant Nevatia , Somboon Hongeng
+Lars Eckert , Rolf-Rainer Grigat
+Ruzena Bajcsy , Shih-Sch&ouml;n Lin
+Michael D. Grossberg , Shree K. Nayar
+Didier Bondyfalat , Th&eacute;odore Papadopoulo
+Bernard Mourrain , Didier Bondyfalat
+Bernard Mourrain , Th&eacute;odore Papadopoulo
+Song Chun Zhu , Zhuowen Tu
+Heung-Yeung Shum , Zhuowen Tu
+Heung-Yeung Shum , Song Chun Zhu
+Lucas J. van Vliet , Peter Bakker
+Peter Bakker , Piet W. Verbeek
+Lucas J. van Vliet , Piet W. Verbeek
+Ahmed M. Elgammal , Larry S. Davis
+Patrick S. Huggins , Steven W. Zucker
+Bruce A. Draper , Jos&eacute; Bins
+Jukka Heikkonen , Sami S. Brandt
+Guillermo Sapiro , Santiago Betel&uacute;
+Allen Tannenbaum , Santiago Betel&uacute;
+Allen Tannenbaum , Guillermo Sapiro
+Jeremy Yermiyahou Kaminski , Michael Fryers
+Amnon Shashua , Jeremy Yermiyahou Kaminski
+Jeremy Yermiyahou Kaminski , Mina Teicher
+Amnon Shashua , Michael Fryers
+Michael Fryers , Mina Teicher
+Amnon Shashua , Mina Teicher
+Luc J. Van Gool , Marc Pollefeys
+Le Lu , Long Quan
+Heung-Yeung Shum , Long Quan
+Long Quan , Maxime Lhuillier
+Heung-Yeung Shum , Le Lu
+Le Lu , Maxime Lhuillier
+Heung-Yeung Shum , Maxime Lhuillier
+Song Wang , Weiyu Zhu
+Song Wang , Zhi-Pei Liang
+Weiyu Zhu , Zhi-Pei Liang
+Kwan-Yee Kenneth Wong , Roberto Cipolla
+Drew Steedly , Irfan A. Essa
+David Liebowitz , Stefan Carlsson
+Amnon Shashua , Lior Wolf
+Kap Luk Chan , Yong Huang
+Yong Huang , ZhongYang Huang
+Kap Luk Chan , ZhongYang Huang
+Elizaveta Levina , Peter J. Bickel
+David Slater , Glenn Healey
+Mongi A. Abidi , Yiyong Sun
+Chengjun Liu , Harry Wechsler
+Santanu Chaudhury , Sumantra Dutta Roy
+Subhashis Banerjee , Sumantra Dutta Roy
+Santanu Chaudhury , Subhashis Banerjee
+Guodong Guo , HongJiang Zhang
+Guodong Guo , Stan Z. Li
+HongJiang Zhang , Stan Z. Li
+Nebojsa Jojic , Patrice Simard
+Brendan J. Frey , Nebojsa Jojic
+David Heckerman , Nebojsa Jojic
+Brendan J. Frey , Patrice Simard
+David Heckerman , Patrice Simard
+Brendan J. Frey , David Heckerman
+Stan Z. Li , XiaoGuang Lv
+HongJiang Zhang , Stan Z. Li
+HongJiang Zhang , XiaoGuang Lv
+Ken-ichi Kanatani , Yasushi Kanazawa
+Hankyu Moon , Rama Chellappa
+Azriel Rosenfeld , Hankyu Moon
+Azriel Rosenfeld , Rama Chellappa
+Roberto Cipolla , Tom Drummond
+David J. Fleet , Kiam Choo
+Taeone Kim , Yongduek Seo
+Ki-Sang Hong , Taeone Kim
+Ki-Sang Hong , Yongduek Seo
+Xavier Binefa , Xavier Orriols
+David J. Hirvonen , Richard P. Wildes
+Richard P. Wildes , Steven C. Hsu
+Rakesh Kumar , Richard P. Wildes
+Richard P. Wildes , W. Brian Lehman
+Bogdan Matei , Richard P. Wildes
+Richard P. Wildes , Wen-Yi Zhao
+David J. Hirvonen , Steven C. Hsu
+David J. Hirvonen , Rakesh Kumar
+David J. Hirvonen , W. Brian Lehman
+Bogdan Matei , David J. Hirvonen
+David J. Hirvonen , Wen-Yi Zhao
+Rakesh Kumar , Steven C. Hsu
+Steven C. Hsu , W. Brian Lehman
+Bogdan Matei , Steven C. Hsu
+Steven C. Hsu , Wen-Yi Zhao
+Rakesh Kumar , W. Brian Lehman
+Bogdan Matei , Rakesh Kumar
+Rakesh Kumar , Wen-Yi Zhao
+Bogdan Matei , W. Brian Lehman
+W. Brian Lehman , Wen-Yi Zhao
+Bogdan Matei , Wen-Yi Zhao
+Madirakshi Das , R. Manmatha
+Olaf A. Hall-Holt , Szymon Rusinkiewicz
+Michael S. Brown , W. Brent Seales
+Alan L. Yuille , James M. Coughlan
+Alan L. Yuille , Scott Konishi
+James M. Coughlan , Scott Konishi
+David W. Jacobs , Ronen Basri
+David J. Kriegman , Sebastian Magda
+Sebastian Magda , Todd Zickler
+Peter N. Belhumeur , Sebastian Magda
+David J. Kriegman , Todd Zickler
+David J. Kriegman , Peter N. Belhumeur
+Peter N. Belhumeur , Todd Zickler
+David A. Forsyth , Kobus Barnard
+Charless Fowlkes , David R. Martin
+David R. Martin , Doron Tal
+David R. Martin , Jitendra Malik
+Charless Fowlkes , Doron Tal
+Charless Fowlkes , Jitendra Malik
+Doron Tal , Jitendra Malik
+John Y. Lin , Ying Wu
+Thomas S. Huang , Ying Wu
+John Y. Lin , Thomas S. Huang
+Hong Chen , Ying-Qing Xu
+Heung-Yeung Shum , Hong Chen
+Hong Chen , Song Chun Zhu
+Hong Chen , Nanning Zheng
+Heung-Yeung Shum , Ying-Qing Xu
+Song Chun Zhu , Ying-Qing Xu
+Nanning Zheng , Ying-Qing Xu
+Heung-Yeung Shum , Song Chun Zhu
+Heung-Yeung Shum , Nanning Zheng
+Nanning Zheng , Song Chun Zhu
+Gianfranco Doretto , Stefano Soatto
+Stefano Soatto , Ying Nian Wu
+Gianfranco Doretto , Ying Nian Wu
+Glenn Healey , Pei-hsiu Suen
+David Slater , Pei-hsiu Suen
+David Slater , Glenn Healey
+Graham D. Finlayson , Mark S. Drew
+Arjan Kuijper , Luc Florack
+David A. Casta&ntilde;on , Haihua Feng
+Haihua Feng , William Clement Karl
+David A. Casta&ntilde;on , William Clement Karl
+Anbumani Subramanian , Lakshmi R. Iyer
+A. Lynn Abbott , Anbumani Subramanian
+Amy E. Bell , Anbumani Subramanian
+A. Lynn Abbott , Lakshmi R. Iyer
+Amy E. Bell , Lakshmi R. Iyer
+A. Lynn Abbott , Amy E. Bell
+Ramin Zabih , Vladimir Kolmogorov
+Shree K. Nayar , Toshifumi Honda
+Andrew Blake , Patrick P&eacute;rez
+Michel Gangnet , Patrick P&eacute;rez
+Andrew Blake , Michel Gangnet
+Omar Javed , Zeeshan Rasheed
+Mubarak Shah , Omar Javed
+Mubarak Shah , Zeeshan Rasheed
+Il-Kyun Jung , Simon Lacroix
+Fr&eacute;d&eacute;ric Jurie , Michel Dhome
+Jane Mulligan , Volkan Isler
+Jane Mulligan , Konstantinos Daniilidis
+Konstantinos Daniilidis , Volkan Isler
+Anders Heyden , Fredrik Kahl
+Bogdan Georgescu , Bogdan Matei
+Bogdan Matei , Peter Meer
+Bogdan Georgescu , Peter Meer
+Amnon Shashua , Anat Levin
+Maria Petrou , Svetlana Barsky
+Greg Turk , Huong Quynh Dinh
+Gregory G. Slabaugh , Huong Quynh Dinh
+Greg Turk , Gregory G. Slabaugh
+Gang Qian , Rama Chellappa
+David A. Forsyth , John A. Haddon
+David Demirdjian , Trevor Darrell
+Neal Checka , Trevor Darrell
+Pedro F. Felzenszwalb , Trevor Darrell
+David Demirdjian , Neal Checka
+David Demirdjian , Pedro F. Felzenszwalb
+Neal Checka , Pedro F. Felzenszwalb
+Andrew Zisserman , Frederik Schaffalitzky
+Ying Shan , Zicheng Liu
+Ying Shan , Zhengyou Zhang
+Zhengyou Zhang , Zicheng Liu
+Hajime Miyaki , Yasuhiro Mukaigawa
+Sadahiko Mihashi , Yasuhiro Mukaigawa
+Takeshi Shakunaga , Yasuhiro Mukaigawa
+Hajime Miyaki , Sadahiko Mihashi
+Hajime Miyaki , Takeshi Shakunaga
+Sadahiko Mihashi , Takeshi Shakunaga
+Am&acirc;ncio Santos , Paulo D. Carvalho
+Ant&oacute;nio Dourado , Paulo D. Carvalho
+Bernardete Ribeiro , Paulo D. Carvalho
+Am&acirc;ncio Santos , Ant&oacute;nio Dourado
+Am&acirc;ncio Santos , Bernardete Ribeiro
+Ant&oacute;nio Dourado , Bernardete Ribeiro
+Daniel Keren , Margarita Osadchy
+QingDong Fu , Stan Z. Li
+Lie Gu , Stan Z. Li
+Bernhard Sch&ouml;lkopf , Stan Z. Li
+Stan Z. Li , Yimin Cheng
+HongJiang Zhang , Stan Z. Li
+Lie Gu , QingDong Fu
+Bernhard Sch&ouml;lkopf , QingDong Fu
+QingDong Fu , Yimin Cheng
+HongJiang Zhang , QingDong Fu
+Bernhard Sch&ouml;lkopf , Lie Gu
+Lie Gu , Yimin Cheng
+HongJiang Zhang , Lie Gu
+Bernhard Sch&ouml;lkopf , Yimin Cheng
+Bernhard Sch&ouml;lkopf , HongJiang Zhang
+HongJiang Zhang , Yimin Cheng
+Anil K. Jain , Sarat C. Dass
+Bernd Heisele , Purdy Ho
+Bernd Heisele , Tomaso Poggio
+Purdy Ho , Tomaso Poggio
+Philip H. S. Torr , Sami Romdhani
+Bernhard Sch&ouml;lkopf , Sami Romdhani
+Andrew Blake , Sami Romdhani
+Bernhard Sch&ouml;lkopf , Philip H. S. Torr
+Andrew Blake , Philip H. S. Torr
+Andrew Blake , Bernhard Sch&ouml;lkopf
+Jean-Yves Bouguet , Salih Burak G&ouml;kt&uuml;rk
+Radek Grzeszczuk , Salih Burak G&ouml;kt&uuml;rk
+Jean-Yves Bouguet , Radek Grzeszczuk
+Hedvig Sidenbladh , Michael J. Black
+Hwann-Tzong Chen , Tyng-Luh Liu
+Allen R. Hanson , Zhigang Zhu
+Ioannis Stamos , Peter K. Allen
+Gang Xu , Takahisa Nakayama
+Gang Xu , Takeshi Kajikawa
+Gang Xu , Jun-ichi Terai
+Takahisa Nakayama , Takeshi Kajikawa
+Jun-ichi Terai , Takahisa Nakayama
+Jun-ichi Terai , Takeshi Kajikawa
+Avraham Levy , Michael Lindenbaum
+Jim R. Parker , Juraj Pivovarov
+Marie-Pierre Jolly , Yuri Boykov
+Jeffrey E. Boyd , Maxwell Sayles
+Hongming Zhang , Jun Miao
+Jun Miao , Wen Gao
+Gang Deng , Jun Miao
+Hong Liu , Jun Miao
+Jun Miao , Xilin Chen
+Hongming Zhang , Wen Gao
+Gang Deng , Hongming Zhang
+Hong Liu , Hongming Zhang
+Hongming Zhang , Xilin Chen
+Gang Deng , Wen Gao
+Hong Liu , Wen Gao
+Wen Gao , Xilin Chen
+Gang Deng , Hong Liu
+Gang Deng , Xilin Chen
+Hong Liu , Xilin Chen
+Agust&iacute;n Trujillo-Pino , Karl Krissian
+Zhengyou Zhang , Zicheng Liu
+Dennis Adler , Zhengyou Zhang
+Michael F. Cohen , Zhengyou Zhang
+Erik Hanson , Zhengyou Zhang
+Ying Shan , Zhengyou Zhang
+Dennis Adler , Zicheng Liu
+Michael F. Cohen , Zicheng Liu
+Erik Hanson , Zicheng Liu
+Ying Shan , Zicheng Liu
+Dennis Adler , Michael F. Cohen
+Dennis Adler , Erik Hanson
+Dennis Adler , Ying Shan
+Erik Hanson , Michael F. Cohen
+Michael F. Cohen , Ying Shan
+Erik Hanson , Ying Shan
+Hiroki Watanabe , Hitoshi Hongo
+Hiroki Watanabe , Mamoru Yasumoto
+Hiroki Watanabe , Yoshinori Niwa
+Hiroki Watanabe , Kazuhiko Yamamoto
+Hitoshi Hongo , Mamoru Yasumoto
+Hitoshi Hongo , Yoshinori Niwa
+Hitoshi Hongo , Kazuhiko Yamamoto
+Mamoru Yasumoto , Yoshinori Niwa
+Kazuhiko Yamamoto , Mamoru Yasumoto
+Kazuhiko Yamamoto , Yoshinori Niwa
+Michael J. Jones , Paul A. Viola
+Rahul Sukthankar , Tat-Jen Cham
+Gita Sukthankar , Rahul Sukthankar
+James M. Rehg , Rahul Sukthankar
+David Hsu , Rahul Sukthankar
+Rahul Sukthankar , Thomas Leung
+Gita Sukthankar , Tat-Jen Cham
+James M. Rehg , Tat-Jen Cham
+David Hsu , Tat-Jen Cham
+Tat-Jen Cham , Thomas Leung
+Gita Sukthankar , James M. Rehg
+David Hsu , Gita Sukthankar
+Gita Sukthankar , Thomas Leung
+David Hsu , James M. Rehg
+James M. Rehg , Thomas Leung
+David Hsu , Thomas Leung
+Hailin Jin , Paolo Favaro
+Paolo Favaro , Stefano Soatto
+Hailin Jin , Stefano Soatto
+Jianbo Shi , Naoya Takao
+Naoya Takao , Simon Baker
+Iain Matthews , Naoya Takao
+Bart C. Nabbe , Naoya Takao
+Jianbo Shi , Simon Baker
+Iain Matthews , Jianbo Shi
+Bart C. Nabbe , Jianbo Shi
+Iain Matthews , Simon Baker
+Bart C. Nabbe , Simon Baker
+Bart C. Nabbe , Iain Matthews
+David J. Bullock , John S. Zelek
+Christos Faloutsos , Zhiqiang Bi
+Flip Korn , Zhiqiang Bi
+Christos Faloutsos , Flip Korn
+Andreas Buja , Yung-Seop Lee
+Igor V. Cadez , Padhraic Smyth
+Heikki Mannila , Igor V. Cadez
+Heikki Mannila , Padhraic Smyth
+Bernhard Seeger , Jens-Peter Dittrich
+Matthew Richardson , Pedro Domingos
+Daryl Pregibon , William DuMouchel
+Glenn Fung , Olvi L. Mangasarian
+Jochen Garcke , Michael Griebel
+Geoff Hulten , Laurie Spencer
+Geoff Hulten , Pedro Domingos
+Laurie Spencer , Pedro Domingos
+Eamonn J. Keogh , Selina Chu
+Eamonn J. Keogh , Michael J. Pazzani
+Michael J. Pazzani , Selina Chu
+Edwin M. Knorr , Raymond T. Ng
+Edwin M. Knorr , Ruben H. Zamar
+Raymond T. Ng , Ruben H. Zamar
+Luc De Raedt , Stefan Kramer
+Christoph Helma , Stefan Kramer
+Christoph Helma , Luc De Raedt
+Bing Liu , Yiming Ma
+Bing Liu , Philip S. Yu
+Philip S. Yu , Yiming Ma
+Balaji Padmanabhan , Zhiqiang Zheng
+Balaji Padmanabhan , Steven Orla Kimbrough
+Steven Orla Kimbrough , Zhiqiang Zheng
+Dmitry Pavlov , Padhraic Smyth
+David M. Pennock , Steve Lawrence
+David M. Pennock , Finn &Aring;rup Nielsen
+C. Lee Giles , David M. Pennock
+Finn &Aring;rup Nielsen , Steve Lawrence
+C. Lee Giles , Steve Lawrence
+C. Lee Giles , Finn &Aring;rup Nielsen
+Agma J. M. Traina , Caetano Traina Jr.
+Agma J. M. Traina , Spiros Papadimitriou
+Agma J. M. Traina , Christos Faloutsos
+Caetano Traina Jr. , Spiros Papadimitriou
+Caetano Traina Jr. , Christos Faloutsos
+Christos Faloutsos , Spiros Papadimitriou
+Cheng Yang , Usama M. Fayyad
+Cheng Yang , Paul S. Bradley
+Paul S. Bradley , Usama M. Fayyad
+Bianca Zadrozny , Charles Elkan
+Peter B. Musgrove , Richard Adderley
+Charu C. Aggarwal , Srinivasan Parthasarathy
+Raymond J. Mooney , Sugato Basu
+Krupakar V. Pasupuleti , Sugato Basu
+Joydeep Ghosh , Sugato Basu
+Krupakar V. Pasupuleti , Raymond J. Mooney
+Joydeep Ghosh , Raymond J. Mooney
+Joydeep Ghosh , Krupakar V. Pasupuleti
+Alina Beygelzimer , Chang-Shing Perng
+Alina Beygelzimer , Sheng Ma
+Chang-Shing Perng , Sheng Ma
+Ella Bingham , Heikki Mannila
+Dianne Cook , Doina Caragea
+Doina Caragea , Vasant Honavar
+Dianne Cook , Vasant Honavar
+Chien Chin Chen , Meng Chang Chen
+Chien Chin Chen , Yeali S. Sun
+Meng Chang Chen , Yeali S. Sun
+DongPing Fang , Tom Chiu
+John Chen , Tom Chiu
+Tom Chiu , Yao Wang
+Christopher Jeris , Tom Chiu
+DongPing Fang , John Chen
+DongPing Fang , Yao Wang
+Christopher Jeris , DongPing Fang
+John Chen , Yao Wang
+Christopher Jeris , John Chen
+Christopher Jeris , Yao Wang
+Chris H. Q. Ding , Xiaofeng He
+Chris H. Q. Ding , Hongyuan Zha
+Hongyuan Zha , Xiaofeng He
+David Harel , Yehuda Koren
+Nitin Indurkhya , Sholom M. Weiss
+Anthony K. H. Tung , Wen Jin
+Jiawei Han , Wen Jin
+Anthony K. H. Tung , Jiawei Han
+Annaka Kalton , Pat Langley
+Annaka Kalton , Kiri Wagstaff
+Annaka Kalton , Jungsoon P. Yoo
+Kiri Wagstaff , Pat Langley
+Jungsoon P. Yoo , Pat Langley
+Jungsoon P. Yoo , Kiri Wagstaff
+Diane Lambert , Jos&eacute; C. Pinheiro
+Aleksandar Lazarevic , Zoran Obradovic
+Dekang Lin , Patrick Pantel
+Dekang Lin , Patrick Pantel
+Bing Liu , Wynne Hsu
+Bing Liu , Yiming Ma
+Wynne Hsu , Yiming Ma
+Bing Liu , Wynne Hsu
+Bing Liu , Yiming Ma
+Wynne Hsu , Yiming Ma
+Heikki Mannila , Marko Salmenkivi
+Jonathan Moody , Ricardo Bezerra de Andrade e Silva
+Jonathan Moody , Joseph Vanderwaart
+Joseph Vanderwaart , Ricardo Bezerra de Andrade e Silva
+Nikunj C. Oza , Stuart J. Russell
+Hannu Toivonen , Petteri Sevon
+Petteri Sevon , Vesa Ollikainen
+Hannu Toivonen , Vesa Ollikainen
+Chang-Tien Lu , Shashi Shekhar
+Pusheng Zhang , Shashi Shekhar
+Chang-Tien Lu , Pusheng Zhang
+W. Nick Street , YongSeog Kim
+Jun-ichi Takeuchi , Kenji Yamanishi
+Jiong Yang , Wei Wang
+Jiong Yang , Philip S. Yu
+Philip S. Yu , Wei Wang
+Ron Kohavi , Zijian Zheng
+Llew Mason , Zijian Zheng
+Llew Mason , Ron Kohavi
+Chidanand Apt&eacute; , E. Bibelnieks
+Chidanand Apt&eacute; , Ramesh Natarajan
+Chidanand Apt&eacute; , Edwin P. D. Pednault
+Chidanand Apt&eacute; , Fateh Tipu
+Chidanand Apt&eacute; , Deb Campbell
+Bryan Nelson , Chidanand Apt&eacute;
+E. Bibelnieks , Ramesh Natarajan
+E. Bibelnieks , Edwin P. D. Pednault
+E. Bibelnieks , Fateh Tipu
+Deb Campbell , E. Bibelnieks
+Bryan Nelson , E. Bibelnieks
+Edwin P. D. Pednault , Ramesh Natarajan
+Fateh Tipu , Ramesh Natarajan
+Deb Campbell , Ramesh Natarajan
+Bryan Nelson , Ramesh Natarajan
+Edwin P. D. Pednault , Fateh Tipu
+Deb Campbell , Edwin P. D. Pednault
+Bryan Nelson , Edwin P. D. Pednault
+Deb Campbell , Fateh Tipu
+Bryan Nelson , Fateh Tipu
+Bryan Nelson , Deb Campbell
+Jonathan D. Becher , Pavel Berkhin
+Dee Jay Randall , Pavel Berkhin
+Dee Jay Randall , Jonathan D. Becher
+James Drew , Piew Datta
+Andrew Betz , Piew Datta
+D. R. Mani , Piew Datta
+Jeffery Howard , Piew Datta
+Andrew Betz , James Drew
+D. R. Mani , James Drew
+James Drew , Jeffery Howard
+Andrew Betz , D. R. Mani
+Andrew Betz , Jeffery Howard
+D. R. Mani , Jeffery Howard
+Edgar Hotz , Udo Grimmer
+Edgar Hotz , W. Heuser
+Edgar Hotz , Gholamreza Nakhaeizadeh
+Edgar Hotz , M. Wieczorek
+Udo Grimmer , W. Heuser
+Gholamreza Nakhaeizadeh , Udo Grimmer
+M. Wieczorek , Udo Grimmer
+Gholamreza Nakhaeizadeh , W. Heuser
+M. Wieczorek , W. Heuser
+Gholamreza Nakhaeizadeh , M. Wieczorek
+Christoph Hueglin , Francesco Vannotti
+Hang Li , Kenji Yamanishi
+Hank Hoek , Teresa Mah
+Teresa Mah , Ying Li
+Hank Hoek , Ying Li
+Einat Neumann , Saharon Rosset
+Saharon Rosset , Uri Eick
+Nurit Vatnik , Saharon Rosset
+Saharon Rosset , Yizhak Idan
+Einat Neumann , Uri Eick
+Einat Neumann , Nurit Vatnik
+Einat Neumann , Yizhak Idan
+Nurit Vatnik , Uri Eick
+Uri Eick , Yizhak Idan
+Nurit Vatnik , Yizhak Idan
+Jeffrey T. Kreulen , W. Scott Spangler
+Doug Warner , J. Neal Richter
+Doug Warner , Stephen D. Durbin
+Bikramjit Banerjee , Doug Warner
+J. Neal Richter , Stephen D. Durbin
+Bikramjit Banerjee , J. Neal Richter
+Bikramjit Banerjee , Stephen D. Durbin
+Henry Haining Zhang , Qiang Yang
+Ian Tian Yi Li , Qiang Yang
+Henry Haining Zhang , Ian Tian Yi Li
+Hector Garcia-Molina , Yongqiang Huang
+Balachander Krishnamurthy , Robert E. Gruber
+Euthimios Panagos , Robert E. Gruber
+Balachander Krishnamurthy , Euthimios Panagos
+David B. Lomet , Roger S. Barga
+Jae Young Lee , Ramez Elmasri
+Michael H. B&ouml;hlen , Mikkel Agesen
+Lasse Poulsen , Mikkel Agesen
+Kristian Torp , Mikkel Agesen
+Lasse Poulsen , Michael H. B&ouml;hlen
+Kristian Torp , Michael H. B&ouml;hlen
+Kristian Torp , Lasse Poulsen
+Jennifer Widom , Jun Yang
+Ramkumar Krishnan , Samuel DeFazio
+Jagannathan Srinivasan , Samuel DeFazio
+Samuel DeFazio , Saydean Zeldin
+Jagannathan Srinivasan , Ramkumar Krishnan
+Ramkumar Krishnan , Saydean Zeldin
+Jagannathan Srinivasan , Saydean Zeldin
+Fabio Casati , Umeshwar Dayal
+Fabio Casati , Ming-Chien Shan
+Ming-Chien Shan , Umeshwar Dayal
+Amarnath Gupta , Bertram Lud&auml;scher
+Bertram Lud&auml;scher , Maryann E. Martone
+Amarnath Gupta , Maryann E. Martone
+Fran&ccedil;oise Fabret , Luc Bouganim
+Fabio Porto , Luc Bouganim
+Luc Bouganim , Patrick Valduriez
+Fabio Porto , Fran&ccedil;oise Fabret
+Fran&ccedil;oise Fabret , Patrick Valduriez
+Fabio Porto , Patrick Valduriez
+Erich M&uuml;ller , Peter Dadam
+Erich M&uuml;ller , Jost Enderle
+Erich M&uuml;ller , M. Feltes
+Jost Enderle , Peter Dadam
+M. Feltes , Peter Dadam
+Jost Enderle , M. Feltes
+David Maier , Lois M. L. Delcambre
+Lois M. L. Delcambre , Shawn Bowers
+Lois M. L. Delcambre , Mathew Weaver
+Lois M. L. Delcambre , Longxing Deng
+Lois M. L. Delcambre , Paul N. Gorman
+Joan S. Ash , Lois M. L. Delcambre
+Lois M. L. Delcambre , Mary Lavelle
+Jason A. Lyman , Lois M. L. Delcambre
+David Maier , Shawn Bowers
+David Maier , Mathew Weaver
+David Maier , Longxing Deng
+David Maier , Paul N. Gorman
+David Maier , Joan S. Ash
+David Maier , Mary Lavelle
+David Maier , Jason A. Lyman
+Mathew Weaver , Shawn Bowers
+Longxing Deng , Shawn Bowers
+Paul N. Gorman , Shawn Bowers
+Joan S. Ash , Shawn Bowers
+Mary Lavelle , Shawn Bowers
+Jason A. Lyman , Shawn Bowers
+Longxing Deng , Mathew Weaver
+Mathew Weaver , Paul N. Gorman
+Joan S. Ash , Mathew Weaver
+Mary Lavelle , Mathew Weaver
+Jason A. Lyman , Mathew Weaver
+Longxing Deng , Paul N. Gorman
+Joan S. Ash , Longxing Deng
+Longxing Deng , Mary Lavelle
+Jason A. Lyman , Longxing Deng
+Joan S. Ash , Paul N. Gorman
+Mary Lavelle , Paul N. Gorman
+Jason A. Lyman , Paul N. Gorman
+Joan S. Ash , Mary Lavelle
+Jason A. Lyman , Joan S. Ash
+Jason A. Lyman , Mary Lavelle
+Klemens B&ouml;hm , Torsten Grabs
+Hans-J&ouml;rg Schek , Torsten Grabs
+Hans-J&ouml;rg Schek , Klemens B&ouml;hm
+Richard T. Snodgrass , Wei Li
+Shiyan Deng , Wei Li
+Vineel Kumar Gattu , Wei Li
+Aravindan Kasthurirangan , Wei Li
+Richard T. Snodgrass , Shiyan Deng
+Richard T. Snodgrass , Vineel Kumar Gattu
+Aravindan Kasthurirangan , Richard T. Snodgrass
+Shiyan Deng , Vineel Kumar Gattu
+Aravindan Kasthurirangan , Shiyan Deng
+Aravindan Kasthurirangan , Vineel Kumar Gattu
+Alon Y. Halevy , Denise Draper
+Daniel S. Weld , Denise Draper
+Alon Y. Halevy , Daniel S. Weld
+Grzegorz Czajkowski , Laurent Dayn&egrave;s
+Juchang Lee , Kihong Kim
+Juchang Lee , Sang Kyun Cha
+Kihong Kim , Sang Kyun Cha
+Alfons Kemper , Andreas G&auml;rtner
+Andreas G&auml;rtner , Donald Kossmann
+Andreas G&auml;rtner , Bernhard Zeller
+Alfons Kemper , Donald Kossmann
+Alfons Kemper , Bernhard Zeller
+Bernhard Zeller , Donald Kossmann
+G&ouml;sta Grahne , Laks V. S. Lakshmanan
+G&ouml;sta Grahne , Xiaohong Wang
+G&ouml;sta Grahne , Ming Hao Xie
+Laks V. S. Lakshmanan , Xiaohong Wang
+Laks V. S. Lakshmanan , Ming Hao Xie
+Ming Hao Xie , Xiaohong Wang
+Joseph L. Hellerstein , Sheng Ma
+Jian Pei , Jiawei Han
+Behzad Mortazavi-Asl , Jian Pei
+Helen Pinto , Jian Pei
+Jian Pei , Qiming Chen
+Jian Pei , Umeshwar Dayal
+Jian Pei , Meichun Hsu
+Behzad Mortazavi-Asl , Jiawei Han
+Helen Pinto , Jiawei Han
+Jiawei Han , Qiming Chen
+Jiawei Han , Umeshwar Dayal
+Jiawei Han , Meichun Hsu
+Behzad Mortazavi-Asl , Helen Pinto
+Behzad Mortazavi-Asl , Qiming Chen
+Behzad Mortazavi-Asl , Umeshwar Dayal
+Behzad Mortazavi-Asl , Meichun Hsu
+Helen Pinto , Qiming Chen
+Helen Pinto , Umeshwar Dayal
+Helen Pinto , Meichun Hsu
+Qiming Chen , Umeshwar Dayal
+Meichun Hsu , Qiming Chen
+Meichun Hsu , Umeshwar Dayal
+Amrish Lal , Jonas S. Karlsson
+Jonas S. Karlsson , T. Y. Cliff Leung
+Jonas S. Karlsson , Thanh Pham
+Amrish Lal , T. Y. Cliff Leung
+Amrish Lal , Thanh Pham
+T. Y. Cliff Leung , Thanh Pham
+Gustavo Alonso , Win Bausch
+Cesare Pautasso , Gustavo Alonso
+Ari Kahn , Gustavo Alonso
+Gustavo Alonso , Michael T. Hallett
+Cesare Pautasso , Win Bausch
+Ari Kahn , Win Bausch
+Michael T. Hallett , Win Bausch
+Ari Kahn , Cesare Pautasso
+Cesare Pautasso , Michael T. Hallett
+Ari Kahn , Michael T. Hallett
+Meichun Hsu , Qiming Chen
+Kyu-Young Whang , Yang-Sae Moon
+Woong-Kee Loh , Yang-Sae Moon
+Kyu-Young Whang , Woong-Kee Loh
+Ambuj K. Singh , Tamer Kahveci
+Jiong Yang , Wei Wang
+Richard R. Muntz , Wei Wang
+Jiong Yang , Richard R. Muntz
+Seung Jin Lim , Yiu-Kai Ng
+Dao Dinh Kha , Masatoshi Yoshikawa
+Dao Dinh Kha , Shunsuke Uemura
+Masatoshi Yoshikawa , Shunsuke Uemura
+Albrecht Schmidt , Martin L. Kersten
+Albrecht Schmidt , Menzo Windhouwer
+Martin L. Kersten , Menzo Windhouwer
+Giorgio Terracina , Luigi Palopoli
+Domenico Ursino , Luigi Palopoli
+Domenico Ursino , Giorgio Terracina
+Eugene Inseok Chong , Souripriya Das
+Chuck Freiwald , Eugene Inseok Chong
+Eugene Inseok Chong , Jagannathan Srinivasan
+Aravind Yalamanchi , Eugene Inseok Chong
+Eugene Inseok Chong , Mahesh Jagannath
+Anh-Tuan Tran , Eugene Inseok Chong
+Eugene Inseok Chong , Ramkumar Krishnan
+Chuck Freiwald , Souripriya Das
+Jagannathan Srinivasan , Souripriya Das
+Aravind Yalamanchi , Souripriya Das
+Mahesh Jagannath , Souripriya Das
+Anh-Tuan Tran , Souripriya Das
+Ramkumar Krishnan , Souripriya Das
+Chuck Freiwald , Jagannathan Srinivasan
+Aravind Yalamanchi , Chuck Freiwald
+Chuck Freiwald , Mahesh Jagannath
+Anh-Tuan Tran , Chuck Freiwald
+Chuck Freiwald , Ramkumar Krishnan
+Aravind Yalamanchi , Jagannathan Srinivasan
+Jagannathan Srinivasan , Mahesh Jagannath
+Anh-Tuan Tran , Jagannathan Srinivasan
+Jagannathan Srinivasan , Ramkumar Krishnan
+Aravind Yalamanchi , Mahesh Jagannath
+Anh-Tuan Tran , Aravind Yalamanchi
+Aravind Yalamanchi , Ramkumar Krishnan
+Anh-Tuan Tran , Mahesh Jagannath
+Mahesh Jagannath , Ramkumar Krishnan
+Anh-Tuan Tran , Ramkumar Krishnan
+Goetz Graefe , Per-&Aring;ke Larson
+Anthony K. H. Tung , Jean Hou
+Anthony K. H. Tung , Jiawei Han
+Jean Hou , Jiawei Han
+Ning An , Zhen-Yu Yang
+Anand Sivasubramaniam , Ning An
+Anand Sivasubramaniam , Zhen-Yu Yang
+Amir Netz , Surajit Chaudhuri
+Amir Netz , Usama M. Fayyad
+Amir Netz , Jeff Bernhardt
+Surajit Chaudhuri , Usama M. Fayyad
+Jeff Bernhardt , Surajit Chaudhuri
+Jeff Bernhardt , Usama M. Fayyad
+Klaus Kreplin , Thomas Zurek
+Roberta Cochrane , Wolfgang Lehner
+Hamid Pirahesh , Wolfgang Lehner
+Markos Zaharioudakis , Wolfgang Lehner
+Hamid Pirahesh , Roberta Cochrane
+Markos Zaharioudakis , Roberta Cochrane
+Hamid Pirahesh , Markos Zaharioudakis
+Klemens B&ouml;hm , Michael Mlivoncic
+Klemens B&ouml;hm , Roger Weber
+Michael Mlivoncic , Roger Weber
+Christian B&ouml;hm , Hans-Peter Kriegel
+Donald Kossmann , Stephan B&ouml;rzs&ouml;nyi
+Konrad Stocker , Stephan B&ouml;rzs&ouml;nyi
+Donald Kossmann , Konrad Stocker
+Jian Pei , Jiawei Han
+Jian Pei , Laks V. S. Lakshmanan
+Jiawei Han , Laks V. S. Lakshmanan
+Douglas Burdick , Manuel Calimlim
+Douglas Burdick , Johannes Gehrke
+Johannes Gehrke , Manuel Calimlim
+Dimitrios Gunopulos , George Kollios
+George Kollios , Nick Koudas
+George Kollios , Stefan Berchtold
+Dimitrios Gunopulos , Nick Koudas
+Dimitrios Gunopulos , Stefan Berchtold
+Nick Koudas , Stefan Berchtold
+Congjun Yang , King-Ip Lin
+Norio Katayama , Shin'ichi Satoh
+Ertem Tuncel , Hakan Ferhatosmanoglu
+Divyakant Agrawal , Hakan Ferhatosmanoglu
+Amr El Abbadi , Hakan Ferhatosmanoglu
+Divyakant Agrawal , Ertem Tuncel
+Amr El Abbadi , Ertem Tuncel
+Amr El Abbadi , Divyakant Agrawal
+Chang-Sup Park , Myoung-Ho Kim
+Chang-Sup Park , Yoon-Joon Lee
+Myoung-Ho Kim , Yoon-Joon Lee
+Damianos Chatziantoniou , Michael O. Akinde
+Damianos Chatziantoniou , Theodore Johnson
+Damianos Chatziantoniou , Samuel Kim
+Michael O. Akinde , Theodore Johnson
+Michael O. Akinde , Samuel Kim
+Samuel Kim , Theodore Johnson
+Gautam Das , Surajit Chaudhuri
+Mayur Datar , Surajit Chaudhuri
+Rajeev Motwani , Surajit Chaudhuri
+Surajit Chaudhuri , Vivek R. Narasayya
+Gautam Das , Mayur Datar
+Gautam Das , Rajeev Motwani
+Gautam Das , Vivek R. Narasayya
+Mayur Datar , Rajeev Motwani
+Mayur Datar , Vivek R. Narasayya
+Rajeev Motwani , Vivek R. Narasayya
+Jarek Gryz , K. Bernhard Schiefer
+Jarek Gryz , Jian Zheng
+Calisto Zuzarte , Jarek Gryz
+Jian Zheng , K. Bernhard Schiefer
+Calisto Zuzarte , K. Bernhard Schiefer
+Calisto Zuzarte , Jian Zheng
+Hui-I Hsiao , Neeraj Mittal
+Sriram Padmanabhan , Timothy Malkemus
+Ramesh C. Agarwal , Sriram Padmanabhan
+Anant Jhingran , Sriram Padmanabhan
+Ramesh C. Agarwal , Timothy Malkemus
+Anant Jhingran , Timothy Malkemus
+Anant Jhingran , Ramesh C. Agarwal
+Donald Kossmann , Konrad Stocker
+Konrad Stocker , Reinhard Braumandl
+Alfons Kemper , Konrad Stocker
+Donald Kossmann , Reinhard Braumandl
+Alfons Kemper , Donald Kossmann
+Alfons Kemper , Reinhard Braumandl
+Bruce G. Lindsay , Jun Rao
+Guy M. Lohman , Jun Rao
+Hamid Pirahesh , Jun Rao
+David E. Simmen , Jun Rao
+Bruce G. Lindsay , Guy M. Lohman
+Bruce G. Lindsay , Hamid Pirahesh
+Bruce G. Lindsay , David E. Simmen
+Guy M. Lohman , Hamid Pirahesh
+David E. Simmen , Guy M. Lohman
+David E. Simmen , Hamid Pirahesh
+H. V. Jagadish , Zhiyuan Chen
+Flip Korn , Zhiyuan Chen
+Nick Koudas , Zhiyuan Chen
+S. Muthukrishnan , Zhiyuan Chen
+Raymond T. Ng , Zhiyuan Chen
+Divesh Srivastava , Zhiyuan Chen
+Flip Korn , H. V. Jagadish
+H. V. Jagadish , Nick Koudas
+H. V. Jagadish , S. Muthukrishnan
+H. V. Jagadish , Raymond T. Ng
+Divesh Srivastava , H. V. Jagadish
+Flip Korn , Nick Koudas
+Flip Korn , S. Muthukrishnan
+Flip Korn , Raymond T. Ng
+Divesh Srivastava , Flip Korn
+Nick Koudas , S. Muthukrishnan
+Nick Koudas , Raymond T. Ng
+Divesh Srivastava , Nick Koudas
+Raymond T. Ng , S. Muthukrishnan
+Divesh Srivastava , S. Muthukrishnan
+Divesh Srivastava , Raymond T. Ng
+Sang-Wook Kim , Sanghyun Park
+Sang-Wook Kim , Wesley W. Chu
+Sanghyun Park , Wesley W. Chu
+Mario A. Lopez , Swanwa Liao
+Scott T. Leutenegger , Swanwa Liao
+Mario A. Lopez , Scott T. Leutenegger
+Agma J. M. Traina , Roberto F. Santos Filho
+Caetano Traina Jr. , Roberto F. Santos Filho
+Christos Faloutsos , Roberto F. Santos Filho
+Agma J. M. Traina , Caetano Traina Jr.
+Agma J. M. Traina , Christos Faloutsos
+Caetano Traina Jr. , Christos Faloutsos
+Kian-Lee Tan , Shen-Tat Goh
+Beng Chin Ooi , Kian-Lee Tan
+Beng Chin Ooi , Shen-Tat Goh
+Klemens B&ouml;hm , Uwe R&ouml;hm
+Hans-J&ouml;rg Schek , Uwe R&ouml;hm
+Hans-J&ouml;rg Schek , Klemens B&ouml;hm
+Wook-Shin Han , Yang-Sae Moon
+Kyu-Young Whang , Wook-Shin Han
+Il-Yeol Song , Wook-Shin Han
+Kyu-Young Whang , Yang-Sae Moon
+Il-Yeol Song , Yang-Sae Moon
+Il-Yeol Song , Kyu-Young Whang
+Charu C. Aggarwal , Philip S. Yu
+Aijun An , Yuanyuan Wang
+Ron Kohavi , Suhail Ansari
+Llew Mason , Suhail Ansari
+Suhail Ansari , Zijian Zheng
+Llew Mason , Ron Kohavi
+Ron Kohavi , Zijian Zheng
+Llew Mason , Zijian Zheng
+Keith C. C. Chan , Wai-Ho Au
+Jos&eacute; L. Balc&aacute;zar , Yang Dai
+Jos&eacute; L. Balc&aacute;zar , Osamu Watanabe
+Osamu Watanabe , Yang Dai
+Bay-Wei Chang , Krishna Bharat
+Krishna Bharat , Monika Rauch Henzinger
+Krishna Bharat , Matthias Ruhl
+Bay-Wei Chang , Monika Rauch Henzinger
+Bay-Wei Chang , Matthias Ruhl
+Matthias Ruhl , Monika Rauch Henzinger
+Catherine Blake , Wanda Pratt
+David J. Hand , Richard J. Bolton
+Krishnamoorthy Sivakumar , Rong Chen
+Hillol Kargupta , Rong Chen
+Hillol Kargupta , Krishnamoorthy Sivakumar
+Jong-Sheng Cherng , Mei-Jung Lo
+Christopher Meek , David Maxwell Chickering
+David Maxwell Chickering , Robert Rounthwaite
+Christopher Meek , Robert Rounthwaite
+Kian-Lee Tan , Manoranjan Dash
+Huan Liu , Manoranjan Dash
+Huan Liu , Kian-Lee Tan
+Chris H. Q. Ding , Xiaofeng He
+Chris H. Q. Ding , Hongyuan Zha
+Chris H. Q. Ding , Ming Gu
+Chris H. Q. Ding , Horst D. Simon
+Hongyuan Zha , Xiaofeng He
+Ming Gu , Xiaofeng He
+Horst D. Simon , Xiaofeng He
+Hongyuan Zha , Ming Gu
+Hongyuan Zha , Horst D. Simon
+Horst D. Simon , Ming Gu
+Juho Rousu , Tapio Elomaa
+Matthew Miller , Wei Fan
+Salvatore J. Stolfo , Wei Fan
+Wei Fan , Wenke Lee
+Philip K. Chan , Wei Fan
+Matthew Miller , Salvatore J. Stolfo
+Matthew Miller , Wenke Lee
+Matthew Miller , Philip K. Chan
+Salvatore J. Stolfo , Wenke Lee
+Philip K. Chan , Salvatore J. Stolfo
+Philip K. Chan , Wenke Lee
+Hichem Frigui , Mohamed Ben Hadj Rhouma
+Bart Goethals , Floris Geerts
+Floris Geerts , Jan Van den Bussche
+Bart Goethals , Jan Van den Bussche
+Karam Gouda , Mohammed Javeed Zaki
+Henner Graubitz , Myra Spiliopoulou
+Henner Graubitz , Karsten Winkler
+Karsten Winkler , Myra Spiliopoulou
+George Karypis , Valerie Guralnik
+Maria Halkidi , Michalis Vazirgiannis
+Chris H. Q. Ding , Xiaofeng He
+Hongyuan Zha , Xiaofeng He
+Horst D. Simon , Xiaofeng He
+Chris H. Q. Ding , Hongyuan Zha
+Chris H. Q. Ding , Horst D. Simon
+Hongyuan Zha , Horst D. Simon
+Johan Himberg , Kalle Korpiaho
+Heikki Mannila , Johan Himberg
+Johan Himberg , Johanna Tikanm&auml;ki
+Hannu Toivonen , Johan Himberg
+Heikki Mannila , Kalle Korpiaho
+Johanna Tikanm&auml;ki , Kalle Korpiaho
+Hannu Toivonen , Kalle Korpiaho
+Heikki Mannila , Johanna Tikanm&auml;ki
+Hannu Toivonen , Heikki Mannila
+Hannu Toivonen , Johanna Tikanm&auml;ki
+Shoji Hirano , Shusaku Tsumoto
+Tzung-Pei Hong , Yeong-Chyi Lee
+Don-Lin Yang , Ming-Chuan Hung
+Hisao Ishibuchi , Takashi Yamamoto
+Hisao Ishibuchi , Tomoharu Nakashima
+Takashi Yamamoto , Tomoharu Nakashima
+Mahesh V. Joshi , Vipin Kumar
+Mahesh V. Joshi , Ramesh C. Agarwal
+Ramesh C. Agarwal , Vipin Kumar
+Sung Young Jung , Taek-Soo Kim
+Dhiral Gada , Konstantinos Kalpakis
+Konstantinos Kalpakis , Vasundhara Puttagunta
+Dhiral Gada , Vasundhara Puttagunta
+Byung-Hoon Park , Hillol Kargupta
+Eamonn J. Keogh , Selina Chu
+David Hart , Eamonn J. Keogh
+Eamonn J. Keogh , Michael J. Pazzani
+David Hart , Selina Chu
+Michael J. Pazzani , Selina Chu
+David Hart , Michael J. Pazzani
+Jon Timmis , Thomas Knight
+George Karypis , Michihiro Kuramochi
+Frank Wm. Tompa , Zarrin Langari
+Chang-Hung Lee , Cheng-Ru Lin
+Chang-Hung Lee , Ming-Syan Chen
+Cheng-Ru Lin , Ming-Syan Chen
+Jung-Won Lee , Kiho Lee
+Jung-Won Lee , Won Kim
+Kiho Lee , Won Kim
+Beitao Li , Wei-Cheng Lai
+Beitao Li , Edward Y. Chang
+Beitao Li , Kwang-Ting Cheng
+Edward Y. Chang , Wei-Cheng Lai
+Kwang-Ting Cheng , Wei-Cheng Lai
+Edward Y. Chang , Kwang-Ting Cheng
+Hong Shen , Jiuyong Li
+Jiuyong Li , Rodney W. Topor
+Hong Shen , Rodney W. Topor
+Jiawei Han , Wenmin Li
+Jian Pei , Wenmin Li
+Jian Pei , Jiawei Han
+Bing Liu , Yiming Ma
+Bing Liu , Ronnie Lee
+Ronnie Lee , Yiming Ma
+Gary Livingston , John M. Rosenberg
+Bruce G. Buchanan , Gary Livingston
+Bruce G. Buchanan , John M. Rosenberg
+Gary Livingston , John M. Rosenberg
+Bruce G. Buchanan , Gary Livingston
+Bruce G. Buchanan , John M. Rosenberg
+Lee-Feng Chien , Wen-Hsiang Lu
+Hsi-Jian Lee , Wen-Hsiang Lu
+Hsi-Jian Lee , Lee-Feng Chien
+Joseph L. Hellerstein , Sheng Ma
+Mohamed Bendou , Paul Munteanu
+Steven Noel , Vijay V. Raghavan
+Chee-Hung Henry Chu , Steven Noel
+Chee-Hung Henry Chu , Vijay V. Raghavan
+Carlos Ordonez , Edward Omiecinski
+Carlos Ordonez , Levien de Braal
+Carlos Ordonez , Cesar A. Santana
+Carlos Ordonez , Norberto F. Ezquerra
+Carlos Ordonez , Jos&eacute; A. Taboada
+C. David Cooke , Carlos Ordonez
+Carlos Ordonez , Elizabeth Krawczynska
+Carlos Ordonez , Ernest V. Garcia
+Edward Omiecinski , Levien de Braal
+Cesar A. Santana , Edward Omiecinski
+Edward Omiecinski , Norberto F. Ezquerra
+Edward Omiecinski , Jos&eacute; A. Taboada
+C. David Cooke , Edward Omiecinski
+Edward Omiecinski , Elizabeth Krawczynska
+Edward Omiecinski , Ernest V. Garcia
+Cesar A. Santana , Levien de Braal
+Levien de Braal , Norberto F. Ezquerra
+Jos&eacute; A. Taboada , Levien de Braal
+C. David Cooke , Levien de Braal
+Elizabeth Krawczynska , Levien de Braal
+Ernest V. Garcia , Levien de Braal
+Cesar A. Santana , Norberto F. Ezquerra
+Cesar A. Santana , Jos&eacute; A. Taboada
+C. David Cooke , Cesar A. Santana
+Cesar A. Santana , Elizabeth Krawczynska
+Cesar A. Santana , Ernest V. Garcia
+Jos&eacute; A. Taboada , Norberto F. Ezquerra
+C. David Cooke , Norberto F. Ezquerra
+Elizabeth Krawczynska , Norberto F. Ezquerra
+Ernest V. Garcia , Norberto F. Ezquerra
+C. David Cooke , Jos&eacute; A. Taboada
+Elizabeth Krawczynska , Jos&eacute; A. Taboada
+Ernest V. Garcia , Jos&eacute; A. Taboada
+C. David Cooke , Elizabeth Krawczynska
+C. David Cooke , Ernest V. Garcia
+Elizabeth Krawczynska , Ernest V. Garcia
+Jian Pei , Jiawei Han
+Hongjun Lu , Jian Pei
+Jian Pei , Shojiro Nishio
+Jian Pei , Shiwei Tang
+Dongqing Yang , Jian Pei
+Hongjun Lu , Jiawei Han
+Jiawei Han , Shojiro Nishio
+Jiawei Han , Shiwei Tang
+Dongqing Yang , Jiawei Han
+Hongjun Lu , Shojiro Nishio
+Hongjun Lu , Shiwei Tang
+Dongqing Yang , Hongjun Lu
+Shiwei Tang , Shojiro Nishio
+Dongqing Yang , Shojiro Nishio
+Dongqing Yang , Shiwei Tang
+Chang-Shing Perng , Haixun Wang
+Chang-Shing Perng , Sheng Ma
+Chang-Shing Perng , Joseph L. Hellerstein
+Haixun Wang , Sheng Ma
+Haixun Wang , Joseph L. Hellerstein
+Joseph L. Hellerstein , Sheng Ma
+Kimmo Raivio , Olli Simula
+Jaana Laiho , Kimmo Raivio
+Jaana Laiho , Olli Simula
+Graeme Richards , Victor J. Rayward-Smith
+Lior Rokach , Oded Maimon
+Ying Sai , Yiyu Yao
+Ning Zhong , Ying Sai
+Ning Zhong , Yiyu Yao
+George Karypis , Masakazu Seno
+Jo&atilde;o Mexia , Joaquim Ferreira da Silva
+Carlos Agra Coelho , Joaquim Ferreira da Silva
+Joaquim Ferreira da Silva , Jos&eacute; Gabriel Pereira Lopes
+Carlos Agra Coelho , Jo&atilde;o Mexia
+Jo&atilde;o Mexia , Jos&eacute; Gabriel Pereira Lopes
+Carlos Agra Coelho , Jos&eacute; Gabriel Pereira Lopes
+Aixin Sun , Ee-Peng Lim
+Fran&ccedil;ois Velin , Pascale Kuntz
+Fran&ccedil;ois Velin , Henri Briand
+Henri Briand , Pascale Kuntz
+Ching-Yao Wang , Tzung-Pei Hong
+Ching-Yao Wang , Shian-Shyong Tseng
+Shian-Shyong Tseng , Tzung-Pei Hong
+Haixun Wang , Philip S. Yu
+Jiong Yang , Wei Wang
+Philip S. Yu , Wei Wang
+Jiong Yang , Philip S. Yu
+Ning Zhong , Y. Y. Yao
+Muneaki Ohshima , Ning Zhong
+Ning Zhong , Setsuo Ohsuga
+Muneaki Ohshima , Y. Y. Yao
+Setsuo Ohsuga , Y. Y. Yao
+Muneaki Ohshima , Setsuo Ohsuga
+Fernando Alonso , Juan Pedro Cara&ccedil;a-Valente
+Fernando Alonso , Lo&iuml;c Mart&iacute;nez
+C&eacute;sar Montes , Fernando Alonso
+Juan Pedro Cara&ccedil;a-Valente , Lo&iuml;c Mart&iacute;nez
+C&eacute;sar Montes , Juan Pedro Cara&ccedil;a-Valente
+C&eacute;sar Montes , Lo&iuml;c Mart&iacute;nez
+Nitesh V. Chawla , Steven Eschrich
+Lawrence O. Hall , Nitesh V. Chawla
+Lawrence O. Hall , Steven Eschrich
+Haiying Li , Jie Chen
+Jie Chen , Shiwei Tang
+Haiying Li , Shiwei Tang
+June-Suh Cho , Nabil R. Adam
+Honghua Dai , Xiaoshu Hang
+Gang Li , Honghua Dai
+Gang Li , Xiaoshu Hang
+Carlotta Domeniconi , Dimitrios Gunopulos
+Lars Schmidt-Thieme , Wolfgang Gaul
+Anders Holst , Daniel Gillblad
+Jitender S. Deogun , Sherri K. Harms
+Jamil Saquer , Sherri K. Harms
+Sherri K. Harms , Tsegaye Tadesse
+Jamil Saquer , Jitender S. Deogun
+Jitender S. Deogun , Tsegaye Tadesse
+Jamil Saquer , Tsegaye Tadesse
+Alexander Maedche , Andreas Hotho
+Andreas Hotho , Steffen Staab
+Alexander Maedche , Steffen Staab
+Nandit Soparkar , Viviane Crestana-Jensen
+Fu Tong , Gang Li
+Gang Li , Honghua Dai
+Fu Tong , Honghua Dai
+Xu Liang , Yao Liang
+Lei Xu , Zhiyong Liu
+Katia Kermanidis , Manolis Maragoudakis
+Manolis Maragoudakis , Nikos Fakotakis
+George K. Kokkinakis , Manolis Maragoudakis
+Katia Kermanidis , Nikos Fakotakis
+George K. Kokkinakis , Katia Kermanidis
+George K. Kokkinakis , Nikos Fakotakis
+Petri Myllym&auml;ki , Tomi Silander
+Henry Tirri , Petri Myllym&auml;ki
+Pekka Uronen , Petri Myllym&auml;ki
+Henry Tirri , Tomi Silander
+Pekka Uronen , Tomi Silander
+Henry Tirri , Pekka Uronen
+Tadashi Nomoto , Yuji Matsumoto
+Carlos Ordonez , Edward Omiecinski
+Carlos Ordonez , Norberto F. Ezquerra
+Edward Omiecinski , Norberto F. Ezquerra
+Guillermo S&aacute;nchez-D&iacute;az , Jos&eacute; Ruiz-Shulcloper
+Christian Decomain , Tobias Scheffer
+Stefan Wrobel , Tobias Scheffer
+Christian Decomain , Stefan Wrobel
+Guy W. Mineau , Pascal Soucy
+Richard Wherry , Sam Steingold
+Gregory Piatetsky-Shapiro , Sam Steingold
+Gregory Piatetsky-Shapiro , Richard Wherry
+Fengzhan Tian , Hongwei Zhang
+Fengzhan Tian , Yuchang Lu
+Chunyi Shi , Fengzhan Tian
+Hongwei Zhang , Yuchang Lu
+Chunyi Shi , Hongwei Zhang
+Chunyi Shi , Yuchang Lu
+Ching-Chi Hsu , Fan-Chen Tseng
+Fan-Chen Tseng , Henry Chen
+Ching-Chi Hsu , Henry Chen
+Hui Wang , Ivo D&uuml;ntsch
+David A. Bell , Hui Wang
+Dayou Liu , Hui Wang
+David A. Bell , Ivo D&uuml;ntsch
+Dayou Liu , Ivo D&uuml;ntsch
+David A. Bell , Dayou Liu
+Lei Wang , Licheng Jiao
+Show-Jane Yen , Yue-Shi Lee
+Mohammad El-Hajj , Osmar R. Za&iuml;ane
+Osmar R. Za&iuml;ane , Paul Lu
+Mohammad El-Hajj , Paul Lu
+Bernard Zenko , Ljupco Todorovski
+Bernard Zenko , Saso Dzeroski
+Ljupco Todorovski , Saso Dzeroski
+Du Zhang , Quoc Luan Ha
+Du Zhang , Meiliu Lu
+Meiliu Lu , Quoc Luan Ha
+Qinghua Zou , Wesley W. Chu
+David B. Johnson , Qinghua Zou
+Henry Chiu , Qinghua Zou
+David B. Johnson , Wesley W. Chu
+Henry Chiu , Wesley W. Chu
+David B. Johnson , Henry Chiu
+Meichun Hsu , Umeshwar Dayal
+Rivka Ladin , Umeshwar Dayal
+Meichun Hsu , Rivka Ladin
+Guy M. Lohman , Michael Stillger
+Michael Stillger , Volker Markl
+Michael Stillger , Mokhtar Kandil
+Guy M. Lohman , Volker Markl
+Guy M. Lohman , Mokhtar Kandil
+Mokhtar Kandil , Volker Markl
+Mihnea Andrei , Patrick Valduriez
+Bj&ouml;rn Blohsfeld , Jochen Van den Bercken
+Jens-Peter Dittrich , Jochen Van den Bercken
+J&uuml;rgen Kr&auml;mer , Jochen Van den Bercken
+Jochen Van den Bercken , Tobias Sch&auml;fer
+Jochen Van den Bercken , Martin Schneider
+Bernhard Seeger , Jochen Van den Bercken
+Bj&ouml;rn Blohsfeld , Jens-Peter Dittrich
+Bj&ouml;rn Blohsfeld , J&uuml;rgen Kr&auml;mer
+Bj&ouml;rn Blohsfeld , Tobias Sch&auml;fer
+Bj&ouml;rn Blohsfeld , Martin Schneider
+Bernhard Seeger , Bj&ouml;rn Blohsfeld
+J&uuml;rgen Kr&auml;mer , Jens-Peter Dittrich
+Jens-Peter Dittrich , Tobias Sch&auml;fer
+Jens-Peter Dittrich , Martin Schneider
+Bernhard Seeger , Jens-Peter Dittrich
+J&uuml;rgen Kr&auml;mer , Tobias Sch&auml;fer
+J&uuml;rgen Kr&auml;mer , Martin Schneider
+Bernhard Seeger , J&uuml;rgen Kr&auml;mer
+Martin Schneider , Tobias Sch&auml;fer
+Bernhard Seeger , Tobias Sch&auml;fer
+Bernhard Seeger , Martin Schneider
+Jayant Madhavan , Philip A. Bernstein
+Erhard Rahm , Jayant Madhavan
+Erhard Rahm , Philip A. Bernstein
+Alon Y. Halevy , Rada Chirkova
+Dan Suciu , Rada Chirkova
+Alon Y. Halevy , Dan Suciu
+Ravi Kumar , Stephen Dill
+Kevin S. McCurley , Stephen Dill
+Sridhar Rajagopalan , Stephen Dill
+D. Sivakumar , Stephen Dill
+Andrew Tomkins , Stephen Dill
+Kevin S. McCurley , Ravi Kumar
+Ravi Kumar , Sridhar Rajagopalan
+D. Sivakumar , Ravi Kumar
+Andrew Tomkins , Ravi Kumar
+Kevin S. McCurley , Sridhar Rajagopalan
+D. Sivakumar , Kevin S. McCurley
+Andrew Tomkins , Kevin S. McCurley
+D. Sivakumar , Sridhar Rajagopalan
+Andrew Tomkins , Sridhar Rajagopalan
+Andrew Tomkins , D. Sivakumar
+Anna C. Gilbert , Yannis Kotidis
+Anna C. Gilbert , S. Muthukrishnan
+Anna C. Gilbert , Martin Strauss
+S. Muthukrishnan , Yannis Kotidis
+Martin Strauss , Yannis Kotidis
+Martin Strauss , S. Muthukrishnan
+Amihood Amir , Reuven Kashi
+Amihood Amir , Nathan S. Netanyahu
+Nathan S. Netanyahu , Reuven Kashi
+Ioana Stanoi , Mirek Riedewald
+Divyakant Agrawal , Ioana Stanoi
+Amr El Abbadi , Ioana Stanoi
+Divyakant Agrawal , Mirek Riedewald
+Amr El Abbadi , Mirek Riedewald
+Amr El Abbadi , Divyakant Agrawal
+Giansalvatore Mecca , Valter Crescenzi
+Paolo Merialdo , Valter Crescenzi
+Giansalvatore Mecca , Paolo Merialdo
+Robert Baumgartner , Sergio Flesca
+Georg Gottlob , Robert Baumgartner
+Georg Gottlob , Sergio Flesca
+Hector Garcia-Molina , Sriram Raghavan
+Ela Hunt , Malcolm P. Atkinson
+Ela Hunt , Robert W. Irving
+Malcolm P. Atkinson , Robert W. Irving
+Amit Somani , Rakesh Agrawal
+Rakesh Agrawal , Yirong Xu
+Amit Somani , Yirong Xu
+Daniela Grigori , Fabio Casati
+Daniela Grigori , Umeshwar Dayal
+Daniela Grigori , Ming-Chien Shan
+Fabio Casati , Umeshwar Dayal
+Fabio Casati , Ming-Chien Shan
+Ming-Chien Shan , Umeshwar Dayal
+Anastassia Ailamaki , David J. DeWitt
+Anastassia Ailamaki , Mark D. Hill
+Anastassia Ailamaki , Marios Skounakis
+David J. DeWitt , Mark D. Hill
+David J. DeWitt , Marios Skounakis
+Marios Skounakis , Mark D. Hill
+Sang Kyun Cha , Sangyong Hwang
+Kihong Kim , Sang Kyun Cha
+Keunjoo Kwon , Sang Kyun Cha
+Kihong Kim , Sangyong Hwang
+Keunjoo Kwon , Sangyong Hwang
+Keunjoo Kwon , Kihong Kim
+Jeffrey F. Naughton , Qiong Luo
+Ilaria Bartolini , Paolo Ciaccia
+Florian Waas , Ilaria Bartolini
+Florian Waas , Paolo Ciaccia
+Klemens B&ouml;hm , Michael Mlivoncic
+Hans-J&ouml;rg Schek , Klemens B&ouml;hm
+Klemens B&ouml;hm , Roger Weber
+Hans-J&ouml;rg Schek , Michael Mlivoncic
+Michael Mlivoncic , Roger Weber
+Hans-J&ouml;rg Schek , Roger Weber
+M. Tamer &Ouml;zsu , Shu Lin
+Shu Lin , Vincent Oria
+Raymond T. Ng , Shu Lin
+M. Tamer &Ouml;zsu , Vincent Oria
+M. Tamer &Ouml;zsu , Raymond T. Ng
+Raymond T. Ng , Vincent Oria
+Masatoshi Yoshikawa , Yasushi Sakurai
+Ryoji Kataoka , Yasushi Sakurai
+Shunsuke Uemura , Yasushi Sakurai
+Masatoshi Yoshikawa , Ryoji Kataoka
+Masatoshi Yoshikawa , Shunsuke Uemura
+Ryoji Kataoka , Shunsuke Uemura
+Daniela Florescu , Ioana Manolescu
+Donald Kossmann , Ioana Manolescu
+Daniela Florescu , Donald Kossmann
+Leonidas Fegaras , Ramez Elmasri
+Jayavel Shanmugasundaram , Jerry Kiernan
+Eugene J. Shekita , Jayavel Shanmugasundaram
+Catalina Fan , Jayavel Shanmugasundaram
+Jayavel Shanmugasundaram , John E. Funderburk
+Eugene J. Shekita , Jerry Kiernan
+Catalina Fan , Jerry Kiernan
+Jerry Kiernan , John E. Funderburk
+Catalina Fan , Eugene J. Shekita
+Eugene J. Shekita , John E. Funderburk
+Catalina Fan , John E. Funderburk
+Pierangelo Veltri , Sophie Cluet
+Dan Vodislav , Sophie Cluet
+Dan Vodislav , Pierangelo Veltri
+Apostol Natsev , Yuan-Chi Chang
+Apostol Natsev , John R. Smith
+Apostol Natsev , Chung-Sheng Li
+Apostol Natsev , Jeffrey Scott Vitter
+John R. Smith , Yuan-Chi Chang
+Chung-Sheng Li , Yuan-Chi Chang
+Jeffrey Scott Vitter , Yuan-Chi Chang
+Chung-Sheng Li , John R. Smith
+Jeffrey Scott Vitter , John R. Smith
+Chung-Sheng Li , Jeffrey Scott Vitter
+Shu-Yao Chien , Vassilis J. Tsotras
+Carlo Zaniolo , Shu-Yao Chien
+Carlo Zaniolo , Vassilis J. Tsotras
+Kian-Lee Tan , Pin-Kwang Eng
+Beng Chin Ooi , Kian-Lee Tan
+Beng Chin Ooi , Pin-Kwang Eng
+Christos Faloutsos , Dimitris Margaritis
+Dimitris Margaritis , Sebastian Thrun
+Christos Faloutsos , Sebastian Thrun
+Guozhu Dong , Jiawei Han
+Guozhu Dong , Joyce M. W. Lam
+Guozhu Dong , Jian Pei
+Guozhu Dong , Ke Wang
+Jiawei Han , Joyce M. W. Lam
+Jian Pei , Jiawei Han
+Jiawei Han , Ke Wang
+Jian Pei , Joyce M. W. Lam
+Joyce M. W. Lam , Ke Wang
+Jian Pei , Ke Wang
+Alexandros Nanopoulos , Yannis Theodoridis
+Alexandros Nanopoulos , Yannis Manolopoulos
+Yannis Manolopoulos , Yannis Theodoridis
+Brian F. Cooper , Neal Sample
+Brian F. Cooper , Michael J. Franklin
+Brian F. Cooper , G&iacute;sli R. Hjaltason
+Brian F. Cooper , Moshe Shadmon
+Michael J. Franklin , Neal Sample
+G&iacute;sli R. Hjaltason , Neal Sample
+Moshe Shadmon , Neal Sample
+G&iacute;sli R. Hjaltason , Michael J. Franklin
+Michael J. Franklin , Moshe Shadmon
+G&iacute;sli R. Hjaltason , Moshe Shadmon
+Ambuj K. Singh , Tamer Kahveci
+Bongki Moon , Quanzhong Li
+Daniela Florescu , Helena Galhardas
+Dennis Shasha , Helena Galhardas
+Eric Simon , Helena Galhardas
+Cristian-Augustin Saita , Helena Galhardas
+Daniela Florescu , Dennis Shasha
+Daniela Florescu , Eric Simon
+Cristian-Augustin Saita , Daniela Florescu
+Dennis Shasha , Eric Simon
+Cristian-Augustin Saita , Dennis Shasha
+Cristian-Augustin Saita , Eric Simon
+Joseph M. Hellerstein , Vijayshankar Raman
+Alexandros Labrinidis , Nick Roussopoulos
+Jason Chionh , Lidan Shou
+Lidan Shou , Zhiyong Huang
+Lidan Shou , Yixin Ruan
+Kian-Lee Tan , Lidan Shou
+Jason Chionh , Zhiyong Huang
+Jason Chionh , Yixin Ruan
+Jason Chionh , Kian-Lee Tan
+Yixin Ruan , Zhiyong Huang
+Kian-Lee Tan , Zhiyong Huang
+Kian-Lee Tan , Yixin Ruan
+Anand Sivasubramaniam , Ning An
+Narayanan Vijaykrishnan , Ning An
+Mahmut T. Kandemir , Ning An
+Mary Jane Irwin , Ning An
+Ning An , Sudhanva Gurumurthi
+Anand Sivasubramaniam , Narayanan Vijaykrishnan
+Anand Sivasubramaniam , Mahmut T. Kandemir
+Anand Sivasubramaniam , Mary Jane Irwin
+Anand Sivasubramaniam , Sudhanva Gurumurthi
+Mahmut T. Kandemir , Narayanan Vijaykrishnan
+Mary Jane Irwin , Narayanan Vijaykrishnan
+Narayanan Vijaykrishnan , Sudhanva Gurumurthi
+Mahmut T. Kandemir , Mary Jane Irwin
+Mahmut T. Kandemir , Sudhanva Gurumurthi
+Mary Jane Irwin , Sudhanva Gurumurthi
+Beng Chin Ooi , Cui Yu
+Cui Yu , Kian-Lee Tan
+Cui Yu , H. V. Jagadish
+Beng Chin Ooi , Kian-Lee Tan
+Beng Chin Ooi , H. V. Jagadish
+H. V. Jagadish , Kian-Lee Tan
+Dimitris Papadias , Yufei Tao
+Christian S. Jensen , David B. Lomet
+Rune Humborstad , Svein Erik Bratsberg
+Bernhard Seeger , Jochen Van den Bercken
+Jennifer Widom , Yingwei Cui
+Luis Gravano , Panagiotis G. Ipeirotis
+H. V. Jagadish , Luis Gravano
+Luis Gravano , Nick Koudas
+Luis Gravano , S. Muthukrishnan
+Divesh Srivastava , Luis Gravano
+H. V. Jagadish , Panagiotis G. Ipeirotis
+Nick Koudas , Panagiotis G. Ipeirotis
+Panagiotis G. Ipeirotis , S. Muthukrishnan
+Divesh Srivastava , Panagiotis G. Ipeirotis
+H. V. Jagadish , Nick Koudas
+H. V. Jagadish , S. Muthukrishnan
+Divesh Srivastava , H. V. Jagadish
+Nick Koudas , S. Muthukrishnan
+Divesh Srivastava , Nick Koudas
+Divesh Srivastava , S. Muthukrishnan
+Michael J. Franklin , Tolga Urhan
+Masahiko Tsukamoto , Rie Sawai
+Rie Sawai , Yin-Huei Loh
+Rie Sawai , Tsutomu Terada
+Rie Sawai , Shojiro Nishio
+Masahiko Tsukamoto , Yin-Huei Loh
+Masahiko Tsukamoto , Tsutomu Terada
+Masahiko Tsukamoto , Shojiro Nishio
+Tsutomu Terada , Yin-Huei Loh
+Shojiro Nishio , Yin-Huei Loh
+Shojiro Nishio , Tsutomu Terada
+Chin-Wan Chung , Seok-Ju Chun
+Ju-Hong Lee , Seok-Ju Chun
+Seok-Ju Chun , Seok-Lyong Lee
+Chin-Wan Chung , Ju-Hong Lee
+Chin-Wan Chung , Seok-Lyong Lee
+Ju-Hong Lee , Seok-Lyong Lee
+Gayatri Sathe , Sunita Sarawagi
+Alfons Kemper , Christian Wiesner
+Beverly Yang , Hector Garcia-Molina
+Demet Aksoy , Michael J. Franklin
+Demet Aksoy , Stanley B. Zdonik
+Michael J. Franklin , Stanley B. Zdonik
+Am&eacute;lie Marian , Serge Abiteboul
+Am&eacute;lie Marian , Gregory Cobena
+Am&eacute;lie Marian , Laurent Mignet
+Gregory Cobena , Serge Abiteboul
+Laurent Mignet , Serge Abiteboul
+Gregory Cobena , Laurent Mignet
+Alaa R. Alameldeen , Ashraf Aboulnaga
+Ashraf Aboulnaga , Jeffrey F. Naughton
+Alaa R. Alameldeen , Jeffrey F. Naughton
+Georg Lausen , Pedro Jos&eacute; Marr&oacute;n
+Andrew Witkowski , William O'Connell
+Goetz Graefe , William O'Connell
+Andrew Witkowski , Goetz Graefe
+Serge Abiteboul , Shalom Tsur
+Rakesh Agrawal , Shalom Tsur
+Shalom Tsur , Umeshwar Dayal
+Johannes Klein , Shalom Tsur
+Gerhard Weikum , Shalom Tsur
+Rakesh Agrawal , Serge Abiteboul
+Serge Abiteboul , Umeshwar Dayal
+Johannes Klein , Serge Abiteboul
+Gerhard Weikum , Serge Abiteboul
+Rakesh Agrawal , Umeshwar Dayal
+Johannes Klein , Rakesh Agrawal
+Gerhard Weikum , Rakesh Agrawal
+Johannes Klein , Umeshwar Dayal
+Gerhard Weikum , Umeshwar Dayal
+Gerhard Weikum , Johannes Klein
+Banu &Ouml;zden , Eran Gabber
+Banu &Ouml;zden , Bruce Hillyer
+Banu &Ouml;zden , Wee Teck Ng
+Banu &Ouml;zden , Elizabeth A. M. Shriver
+Banu &Ouml;zden , David J. DeWitt
+Banu &Ouml;zden , Bruce Gordon
+Banu &Ouml;zden , Jim Gray
+Banu &Ouml;zden , John Wilkes
+Bruce Hillyer , Eran Gabber
+Eran Gabber , Wee Teck Ng
+Elizabeth A. M. Shriver , Eran Gabber
+David J. DeWitt , Eran Gabber
+Bruce Gordon , Eran Gabber
+Eran Gabber , Jim Gray
+Eran Gabber , John Wilkes
+Bruce Hillyer , Wee Teck Ng
+Bruce Hillyer , Elizabeth A. M. Shriver
+Bruce Hillyer , David J. DeWitt
+Bruce Gordon , Bruce Hillyer
+Bruce Hillyer , Jim Gray
+Bruce Hillyer , John Wilkes
+Elizabeth A. M. Shriver , Wee Teck Ng
+David J. DeWitt , Wee Teck Ng
+Bruce Gordon , Wee Teck Ng
+Jim Gray , Wee Teck Ng
+John Wilkes , Wee Teck Ng
+David J. DeWitt , Elizabeth A. M. Shriver
+Bruce Gordon , Elizabeth A. M. Shriver
+Elizabeth A. M. Shriver , Jim Gray
+Elizabeth A. M. Shriver , John Wilkes
+Bruce Gordon , David J. DeWitt
+David J. DeWitt , Jim Gray
+David J. DeWitt , John Wilkes
+Bruce Gordon , Jim Gray
+Bruce Gordon , John Wilkes
+Jim Gray , John Wilkes
+Ahmed K. Elmagarmid , Athman Bouguettaya
+Athman Bouguettaya , Brahim Medjahed
+Athman Bouguettaya , Mourad Ouzzani
+Ahmed K. Elmagarmid , Brahim Medjahed
+Ahmed K. Elmagarmid , Mourad Ouzzani
+Brahim Medjahed , Mourad Ouzzani
+Angela Bonifati , Fabio Casati
+Angela Bonifati , Umeshwar Dayal
+Angela Bonifati , Ming-Chien Shan
+Fabio Casati , Umeshwar Dayal
+Fabio Casati , Ming-Chien Shan
+Ming-Chien Shan , Umeshwar Dayal
+Carlo Zaniolo , Reza Sadri
+Amir M. Zarkesh , Reza Sadri
+Jafar Adibi , Reza Sadri
+Amir M. Zarkesh , Carlo Zaniolo
+Carlo Zaniolo , Jafar Adibi
+Amir M. Zarkesh , Jafar Adibi
+Craig J. Bunker , Latha S. Colby
+Craig J. Bunker , Richard L. Cole
+Craig J. Bunker , William J. McKenna
+Craig J. Bunker , Gopal Mulagund
+Craig J. Bunker , David Wilhite
+Latha S. Colby , Richard L. Cole
+Latha S. Colby , William J. McKenna
+Gopal Mulagund , Latha S. Colby
+David Wilhite , Latha S. Colby
+Richard L. Cole , William J. McKenna
+Gopal Mulagund , Richard L. Cole
+David Wilhite , Richard L. Cole
+Gopal Mulagund , William J. McKenna
+David Wilhite , William J. McKenna
+David Wilhite , Gopal Mulagund
+Mani Abrol , Neil Latarche
+Mani Abrol , Uma Mahadevan
+Jianchang Mao , Mani Abrol
+Mani Abrol , Rajat Mukherjee
+Mani Abrol , Prabhakar Raghavan
+Mani Abrol , Michel Tourn
+John Wang , Mani Abrol
+Grace Zhang , Mani Abrol
+Neil Latarche , Uma Mahadevan
+Jianchang Mao , Neil Latarche
+Neil Latarche , Rajat Mukherjee
+Neil Latarche , Prabhakar Raghavan
+Michel Tourn , Neil Latarche
+John Wang , Neil Latarche
+Grace Zhang , Neil Latarche
+Jianchang Mao , Uma Mahadevan
+Rajat Mukherjee , Uma Mahadevan
+Prabhakar Raghavan , Uma Mahadevan
+Michel Tourn , Uma Mahadevan
+John Wang , Uma Mahadevan
+Grace Zhang , Uma Mahadevan
+Jianchang Mao , Rajat Mukherjee
+Jianchang Mao , Prabhakar Raghavan
+Jianchang Mao , Michel Tourn
+Jianchang Mao , John Wang
+Grace Zhang , Jianchang Mao
+Prabhakar Raghavan , Rajat Mukherjee
+Michel Tourn , Rajat Mukherjee
+John Wang , Rajat Mukherjee
+Grace Zhang , Rajat Mukherjee
+Michel Tourn , Prabhakar Raghavan
+John Wang , Prabhakar Raghavan
+Grace Zhang , Prabhakar Raghavan
+John Wang , Michel Tourn
+Grace Zhang , Michel Tourn
+Grace Zhang , John Wang
+Anindya Datta , Kaushik Dutta
+Anindya Datta , Helen M. Thomas
+Anindya Datta , Debra E. VanderMeer
+Anindya Datta , Krithi Ramamritham
+Anindya Datta , Dan Fishman
+Helen M. Thomas , Kaushik Dutta
+Debra E. VanderMeer , Kaushik Dutta
+Kaushik Dutta , Krithi Ramamritham
+Dan Fishman , Kaushik Dutta
+Debra E. VanderMeer , Helen M. Thomas
+Helen M. Thomas , Krithi Ramamritham
+Dan Fishman , Helen M. Thomas
+Debra E. VanderMeer , Krithi Ramamritham
+Dan Fishman , Debra E. VanderMeer
+Dan Fishman , Krithi Ramamritham
+Michael J. Carey , Steve Kirsch
+Mary Roth , Michael J. Carey
+Bert Van der Linden , Michael J. Carey
+Michael J. Carey , Nicolas Adiba
+Michael Blow , Michael J. Carey
+Daniela Florescu , Michael J. Carey
+David Li , Michael J. Carey
+Ivan Oprencak , Michael J. Carey
+Michael J. Carey , Rajendra Panwar
+Michael J. Carey , Runping Qi
+David Rieber , Michael J. Carey
+John C. Shafer , Michael J. Carey
+Brian Sterling , Michael J. Carey
+Michael J. Carey , Tolga Urhan
+Brian Vickery , Michael J. Carey
+Dan Wineman , Michael J. Carey
+Kuan Yee , Michael J. Carey
+Mary Roth , Steve Kirsch
+Bert Van der Linden , Steve Kirsch
+Nicolas Adiba , Steve Kirsch
+Michael Blow , Steve Kirsch
+Daniela Florescu , Steve Kirsch
+David Li , Steve Kirsch
+Ivan Oprencak , Steve Kirsch
+Rajendra Panwar , Steve Kirsch
+Runping Qi , Steve Kirsch
+David Rieber , Steve Kirsch
+John C. Shafer , Steve Kirsch
+Brian Sterling , Steve Kirsch
+Steve Kirsch , Tolga Urhan
+Brian Vickery , Steve Kirsch
+Dan Wineman , Steve Kirsch
+Kuan Yee , Steve Kirsch
+Bert Van der Linden , Mary Roth
+Mary Roth , Nicolas Adiba
+Mary Roth , Michael Blow
+Daniela Florescu , Mary Roth
+David Li , Mary Roth
+Ivan Oprencak , Mary Roth
+Mary Roth , Rajendra Panwar
+Mary Roth , Runping Qi
+David Rieber , Mary Roth
+John C. Shafer , Mary Roth
+Brian Sterling , Mary Roth
+Mary Roth , Tolga Urhan
+Brian Vickery , Mary Roth
+Dan Wineman , Mary Roth
+Kuan Yee , Mary Roth
+Bert Van der Linden , Nicolas Adiba
+Bert Van der Linden , Michael Blow
+Bert Van der Linden , Daniela Florescu
+Bert Van der Linden , David Li
+Bert Van der Linden , Ivan Oprencak
+Bert Van der Linden , Rajendra Panwar
+Bert Van der Linden , Runping Qi
+Bert Van der Linden , David Rieber
+Bert Van der Linden , John C. Shafer
+Bert Van der Linden , Brian Sterling
+Bert Van der Linden , Tolga Urhan
+Bert Van der Linden , Brian Vickery
+Bert Van der Linden , Dan Wineman
+Bert Van der Linden , Kuan Yee
+Michael Blow , Nicolas Adiba
+Daniela Florescu , Nicolas Adiba
+David Li , Nicolas Adiba
+Ivan Oprencak , Nicolas Adiba
+Nicolas Adiba , Rajendra Panwar
+Nicolas Adiba , Runping Qi
+David Rieber , Nicolas Adiba
+John C. Shafer , Nicolas Adiba
+Brian Sterling , Nicolas Adiba
+Nicolas Adiba , Tolga Urhan
+Brian Vickery , Nicolas Adiba
+Dan Wineman , Nicolas Adiba
+Kuan Yee , Nicolas Adiba
+Daniela Florescu , Michael Blow
+David Li , Michael Blow
+Ivan Oprencak , Michael Blow
+Michael Blow , Rajendra Panwar
+Michael Blow , Runping Qi
+David Rieber , Michael Blow
+John C. Shafer , Michael Blow
+Brian Sterling , Michael Blow
+Michael Blow , Tolga Urhan
+Brian Vickery , Michael Blow
+Dan Wineman , Michael Blow
+Kuan Yee , Michael Blow
+Daniela Florescu , David Li
+Daniela Florescu , Ivan Oprencak
+Daniela Florescu , Rajendra Panwar
+Daniela Florescu , Runping Qi
+Daniela Florescu , David Rieber
+Daniela Florescu , John C. Shafer
+Brian Sterling , Daniela Florescu
+Daniela Florescu , Tolga Urhan
+Brian Vickery , Daniela Florescu
+Dan Wineman , Daniela Florescu
+Daniela Florescu , Kuan Yee
+David Li , Ivan Oprencak
+David Li , Rajendra Panwar
+David Li , Runping Qi
+David Li , David Rieber
+David Li , John C. Shafer
+Brian Sterling , David Li
+David Li , Tolga Urhan
+Brian Vickery , David Li
+Dan Wineman , David Li
+David Li , Kuan Yee
+Ivan Oprencak , Rajendra Panwar
+Ivan Oprencak , Runping Qi
+David Rieber , Ivan Oprencak
+Ivan Oprencak , John C. Shafer
+Brian Sterling , Ivan Oprencak
+Ivan Oprencak , Tolga Urhan
+Brian Vickery , Ivan Oprencak
+Dan Wineman , Ivan Oprencak
+Ivan Oprencak , Kuan Yee
+Rajendra Panwar , Runping Qi
+David Rieber , Rajendra Panwar
+John C. Shafer , Rajendra Panwar
+Brian Sterling , Rajendra Panwar
+Rajendra Panwar , Tolga Urhan
+Brian Vickery , Rajendra Panwar
+Dan Wineman , Rajendra Panwar
+Kuan Yee , Rajendra Panwar
+David Rieber , Runping Qi
+John C. Shafer , Runping Qi
+Brian Sterling , Runping Qi
+Runping Qi , Tolga Urhan
+Brian Vickery , Runping Qi
+Dan Wineman , Runping Qi
+Kuan Yee , Runping Qi
+David Rieber , John C. Shafer
+Brian Sterling , David Rieber
+David Rieber , Tolga Urhan
+Brian Vickery , David Rieber
+Dan Wineman , David Rieber
+David Rieber , Kuan Yee
+Brian Sterling , John C. Shafer
+John C. Shafer , Tolga Urhan
+Brian Vickery , John C. Shafer
+Dan Wineman , John C. Shafer
+John C. Shafer , Kuan Yee
+Brian Sterling , Tolga Urhan
+Brian Sterling , Brian Vickery
+Brian Sterling , Dan Wineman
+Brian Sterling , Kuan Yee
+Brian Vickery , Tolga Urhan
+Dan Wineman , Tolga Urhan
+Kuan Yee , Tolga Urhan
+Brian Vickery , Dan Wineman
+Brian Vickery , Kuan Yee
+Dan Wineman , Kuan Yee
+Srinivasa Narayanan , Subbu N. Subramanian
+John Catozzi , Sorana Rabinovici
+Tirthankar Lahiri , Vinay Srihari
+Tirthankar Lahiri , Wilson Chan
+N. MacNaughton , Tirthankar Lahiri
+Sashikanth Chandrasekaran , Tirthankar Lahiri
+Vinay Srihari , Wilson Chan
+N. MacNaughton , Vinay Srihari
+Sashikanth Chandrasekaran , Vinay Srihari
+N. MacNaughton , Wilson Chan
+Sashikanth Chandrasekaran , Wilson Chan
+N. MacNaughton , Sashikanth Chandrasekaran
+Le Gruenwald , Leonard Brown
+Motomichi Toyama , Yoko Maeda
+Boualem Benatallah , Liangzhao Zeng
+Liangzhao Zeng , Phuong Nguyen
+Anne H. H. Ngu , Liangzhao Zeng
+Boualem Benatallah , Phuong Nguyen
+Anne H. H. Ngu , Boualem Benatallah
+Anne H. H. Ngu , Phuong Nguyen
+K. Sel&ccedil;uk Candan , Wen-Syan Li
+Wang-Pin Hsiung , Wen-Syan Li
+Oliver Po , Wen-Syan Li
+Divyakant Agrawal , Wen-Syan Li
+Qiong Luo , Wen-Syan Li
+Wei-Kuang Waine Huang , Wen-Syan Li
+Wen-Syan Li , Yusuf Akca
+Cemal Yilmaz , Wen-Syan Li
+K. Sel&ccedil;uk Candan , Wang-Pin Hsiung
+K. Sel&ccedil;uk Candan , Oliver Po
+Divyakant Agrawal , K. Sel&ccedil;uk Candan
+K. Sel&ccedil;uk Candan , Qiong Luo
+K. Sel&ccedil;uk Candan , Wei-Kuang Waine Huang
+K. Sel&ccedil;uk Candan , Yusuf Akca
+Cemal Yilmaz , K. Sel&ccedil;uk Candan
+Oliver Po , Wang-Pin Hsiung
+Divyakant Agrawal , Wang-Pin Hsiung
+Qiong Luo , Wang-Pin Hsiung
+Wang-Pin Hsiung , Wei-Kuang Waine Huang
+Wang-Pin Hsiung , Yusuf Akca
+Cemal Yilmaz , Wang-Pin Hsiung
+Divyakant Agrawal , Oliver Po
+Oliver Po , Qiong Luo
+Oliver Po , Wei-Kuang Waine Huang
+Oliver Po , Yusuf Akca
+Cemal Yilmaz , Oliver Po
+Divyakant Agrawal , Qiong Luo
+Divyakant Agrawal , Wei-Kuang Waine Huang
+Divyakant Agrawal , Yusuf Akca
+Cemal Yilmaz , Divyakant Agrawal
+Qiong Luo , Wei-Kuang Waine Huang
+Qiong Luo , Yusuf Akca
+Cemal Yilmaz , Qiong Luo
+Wei-Kuang Waine Huang , Yusuf Akca
+Cemal Yilmaz , Wei-Kuang Waine Huang
+Cemal Yilmaz , Yusuf Akca
+Seema Sundara , Ying Hu
+Seema Sundara , Timothy Chorma
+Nipun Agarwal , Seema Sundara
+Jagannathan Srinivasan , Seema Sundara
+Timothy Chorma , Ying Hu
+Nipun Agarwal , Ying Hu
+Jagannathan Srinivasan , Ying Hu
+Nipun Agarwal , Timothy Chorma
+Jagannathan Srinivasan , Timothy Chorma
+Jagannathan Srinivasan , Nipun Agarwal
+Atsuyuki Morishima , Seiichi Koizumi
+Atsuyuki Morishima , Hiroyuki Kitagawa
+Atsuyuki Morishima , Satoshi Takano
+Hiroyuki Kitagawa , Seiichi Koizumi
+Satoshi Takano , Seiichi Koizumi
+Hiroyuki Kitagawa , Satoshi Takano
+Henk Ernst Blok , Menzo Windhouwer
+Henk Ernst Blok , Roelof van Zwol
+Henk Ernst Blok , Milan Petkovic
+Henk Ernst Blok , Peter M. G. Apers
+Henk Ernst Blok , Martin L. Kersten
+Henk Ernst Blok , Willem Jonker
+Menzo Windhouwer , Roelof van Zwol
+Menzo Windhouwer , Milan Petkovic
+Menzo Windhouwer , Peter M. G. Apers
+Martin L. Kersten , Menzo Windhouwer
+Menzo Windhouwer , Willem Jonker
+Milan Petkovic , Roelof van Zwol
+Peter M. G. Apers , Roelof van Zwol
+Martin L. Kersten , Roelof van Zwol
+Roelof van Zwol , Willem Jonker
+Milan Petkovic , Peter M. G. Apers
+Martin L. Kersten , Milan Petkovic
+Milan Petkovic , Willem Jonker
+Martin L. Kersten , Peter M. G. Apers
+Peter M. G. Apers , Willem Jonker
+Martin L. Kersten , Willem Jonker
+Christophe Bobineau , Nicolas Anciaux
+Luc Bouganim , Nicolas Anciaux
+Nicolas Anciaux , Philippe Pucheral
+Nicolas Anciaux , Patrick Valduriez
+Christophe Bobineau , Luc Bouganim
+Christophe Bobineau , Philippe Pucheral
+Christophe Bobineau , Patrick Valduriez
+Luc Bouganim , Philippe Pucheral
+Luc Bouganim , Patrick Valduriez
+Patrick Valduriez , Philippe Pucheral
+Giuseppe Sindoni , Leonardo Tininini
+Amedea Ambrosetti , Giuseppe Sindoni
+Cristina Bedeschi , Giuseppe Sindoni
+Giuseppe Sindoni , Stefano De Francisci
+Giuseppe Sindoni , Orietta Gargano
+Giuseppe Sindoni , Rossella Molinaro
+Giuseppe Sindoni , Mario Paolucci
+Giuseppe Sindoni , Paola Patteri
+Giuseppe Sindoni , Pina Ticca
+Amedea Ambrosetti , Leonardo Tininini
+Cristina Bedeschi , Leonardo Tininini
+Leonardo Tininini , Stefano De Francisci
+Leonardo Tininini , Orietta Gargano
+Leonardo Tininini , Rossella Molinaro
+Leonardo Tininini , Mario Paolucci
+Leonardo Tininini , Paola Patteri
+Leonardo Tininini , Pina Ticca
+Amedea Ambrosetti , Cristina Bedeschi
+Amedea Ambrosetti , Stefano De Francisci
+Amedea Ambrosetti , Orietta Gargano
+Amedea Ambrosetti , Rossella Molinaro
+Amedea Ambrosetti , Mario Paolucci
+Amedea Ambrosetti , Paola Patteri
+Amedea Ambrosetti , Pina Ticca
+Cristina Bedeschi , Stefano De Francisci
+Cristina Bedeschi , Orietta Gargano
+Cristina Bedeschi , Rossella Molinaro
+Cristina Bedeschi , Mario Paolucci
+Cristina Bedeschi , Paola Patteri
+Cristina Bedeschi , Pina Ticca
+Orietta Gargano , Stefano De Francisci
+Rossella Molinaro , Stefano De Francisci
+Mario Paolucci , Stefano De Francisci
+Paola Patteri , Stefano De Francisci
+Pina Ticca , Stefano De Francisci
+Orietta Gargano , Rossella Molinaro
+Mario Paolucci , Orietta Gargano
+Orietta Gargano , Paola Patteri
+Orietta Gargano , Pina Ticca
+Mario Paolucci , Rossella Molinaro
+Paola Patteri , Rossella Molinaro
+Pina Ticca , Rossella Molinaro
+Mario Paolucci , Paola Patteri
+Mario Paolucci , Pina Ticca
+Paola Patteri , Pina Ticca
+Harald Kosch , L&aacute;szl&oacute; B&ouml;sz&ouml;rm&eacute;nyi
+Alexander Bachlechner , Harald Kosch
+Christian Hanin , Harald Kosch
+Christian Hofbauer , Harald Kosch
+Harald Kosch , Margit Lang
+Carmen Riedler , Harald Kosch
+Harald Kosch , Roland Tusch
+Alexander Bachlechner , L&aacute;szl&oacute; B&ouml;sz&ouml;rm&eacute;nyi
+Christian Hanin , L&aacute;szl&oacute; B&ouml;sz&ouml;rm&eacute;nyi
+Christian Hofbauer , L&aacute;szl&oacute; B&ouml;sz&ouml;rm&eacute;nyi
+L&aacute;szl&oacute; B&ouml;sz&ouml;rm&eacute;nyi , Margit Lang
+Carmen Riedler , L&aacute;szl&oacute; B&ouml;sz&ouml;rm&eacute;nyi
+L&aacute;szl&oacute; B&ouml;sz&ouml;rm&eacute;nyi , Roland Tusch
+Alexander Bachlechner , Christian Hanin
+Alexander Bachlechner , Christian Hofbauer
+Alexander Bachlechner , Margit Lang
+Alexander Bachlechner , Carmen Riedler
+Alexander Bachlechner , Roland Tusch
+Christian Hanin , Christian Hofbauer
+Christian Hanin , Margit Lang
+Carmen Riedler , Christian Hanin
+Christian Hanin , Roland Tusch
+Christian Hofbauer , Margit Lang
+Carmen Riedler , Christian Hofbauer
+Christian Hofbauer , Roland Tusch
+Carmen Riedler , Margit Lang
+Margit Lang , Roland Tusch
+Carmen Riedler , Roland Tusch
+Robert Baumgartner , Sergio Flesca
+Georg Gottlob , Robert Baumgartner
+Georg Gottlob , Sergio Flesca
+Craig A. Knoblock , Jos&eacute; Luis Ambite
+Jos&eacute; Luis Ambite , Mohammad R. Kolahdouzan
+Jos&eacute; Luis Ambite , Maria Muslea
+Cyrus Shahabi , Jos&eacute; Luis Ambite
+Jos&eacute; Luis Ambite , Snehal Thakkar
+Craig A. Knoblock , Mohammad R. Kolahdouzan
+Craig A. Knoblock , Maria Muslea
+Craig A. Knoblock , Cyrus Shahabi
+Craig A. Knoblock , Snehal Thakkar
+Maria Muslea , Mohammad R. Kolahdouzan
+Cyrus Shahabi , Mohammad R. Kolahdouzan
+Mohammad R. Kolahdouzan , Snehal Thakkar
+Cyrus Shahabi , Maria Muslea
+Maria Muslea , Snehal Thakkar
+Cyrus Shahabi , Snehal Thakkar
+Aoying Zhou , Hongjun Lu
+Aoying Zhou , Shihui Zheng
+Aoying Zhou , Yuqi Liang
+Aoying Zhou , Long Zhang
+Aoying Zhou , Wenyun Ji
+Aoying Zhou , Zengping Tian
+Hongjun Lu , Shihui Zheng
+Hongjun Lu , Yuqi Liang
+Hongjun Lu , Long Zhang
+Hongjun Lu , Wenyun Ji
+Hongjun Lu , Zengping Tian
+Shihui Zheng , Yuqi Liang
+Long Zhang , Shihui Zheng
+Shihui Zheng , Wenyun Ji
+Shihui Zheng , Zengping Tian
+Long Zhang , Yuqi Liang
+Wenyun Ji , Yuqi Liang
+Yuqi Liang , Zengping Tian
+Long Zhang , Wenyun Ji
+Long Zhang , Zengping Tian
+Wenyun Ji , Zengping Tian
+Erhard Rahm , Thomas St&ouml;hr
+Fran&ccedil;oise Fabret , Jo&atilde;o Pereira
+Hans-Arno Jacobsen , Jo&atilde;o Pereira
+Fran&ccedil;ois Llirbat , Jo&atilde;o Pereira
+Dennis Shasha , Jo&atilde;o Pereira
+Fran&ccedil;oise Fabret , Hans-Arno Jacobsen
+Fran&ccedil;ois Llirbat , Fran&ccedil;oise Fabret
+Dennis Shasha , Fran&ccedil;oise Fabret
+Fran&ccedil;ois Llirbat , Hans-Arno Jacobsen
+Dennis Shasha , Hans-Arno Jacobsen
+Dennis Shasha , Fran&ccedil;ois Llirbat
+Kyuseok Shim , Surajit Chaudhuri
+Michael J. Franklin , Mitch Cherniack
+Mitch Cherniack , Stanley B. Zdonik
+Michael J. Franklin , Stanley B. Zdonik
+Minos N. Garofalakis , Phillip B. Gibbons
+Carole A. Goble , Norman W. Paton
+Jian Pei , Jiawei Han
+Guozhu Dong , Jiawei Han
+Jiawei Han , Ke Wang
+Guozhu Dong , Jian Pei
+Jian Pei , Ke Wang
+Guozhu Dong , Ke Wang
+Flip Korn , Johannes Gehrke
+Divesh Srivastava , Johannes Gehrke
+Divesh Srivastava , Flip Korn
+Alan S. Wagner , Raymond T. Ng
+Raymond T. Ng , Yu Yin
+Alan S. Wagner , Yu Yin
+Charu C. Aggarwal , Philip S. Yu
+Denis Rinfret , Patrick E. O'Neil
+Denis Rinfret , Elizabeth J. O'Neil
+Elizabeth J. O'Neil , Patrick E. O'Neil
+Michael Greenwald , Sanjeev Khanna
+Luis Gravano , Panagiotis G. Ipeirotis
+Mehran Sahami , Panagiotis G. Ipeirotis
+Luis Gravano , Mehran Sahami
+Hans-Peter Kriegel , Markus M. Breunig
+Markus M. Breunig , Peer Kr&ouml;ger
+J&ouml;rg Sander , Markus M. Breunig
+Hans-Peter Kriegel , Peer Kr&ouml;ger
+Hans-Peter Kriegel , J&ouml;rg Sander
+J&ouml;rg Sander , Peer Kr&ouml;ger
+Mahesh V. Joshi , Ramesh C. Agarwal
+Mahesh V. Joshi , Vipin Kumar
+Ramesh C. Agarwal , Vipin Kumar
+Atsuyuki Morishima , Mary F. Fernandez
+Dan Suciu , Mary F. Fernandez
+Atsuyuki Morishima , Dan Suciu
+Fran&ccedil;oise Fabret , Hans-Arno Jacobsen
+Fran&ccedil;ois Llirbat , Fran&ccedil;oise Fabret
+Fran&ccedil;oise Fabret , Jo&atilde;o Pereira
+Fran&ccedil;oise Fabret , Kenneth A. Ross
+Dennis Shasha , Fran&ccedil;oise Fabret
+Fran&ccedil;ois Llirbat , Hans-Arno Jacobsen
+Hans-Arno Jacobsen , Jo&atilde;o Pereira
+Hans-Arno Jacobsen , Kenneth A. Ross
+Dennis Shasha , Hans-Arno Jacobsen
+Fran&ccedil;ois Llirbat , Jo&atilde;o Pereira
+Fran&ccedil;ois Llirbat , Kenneth A. Ross
+Dennis Shasha , Fran&ccedil;ois Llirbat
+Jo&atilde;o Pereira , Kenneth A. Ross
+Dennis Shasha , Jo&atilde;o Pereira
+Dennis Shasha , Kenneth A. Ross
+Christian S. Jensen , Giedrius Slivinskas
+Giedrius Slivinskas , Richard T. Snodgrass
+Christian S. Jensen , Richard T. Snodgrass
+Kihong Kim , Sang Kyun Cha
+Keunjoo Kwon , Kihong Kim
+Keunjoo Kwon , Sang Kyun Cha
+Eamonn J. Keogh , Kaushik Chakrabarti
+Eamonn J. Keogh , Sharad Mehrotra
+Eamonn J. Keogh , Michael J. Pazzani
+Kaushik Chakrabarti , Sharad Mehrotra
+Kaushik Chakrabarti , Michael J. Pazzani
+Michael J. Pazzani , Sharad Mehrotra
+Peter McIlroy , Philip Bohannon
+Philip Bohannon , Rajeev Rastogi
+Peter McIlroy , Rajeev Rastogi
+Kaustubh Deshmukh , Vinayak R. Borkar
+Sunita Sarawagi , Vinayak R. Borkar
+Kaustubh Deshmukh , Sunita Sarawagi
+Clement T. Yu , Weiyi Meng
+Clement T. Yu , Wensheng Wu
+Clement T. Yu , King-Lup Liu
+Weiyi Meng , Wensheng Wu
+King-Lup Liu , Weiyi Meng
+King-Lup Liu , Wensheng Wu
+Amol Deshpande , Minos N. Garofalakis
+Amol Deshpande , Rajeev Rastogi
+Minos N. Garofalakis , Rajeev Rastogi
+Nicolas Bruno , Surajit Chaudhuri
+Luis Gravano , Nicolas Bruno
+Luis Gravano , Surajit Chaudhuri
+H. V. Jagadish , Hui Jin
+Beng Chin Ooi , H. V. Jagadish
+H. V. Jagadish , Kian-Lee Tan
+Beng Chin Ooi , Hui Jin
+Hui Jin , Kian-Lee Tan
+Beng Chin Ooi , Kian-Lee Tan
+Phillip B. Gibbons , Shimin Chen
+Shimin Chen , Todd C. Mowry
+Phillip B. Gibbons , Todd C. Mowry
+Aristides Gionis , Dimitrios Gunopulos
+Aristides Gionis , Nick Koudas
+Dimitrios Gunopulos , Nick Koudas
+Nick Koudas , Vagelis Hristidis
+Vagelis Hristidis , Yannis Papakonstantinou
+Nick Koudas , Yannis Papakonstantinou
+Johannes Gehrke , Zhiyuan Chen
+Flip Korn , Zhiyuan Chen
+Flip Korn , Johannes Gehrke
+Minos N. Garofalakis , Shivnath Babu
+Rajeev Rastogi , Shivnath Babu
+Minos N. Garofalakis , Rajeev Rastogi
+Gautam Das , Surajit Chaudhuri
+Surajit Chaudhuri , Vivek R. Narasayya
+Gautam Das , Vivek R. Narasayya
+Hoshi Mistry , Prasan Roy
+Hoshi Mistry , S. Sudarshan
+Hoshi Mistry , Krithi Ramamritham
+Prasan Roy , S. Sudarshan
+Krithi Ramamritham , Prasan Roy
+Krithi Ramamritham , S. Sudarshan
+Chen Li , Foto N. Afrati
+Foto N. Afrati , Jeffrey D. Ullman
+Chen Li , Jeffrey D. Ullman
+Jonathan Goldstein , Per-&Aring;ke Larson
+Kyu-Young Whang , Sang Ho Lee
+Sang Ho Lee , Yang-Sae Moon
+Il-Yeol Song , Sang Ho Lee
+Kyu-Young Whang , Yang-Sae Moon
+Il-Yeol Song , Kyu-Young Whang
+Il-Yeol Song , Yang-Sae Moon
+Boon Thau Loo , Chris Olston
+Chris Olston , Jennifer Widom
+Boon Thau Loo , Jennifer Widom
+Dimitris Papadias , Panos Kalnis
+Bernhard Braunm&uuml;ller , Christian B&ouml;hm
+Christian B&ouml;hm , Florian Krebs
+Christian B&ouml;hm , Hans-Peter Kriegel
+Bernhard Braunm&uuml;ller , Florian Krebs
+Bernhard Braunm&uuml;ller , Hans-Peter Kriegel
+Florian Krebs , Hans-Peter Kriegel
+Ambuj K. Singh , Christian A. Lang
+Iosif Lazaridis , Sharad Mehrotra
+Igor Tatarinov , Zachary G. Ives
+Alon Y. Halevy , Igor Tatarinov
+Daniel S. Weld , Igor Tatarinov
+Alon Y. Halevy , Zachary G. Ives
+Daniel S. Weld , Zachary G. Ives
+Alon Y. Halevy , Daniel S. Weld
+Chun Zhang , Jeffrey F. Naughton
+Chun Zhang , David J. DeWitt
+Chun Zhang , Qiong Luo
+Chun Zhang , Guy M. Lohman
+David J. DeWitt , Jeffrey F. Naughton
+Jeffrey F. Naughton , Qiong Luo
+Guy M. Lohman , Jeffrey F. Naughton
+David J. DeWitt , Qiong Luo
+David J. DeWitt , Guy M. Lohman
+Guy M. Lohman , Qiong Luo
+Benjamin Nguyen , Serge Abiteboul
+Benjamin Nguyen , Gregory Cobena
+Benjamin Nguyen , Mihai Preda
+Gregory Cobena , Serge Abiteboul
+Mihai Preda , Serge Abiteboul
+Gregory Cobena , Mihai Preda
+Divyakant Agrawal , Yi-Leh Wu
+Amr El Abbadi , Yi-Leh Wu
+Amr El Abbadi , Divyakant Agrawal
+Benjamin Taskar , Lise Getoor
+Daphne Koller , Lise Getoor
+Benjamin Taskar , Daphne Koller
+Assaf Schuster , Ran Wolff
+Ling-Ling Yan , Ren&eacute;e J. Miller
+Laura M. Haas , Ling-Ling Yan
+Ling-Ling Yan , Ronald Fagin
+Laura M. Haas , Ren&eacute;e J. Miller
+Ren&eacute;e J. Miller , Ronald Fagin
+Laura M. Haas , Ronald Fagin
+Sihem Amer-Yahia , SungRan Cho
+Laks V. S. Lakshmanan , Sihem Amer-Yahia
+Divesh Srivastava , Sihem Amer-Yahia
+Laks V. S. Lakshmanan , SungRan Cho
+Divesh Srivastava , SungRan Cho
+Divesh Srivastava , Laks V. S. Lakshmanan
+AnHai Doan , Pedro Domingos
+Alon Y. Halevy , AnHai Doan
+Alon Y. Halevy , Pedro Domingos
+Felipe Cari&ntilde;o , Pekka Kostamaa
+Art Kaufmann , Felipe Cari&ntilde;o
+Felipe Cari&ntilde;o , John Burgess
+Art Kaufmann , Pekka Kostamaa
+John Burgess , Pekka Kostamaa
+Art Kaufmann , John Burgess
+K. Sel&ccedil;uk Candan , Wen-Syan Li
+K. Sel&ccedil;uk Candan , Qiong Luo
+K. Sel&ccedil;uk Candan , Wang-Pin Hsiung
+Divyakant Agrawal , K. Sel&ccedil;uk Candan
+Qiong Luo , Wen-Syan Li
+Wang-Pin Hsiung , Wen-Syan Li
+Divyakant Agrawal , Wen-Syan Li
+Qiong Luo , Wang-Pin Hsiung
+Divyakant Agrawal , Qiong Luo
+Divyakant Agrawal , Wang-Pin Hsiung
+Julio C. Navas , Michael J. Wynblatt
+Joseph M. Hellerstein , Michael Stonebraker
+Eric Bloedorn , Zohreh Nazeri
+Paul Ostwald , Zohreh Nazeri
+Eric Bloedorn , Paul Ostwald
+Alon Y. Halevy , Denise Draper
+Daniel S. Weld , Denise Draper
+Alon Y. Halevy , Daniel S. Weld
+C&eacute;sar A. Galindo-Legaria , Milind Joshi
+Jarek Gryz , Parke Godfrey
+Calisto Zuzarte , Parke Godfrey
+Calisto Zuzarte , Jarek Gryz
+Amit Ganesh , Tirthankar Lahiri
+Ron Weiss , Tirthankar Lahiri
+Ashok Joshi , Tirthankar Lahiri
+Amit Ganesh , Ron Weiss
+Amit Ganesh , Ashok Joshi
+Ashok Joshi , Ron Weiss
+Joseph M. Hellerstein , Peter J. Haas
+Dimitrios Gunopulos , Gautam Das
+Fabio Casati , Ming-Chien Shan
+Amol Katkar , Pavan Deolasee
+Ankur Panchbudhe , Pavan Deolasee
+Krithi Ramamritham , Pavan Deolasee
+Pavan Deolasee , Prashant J. Shenoy
+Amol Katkar , Ankur Panchbudhe
+Amol Katkar , Krithi Ramamritham
+Amol Katkar , Prashant J. Shenoy
+Ankur Panchbudhe , Krithi Ramamritham
+Ankur Panchbudhe , Prashant J. Shenoy
+Krithi Ramamritham , Prashant J. Shenoy
+Stefan Holland , Werner Kie&szlig;ling
+Stefan Fischer , Werner Kie&szlig;ling
+Thorsten Ehm , Werner Kie&szlig;ling
+Stefan Fischer , Stefan Holland
+Stefan Holland , Thorsten Ehm
+Stefan Fischer , Thorsten Ehm
+Jason Chionh , Lidan Shou
+Kian-Lee Tan , Lidan Shou
+Lidan Shou , Yixin Ruan
+Lidan Shou , Zhiyong Huang
+Jason Chionh , Kian-Lee Tan
+Jason Chionh , Yixin Ruan
+Jason Chionh , Zhiyong Huang
+Kian-Lee Tan , Yixin Ruan
+Kian-Lee Tan , Zhiyong Huang
+Yixin Ruan , Zhiyong Huang
+Sudarshan S. Chawathe , Thomas Baby
+Jihwang Yeo , Sudarshan S. Chawathe
+Jihwang Yeo , Thomas Baby
+David Buttler , Ling Liu
+Calton Pu , David Buttler
+David Buttler , Henrique Paques
+Calton Pu , Ling Liu
+Henrique Paques , Ling Liu
+Calton Pu , Henrique Paques
+Elisa Bertino , Silvana Castano
+Elena Ferrari , Elisa Bertino
+Elena Ferrari , Silvana Castano
+Elke A. Rundensteiner , Kajal T. Claypool
+Kajal T. Claypool , Xin Zhang
+Hong Su , Kajal T. Claypool
+Harumi A. Kuno , Kajal T. Claypool
+Kajal T. Claypool , Wang-Chien Lee
+Gail Mitchell , Kajal T. Claypool
+Elke A. Rundensteiner , Xin Zhang
+Elke A. Rundensteiner , Hong Su
+Elke A. Rundensteiner , Harumi A. Kuno
+Elke A. Rundensteiner , Wang-Chien Lee
+Elke A. Rundensteiner , Gail Mitchell
+Hong Su , Xin Zhang
+Harumi A. Kuno , Xin Zhang
+Wang-Chien Lee , Xin Zhang
+Gail Mitchell , Xin Zhang
+Harumi A. Kuno , Hong Su
+Hong Su , Wang-Chien Lee
+Gail Mitchell , Hong Su
+Harumi A. Kuno , Wang-Chien Lee
+Gail Mitchell , Harumi A. Kuno
+Gail Mitchell , Wang-Chien Lee
+Mauricio A. Hern&aacute;ndez , Ren&eacute;e J. Miller
+Laura M. Haas , Mauricio A. Hern&aacute;ndez
+Laura M. Haas , Ren&eacute;e J. Miller
+Sanjay Agrawal , Surajit Chaudhuri
+Sanjay Agrawal , Vivek R. Narasayya
+Surajit Chaudhuri , Vivek R. Narasayya
+Giuseppe Santucci , Tiziana Catarci
+Asaf Adi , David Botzer
+Asaf Adi , Opher Etzion
+Asaf Adi , Tali Yatzkar-Haham
+David Botzer , Opher Etzion
+David Botzer , Tali Yatzkar-Haham
+Opher Etzion , Tali Yatzkar-Haham
+Mehul A. Shah , Sirish Chandrasekaran
+Eugene Agichtein , Luis Gravano
+Eugene Agichtein , Jeff Pavel
+Eugene Agichtein , Viktoriya Sokolova
+Aleksandr Voskoboynik , Eugene Agichtein
+Jeff Pavel , Luis Gravano
+Luis Gravano , Viktoriya Sokolova
+Aleksandr Voskoboynik , Luis Gravano
+Jeff Pavel , Viktoriya Sokolova
+Aleksandr Voskoboynik , Jeff Pavel
+Aleksandr Voskoboynik , Viktoriya Sokolova
+Edward Y. Chang , Kwang-Ting (Tim) Cheng
+Edward Y. Chang , Lihyuarn L. Chang
+Kwang-Ting (Tim) Cheng , Lihyuarn L. Chang
+Andreas M&uuml;ller , Hans-Peter Kriegel
+Hans-Peter Kriegel , Marco P&ouml;tke
+Hans-Peter Kriegel , Thomas Seidl
+Andreas M&uuml;ller , Marco P&ouml;tke
+Andreas M&uuml;ller , Thomas Seidl
+Marco P&ouml;tke , Thomas Seidl
+Edward Chan , Kam-yiu Lam
+Kam-yiu Lam , Tei-Wei Kuo
+Kam-yiu Lam , S. W. Ng
+Dick Hung , Kam-yiu Lam
+Edward Chan , Tei-Wei Kuo
+Edward Chan , S. W. Ng
+Dick Hung , Edward Chan
+S. W. Ng , Tei-Wei Kuo
+Dick Hung , Tei-Wei Kuo
+Dick Hung , S. W. Ng
+Anindya Datta , Kaushik Dutta
+Anindya Datta , Krithi Ramamritham
+Anindya Datta , Helen M. Thomas
+Anindya Datta , Debra E. VanderMeer
+Kaushik Dutta , Krithi Ramamritham
+Helen M. Thomas , Kaushik Dutta
+Debra E. VanderMeer , Kaushik Dutta
+Helen M. Thomas , Krithi Ramamritham
+Debra E. VanderMeer , Krithi Ramamritham
+Debra E. VanderMeer , Helen M. Thomas
+Arthur T. Whitney , Dennis Shasha
+Hasan M. Jamil , Jiawei Han
+Jiawei Han , Ying Lu
+Jiawei Han , Liangyou Chen
+Jiawei Han , Yaqin Liao
+Jian Pei , Jiawei Han
+Hasan M. Jamil , Ying Lu
+Hasan M. Jamil , Liangyou Chen
+Hasan M. Jamil , Yaqin Liao
+Hasan M. Jamil , Jian Pei
+Liangyou Chen , Ying Lu
+Yaqin Liao , Ying Lu
+Jian Pei , Ying Lu
+Liangyou Chen , Yaqin Liao
+Jian Pei , Liangyou Chen
+Jian Pei , Yaqin Liao
+Jun Chen , Xin Zhang
+Jun Chen , Songting Chen
+Andreas Koeller , Jun Chen
+Elke A. Rundensteiner , Jun Chen
+Songting Chen , Xin Zhang
+Andreas Koeller , Xin Zhang
+Elke A. Rundensteiner , Xin Zhang
+Andreas Koeller , Songting Chen
+Elke A. Rundensteiner , Songting Chen
+Andreas Koeller , Elke A. Rundensteiner
+Benjamin Kuipers , Emilio Remolina
+Gerhard Lakemeyer , Henrik Grosskreutz
+Joseph Y. Halpern , Judea Pearl
+Thomas Eiter , Thomas Lukasiewicz
+Christopher Bailey-Kellogg , Naren Ramakrishnan
+David A. Randell , Mark Witkowski
+David A. Randell , Murray Shanahan
+Mark Witkowski , Murray Shanahan
+Hidde de Jong , Michel Page
+C&eacute;line Hernandez , Hidde de Jong
+Hidde de Jong , Johannes Geiselmann
+C&eacute;line Hernandez , Michel Page
+Johannes Geiselmann , Michel Page
+C&eacute;line Hernandez , Johannes Geiselmann
+Ivayla Vatcheva , Olivier Bernard
+Hidde de Jong , Ivayla Vatcheva
+Ivayla Vatcheva , Jean-Luc Gouz&eacute;
+Ivayla Vatcheva , Nicolaas J. I. Mars
+Hidde de Jong , Olivier Bernard
+Jean-Luc Gouz&eacute; , Olivier Bernard
+Nicolaas J. I. Mars , Olivier Bernard
+Hidde de Jong , Jean-Luc Gouz&eacute;
+Hidde de Jong , Nicolaas J. I. Mars
+Jean-Luc Gouz&eacute; , Nicolaas J. I. Mars
+Andrei A. Krokhin , Peter Jeavons
+Andrei A. Krokhin , Peter Jonsson
+Peter Jeavons , Peter Jonsson
+Chitta Baral , Yan Zhang
+Nad&egrave;ge Porquet , Pierre Marquis
+Salem Benferhat , Souhila Kaci
+Daniel Le Berre , Salem Benferhat
+Mary-Anne Williams , Salem Benferhat
+Daniel Le Berre , Souhila Kaci
+Mary-Anne Williams , Souhila Kaci
+Daniel Le Berre , Mary-Anne Williams
+Andreas Herzig , J&eacute;r&ocirc;me Lang
+Andreas Herzig , Pierre Marquis
+Andreas Herzig , Thomas Polacsek
+J&eacute;r&ocirc;me Lang , Pierre Marquis
+J&eacute;r&ocirc;me Lang , Thomas Polacsek
+Pierre Marquis , Thomas Polacsek
+Maurice Pagnucco , Pavlos Peppas
+Dongmo Zhang , Norman Y. Foo
+Patrick Doherty , Witold Lukaszewicz
+Andrzej Szalas , Patrick Doherty
+Andrzej Szalas , Witold Lukaszewicz
+Diego Calvanese , Giuseppe De Giacomo
+Diego Calvanese , Maurizio Lenzerini
+Giuseppe De Giacomo , Maurizio Lenzerini
+Ralf M&ouml;ller , Volker Haarslev
+Marco Cadoli , Thomas Eiter
+Georg Gottlob , Marco Cadoli
+Georg Gottlob , Thomas Eiter
+Adnan Darwiche , Pierre Marquis
+Delbert D. Bailey , V&iacute;ctor Dalmau
+Delbert D. Bailey , Phokion G. Kolaitis
+Phokion G. Kolaitis , V&iacute;ctor Dalmau
+Ian Horrocks , Ulrike Sattler
+Jean-Fran&ccedil;ois Baget , Marie-Laure Mugnier
+Franz Baader , Sebastian Brandt
+Franz Baader , Ralf K&uuml;sters
+Ralf K&uuml;sters , Sebastian Brandt
+Ralf K&uuml;sters , Ralf Molitor
+Alexander Maedche , Gerd Stumme
+Andrew G. Barto , Theodore J. Perkins
+Gilles Dequen , Olivier Dubois
+John K. Slaney , Toby Walsh
+Enrico Giunchiglia , Massimo Narizzano
+Armando Tacchella , Enrico Giunchiglia
+Armando Tacchella , Massimo Narizzano
+Alan M. Frisch , Timothy J. Peugniez
+Jean-Fran&ccedil;ois Baget , Yannic S. Tognetti
+Micha Janssen , Pascal Van Hentenryck
+Micha Janssen , Yves Deville
+Pascal Van Hentenryck , Yves Deville
+Eric Monfroy , Lucas Bordeaux
+Fr&eacute;d&eacute;ric Benhamou , Lucas Bordeaux
+Eric Monfroy , Fr&eacute;d&eacute;ric Benhamou
+Christian Bessi&egrave;re , Jean-Charles R&eacute;gin
+Roland H. C. Yap , Yuanlin Zhang
+Lina Khatib , Paul H. Morris
+Lina Khatib , Robert A. Morris
+Francesca Rossi , Lina Khatib
+Paul H. Morris , Robert A. Morris
+Francesca Rossi , Paul H. Morris
+Francesca Rossi , Robert A. Morris
+Jin-Kao Hao , Michel Vasquez
+Dale Schuurmans , Finnegan Southey
+Dale Schuurmans , Robert C. Holte
+Finnegan Southey , Robert C. Holte
+Andrew Lim , Wang Ying
+Henry A. Kautz , Yongshao Ruan
+Dimitris Achlioptas , Henry A. Kautz
+Carla P. Gomes , Henry A. Kautz
+Bart Selman , Henry A. Kautz
+Henry A. Kautz , Mark E. Stickel
+Dimitris Achlioptas , Yongshao Ruan
+Carla P. Gomes , Yongshao Ruan
+Bart Selman , Yongshao Ruan
+Mark E. Stickel , Yongshao Ruan
+Carla P. Gomes , Dimitris Achlioptas
+Bart Selman , Dimitris Achlioptas
+Dimitris Achlioptas , Mark E. Stickel
+Bart Selman , Carla P. Gomes
+Carla P. Gomes , Mark E. Stickel
+Bart Selman , Mark E. Stickel
+Alvaro del Val , Laurent Simon
+Ashok K. Goel , Jim Davies
+Mary-Anne Williams , Peter G&auml;rdenfors
+Alessandro Saffiotti , Silvia Coradeschi
+Fahiem Bacchus , Michael Ady
+Dana S. Nau , H&eacute;ctor Mu&ntilde;oz-Avila
+Dana S. Nau , Yue Cao
+Amnon Lotem , Dana S. Nau
+Dana S. Nau , Steven Mitchell
+H&eacute;ctor Mu&ntilde;oz-Avila , Yue Cao
+Amnon Lotem , H&eacute;ctor Mu&ntilde;oz-Avila
+H&eacute;ctor Mu&ntilde;oz-Avila , Steven Mitchell
+Amnon Lotem , Yue Cao
+Steven Mitchell , Yue Cao
+Amnon Lotem , Steven Mitchell
+Emmanuel Guere , Rachid Alami
+Derek Long , Maria Fox
+Subbarao Kambhampati , XuanLong Nguyen
+Alessandro Cimatti , Piergiorgio Bertoli
+Marco Roveri , Piergiorgio Bertoli
+Alessandro Cimatti , Marco Roveri
+Alessandro Cimatti , Piergiorgio Bertoli
+Marco Roveri , Piergiorgio Bertoli
+Paolo Traverso , Piergiorgio Bertoli
+Alessandro Cimatti , Marco Roveri
+Alessandro Cimatti , Paolo Traverso
+Marco Roveri , Paolo Traverso
+Marco Pistore , Paolo Traverso
+Brian C. Williams , Phil Kim
+Mark Abramson , Phil Kim
+Brian C. Williams , Mark Abramson
+Nicola Muscettola , Paul H. Morris
+Paul H. Morris , Thierry Vidal
+Nicola Muscettola , Thierry Vidal
+Chitta Baral , Vladik Kreinovich
+Chitta Baral , Raul Trejo
+Raul Trejo , Vladik Kreinovich
+Jonathan Schaeffer , Markian Hlynka
+Jonathan Schaeffer , Vili Jussila
+Markian Hlynka , Vili Jussila
+Jeff L. Stimpson , Michael A. Goodrich
+Jeff L. Stimpson , Lawrence C. Walters
+Lawrence C. Walters , Michael A. Goodrich
+Claudia Picardi , Luca Console
+Daniele Theseider Dupr&eacute; , Luca Console
+Claudia Picardi , Daniele Theseider Dupr&eacute;
+Louise Trav&eacute;-Massuy&egrave;s , Teresa Escobet
+Louise Trav&eacute;-Massuy&egrave;s , Robert Milne
+Robert Milne , Teresa Escobet
+Feng Zhao , Xenofon D. Koutsoukos
+Feng Zhao , Horst W. Haussecker
+Feng Zhao , James Reich
+Feng Zhao , Patrick Cheung
+Claudia Picardi , Feng Zhao
+Horst W. Haussecker , Xenofon D. Koutsoukos
+James Reich , Xenofon D. Koutsoukos
+Patrick Cheung , Xenofon D. Koutsoukos
+Claudia Picardi , Xenofon D. Koutsoukos
+Horst W. Haussecker , James Reich
+Horst W. Haussecker , Patrick Cheung
+Claudia Picardi , Horst W. Haussecker
+James Reich , Patrick Cheung
+Claudia Picardi , James Reich
+Claudia Picardi , Patrick Cheung
+Ir&egrave;ne Grosclaude , Marie-Odile Cordier
+Ir&egrave;ne Grosclaude , Rene Quiniou
+Marie-Odile Cordier , Rene Quiniou
+Luca Chittaro , Roberto Ranon
+Brian C. Williams , Seung Chung
+Brian C. Williams , Vineet Gupta
+Seung Chung , Vineet Gupta
+Antonis C. Kakas , Bert Van Nuffelen
+Antonis C. Kakas , Marc Denecker
+Bert Van Nuffelen , Marc Denecker
+Kewen Wang , Torsten Schaub
+Alexandre Riazanov , Andrei Voronkov
+Eyal Amir , Sheila A. McIlraith
+Nicola Leone , Wolfgang Faber
+Gerald Pfeifer , Wolfgang Faber
+Gerald Pfeifer , Nicola Leone
+Michael Fink , Thomas Eiter
+Giuliana Sabbatini , Thomas Eiter
+Hans Tompits , Thomas Eiter
+Giuliana Sabbatini , Michael Fink
+Hans Tompits , Michael Fink
+Giuliana Sabbatini , Hans Tompits
+Fangzhen Lin , Jia-Huai You
+Silja Renooij , Simon Parsons
+Linda C. van der Gaag , Silja Renooij
+Linda C. van der Gaag , Simon Parsons
+Carlos Guestrin , Daphne Koller
+Carlos Guestrin , Ronald Parr
+Daphne Koller , Ronald Parr
+Kee-Eung Kim , Thomas Dean
+Craig Boutilier , Raymond Reiter
+Bob Price , Craig Boutilier
+Bob Price , Raymond Reiter
+Abdel-Illah Mouaddib , St&eacute;phane Cardon
+Shlomo Zilberstein , St&eacute;phane Cardon
+Richard Washington , St&eacute;phane Cardon
+Abdel-Illah Mouaddib , Shlomo Zilberstein
+Abdel-Illah Mouaddib , Richard Washington
+Richard Washington , Shlomo Zilberstein
+Eric A. Hansen , Rong Zhou
+Lluis Godo , Petr H&aacute;jek
+Francesc Esteva , Lluis Godo
+Francesc Esteva , Petr H&aacute;jek
+Hanna Pasula , Stuart J. Russell
+Kenneth McGarry , Stefan Wermter
+John MacIntyre , Kenneth McGarry
+John MacIntyre , Stefan Wermter
+Benjamin W. Wah , Minglun Qian
+Fredrik Lin&aring;ker , Henrik Jacobsson
+James N. K. Liu , Raymond S. T. Lee
+Eric C. C. Tsang , Shenshan Qiu
+Daniel S. Yeung , Shenshan Qiu
+Shenshan Qiu , Xizhao Wang
+Daniel S. Yeung , Eric C. C. Tsang
+Eric C. C. Tsang , Xizhao Wang
+Daniel S. Yeung , Xizhao Wang
+Jianxin Wu , Zhi-Hua Zhou
+Yuan Jiang , Zhi-Hua Zhou
+Shifu Chen , Zhi-Hua Zhou
+Jianxin Wu , Yuan Jiang
+Jianxin Wu , Shifu Chen
+Shifu Chen , Yuan Jiang
+Chew Lim Tan , Henry Wai Kit Chia
+Daniel S. Yeung , Xuequan Sun
+Daniel S. Yeung , Xiaoqin Zeng
+Xiaoqin Zeng , Xuequan Sun
+David Wolpert , Joseph Sill
+David Wolpert , Kagan Tumer
+Joseph Sill , Kagan Tumer
+Bikramjit Banerjee , Sandip Sen
+Bikramjit Banerjee , Jing Peng
+Jing Peng , Sandip Sen
+Alain Dutech , Olivier Buffet
+Alain Dutech , Fran&ccedil;ois Charpillet
+Fran&ccedil;ois Charpillet , Olivier Buffet
+Andrew G. Barto , Michael T. Rosenstein
+Floriana Esposito , Nicola Fanizzi
+Floriana Esposito , Stefano Ferilli
+Floriana Esposito , Giovanni Semeraro
+Nicola Fanizzi , Stefano Ferilli
+Giovanni Semeraro , Nicola Fanizzi
+Giovanni Semeraro , Stefano Ferilli
+Luc De Raedt , Stefan Kramer
+Daphne Koller , Simon Tong
+Benjamin Taskar , Eran Segal
+Benjamin Taskar , Daphne Koller
+Daphne Koller , Eran Segal
+Corin R. Anderson , Pedro Domingos
+Corin R. Anderson , Daniel S. Weld
+Daniel S. Weld , Pedro Domingos
+Haym Hirsh , Sofus A. Macskassy
+Arunava Banerjee , Sofus A. Macskassy
+Aynur A. Dayanik , Sofus A. Macskassy
+Arunava Banerjee , Haym Hirsh
+Aynur A. Dayanik , Haym Hirsh
+Arunava Banerjee , Aynur A. Dayanik
+Joost N. Kok , Siegfried Nijssen
+Guy W. Mineau , Pascal Soucy
+Alice X. Zheng , Andrew Y. Ng
+Andrew Y. Ng , Michael I. Jordan
+Alice X. Zheng , Michael I. Jordan
+Foster J. Provost , Maytal Saar-Tsechansky
+Alessandro Serra , Attilio Giordana
+Alessandro Serra , Lorenza Saitta
+Attilio Giordana , Lorenza Saitta
+Alessandro Sperduti , Fabio Aiolli
+Jihie Kim , Yolanda Gil
+Moshe Tennenholtz , Ronen I. Brafman
+Florent Serre , Fr&eacute;d&eacute;rick Garcia
+Gregory Z. Grudic , Lyle H. Ungar
+Raymond J. Mooney , Un Yong Nahm
+David W. Aha , Rosina Weber
+David W. Aha , H&eacute;ctor Mu&ntilde;oz-Avila
+David W. Aha , Len Breslow
+David W. Aha , Kalyan Moy Gupta
+H&eacute;ctor Mu&ntilde;oz-Avila , Rosina Weber
+Len Breslow , Rosina Weber
+Kalyan Moy Gupta , Rosina Weber
+H&eacute;ctor Mu&ntilde;oz-Avila , Len Breslow
+H&eacute;ctor Mu&ntilde;oz-Avila , Kalyan Moy Gupta
+Kalyan Moy Gupta , Len Breslow
+David W. Aha , H&eacute;ctor Mu&ntilde;oz-Avila
+Dana S. Nau , H&eacute;ctor Mu&ntilde;oz-Avila
+H&eacute;ctor Mu&ntilde;oz-Avila , Rosina Weber
+H&eacute;ctor Mu&ntilde;oz-Avila , Len Breslow
+Fusun Yaman , H&eacute;ctor Mu&ntilde;oz-Avila
+Dana S. Nau , David W. Aha
+David W. Aha , Rosina Weber
+David W. Aha , Len Breslow
+David W. Aha , Fusun Yaman
+Dana S. Nau , Rosina Weber
+Dana S. Nau , Len Breslow
+Dana S. Nau , Fusun Yaman
+Len Breslow , Rosina Weber
+Fusun Yaman , Rosina Weber
+Fusun Yaman , Len Breslow
+Luca Spalazzi , Maurizio Panti
+Loris Penserini , Maurizio Panti
+Loris Penserini , Luca Spalazzi
+Jacek Jarmulak , Susan Craw
+Jacek Jarmulak , Ray Rowe
+Ray Rowe , Susan Craw
+Manuela M. Veloso , Michael H. Bowling
+Brian Milch , Daphne Koller
+Gabriele M. T. D'Eleuterio , Tim D. Barfoot
+Piotr J. Gmytrasiewicz , Sanguk Noh
+Damian A. Isla , Robert C. Burke
+Damian A. Isla , Marc Downie
+Bruce Blumberg , Damian A. Isla
+Marc Downie , Robert C. Burke
+Bruce Blumberg , Robert C. Burke
+Bruce Blumberg , Marc Downie
+Berardina De Carolis , Catherine Pelachaud
+Berardina De Carolis , Isabella Poggi
+Berardina De Carolis , Fiorella de Rosis
+Catherine Pelachaud , Isabella Poggi
+Catherine Pelachaud , Fiorella de Rosis
+Fiorella de Rosis , Isabella Poggi
+Andrew Garland , Richard Alterman
+Moshe Tennenholtz , Yoav Shoham
+Makoto Yokoo , Yuko Sakurai
+Makoto Yokoo , Shigeo Matsubara
+Shigeo Matsubara , Yuko Sakurai
+Makoto Yokoo , Yuko Sakurai
+Makoto Yokoo , Shigeo Matsubara
+Shigeo Matsubara , Yuko Sakurai
+Subhash Suri , Tuomas Sandholm
+Andrew Gilpin , Tuomas Sandholm
+David Levine , Tuomas Sandholm
+Andrew Gilpin , Subhash Suri
+David Levine , Subhash Suri
+Andrew Gilpin , David Levine
+Anna Goy , Liliana Ardissono
+Giovanna Petrone , Liliana Ardissono
+Liliana Ardissono , Marino Segnan
+Anna Goy , Giovanna Petrone
+Anna Goy , Marino Segnan
+Giovanna Petrone , Marino Segnan
+Joanna Bryson , Lynn Andrea Stein
+Costas Tsatsoulis , Leen-Kiat Soh
+Rina Azoulay-Schwartz , Sarit Kraus
+Jianwen Yin , John Yen
+John Yen , Thomas R. Ioerger
+John Yen , Michael S. Miller
+Dianxiang Xu , John Yen
+John Yen , Richard A. Volz
+Jianwen Yin , Thomas R. Ioerger
+Jianwen Yin , Michael S. Miller
+Dianxiang Xu , Jianwen Yin
+Jianwen Yin , Richard A. Volz
+Michael S. Miller , Thomas R. Ioerger
+Dianxiang Xu , Thomas R. Ioerger
+Richard A. Volz , Thomas R. Ioerger
+Dianxiang Xu , Michael S. Miller
+Michael S. Miller , Richard A. Volz
+Dianxiang Xu , Richard A. Volz
+Subhash Suri , Tuomas Sandholm
+Makoto Yokoo , William E. Walsh
+Katsutoshi Hirayama , William E. Walsh
+Michael P. Wellman , William E. Walsh
+Katsutoshi Hirayama , Makoto Yokoo
+Makoto Yokoo , Michael P. Wellman
+Katsutoshi Hirayama , Michael P. Wellman
+David C. Parkes , Jayant Kalagnanam
+David C. Parkes , Marta Eso
+Jayant Kalagnanam , Marta Eso
+James E. Hanson , Rajarshi Das
+Jeffrey O. Kephart , Rajarshi Das
+Gerald Tesauro , Rajarshi Das
+James E. Hanson , Jeffrey O. Kephart
+Gerald Tesauro , James E. Hanson
+Gerald Tesauro , Jeffrey O. Kephart
+Christopher G. Healey , Robert St. Amant
+Anthony Jameson , Frank Wittig
+Catholijn M. Jonker , Jan Treur
+Francisco Toledo , Luis A. Garc&iacute;a
+Craig Boutilier , Holger H. Hoos
+Fatma Ozcan , V. S. Subrahmanian
+Alexander G. Hauptmann , Rong Jin
+Kalina Bontcheva , Yorick Wilks
+Charles B. Callaway , James C. Lester
+Dan Roth , Wen-tau Yih
+Mark Craven , Soumya Ray
+Dennis Nilsson , Jacob Goldberger
+Alessandro Moschitti , Roberto Basili
+Maria Teresa Pazienza , Roberto Basili
+Alessandro Moschitti , Maria Teresa Pazienza
+Cristina Conati , Giuseppe Carenini
+Giuseppe Carenini , Johanna D. Moore
+Joseph Bockhorst , Mark Craven
+Chung-hye Han , Fei Xia
+Fei Xia , Martha Stone Palmer
+Aravind K. Joshi , Fei Xia
+Chung-hye Han , Martha Stone Palmer
+Aravind K. Joshi , Chung-hye Han
+Aravind K. Joshi , Martha Stone Palmer
+Alberto Finzi , Fiora Pirri
+Lisa Meeden , Mitchell A. Potter
+Alan C. Schultz , Mitchell A. Potter
+Alan C. Schultz , Lisa Meeden
+Arancha Casal , Jeremy Kubica
+Jeremy Kubica , Tad Hogg
+Arancha Casal , Tad Hogg
+Antony Galton , Richard C. Meathrel
+Christine Alvarado , Randall Davis
+Hiroshi Ishiguro , Takuichi Nishimura
+Ramana Isukapalli , Russell Greiner
+Huizhong Long , Wee Kheng Leow
+Philippe Mulhem , Wee Kheng Leow
+Philippe Mulhem , Yoong Keok Lee
+Wee Kheng Leow , Yoong Keok Lee
+Eduardo F. Morales , Leonardo Romero
+Leonardo Romero , Luis Enrique Sucar
+Eduardo F. Morales , Luis Enrique Sucar
+Kazuhiro Nakadai , Ken-ichi Hidai
+Hiroshi Mizoguchi , Kazuhiro Nakadai
+Hiroshi G. Okuno , Kazuhiro Nakadai
+Hiroaki Kitano , Kazuhiro Nakadai
+Hiroshi Mizoguchi , Ken-ichi Hidai
+Hiroshi G. Okuno , Ken-ichi Hidai
+Hiroaki Kitano , Ken-ichi Hidai
+Hiroshi G. Okuno , Hiroshi Mizoguchi
+Hiroaki Kitano , Hiroshi Mizoguchi
+Hiroaki Kitano , Hiroshi G. Okuno
+Carmel Domshlak , Ronen I. Brafman
+Carmel Domshlak , Solomon Eyal Shimony
+Ronen I. Brafman , Solomon Eyal Shimony
+Satoshi Oyama , Takashi Kokubo
+Satoshi Oyama , Toru Ishida
+Satoshi Oyama , Teruhiro Yamada
+Satoshi Oyama , Yasuhiko Kitamura
+Takashi Kokubo , Toru Ishida
+Takashi Kokubo , Teruhiro Yamada
+Takashi Kokubo , Yasuhiko Kitamura
+Teruhiro Yamada , Toru Ishida
+Toru Ishida , Yasuhiko Kitamura
+Teruhiro Yamada , Yasuhiko Kitamura
+Daniel R. Dooly , Robert A. Amar
+Robert A. Amar , Sally A. Goldman
+Qi Zhang , Robert A. Amar
+Daniel R. Dooly , Sally A. Goldman
+Daniel R. Dooly , Qi Zhang
+Qi Zhang , Sally A. Goldman
+Hendrik Blockeel , Jan Struyf
+Avrim Blum , Shuchi Chawla
+Manuela M. Veloso , Michael H. Bowling
+Daphne Koller , Urszula Chajewska
+Dirk Ormoneit , Urszula Chajewska
+Daphne Koller , Dirk Ormoneit
+Benjamin Van Roy , David Choi
+S. Sathiya Keerthi , Wei Chu
+Chong Jin Ong , Wei Chu
+Chong Jin Ong , S. Sathiya Keerthi
+John Shawe-Taylor , Nello Cristianini
+Huma Lodhi , Nello Cristianini
+Huma Lodhi , John Shawe-Taylor
+Alin Dobra , Johannes Gehrke
+Carlotta Domeniconi , Dimitrios Gunopulos
+Geoff Hulten , Pedro Domingos
+Melissa Dominguez , Robert A. Jacobs
+Behzad Shahraray , Harris Drucker
+David C. Gibbon , Harris Drucker
+Behzad Shahraray , David C. Gibbon
+Jude W. Shavlik , Tina Eliassi-Rad
+Shie Mannor , Yaakov Engel
+Peter A. Flach , Thomas G&auml;rtner
+Lise Getoor , Nir Friedman
+Daphne Koller , Lise Getoor
+Benjamin Taskar , Lise Getoor
+Daphne Koller , Nir Friedman
+Benjamin Taskar , Nir Friedman
+Benjamin Taskar , Daphne Koller
+Rayid Ghani , Se&aacute;n Slattery
+Rayid Ghani , Yiming Yang
+Se&aacute;n Slattery , Yiming Yang
+Mohammad Ghavamzadeh , Sridhar Mahadevan
+Katia P. Sycara , Matthew R. Glickman
+Charles Elkan , Greg Hamerly
+Bruce Blumberg , Yuri A. Ivanov
+Alex Pentland , Yuri A. Ivanov
+Alex Pentland , Bruce Blumberg
+Amir Jafari , Amy Greenwald
+Amir Jafari , David Gondek
+Amir Jafari , Gunes Ercal
+Amy Greenwald , David Gondek
+Amy Greenwald , Gunes Ercal
+David Gondek , Gunes Ercal
+Alexander G. Hauptmann , Rong Jin
+Nello Cristianini , Thorsten Joachims
+John Shawe-Taylor , Thorsten Joachims
+John Shawe-Taylor , Nello Cristianini
+Luc De Raedt , Stefan Kramer
+Abba Krieger , Chuan Long
+Abba Krieger , Abraham Wyner
+Abraham Wyner , Chuan Long
+Andrew McCallum , John D. Lafferty
+Fernando C. N. Pereira , John D. Lafferty
+Andrew McCallum , Fernando C. N. Pereira
+John Langford , Matthias Seeger
+John Langford , Nimrod Megiddo
+Matthias Seeger , Nimrod Megiddo
+Marco Saerens , Patrice Latinne
+Christine Decaestecker , Patrice Latinne
+Christine Decaestecker , Marco Saerens
+Bernhard Sch&ouml;lkopf , Neil D. Lawrence
+Rosemary Emery , Yufeng Liu
+Deepayan Chakrabarti , Yufeng Liu
+Wolfram Burgard , Yufeng Liu
+Sebastian Thrun , Yufeng Liu
+Deepayan Chakrabarti , Rosemary Emery
+Rosemary Emery , Wolfram Burgard
+Rosemary Emery , Sebastian Thrun
+Deepayan Chakrabarti , Wolfram Burgard
+Deepayan Chakrabarti , Sebastian Thrun
+Sebastian Thrun , Wolfram Burgard
+Josep Maria Garrell i Guiu , Xavier Llor&agrave;
+John Shawe-Taylor , Mario Marchand
+Ido Dagan , Zvika Marx
+Joachim M. Buhmann , Zvika Marx
+Ido Dagan , Joachim M. Buhmann
+Amy McGovern , Andrew G. Barto
+Arindam Choudhury , Prasanth B. Nair
+Andy J. Keane , Prasanth B. Nair
+Andy J. Keane , Arindam Choudhury
+Andrew Y. Ng , Michael I. Jordan
+Ilia Nouretdinov , Thomas Melluish
+Ilia Nouretdinov , Volodya Vovk
+Thomas Melluish , Volodya Vovk
+Athanassios Papagelis , Dimitrios Kalles
+Andrew W. Moore , Dan Pelleg
+Andrew G. Barto , Theodore J. Perkins
+Doina Precup , Richard S. Sutton
+Doina Precup , Sanjoy Dasgupta
+Richard S. Sutton , Sanjoy Dasgupta
+David Page , Soumya Ray
+Igor Kononenko , Marko Robnik-Sikonja
+Andrew McCallum , Nicholas Roy
+Antonin Rozsypal , Miroslav Kubat
+Andrew W. Moore , Peter Sand
+Manish Sarkar , Tze-Yun Leong
+Makoto Sato , Shigenobu Kobayashi
+Stefan Wrobel , Tobias Scheffer
+Mark Schwabacher , Pat Langley
+Marco Ramoni , Paola Sebastiani
+Marc Sebban , Richard Nock
+Marc Sebban , St&eacute;phane Lallich
+Richard Nock , St&eacute;phane Lallich
+Gill Bejerano , Yevgeny Seldin
+Naftali Tishby , Yevgeny Seldin
+Gill Bejerano , Naftali Tishby
+Gregory Shakhnarovich , Ran El-Yaniv
+Gregory Shakhnarovich , Yoram Baram
+Ran El-Yaniv , Yoram Baram
+Bryan Singer , Manuela M. Veloso
+Peter Stone , Richard S. Sutton
+Andrew W. Moore , Malcolm J. A. Strens
+Jonathan Baxter , Nigel Tao
+Lex Weaver , Nigel Tao
+Jonathan Baxter , Lex Weaver
+Claire Cardie , Kiri Wagstaff
+Kiri Wagstaff , Seth Rogers
+Kiri Wagstaff , Stefan Schr&ouml;dl
+Claire Cardie , Seth Rogers
+Claire Cardie , Stefan Schr&ouml;dl
+Seth Rogers , Stefan Schr&ouml;dl
+Eric P. Xing , Michael I. Jordan
+Eric P. Xing , Richard M. Karp
+Michael I. Jordan , Richard M. Karp
+Bianca Zadrozny , Charles Elkan
+Charles X. Ling , Huajie Zhang
+Martin Zinkevich , Tucker R. Balch
+Aaron C. Courville , David S. Touretzky
+Benjamin P. Hiles , Shimon Edelman
+Hwajin Yang , Shimon Edelman
+Nathan Intrator , Shimon Edelman
+Benjamin P. Hiles , Hwajin Yang
+Benjamin P. Hiles , Nathan Intrator
+Hwajin Yang , Nathan Intrator
+Bas Rokers , David Jacobs
+Archisman Rudra , David Jacobs
+David Jacobs , Zili Liu
+Archisman Rudra , Bas Rokers
+Bas Rokers , Zili Liu
+Archisman Rudra , Zili Liu
+Christopher D. Manning , Dan Klein
+Andrew G. Barto , Michael Kositsky
+Michael C. Mozer , Michael D. Colagrosso
+David E. Huber , Michael C. Mozer
+David E. Huber , Michael D. Colagrosso
+Daniel Jurafsky , S. Narayanan
+Michiro Negishi , Stephen Jose Hanson
+R. S. Busby , Randall C. O'Reilly
+R. Soto , Randall C. O'Reilly
+J. Wearden , Jonathan L. Shapiro
+Daniel Yarlett , Michael Ramscar
+Alexei V. Samsonovich , Giorgio A. Ascoli
+A. d'Avella , M. C. Tresch
+A. V. van den Berg , J. A. Beintema
+J. A. Beintema , M. Lappe
+A. V. van den Berg , M. Lappe
+Benjamin Blankertz , Gabriel Curio
+Benjamin Blankertz , Klaus-Robert M&uuml;ller
+Gabriel Curio , Klaus-Robert M&uuml;ller
+Neil Burgess , Tom Hartley
+Amir Globerson , Gal Chechik
+Gal Chechik , M. J. Anderson
+E. D. Young , Gal Chechik
+Gal Chechik , Israel Nelken
+Gal Chechik , Naftali Tishby
+Amir Globerson , M. J. Anderson
+Amir Globerson , E. D. Young
+Amir Globerson , Israel Nelken
+Amir Globerson , Naftali Tishby
+E. D. Young , M. J. Anderson
+Israel Nelken , M. J. Anderson
+M. J. Anderson , Naftali Tishby
+E. D. Young , Israel Nelken
+E. D. Young , Naftali Tishby
+Israel Nelken , Naftali Tishby
+A. Diederich , H. Colonius
+Angela J. Yu , Peter Dayan
+O. Donchin , Reza Shadmehr
+Berthold B&auml;uml , Julian Eggert
+Michael J. Black , Yun Gao
+Elie Bienenstock , Yun Gao
+Shy Shoham , Yun Gao
+John P. Donoghue , Yun Gao
+Elie Bienenstock , Michael J. Black
+Michael J. Black , Shy Shoham
+John P. Donoghue , Michael J. Black
+Elie Bienenstock , Shy Shoham
+Elie Bienenstock , John P. Donoghue
+John P. Donoghue , Shy Shoham
+Richard H. R. Hahnloser , Xiaohui Xie
+H. Sebastian Seung , Richard H. R. Hahnloser
+H. Sebastian Seung , Xiaohui Xie
+&Aacute;d&aacute;m Kepecs , S. Raghavachari
+M. Okada , N. Matsumoto
+Hiroyuki Nakahara , Shun-ichi Amari
+Antonino Casile , Michele Rucci
+E. J. Chichilnisky , Odelia Schwartz
+Eero P. Simoncelli , Odelia Schwartz
+E. J. Chichilnisky , Eero P. Simoncelli
+Haim Sompolinsky , Maoz Shamir
+&Aacute;d&aacute;m Kepecs , Jesper Tegn&eacute;r
+Edmund T. Rolls , Thomas P. Trappenberg
+Simon M. Stringer , Thomas P. Trappenberg
+Edmund T. Rolls , Simon M. Stringer
+Gregor Wenning , Klaus Obermayer
+B. D. Wright , Kamal Sen
+B. D. Wright , William Bialek
+A. J. Doupe , B. D. Wright
+Kamal Sen , William Bialek
+A. J. Doupe , Kamal Sen
+A. J. Doupe , William Bialek
+Shun-ichi Amari , Si Wu
+Martin A. Giese , Xiaohui Xie
+Dimitris Achlioptas , Frank McSherry
+Bernhard Sch&ouml;lkopf , Dimitris Achlioptas
+Bernhard Sch&ouml;lkopf , Frank McSherry
+Hyeyoung Park , Shun-ichi Amari
+Shun-ichi Amari , Tomoko Ozeki
+Hyeyoung Park , Tomoko Ozeki
+Joachim M. Buhmann , Mikio L. Braun
+Alex Conconi , Nicol&ograve; Cesa-Bianchi
+Claudio Gentile , Nicol&ograve; Cesa-Bianchi
+Alex Conconi , Claudio Gentile
+John Shawe-Taylor , Nello Cristianini
+Andr&eacute; Elisseeff , Nello Cristianini
+Jaz S. Kandola , Nello Cristianini
+Andr&eacute; Elisseeff , John Shawe-Taylor
+Jaz S. Kandola , John Shawe-Taylor
+Andr&eacute; Elisseeff , Jaz S. Kandola
+Michael L. Littman , Sanjoy Dasgupta
+David A. McAllester , Sanjoy Dasgupta
+David A. McAllester , Michael L. Littman
+Anita C. Faul , Michael E. Tipping
+Ralf Herbrich , Robert C. Williamson
+Shiro Ikeda , Toshiyuki Tanaka
+Shiro Ikeda , Shun-ichi Amari
+Shun-ichi Amari , Toshiyuki Tanaka
+Hilbert J. Kappen , Wim Wiegerinck
+Dan Roth , Roni Khardon
+Rocco A. Servedio , Roni Khardon
+Dan Roth , Rocco A. Servedio
+Adam Kowalczyk , Alex J. Smola
+Adam Kowalczyk , Robert C. Williamson
+Alex J. Smola , Robert C. Williamson
+Guy Lebanon , John D. Lafferty
+Bert Kappen , Martijn A. R. Leisink
+D&ouml;rthe Malzahn , Manfred Opper
+F. Shafee , Ilya Nemenman
+Ilya Nemenman , William Bialek
+F. Shafee , William Bialek
+Manfred Opper , Robert Urbanczik
+Gunnar R&auml;tsch , Sebastian Mika
+Gunnar R&auml;tsch , Manfred K. Warmuth
+Manfred K. Warmuth , Sebastian Mika
+Gleb Basalyga , Magnus Rattray
+John Shawe-Taylor , Nello Cristianini
+Jaz S. Kandola , John Shawe-Taylor
+Jaz S. Kandola , Nello Cristianini
+Shiro Ikeda , Toshiyuki Tanaka
+Shun-ichi Amari , Toshiyuki Tanaka
+Shiro Ikeda , Shun-ichi Amari
+F. Li , K. Y. M. Wong
+Florence d'Alch&eacute;-Buc , Yves Grandvalet
+Christophe Ambroise , Florence d'Alch&eacute;-Buc
+Christophe Ambroise , Yves Grandvalet
+Christophe Andrieu , Nando de Freitas
+Arnaud Doucet , Christophe Andrieu
+Arnaud Doucet , Nando de Freitas
+Francis R. Bach , Michael I. Jordan
+Matthew J. Beal , Zoubin Ghahramani
+Carl Edward Rasmussen , Matthew J. Beal
+Carl Edward Rasmussen , Zoubin Ghahramani
+Mikhail Belkin , Partha Niyogi
+J. Bi , K. P. Bennett
+Andrew Y. Ng , David M. Blei
+David M. Blei , Michael I. Jordan
+Andrew Y. Ng , Michael I. Jordan
+Bernhard Sch&ouml;lkopf , Olivier Chapelle
+Michael Collins , S. Dasgupta
+Michael Collins , Robert E. Schapire
+Robert E. Schapire , S. Dasgupta
+Michael Collins , Nigel Duffy
+Ronan Collobert , Samy Bengio
+Ronan Collobert , Yoshua Bengio
+Samy Bengio , Yoshua Bengio
+Koby Crammer , Yoram Singer
+John Shawe-Taylor , Nello Cristianini
+Jaz S. Kandola , Nello Cristianini
+Jaz S. Kandola , John Shawe-Taylor
+Lehel Csat&oacute; , Manfred Opper
+Lehel Csat&oacute; , Ole Winther
+Manfred Opper , Ole Winther
+Carlotta Domeniconi , Dimitrios Gunopulos
+Geoff Hulten , Pedro Domingos
+Andr&eacute; Elisseeff , Jason Weston
+Benjamin Van Roy , Daniela Pucci de Farias
+Katya Scheinberg , Shai Fine
+Brendan J. Frey , Nebojsa Jojic
+Anitha Kannan , Brendan J. Frey
+Brendan J. Frey , Nebojsa Jojic
+Anitha Kannan , Nebojsa Jojic
+Brendan J. Frey , Ralf Koetter
+Brendan J. Frey , Nemanja Petrovic
+Nemanja Petrovic , Ralf Koetter
+Alexander Ziehe , Stefan Harmeling
+Motoaki Kawanabe , Stefan Harmeling
+Klaus-Robert M&uuml;ller , Stefan Harmeling
+Alexander Ziehe , Motoaki Kawanabe
+Alexander Ziehe , Klaus-Robert M&uuml;ller
+Klaus-Robert M&uuml;ller , Motoaki Kawanabe
+Assaf Gottlieb , David Horn
+Hava T. Siegelmann , Tommi Jaakkola
+Alex J. Smola , Jyrki Kivinen
+Jyrki Kivinen , Robert C. Williamson
+Alex J. Smola , Robert C. Williamson
+Jens Kohlmorgen , Steven Lemm
+Gert R. G. Lanckriet , Laurent El Ghaoui
+Chiranjib Bhattacharyya , Gert R. G. Lanckriet
+Gert R. G. Lanckriet , Michael I. Jordan
+Chiranjib Bhattacharyya , Laurent El Ghaoui
+Laurent El Ghaoui , Michael I. Jordan
+Chiranjib Bhattacharyya , Michael I. Jordan
+John Langford , Rich Caruana
+Michael J. Kearns , Michael L. Littman
+Michael L. Littman , Satinder P. Singh
+Michael J. Kearns , Satinder P. Singh
+Helge Ritter , Peter Meinicke
+Kevin P. Murphy , Mark A. Paskin
+Andrew Y. Ng , Michael I. Jordan
+Andrew Y. Ng , Michael I. Jordan
+Andrew Y. Ng , Yair Weiss
+Michael I. Jordan , Yair Weiss
+Alberto Paccanaro , Geoffrey E. Hinton
+Alan L. Yuille , Anand Rangarajan
+Carl Edward Rasmussen , Zoubin Ghahramani
+Lawrence K. Saul , Sam T. Roweis
+Geoffrey E. Hinton , Sam T. Roweis
+Geoffrey E. Hinton , Lawrence K. Saul
+Daniel D. Lee , Lawrence K. Saul
+Daphne Koller , Eran Segal
+Dirk Ormoneit , Eran Segal
+Daphne Koller , Dirk Ormoneit
+Hiroshi Shimodaira , Ken-ichi Noma
+Hiroshi Shimodaira , Mitsuru Nakai
+Hiroshi Shimodaira , Shigeki Sagayama
+Ken-ichi Noma , Mitsuru Nakai
+Ken-ichi Noma , Shigeki Sagayama
+Mitsuru Nakai , Shigeki Sagayama
+Nir Friedman , Noam Slonim
+Naftali Tishby , Noam Slonim
+Naftali Tishby , Nir Friedman
+Peter Sykacek , Stephen J. Roberts
+Martin Szummer , Tommi Jaakkola
+Max Welling , Yee Whye Teh
+John Langford , Sebastian Thrun
+Sebastian Thrun , Vandi Verma
+John Langford , Vandi Verma
+Koji Tsuda , Motoaki Kawanabe
+Gunnar R&auml;tsch , Koji Tsuda
+Koji Tsuda , S&ouml;ren Sonnenburg
+Klaus-Robert M&uuml;ller , Koji Tsuda
+Gunnar R&auml;tsch , Motoaki Kawanabe
+Motoaki Kawanabe , S&ouml;ren Sonnenburg
+Klaus-Robert M&uuml;ller , Motoaki Kawanabe
+Gunnar R&auml;tsch , S&ouml;ren Sonnenburg
+Gunnar R&auml;tsch , Klaus-Robert M&uuml;ller
+Klaus-Robert M&uuml;ller , S&ouml;ren Sonnenburg
+Pascal Vincent , Yoshua Bengio
+Klaus Obermayer , Roland Vollgraf
+Martin J. Wainwright , Tommi Jaakkola
+Alan S. Willsky , Martin J. Wainwright
+Alan S. Willsky , Tommi Jaakkola
+Christopher K. I. Williams , Felix V. Agakov
+Christopher K. I. Williams , Stephen N. Felderhof
+Felix V. Agakov , Stephen N. Felderhof
+Oren Souroujon , Ran El-Yaniv
+Alan L. Yuille , Anand Rangarajan
+Michael Zibulevsky , Pavel Kisilev
+Michael Zibulevsky , Yehoshua Y. Zeevi
+Barak A. Pearlmutter , Michael Zibulevsky
+Pavel Kisilev , Yehoshua Y. Zeevi
+Barak A. Pearlmutter , Pavel Kisilev
+Barak A. Pearlmutter , Yehoshua Y. Zeevi
+Hongyuan Zha , Xiaofeng He
+Chris H. Q. Ding , Hongyuan Zha
+Hongyuan Zha , Ming Gu
+Hongyuan Zha , Horst D. Simon
+Chris H. Q. Ding , Xiaofeng He
+Ming Gu , Xiaofeng He
+Horst D. Simon , Xiaofeng He
+Chris H. Q. Ding , Ming Gu
+Chris H. Q. Ding , Horst D. Simon
+Horst D. Simon , Ming Gu
+Qi Zhang , Sally A. Goldman
+Ji Zhu , Trevor Hastie
+A. Bofill , A. F. Murray
+A. Bofill , D. P. Thompson
+A. F. Murray , D. P. Thompson
+Gert Cauwenberghs , Roman Genov
+J&ouml;rg Kramer , Shih-Chii Liu
+Giacomo Indiveri , Shih-Chii Liu
+Shih-Chii Liu , Tobi Delbr&uuml;ck
+Rodney J. Douglas , Shih-Chii Liu
+Giacomo Indiveri , J&ouml;rg Kramer
+J&ouml;rg Kramer , Tobi Delbr&uuml;ck
+J&ouml;rg Kramer , Rodney J. Douglas
+Giacomo Indiveri , Tobi Delbr&uuml;ck
+Giacomo Indiveri , Rodney J. Douglas
+Rodney J. Douglas , Tobi Delbr&uuml;ck
+Takashi Morie , Tomohiro Matsuura
+Makoto Nagata , Takashi Morie
+Atsushi Iwata , Takashi Morie
+Makoto Nagata , Tomohiro Matsuura
+Atsushi Iwata , Tomohiro Matsuura
+Atsushi Iwata , Makoto Nagata
+Aaron P. Shon , David Hsu
+Aaron P. Shon , Chris Diorio
+Chris Diorio , David Hsu
+Tadashi Shibata , Toshihiko Yamasaki
+Gang Ji , Jeff Bilmes
+Jeff Bilmes , Marina Meila
+Gang Ji , Marina Meila
+Andrew D. Brown , Geoffrey E. Hinton
+Brendan J. Frey , Trausti T. Kristjansson
+Brendan J. Frey , Li Deng
+Alex Acero , Brendan J. Frey
+Li Deng , Trausti T. Kristjansson
+Alex Acero , Trausti T. Kristjansson
+Alex Acero , Li Deng
+John R. Hershey , Michael Casey
+Andreas Ziehe , Frank C. Meinecke
+Frank C. Meinecke , Motoaki Kawanabe
+Frank C. Meinecke , Klaus-Robert M&uuml;ller
+Andreas Ziehe , Motoaki Kawanabe
+Andreas Ziehe , Klaus-Robert M&uuml;ller
+Klaus-Robert M&uuml;ller , Motoaki Kawanabe
+P. Green , S. Parveen
+Mark J. F. Gales , N. Smith
+K. Yao , S. Nakamura
+Guy J. Brown , Stuart N. Wrigley
+Alan L. Yuille , James M. Coughlan
+Bernd Heisele , Thomas Serre
+Bernd Heisele , Massimiliano Pontil
+Bernd Heisele , Thomas Vetter
+Bernd Heisele , Tomaso Poggio
+Massimiliano Pontil , Thomas Serre
+Thomas Serre , Thomas Vetter
+Thomas Serre , Tomaso Poggio
+Massimiliano Pontil , Thomas Vetter
+Massimiliano Pontil , Tomaso Poggio
+Thomas Vetter , Tomaso Poggio
+Jochen Braun , Laurent Itti
+Christof Koch , Laurent Itti
+Christof Koch , Jochen Braun
+Marzia Polito , Pietro Perona
+R&oacute;mer Rosales , Stan Sclaroff
+Fabio Solari , Silvio P. Sabatini
+G. Andreani , Silvio P. Sabatini
+C. Bartolozzi , Silvio P. Sabatini
+Giacomo M. Bisio , Silvio P. Sabatini
+Fabio Solari , G. Andreani
+C. Bartolozzi , Fabio Solari
+Fabio Solari , Giacomo M. Bisio
+C. Bartolozzi , G. Andreani
+G. Andreani , Giacomo M. Bisio
+C. Bartolozzi , Giacomo M. Bisio
+Javid Sadr , Sayan Mukherjee
+Javid Sadr , K. Thoresz
+Javid Sadr , Pawan Sinha
+K. Thoresz , Sayan Mukherjee
+Pawan Sinha , Sayan Mukherjee
+K. Thoresz , Pawan Sinha
+Luis Goncalves , Yang Song
+Pietro Perona , Yang Song
+Luis Goncalves , Pietro Perona
+Chris Stauffer , Erik G. Miller
+Chris Stauffer , Kinh Tieu
+Erik G. Miller , Kinh Tieu
+Michael J. Jones , Paul A. Viola
+John W. Zweck , Lance R. Williams
+Jianbo Shi , Stella X. Yu
+Igor V. Cadez , Paul S. Bradley
+Igor V. Cadez , Padhraic Smyth
+Ali Taylan Cemgil , Bert Kappen
+Nicolas Chapados , Yoshua Bengio
+Nicolas Chapados , Pascal Vincent
+Joumana Ghosn , Nicolas Chapados
+Charles Dugas , Nicolas Chapados
+Ichiro Takeuchi , Nicolas Chapados
+Linyan Meng , Nicolas Chapados
+Pascal Vincent , Yoshua Bengio
+Joumana Ghosn , Yoshua Bengio
+Charles Dugas , Yoshua Bengio
+Ichiro Takeuchi , Yoshua Bengio
+Linyan Meng , Yoshua Bengio
+Joumana Ghosn , Pascal Vincent
+Charles Dugas , Pascal Vincent
+Ichiro Takeuchi , Pascal Vincent
+Linyan Meng , Pascal Vincent
+Charles Dugas , Joumana Ghosn
+Ichiro Takeuchi , Joumana Ghosn
+Joumana Ghosn , Linyan Meng
+Charles Dugas , Ichiro Takeuchi
+Charles Dugas , Linyan Meng
+Ichiro Takeuchi , Linyan Meng
+Joshua B. Tenenbaum , Thomas L. Griffiths
+Charles Lee Isbell Jr. , Christian R. Shelton
+Charles Lee Isbell Jr. , Michael J. Kearns
+Charles Lee Isbell Jr. , Satinder P. Singh
+Charles Lee Isbell Jr. , Peter Stone
+Christian R. Shelton , Michael J. Kearns
+Christian R. Shelton , Satinder P. Singh
+Christian R. Shelton , Peter Stone
+Michael J. Kearns , Satinder P. Singh
+Michael J. Kearns , Peter Stone
+Peter Stone , Satinder P. Singh
+Antony I. T. Rowstron , Neil D. Lawrence
+Christopher M. Bishop , Neil D. Lawrence
+M. J. Taylor , Neil D. Lawrence
+Antony I. T. Rowstron , Christopher M. Bishop
+Antony I. T. Rowstron , M. J. Taylor
+Christopher M. Bishop , M. J. Taylor
+Michael C. Mozer , Robert H. Dodier
+Michael C. Mozer , Michael D. Colagrosso
+Cesar Guerra-Salcedo , Michael C. Mozer
+Michael C. Mozer , Richard H. Wolniewicz
+Michael D. Colagrosso , Robert H. Dodier
+Cesar Guerra-Salcedo , Robert H. Dodier
+Richard H. Wolniewicz , Robert H. Dodier
+Cesar Guerra-Salcedo , Michael D. Colagrosso
+Michael D. Colagrosso , Richard H. Wolniewicz
+Cesar Guerra-Salcedo , Richard H. Wolniewicz
+Helge Ritter , J&ouml;rg Ontrup
+Christopher J. C. Burges , John C. Platt
+John C. Platt , S. Swenson
+C. Weare , John C. Platt
+A. Zheng , John C. Platt
+Christopher J. C. Burges , S. Swenson
+C. Weare , Christopher J. C. Burges
+A. Zheng , Christopher J. C. Burges
+C. Weare , S. Swenson
+A. Zheng , S. Swenson
+A. Zheng , C. Weare
+Matthew Richardson , Pedro Domingos
+Gunnar R&auml;tsch , Manfred K. Warmuth
+Manfred K. Warmuth , Michael Mathieson
+Jun Liao , Manfred K. Warmuth
+Christian Lemmen , Manfred K. Warmuth
+Gunnar R&auml;tsch , Michael Mathieson
+Gunnar R&auml;tsch , Jun Liao
+Christian Lemmen , Gunnar R&auml;tsch
+Jun Liao , Michael Mathieson
+Christian Lemmen , Michael Mathieson
+Christian Lemmen , Jun Liao
+Hans-Georg Zimmermann , Ralph Neuneier
+Hans-Georg Zimmermann , Ralph Grothmann
+Ralph Grothmann , Ralph Neuneier
+Leslie Pack Kaelbling , Yu-Han Chang
+Thomas G. Dietterich , Xin Wang
+Eyal Even-Dar , Yishay Mansour
+Evan Greensmith , Peter L. Bartlett
+Evan Greensmith , Jonathan Baxter
+Jonathan Baxter , Peter L. Bartlett
+Gregory Z. Grudic , Lyle H. Ungar
+Carlos Guestrin , Daphne Koller
+Carlos Guestrin , Ronald Parr
+Daphne Koller , Ronald Parr
+Maxim Likhachev , Sven Koenig
+Michail G. Lagoudakis , Ronald Parr
+Michael L. Littman , Richard S. Sutton
+Michael L. Littman , Satinder P. Singh
+Richard S. Sutton , Satinder P. Singh
+Nahum Shimkin , Shie Mannor
+Dale Schuurmans , Relu Patrascu
+Thomas G. Dietterich , Xin Wang
