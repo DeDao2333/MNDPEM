@@ -4,6 +4,7 @@ import pandas as pd
 import networkx as nx
 import random
 from community import community_louvain
+from util import draw_graph
 from util import base_method as tools
 from method.community_detection import MNDP
 from util import read_data as Read
@@ -15,6 +16,15 @@ from karateclub.community_detection.non_overlapping import GEMSEC, EdMot
 class Strategy(object):
     def __init__(self):
         pass
+
+    @classmethod
+    def res_display(cls, is_unknown, F_argmax, observe_graph, labels):
+        if is_unknown:
+            Q = tools.Modularity_Q(F_argmax, observe_graph)
+            print("Modularity_Q: {:.4f}".format(Q))
+            return Q
+        else:
+            return tools.display_result(F_argmax, labels)
 
     @staticmethod
     def prepare_data(read_data, missing_rate=0.2):
@@ -53,8 +63,8 @@ class Strategy(object):
         our_method = MNDPEM_model(N, C)
         our_method.train(ob, labels, Z_noEdge_ori, Z_Edge_ori, num_del_edges, is_unknown)
 
-    @staticmethod
-    def train_byMNDP_Missing(data):
+    @classmethod
+    def train_byMNDP_Missing(cls, data):
         print('===========  Method:  MNDP-Missing  ===============')
         C = data['C']
         observe_graph = data['observe_graph']
@@ -65,14 +75,10 @@ class Strategy(object):
         F_argmax = np.argmax(F_, axis=1) + 1
         ## 绘制 karate 示例专用，其他数据集报错
         # draw_karate(observe_graph_, F_argmax)
-        if is_unknown:
-            Q = tools.Modularity_Q(F_argmax, observe_graph)
-            print("Modularity_Q: {:.4f}".format(Q))
-        else:
-            tools.display_result(F_argmax, labels)
+        return cls.res_display(is_unknown, F_argmax, observe_graph, labels)
 
-    @staticmethod
-    def train_byGEMSEC(data):
+    @classmethod
+    def train_byGEMSEC(cls, data):
         print('===========  Method:  GEMSEC  ===============')
         observe_graph = data['observe_graph']
         labels = data['labels']
@@ -86,14 +92,10 @@ class Strategy(object):
         F_ = np.array(list(F_.values()))
         F_argmax = F_ + 1
 
-        if is_unknown:
-            Q = tools.Modularity_Q(F_argmax, observe_graph)
-            print("Modularity_Q: {:.4f}".format(Q))
-        else:
-            tools.display_result(F_argmax, labels)
+        return cls.res_display(is_unknown, F_argmax, observe_graph, labels)
 
-    @staticmethod
-    def train_byDANMF(data):
+    @classmethod
+    def train_byDANMF(cls, data):
         print('===========  Method:  DANMF  ===============')
         observe_graph = data['observe_graph']
         labels = data['labels']
@@ -105,14 +107,10 @@ class Strategy(object):
         F_ = np.array(list(F_.values()))
         F_argmax = F_ + 1
 
-        if is_unknown:
-            Q = tools.Modularity_Q(F_argmax, observe_graph)
-            print("Modularity_Q: {:.4f}".format(Q))
-        else:
-            tools.display_result(F_argmax, labels)
+        return cls.res_display(is_unknown, F_argmax, observe_graph, labels)
 
-    @staticmethod
-    def train_byLouvain(data):
+    @classmethod
+    def train_byLouvain(cls, data):
         print('===========    louvain   ===============')
         observe_graph = data['observe_graph']
         labels = data['labels']
@@ -121,30 +119,22 @@ class Strategy(object):
         res = community_louvain.best_partition(observe_graph)
         F_argmax = np.array(list(res.values())) + 1
 
-        if is_unknown:
-            Q = tools.Modularity_Q(F_argmax, observe_graph)
-            print("Modularity_Q: {:.4f}".format(Q))
-        else:
-            tools.display_result(F_argmax, labels)
+        return cls.res_display(is_unknown, F_argmax, observe_graph, labels)
 
-    @staticmethod
-    def train_byBigClam(data):
+    @classmethod
+    def train_byBigClam(cls, data):
         print('===========  Method:  BigClam  ===============')
         observe_graph = data['observe_graph']
         labels = data['labels']
         is_unknown = data['is_unknown']
         num_nodes = len(observe_graph.nodes)
-        model = BigClam(num_of_nodes=num_nodes, dimensions=4, iterations=200, learning_rate=0.002, seed=42)
+        model = BigClam(num_of_nodes=num_nodes, dimensions=8, iterations=300, learning_rate=0.003, seed=42)
         model.fit(observe_graph)
         F_ = model.get_memberships()
         F_ = np.array(list(F_.values()))
         F_argmax = F_ + 1
 
-        if is_unknown:
-            Q = tools.Modularity_Q(F_argmax, observe_graph)
-            print("Modularity_Q: {:.4f}".format(Q))
-        else:
-            tools.display_result(F_argmax, labels)
+        return cls.res_display(is_unknown, F_argmax, observe_graph, labels)
 
     @classmethod
     def train_byAllMethod(cls, data):
@@ -162,7 +152,7 @@ class Strategy(object):
             for rate in missing_rate:
                 print("Missing rate -> {}".format(rate))
                 data = cls.prepare_data(data_read, rate)
-                cls.train_byBigClam(data)
+                cls.train_byLouvain(data)
 
     @classmethod
     def Experiment_DBLP_case(cls):
