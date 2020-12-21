@@ -158,7 +158,7 @@ class Strategy(object):
     def Experiment_DBLP_case(cls):
         data = cls.prepare_data(Read.read_dblp_time1_subgraph, missing_rate=0)
         data['num_del_edges'] = 300
-        cls.train_byDANMF(data)
+        cls.train_byMNDP_Missing(data)
 
 
 def main(stg_model):
@@ -176,4 +176,4 @@ def main2(stg_model: Strategy):
 if __name__ == '__main__':
     stg_model = Strategy()
     # main(stg_model)
-    main(stg_model)
+    main2(stg_model)
