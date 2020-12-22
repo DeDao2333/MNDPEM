@@ -176,17 +176,16 @@ class Strategy(object):
                    ]
 
         for data_ in dataset:
-            data = cls.prepare_data(data_, missing_rate=0.0)
             for method_ in methods:
                 res = defaultdict(list)
                 for i in range(15):
+                    data = cls.prepare_data(data_, missing_rate=0.2)
                     tmp = method_(data)
-                    print(f'tmp type: {type(tmp)}, time -> {i}')
+                    print(f'time -> {i}')
                     if method_.__name__ == 'train_byMNDPEM':
-                        # tmp[0] is the type of list, so need 'extend'
-                        res['nmi'].extend(tmp[0])
-                        res['ari'].extend(tmp[1])
-                        res['pur'].extend(tmp[2])
+                        res['nmi'].extend(tmp['nmi'])
+                        res['ari'].extend(tmp['ari'])
+                        res['pur'].extend(tmp['pur'])
                     else:
                         res['nmi'].append(tmp[0])
                         res['ari'].append(tmp[1])
