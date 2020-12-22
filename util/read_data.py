@@ -88,19 +88,19 @@ def read_dblp_time1():
     paper_label = []
     name_labels = defaultdict(list)
 
-    with open(pre_path_time + 'dblp\\label1.txt', 'r') as f:
+    with open(pre_path_time + 'dblp/label1.txt', 'r') as f:
         lines = f.readlines()
         for line in lines:
             paper_label.append(int(line.strip()))
 
-    with open(pre_path_time + 'dblp\\name1.txt', 'r') as f:
+    with open(pre_path_time + 'dblp/name1.txt', 'r') as f:
         lines = f.readlines()
         for j, line in enumerate(lines):
             author = line.strip()
             name_labels[author].append(paper_label[j])
             G.add_node(author, label=paper_label[j])
 
-    with open(pre_path_time + 'dblp\\edge1.txt', 'r') as f:
+    with open(pre_path_time + 'dblp/edge1.txt', 'r') as f:
         lines = f.readlines()
         for line in lines:
             line = line.split(',')
