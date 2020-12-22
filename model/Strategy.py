@@ -161,19 +161,23 @@ class Strategy(object):
 
     @classmethod
     def Experiment_known_network(cls):
-        dataset = [Read.read_karate_club,
-                   Read.read_dolphins,
-                   Read.read_football
-                   ]
+        dataset = [
+            # Read.read_karate_club,
+            # Read.read_dolphins,
+            # Read.read_football,
+            Read.read_wisconsin,
+            Read.read_polbooks,
+            Read.read_polblogs,
+        ]
 
         methods = [
-                   cls.train_byMNDP_Missing,
-                   cls.train_byMNDPEM,
-                   cls.train_byDANMF,
-                   cls.train_byGEMSEC,
-                   cls.train_byLouvain,
-                   # cls.train_byBigClam
-                   ]
+            cls.train_byMNDP_Missing,
+            # cls.train_byMNDPEM,
+            cls.train_byDANMF,
+            cls.train_byGEMSEC,
+            cls.train_byLouvain,
+            cls.train_byBigClam
+        ]
 
         for data_ in dataset:
             for method_ in methods:
@@ -190,7 +194,41 @@ class Strategy(object):
                         res['nmi'].append(tmp[0])
                         res['ari'].append(tmp[1])
                         res['pur'].append(tmp[2])
-                cls.res2csv(res, path=f'../res/{data_.__name__.split("_")[1] + "_" + method_.__name__.split("_")[1]}.csv')
+                cls.res2csv(res,
+                            path=f'../res/{data_.__name__.split("_")[1] + "_" + method_.__name__.split("_")[1]}.csv')
+
+    @classmethod
+    def Experiment_unknown_network(cls):
+        dataset = [
+            Read.read_adjnoun,
+            Read.read_celegansneural,
+            Read.read_email,
+            Read.read_jazz,
+            Read.read_lesmis,
+        ]
+
+        methods = [
+            cls.train_byMNDP_Missing,
+            # cls.train_byMNDPEM,
+            cls.train_byDANMF,
+            cls.train_byGEMSEC,
+            cls.train_byLouvain,
+            cls.train_byBigClam
+        ]
+
+        for data_ in dataset:
+            for method_ in methods:
+                res = defaultdict(list)
+                for i in range(15):
+                    data = cls.prepare_data(data_, missing_rate=0.2)
+                    tmp = method_(data)
+                    print(f'time -> {i}')
+                    if method_.__name__ == 'train_byMNDPEM':
+                        res['Q'].extend(tmp['Q'])
+                    else:
+                        res['Q'].append(tmp)
+                cls.res2csv(res,
+                            path=f'../res/{data_.__name__.split("_")[1] + "_" + method_.__name__.split("_")[1]}.csv')
 
     @classmethod
     def Experiment_different_missing_rate(cls, dataset):

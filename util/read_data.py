@@ -48,6 +48,34 @@ def read_dolphins():
     return res
 
 
+def read_polbooks():
+    print("Dataset : polbooks ---------------------------------------------")
+    g, B, labels = _read_txt_graph('polbooks')
+    is_unknown = False
+
+    res = dict()
+    res['graph_real'] = g
+    res['adj_real'] = B
+    res['labels'] = labels
+    res['is_unknown'] = is_unknown
+    res['num_del_edges'] = 10
+    return res
+
+
+def read_polblogs():
+    print("Dataset : polblogs ------------------------------------------")
+    g, B, labels = _read_txt_graph('polblogs')
+    is_unknown = False
+
+    res = dict()
+    res['graph_real'] = g
+    res['adj_real'] = B
+    res['labels'] = labels
+    res['is_unknown'] = is_unknown
+    res['num_del_edges'] = 100
+    return res
+
+
 def read_football():
     print("Dataset : football ---------------------------------------------")
     g, B, labels = _read_txt_graph('football')
@@ -58,6 +86,25 @@ def read_football():
     res['adj_real'] = B
     res['labels'] = labels
     res['is_unknown'] = is_unknown
+    res['num_del_edges'] = 100
+    return res
+
+
+def read_wisconsin():
+    # K : 5
+    print("Dataset : wisconsin ---------------------------------------------")
+    data = io.loadmat(pre_path_com_known + 'wisconsin.mat')
+    B = np.array(data['B'], dtype=float)
+    g = nx.from_numpy_array(B)
+    content = np.array(data['F'])
+    target = np.array(data['labels'])
+    target = target.reshape((target.size,))
+
+    res = dict()
+    res['graph_real'] = g
+    res['adj_real'] = B
+    res['labels'] = target
+    res['is_unknown'] = False
     res['num_del_edges'] = 100
     return res
 
@@ -81,6 +128,49 @@ def _read_txt_graph(name):
     data = io.loadmat(pre_path_com_known + name + '_rlabels.mat')
     labels = np.array(data['labels'])
     return g, B, labels[0]
+
+
+def read_adjnoun():
+    print('----------- unknown com data : adjnoun ------------------')
+    return _read_unknown('adjnoun')
+
+
+def read_celegansneural():
+    print('----------- unknown com data : celegansneural ------------------')
+    return _read_unknown('celegansneural')
+
+
+def read_email():
+    print('----------- unknown com data : email ------------------')
+    return _read_unknown('email')
+
+
+def read_jazz():
+    print('----------- unknown com data : jazz ------------------')
+    return _read_unknown('jazz')
+
+
+def read_lesmis():
+    print('----------- unknown com data : lesmis ------------------')
+    return _read_unknown('lesmis')
+
+
+def _read_unknown(name):
+    # 需要对gml文件里内容的开头，标注上是有向图还是无向图
+    g = nx.read_gml(pre_path_com_unknown + name + '.gml', label='id')
+    B = nx.to_numpy_array(g, nodelist=sorted(g.nodes))
+    B[B > 1] = 1
+    g = nx.from_numpy_array(B)
+    partition = community_louvain.best_partition(g)
+    label = np.array(list(partition.values()), dtype=int) + 1
+
+    res = dict()
+    res['graph_real'] = g
+    res['adj_real'] = B
+    res['labels'] = label
+    res['is_unknown'] = True
+    res['num_del_edges'] = 100
+    return res
 
 
 def read_dblp_time1():
@@ -160,8 +250,9 @@ def read_dblp_time1_subgraph():
     return res_
 
 
-if __name__ == '__main__':
+def main():
     import matplotlib.pyplot as plt
+
     data = read_dblp_time1_subgraph()
     g = data['graph_real']
     labels = data['labels']
@@ -172,6 +263,10 @@ if __name__ == '__main__':
     plt.subplots(1, 1, figsize=(15, 13))
     nx.draw_spring(g, with_labels=True, node_color=labels)
     plt.show()
+
+
+if __name__ == '__main__':
     # res = read_dblp_time1()
     # g = res['graph_real']
     # print(g)
+    main()
