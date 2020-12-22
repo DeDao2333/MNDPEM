@@ -2,8 +2,14 @@
   <dictionary name="PREOATOR">
     <words>
       <w>argmax</w>
+      <w>clmc</w>
+      <w>danmf</w>
       <w>dataset</w>
       <w>dblp</w>
+      <w>gemsec</w>
+      <w>louvain</w>
+      <w>mndp</w>
+      <w>polblogs</w>
     </words>
   </dictionary>
 </component>

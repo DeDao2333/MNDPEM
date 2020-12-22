@@ -19,9 +19,9 @@ class Strategy(object):
         pass
 
     @classmethod
-    def res_display(cls, is_unknown, F_argmax, observe_graph, labels):
+    def res_display(cls, is_unknown, F_argmax, graph, labels):
         if is_unknown:
-            Q = tools.Modularity_Q(F_argmax, observe_graph)
+            Q = tools.Modularity_Q(F_argmax, graph)
             print("Modularity_Q: {:.4f}".format(Q))
             return Q
         else:
@@ -75,7 +75,7 @@ class Strategy(object):
         num_del_edges = data.get('num_del_edges', 20)
         is_unknown = data['is_unknown']
         our_method = MNDPEM_model(N, C)
-        our_method.train(ob, labels, Z_noEdge_ori, Z_Edge_ori, num_del_edges, is_unknown)
+        return our_method.train(ob, labels, Z_noEdge_ori, Z_Edge_ori, num_del_edges, is_unknown)
 
     @classmethod
     def train_byMNDP_Missing(cls, data):
@@ -166,7 +166,8 @@ class Strategy(object):
                    Read.read_football
                    ]
 
-        methods = [cls.train_byMNDP_Missing,
+        methods = [
+                   cls.train_byMNDP_Missing,
                    cls.train_byMNDPEM,
                    cls.train_byDANMF,
                    cls.train_byGEMSEC,
@@ -176,14 +177,21 @@ class Strategy(object):
 
         for data_ in dataset:
             data = cls.prepare_data(data_, missing_rate=0.0)
-            for method in methods:
+            for method_ in methods:
                 res = defaultdict(list)
                 for i in range(15):
-                    tmp = method(data)
-                    res['nmi'].append(tmp[0])
-                    res['ari'].append(tmp[1])
-                    res['pur'].append(tmp[2])
-                cls.res2csv(res, path=f'../res/{method.__name__}.csv')
+                    tmp = method_(data)
+                    print(f'tmp type: {type(tmp)}, time -> {i}')
+                    if method_.__name__ == 'train_byMNDPEM':
+                        # tmp[0] is the type of list, so need 'extend'
+                        res['nmi'].extend(tmp[0])
+                        res['ari'].extend(tmp[1])
+                        res['pur'].extend(tmp[2])
+                    else:
+                        res['nmi'].append(tmp[0])
+                        res['ari'].append(tmp[1])
+                        res['pur'].append(tmp[2])
+                cls.res2csv(res, path=f'../res/{data_.__name__.split("_")[1] + "_" + method_.__name__.split("_")[1]}.csv')
 
     @classmethod
     def Experiment_different_missing_rate(cls, dataset):

@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import networkx as nx
 
 
 def display_rate_football():
@@ -85,6 +86,22 @@ def display_rate_dolphins():
     plt.legend(loc="lower left", ncol=2, fontsize=9)
     plt.savefig("Dolphins.png")
     plt.show()
+
+
+def display_rate_polblogs():
+    pass
+
+
+def draw_simple_graph(graph, labels):
+    plt.subplots(1, 1, figsize=(15, 13))
+    nx.draw_spring(graph, with_labels=True, node_color=labels)
+    plt.show()
+
+
+def _draw_different_rate():
+    display_rate_karate()
+    display_rate_dolphins()
+    display_rate_football()
 
 
 if __name__ == '__main__':

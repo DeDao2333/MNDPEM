@@ -5,13 +5,14 @@ import random
 import re
 from method.community_detection import MNDP
 from util import base_method as tools
+from collections import defaultdict
 
 
 class MNDPEM_model(object):
 
     def __init__(self,
                  N: int, C: int, F: np.ndarray = None,
-                 num_EM_iter=25, num_sample=500, num_warm_up=4000):
+                 num_EM_iter=15, num_sample=500, num_warm_up=4000):
         self.F = F
         self.C = C
         self.N = N
@@ -140,6 +141,7 @@ class MNDPEM_model(object):
     def train(self, observe_graph, label, Z_noEdge_ori, Z_Edge_ori, num_del_edge,
               is_unknown_data):
         # M步不同，整合了E步所有样本到一起
+        res = defaultdict(list)
         if self.F is None:
             self.F = np.random.uniform(0, 1, size=(self.N, self.C))
         for epoch in range(self.num_EM_iter):
@@ -155,8 +157,13 @@ class MNDPEM_model(object):
             if is_unknown_data:
                 Q = tools.Modularity_Q(F_argmax, G)
                 print("Modularity_Q: {:.4f}".format(Q))
+                res['Q'].append(Q)
             else:
-                tools.display_result(F_argmax, label)
+                tmp = tools.display_result(F_argmax, label)
+                res['nmi'].append(tmp[0])
+                res['ari'].append(tmp[1])
+                res['pur'].append(tmp[2])
+        return res
 
     @staticmethod
     def mergeAll_G_Z(G: nx.Graph, samples_Z_edge: list, alpha: float = 0.5):
