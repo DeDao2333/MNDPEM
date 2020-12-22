@@ -26,7 +26,7 @@ def display_rate_football():
     plt.ylabel('NMI', fontsize=14)
     plt.title('Football', fontsize=14)
     plt.legend(loc="lower left", fontsize=9)
-    plt.savefig("D:/football.png")
+    plt.savefig("football.png")
     plt.show()
 
 
@@ -54,7 +54,7 @@ def display_rate_karate():
     plt.ylabel('NMI', fontsize=14)
     plt.title('Zachary’s karate club', fontsize=14)
     plt.legend(loc="lower left", fontsize=9)
-    plt.savefig("D:/karate.png")
+    plt.savefig("karate.png")
     plt.show()
 
 
@@ -83,7 +83,7 @@ def display_rate_dolphins():
     plt.ylabel('NMI', fontsize=14)
     plt.title('Dolphin social network', fontsize=14)
     plt.legend(loc="lower left", ncol=2, fontsize=9)
-    plt.savefig("D:/Dolphins.png")
+    plt.savefig("Dolphins.png")
     plt.show()
 
 

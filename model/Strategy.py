@@ -7,6 +7,7 @@ from community import community_louvain
 from util import draw_graph
 from util import base_method as tools
 from method.community_detection import MNDP
+from collections import defaultdict
 from util import read_data as Read
 from model.MNDPEM_model import MNDPEM_model
 from karateclub.community_detection.overlapping import NNSED, DANMF, MNMF, BigClam, SymmNMF
@@ -48,6 +49,19 @@ class Strategy(object):
         res['N'] = N
         res['C'] = C
         return res
+
+    @classmethod
+    def res2csv(cls, res: dict, path):
+        if 'nmi' in res.keys():
+            # represent nmi, ari, pur
+            df = pd.DataFrame(res, columns=['nmi', 'ari', 'pur'])
+            df.to_csv(path)
+        elif 'Q' in res.keys():
+            # represent Q
+            df = pd.DataFrame(res, columns=['Q'])
+            df.to_csv(path)
+        else:
+            assert False, "Not right index"
 
     @staticmethod
     def train_byMNDPEM(data):
@@ -146,6 +160,32 @@ class Strategy(object):
         cls.train_byLouvain(data)
 
     @classmethod
+    def Experiment_known_network(cls):
+        dataset = [Read.read_karate_club,
+                   Read.read_dolphins,
+                   Read.read_football
+                   ]
+
+        methods = [cls.train_byMNDP_Missing,
+                   cls.train_byMNDPEM,
+                   cls.train_byDANMF,
+                   cls.train_byGEMSEC,
+                   cls.train_byLouvain,
+                   # cls.train_byBigClam
+                   ]
+
+        for data_ in dataset:
+            data = cls.prepare_data(data_, missing_rate=0.0)
+            for method in methods:
+                res = defaultdict(list)
+                for i in range(15):
+                    tmp = method(data)
+                    res['nmi'].append(tmp[0])
+                    res['ari'].append(tmp[1])
+                    res['pur'].append(tmp[2])
+                cls.res2csv(res, path=f'../res/{method.__name__}.csv')
+
+    @classmethod
     def Experiment_different_missing_rate(cls, dataset):
         missing_rate = [i * 0.05 for i in range(0, 2)]
         for data_read in dataset:
@@ -158,7 +198,7 @@ class Strategy(object):
     def Experiment_DBLP_case(cls):
         data = cls.prepare_data(Read.read_dblp_time1_subgraph, missing_rate=0)
         data['num_del_edges'] = 300
-        cls.train_byDANMF(data)
+        cls.train_byMNDP_Missing(data)
 
 
 def main(stg_model):
@@ -173,7 +213,17 @@ def main2(stg_model: Strategy):
     stg_model.Experiment_DBLP_case()
 
 
+def main3(stg: Strategy):
+    print(stg.train_byMNDPEM.__name__)
+
+
+def main4(stg):
+    stg.Experiment_known_network()
+
+
 if __name__ == '__main__':
     stg_model = Strategy()
     # main(stg_model)
-    main(stg_model)
+    # main2(stg_model)
+    # main3(stg_model)
+    main4(stg_model)

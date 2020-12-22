@@ -88,19 +88,19 @@ def read_dblp_time1():
     paper_label = []
     name_labels = defaultdict(list)
 
-    with open(pre_path_time + 'dblp\\label1.txt', 'r') as f:
+    with open(pre_path_time + 'dblp/label1.txt', 'r') as f:
         lines = f.readlines()
         for line in lines:
             paper_label.append(int(line.strip()))
 
-    with open(pre_path_time + 'dblp\\name1.txt', 'r') as f:
+    with open(pre_path_time + 'dblp/name1.txt', 'r') as f:
         lines = f.readlines()
         for j, line in enumerate(lines):
             author = line.strip()
             name_labels[author].append(paper_label[j])
             G.add_node(author, label=paper_label[j])
 
-    with open(pre_path_time + 'dblp\\edge1.txt', 'r') as f:
+    with open(pre_path_time + 'dblp/edge1.txt', 'r') as f:
         lines = f.readlines()
         for line in lines:
             line = line.split(',')
@@ -128,6 +128,16 @@ def read_dblp_time1():
 
 
 def read_dblp_time1_subgraph():
+    def ori_label_to_index_label(labels):
+        # convert 1, 1, 3, 4 ---> 1, 1, 2, 3
+        tmp_labels = set(labels)
+        ori2index = dict()
+        index = 1
+        for i in tmp_labels:
+            ori2index[str(i)] = index
+            index += 1
+        return ori2index
+
     res = read_dblp_time1()
     g_ = res['graph_ori']
     graph = ego_graph(g_, 'Thomas S. Huang', 5)
@@ -135,22 +145,29 @@ def read_dblp_time1_subgraph():
     for name, attr in graph.nodes.data():
         labels.append(attr['label'])
 
+    label_dict = ori_label_to_index_label(labels)
+    sorted_label = []
+    for i in labels:
+        sorted_label.append(label_dict[str(i)])
     B = nx.to_numpy_array(graph)  # network adj
     G1 = nx.from_numpy_array(B)  # node index
     res_ = dict()
     res_['graph_real'] = G1
     res_['adj_real'] = B
-    res_['labels'] = labels
+    res_['labels'] = sorted_label
+    res_['ori_labels'] = labels
     res_['is_unknown'] = False
     return res_
 
 
 if __name__ == '__main__':
     import matplotlib.pyplot as plt
-    g, labels = read_dblp_time1_subgraph()
-    print(len(g.nodes))
+    data = read_dblp_time1_subgraph()
+    g = data['graph_real']
+    labels = data['labels']
+    ori_labels = data['ori_labels']
+    print(ori_labels)
     print(labels)
-    print(g.nodes)
     print(g.nodes.data())
     plt.subplots(1, 1, figsize=(15, 13))
     nx.draw_spring(g, with_labels=True, node_color=labels)
