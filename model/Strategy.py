@@ -130,7 +130,7 @@ class Strategy(object):
         labels = data['labels']
         is_unknown = data['is_unknown']
 
-        res = community_louvain.best_partition(observe_graph)
+        res = community_louvain.best_partition(observe_graph, resolution=2)
         F_argmax = np.array(list(res.values())) + 1
 
         return cls.res_display(is_unknown, F_argmax, observe_graph, labels)
@@ -171,12 +171,12 @@ class Strategy(object):
         ]
 
         methods = [
-            cls.train_byMNDP_Missing,
-            # cls.train_byMNDPEM,
-            cls.train_byDANMF,
-            cls.train_byGEMSEC,
-            cls.train_byLouvain,
-            cls.train_byBigClam
+            # cls.train_byMNDP_Missing,
+            # cls.train_byDANMF,
+            # cls.train_byGEMSEC,
+            # cls.train_byLouvain,
+            # cls.train_byBigClam,
+            cls.train_byMNDPEM,
         ]
 
         for data_ in dataset:
@@ -208,12 +208,12 @@ class Strategy(object):
         ]
 
         methods = [
-            cls.train_byMNDP_Missing,
-            # cls.train_byMNDPEM,
-            cls.train_byDANMF,
-            cls.train_byGEMSEC,
-            cls.train_byLouvain,
-            cls.train_byBigClam
+            # cls.train_byMNDP_Missing,
+            cls.train_byMNDPEM,
+            # cls.train_byDANMF,
+            # cls.train_byGEMSEC,
+            # cls.train_byLouvain,
+            # cls.train_byBigClam
         ]
 
         for data_ in dataset:

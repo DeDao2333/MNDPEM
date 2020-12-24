@@ -17,14 +17,15 @@ pre_path_time = sys.path[-1] + '/dataset/time_network/'
 
 def read_karate_club():
     print("Dataset : karate ---------------------------------------------")
-    g = nx.karate_club_graph()
-    B = nx.to_numpy_array(g, nodelist=sorted(g.nodes))
+    g_ = nx.karate_club_graph()
+    B = nx.to_numpy_array(g_, nodelist=sorted(g_.nodes))
     g = nx.from_numpy_array(B)
     data = io.loadmat(pre_path_com_known + 'karate_rlabels.mat')
     labels = np.array(data['labels'])[0]
     is_unknown = False
 
     res = dict()
+    res['g_'] = g_
     res['graph_real'] = g
     res['adj_real'] = B
     res['labels'] = labels

@@ -43,7 +43,7 @@ def display_result(F_argmax, target):
     print(f'NMI: {nmi:.4f}')
     print(f'ARI: {ari:.4f}')
     print(f'Pur: {pur:.4f}')
-    return nmi, ari, pur  # , f1_macro, f1_micro
+    return nmi, ari, pur, F_argmax  # , f1_macro, f1_micro
 
 
 def get_train_test(graph: nx.Graph, fraction: float = 0.2) -> (np.ndarray, list):

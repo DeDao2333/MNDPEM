@@ -154,6 +154,8 @@ class MNDPEM_model(object):
             F_argmax, G = self.M_step(observe_graph, samples_Z_edge, epoch)
 
             # 社团发现结果
+            res['F_argmax'] = F_argmax
+            res['graph_res'] = G
             if is_unknown_data:
                 Q = tools.Modularity_Q(F_argmax, G)
                 print("Modularity_Q: {:.4f}".format(Q))
@@ -163,10 +165,11 @@ class MNDPEM_model(object):
                 res['nmi'].append(tmp[0])
                 res['ari'].append(tmp[1])
                 res['pur'].append(tmp[2])
+
         return res
 
     @staticmethod
-    def mergeAll_G_Z(G: nx.Graph, samples_Z_edge: list, alpha: float = 0.5):
+    def mergeAll_G_Z(G: nx.Graph, samples_Z_edge: list, alpha: float = 0.3):
         # r = 0.025 * epoch_ * 0.7 + 0.2
         res = 0
         i = 0
