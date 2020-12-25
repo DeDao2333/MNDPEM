@@ -62,7 +62,7 @@ def get_train_test(graph: nx.Graph, fraction: float = 0.2) -> (np.ndarray, list)
     observe_graph.remove_edges_from(del_list)  # 此时虽然删除了些边，但是即使结点孤立，也保存在图中
 
     test_edge_list = del_list
-    print("deleted edges: ", sorted(test_edge_list))
+    # print("deleted edges: ", sorted(test_edge_list))
     return observe_graph, test_edge_list
 
 

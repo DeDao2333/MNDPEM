@@ -99,8 +99,8 @@ class Strategy(object):
         is_unknown = data['is_unknown']
 
         num_c = max(labels)
-        model = GEMSEC(walk_number=5, walk_length=10, dimensions=32, negative_samples=10,
-                       window_size=4, learning_rate=0.1, clusters=num_c, gamma=0.1, seed=42)
+        model = GEMSEC(walk_number=5, walk_length=10, dimensions=64, negative_samples=30,
+                       window_size=6, learning_rate=0.1, clusters=num_c, gamma=0.1, seed=42)
         model.fit(observe_graph)
         F_ = model.get_memberships()
         F_ = np.array(list(F_.values()))
@@ -232,12 +232,12 @@ class Strategy(object):
 
     @classmethod
     def Experiment_different_missing_rate(cls, dataset):
-        missing_rate = [i * 0.05 for i in range(0, 2)]
+        missing_rate = [i * 0.05 for i in range(0, 8)]
         for data_read in dataset:
             for rate in missing_rate:
                 print("Missing rate -> {}".format(rate))
                 data = cls.prepare_data(data_read, rate)
-                cls.train_byLouvain(data)
+                cls.train_byMNDP_Missing(data)
 
     @classmethod
     def Experiment_DBLP_case(cls):
@@ -249,7 +249,7 @@ class Strategy(object):
 def main(stg_model):
     dataset = [
         # Read.read_dolphins,
-        Read.read_football
+        Read.read_polblogs
     ]
     stg_model.Experiment_different_missing_rate(dataset)
 
@@ -268,7 +268,7 @@ def main4(stg):
 
 if __name__ == '__main__':
     stg_model = Strategy()
-    # main(stg_model)
+    main(stg_model)
     # main2(stg_model)
     # main3(stg_model)
-    main4(stg_model)
+    # main4(stg_model)

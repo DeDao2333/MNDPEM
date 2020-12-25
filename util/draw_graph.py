@@ -91,7 +91,28 @@ def display_rate_dolphins():
 
 
 def display_rate_polblogs():
-    pass
+    rate = ['0%', '5%', '10%', '15%', '20%', '25%', '30%', '35%']
+
+    # Dolphins
+    MNDP_M = [54.73, 53.24, 52.79, 51.32, 51.08, 48.23, 43.71, 42.32]
+    MNDP_EM = [54.90, 54.35, 53.78, 52.97, 52.07, 50.10, 46.51, 43.79]
+    GEMSEC = [51.17, 50.91, 50.23, 49.30, 49.36, 47.03, 41.46, 40.02]
+    DANMF = [52.28, 51.81, 51.31, 43.05, 42.44, 42.17, 41.34, 40.96]
+    Louvain = [39.36, 38.91, 36.83, 36.22, 35.45, 35.13, 35.06, 34.79]
+
+    plt.figure(figsize=(6, 4.3))
+    plt.plot(rate, GEMSEC, c='#6B6B6B', marker='o', ms=9, label='GEMSEC')
+    plt.plot(rate, DANMF, c='#228B22', marker='o', ms=9, label='DANMF')
+    plt.plot(rate, Louvain, c='#DD6D22', marker='o', ms=9, label='Louvain')
+    plt.plot(rate, MNDP_M, c='#A0522D', marker='<', ms=9, label='MNDP-M')
+    plt.plot(rate, MNDP_EM, c='#2B91D5', marker='D', ms=8, label='MNDPEM')
+    # fig.suptitle('Categorical Plotting')
+    plt.xlabel('Different ratio of missing edges', fontsize=14)
+    plt.ylabel('NMI', fontsize=14)
+    plt.title('Political blogs', fontsize=14)
+    plt.legend(loc="lower left", ncol=2, fontsize=9)
+    plt.savefig("polblogs.png")
+    plt.show()
 
 
 def draw_karate(g_clmc=None, clmc_labels=None,
@@ -162,6 +183,7 @@ def _draw_different_rate():
     display_rate_karate()
     display_rate_dolphins()
     display_rate_football()
+    display_rate_polblogs()
 
 
 def main_clmc_mndp():
@@ -197,7 +219,8 @@ def main_clmc_mndp():
     res_ = stg.train_byMNDPEM(data=res)
     g_mndpem = res_['graph_res']
     # mndpem_labels = res_['F_argmax']
-    mndpem_labels = [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+    mndpem_labels = [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                     2]
     print(f'different [ MNDPEM - CLMC ] : {set(g_mndpem.edges) - set(g_clmc.edges)}')
 
     # MNDP
@@ -233,8 +256,6 @@ def nothing():
 
 
 if __name__ == '__main__':
-    main_clmc_mndp()
+    # main_clmc_mndp()
     # nothing()
-    # res = Read.read_karate_club()
-    # g = res['graph_real']
-    # print(len(g.edges))
+    display_rate_polblogs()
