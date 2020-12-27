@@ -115,16 +115,14 @@ def display_rate_polblogs():
     plt.show()
 
 
-def draw_karate(g_clmc=None, clmc_labels=None,
-                g_mndp=None, mndp_labels=None,
-                g_mndpem=None, mndpem_labels=None):
+def draw_karate(g, labels, fig_title):
     def get_color(labels):
         color_list = []
         for i in labels:
             if i == 1:
-                color_list.append('red')
+                color_list.append('#CD4F39')
             else:
-                color_list.append('green')
+                color_list.append('#96CDCD')
         return color_list
 
     pos = {0: array([0.04035086, -0.35842333]), 1: array([0.23988347, -0.23390369]), 2: array([-0.0759524, 0.08270998]),
@@ -147,30 +145,22 @@ def draw_karate(g_clmc=None, clmc_labels=None,
            30: array([0.1536715, 0.14563396]), 31: array([-0.16937923, -0.03755861]),
            32: array([-0.10773608, 0.41913559]), 33: array([0.02822436, 0.25828881])}
 
-    # clmc
-    plt.subplot(121)
-    color_list_ = get_color(clmc_labels)
-    nx.draw_networkx(g_clmc, pos=pos, node_color=color_list_)
+    plt.figure(figsize=(6, 8))
+    color_list_ = get_color(labels)
 
-    # MNDPEM
-    plt.subplot(122)
-    color_list_ = get_color(mndpem_labels)
-    nx.draw_networkx(g_mndpem, pos=pos, node_color=color_list_)
-
+    edges_colors = []
+    for i, j in g.edges():
+        edges_colors.append(g.edges[i, j]['color'])
+    nx.draw_networkx(g, pos=pos, node_color=color_list_, edge_color=edges_colors, width=1.7)
+    plt.title(fig_title, fontsize=14)
     plt.show()
-
-    # MNDP
-    plt.subplot(121)
-    color_list_ = get_color(mndp_labels)
-    nx.draw_networkx(g_mndp, pos=pos, node_color=color_list_)
 
     # ground true
-    res = Read.read_karate_club()
-    g_, b_, labels_ = res['graph_real'], res['adj_real'], res['labels']
-    color_list_ = get_color(labels_)
-    plt.subplot(122)
-    nx.draw_networkx(g_, pos=pos, node_color=color_list_)
-    plt.show()
+    # res = Read.read_karate_club()
+    # g_, b_, labels_ = res['graph_real'], res['adj_real'], res['labels']
+    # color_list_ = get_color(labels_)
+    # nx.draw_networkx(g_, pos=pos, node_color=color_list_)
+    # plt.show()
 
 
 def draw_simple_graph(graph, labels):
@@ -186,42 +176,84 @@ def _draw_different_rate():
     display_rate_polblogs()
 
 
-def main_clmc_mndp():
+def main_intro_case(mode=1):
     from util import base_method as tools
     from model.Strategy import Strategy
 
     stg = Strategy()
+
+    ALL_COLORs ={
+        'exist': '#5E5E5E',
+        'removed': '#D4D4D4',
+        'predict': '#CD00CD'}
+    # true graph
     res = Read.read_karate_club()
     g_ = res['graph_real']
     true_labels = res['labels']
+    for i, j in g_.edges():
+        g_.edges[i, j]['color'] = ALL_COLORs['exist']
+    draw_karate(g_, true_labels, fig_title='Complete karate network with ground trues')
 
-    # louvain_data = stg.prepare_data(Read.read_karate_club, missing_rate=0.0)
-    # for i in range(10):
-    #     louvain_res = stg.train_byLouvain(louvain_data)
-    #     print(louvain_res)
+    # remove 10% edges
+    del_edges = [(0, 6), (0, 8), (1, 7), (1, 17), (1, 30), (2, 3), (2, 32), (29, 33)]
+    if mode != 1:
+        # deleting edges
+        g_.remove_edges_from(del_edges)
+    else:
+        # for displaying removed edges, so not really delete
+        for i, j in del_edges:
+            g_.edges[i, j]['color'] = ALL_COLORs['removed']
+    draw_karate(g_, true_labels, fig_title='Karate network with 10% missing edges')
 
+    # Louvain
+    if mode != 1:
+        while True:
+            louvain_res = stg.train_byLouvain(data=res)
+            louvain_labels = louvain_res[-1]
+            if 0.8 < louvain_res[0] < 1:
+                break
+    else:
+        louvain_labels = [1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                          2, 2, 2]
+    g_lou = g_.copy()
+    draw_karate(g_lou, louvain_labels, fig_title='Louvain on incomplete karate network')
+
+    # CLMC on 10% edges removed network
     clmc_labels = [1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
-    clmc_del_edges = [(0, 6), (0, 8), (1, 7), (1, 17), (1, 30), (2, 3), (2, 32), (29, 33)]
-    g_.remove_edges_from(clmc_del_edges)
     g_clmc = g_.copy()
-
-    Z_Edge_ori, Z_noEdge_ori = tools.get_Z_init(g_)
-    N = g_.number_of_nodes()
-    C = 2
-    res['observe_graph'] = g_
-    res['Z_noEdge_ori'] = Z_noEdge_ori
-    res['Z_Edge_ori'] = Z_Edge_ori
-    res['num_del_edges'] = 16
-    res['N'] = N
-    res['C'] = C
+    if mode == 1:
+        # link prediction
+        # predicted true edges: (1, 7), (29, 33)
+        # predicted false edges: (10, 16)
+        g_clmc.edges[1, 7]['color'] = ALL_COLORs['predict']
+        g_clmc.edges[29, 33]['color'] = ALL_COLORs['predict']
+        g_clmc.add_edge(10, 16)
+        g_clmc.edges[10, 16]['color'] = ALL_COLORs['predict']
+    draw_karate(g_clmc, clmc_labels, fig_title='CLMC on incomplete karate network')
 
     # MNDPEM
-    res_ = stg.train_byMNDPEM(data=res)
-    g_mndpem = res_['graph_res']
-    # mndpem_labels = res_['F_argmax']
-    mndpem_labels = [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-                     2]
-    print(f'different [ MNDPEM - CLMC ] : {set(g_mndpem.edges) - set(g_clmc.edges)}')
+    if mode != 1:
+        Z_Edge_ori, Z_noEdge_ori = tools.get_Z_init(g_)
+        N = g_.number_of_nodes()
+        C = 2
+        res['observe_graph'] = g_
+        res['Z_noEdge_ori'] = Z_noEdge_ori
+        res['Z_Edge_ori'] = Z_Edge_ori
+        res['num_del_edges'] = 16
+        res['N'] = N
+        res['C'] = C
+
+        res_ = stg.train_byMNDPEM(data=res)
+        g_mndpem = res_['graph_res']
+        mndpem_labels = res_['F_argmax']
+        print(f'different [ MNDPEM - CLMC ] : {set(g_mndpem.edges) - set(g_clmc.edges)}')
+    else:
+        g_mndpem = g_.copy()
+        g_mndpem.add_edges_from([(0, 33), (2, 3)])
+        g_mndpem.edges[0, 33]['color'] = ALL_COLORs['predict']
+        g_mndpem.edges[2, 3]['color'] = ALL_COLORs['predict']
+        mndpem_labels = [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+    draw_karate(g_mndpem, mndpem_labels, fig_title='Our method on complete karate network')
 
     # MNDP
     # while True:
@@ -230,16 +262,6 @@ def main_clmc_mndp():
     #     if mndp_res[0] < 1:
     #         break
     # g_mndp = g_.copy()
-
-    # Louvain
-    while True:
-        louvain_res = stg.train_byLouvain(data=res)
-        louvain_labels = louvain_res[-1]
-        if 0.8 < louvain_res[0] < 1:
-            break
-    g_lou = g_.copy()
-
-    draw_karate(g_clmc, clmc_labels, g_lou, louvain_labels, g_mndpem, mndpem_labels)
 
 
 def nothing():
@@ -256,6 +278,6 @@ def nothing():
 
 
 if __name__ == '__main__':
-    # main_clmc_mndp()
     # nothing()
-    display_rate_polblogs()
+    # display_rate_polblogs()
+    main_intro_case()
