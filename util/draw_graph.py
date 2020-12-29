@@ -155,12 +155,26 @@ def draw_karate(g, labels, fig_title):
     plt.title(fig_title, fontsize=14)
     plt.show()
 
-    # ground true
-    # res = Read.read_karate_club()
-    # g_, b_, labels_ = res['graph_real'], res['adj_real'], res['labels']
-    # color_list_ = get_color(labels_)
-    # nx.draw_networkx(g_, pos=pos, node_color=color_list_)
-    # plt.show()
+
+def display_polbooks(g, labels, fig_title):
+    def get_color(labels):
+        color_list = []
+        for i in labels:
+            if i == 1:
+                color_list.append('#CD4F39')
+            elif i == 2:
+                color_list.append('#DAA520')
+            elif i == 3:
+                color_list.append('#96CDCD')
+        return color_list
+
+    color_list_ = get_color(labels)
+    edges_colors = []
+    for i, j in g.edges():
+        edges_colors.append(g.edges[i, j]['color'])
+    nx.draw_networkx(g, node_color=color_list_, edge_color=edges_colors, width=1.7)
+    plt.title(fig_title, fontsize=14)
+    plt.show()
 
 
 def draw_simple_graph(graph, labels):
@@ -176,13 +190,18 @@ def _draw_different_rate():
     display_rate_polblogs()
 
 
-def main_intro_case(mode=1):
+def display_intro_case(mode=1):
+    """
+
+    :param mode:  display mode
+    :return:
+    """
     from util import base_method as tools
     from model.Strategy import Strategy
 
     stg = Strategy()
 
-    ALL_COLORs ={
+    ALL_COLORs = {
         'exist': '#5E5E5E',
         'removed': '#D4D4D4',
         'predict': '#CD00CD'}
@@ -192,7 +211,7 @@ def main_intro_case(mode=1):
     true_labels = res['labels']
     for i, j in g_.edges():
         g_.edges[i, j]['color'] = ALL_COLORs['exist']
-    draw_karate(g_, true_labels, fig_title='Complete karate network with ground trues')
+    draw_karate(g_, true_labels, fig_title='Louvain on complete karate network')
 
     # remove 10% edges
     del_edges = [(0, 6), (0, 8), (1, 7), (1, 17), (1, 30), (2, 3), (2, 32), (29, 33)]
@@ -223,10 +242,11 @@ def main_intro_case(mode=1):
     g_clmc = g_.copy()
     if mode == 1:
         # link prediction
-        # predicted true edges: (1, 7), (29, 33)
+        # predicted true edges: (1, 7), (29, 33), (1, 17)
         # predicted false edges: (10, 16)
         g_clmc.edges[1, 7]['color'] = ALL_COLORs['predict']
         g_clmc.edges[29, 33]['color'] = ALL_COLORs['predict']
+        g_clmc.edges[1, 17]['color'] = ALL_COLORs['predict']
         g_clmc.add_edge(10, 16)
         g_clmc.edges[10, 16]['color'] = ALL_COLORs['predict']
     draw_karate(g_clmc, clmc_labels, fig_title='CLMC on incomplete karate network')
@@ -248,12 +268,14 @@ def main_intro_case(mode=1):
         mndpem_labels = res_['F_argmax']
         print(f'different [ MNDPEM - CLMC ] : {set(g_mndpem.edges) - set(g_clmc.edges)}')
     else:
+        tmp_add_edges = [(0, 33), (2, 3), (13, 12)]
         g_mndpem = g_.copy()
-        g_mndpem.add_edges_from([(0, 33), (2, 3)])
-        g_mndpem.edges[0, 33]['color'] = ALL_COLORs['predict']
-        g_mndpem.edges[2, 3]['color'] = ALL_COLORs['predict']
-        mndpem_labels = [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
-    draw_karate(g_mndpem, mndpem_labels, fig_title='Our method on complete karate network')
+        g_mndpem.add_edges_from(tmp_add_edges)
+        for i, j in tmp_add_edges:
+            g_mndpem.edges[i, j]['color'] = ALL_COLORs['predict']
+        mndpem_labels = [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                         2, 2]
+    draw_karate(g_mndpem, mndpem_labels, fig_title='Our method on incomplete karate network')
 
     # MNDP
     # while True:
@@ -264,7 +286,39 @@ def main_intro_case(mode=1):
     # g_mndp = g_.copy()
 
 
-def nothing():
+def display_case_study():
+    from util import base_method as tools
+    from model.Strategy import Strategy
+
+    stg = Strategy()
+    ALL_COLORs = {
+        'exist': '#5E5E5E',
+        'removed': '#D4D4D4',
+        'predict': '#CD00CD'}
+    data = stg.prepare_data(Read.read_polbooks)
+    g_ori = data['graph_real']
+    observe_graph = data['observe_graph']
+    del_edges = data['del_edges']
+    res = stg.train_byMNDPEM(data)
+    F_argmax = res['F_argmax']
+    g_res = res['graph_res']
+
+    for i, j in observe_graph.edges:
+        observe_graph.edges[i, j]['color'] = ALL_COLORs['exist']
+
+    observe_graph.add_edges_from(del_edges)
+    for i, j in del_edges:
+        observe_graph.edges[i, j]['color'] = ALL_COLORs['removed']
+
+    predicted_edges = list(set(g_res.edges) - set(observe_graph.edges))
+    observe_graph.add_edges_from(predicted_edges)
+    for i, j in predicted_edges:
+        observe_graph.edges[i, j]['color'] = ALL_COLORs['predict']
+
+    display_polbooks(observe_graph, F_argmax, fig_title='Our model on Polbook')
+
+
+def _analyze_tmpTxt():
     import re
 
     res = []
@@ -278,6 +332,6 @@ def nothing():
 
 
 if __name__ == '__main__':
-    # nothing()
     # display_rate_polblogs()
-    main_intro_case()
+    # display_intro_case()
+    display_case_study()

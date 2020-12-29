@@ -43,6 +43,7 @@ class Strategy(object):
         res['observe_graph'] = observe_graph
         res['Z_noEdge_ori'] = Z_noEdge_ori
         res['Z_Edge_ori'] = Z_Edge_ori
+        res['del_edges'] = test_edges
         if num_del_edges != 0:
             res['num_del_edges'] = num_del_edges
 
@@ -160,6 +161,11 @@ class Strategy(object):
         cls.train_byLouvain(data)
 
     @classmethod
+    def Experiment_intro_case(cls):
+        from util.draw_graph import display_intro_case
+        display_intro_case(mode=1)
+
+    @classmethod
     def Experiment_known_network(cls):
         dataset = [
             # Read.read_karate_club,
@@ -256,14 +262,6 @@ def main(stg_model):
 
 def main2(stg_model: Strategy):
     stg_model.Experiment_DBLP_case()
-
-
-def main3(stg: Strategy):
-    print(stg.train_byMNDPEM.__name__)
-
-
-def main4(stg):
-    stg.Experiment_known_network()
 
 
 if __name__ == '__main__':
