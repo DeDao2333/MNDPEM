@@ -4,7 +4,8 @@ import pandas as pd
 import networkx as nx
 import random
 from community import community_louvain
-from util import draw_graph
+import matplotlib.pyplot as plt
+from util import draw_graph as Draw
 from util import base_method as tools
 from method.community_detection import MNDP
 from collections import defaultdict
@@ -20,12 +21,19 @@ class Strategy(object):
 
     @classmethod
     def res_display(cls, is_unknown, F_argmax, graph, labels):
+        res = dict()
+        res['graph_res'] = graph
         if is_unknown:
             Q = tools.Modularity_Q(F_argmax, graph)
             print("Modularity_Q: {:.4f}".format(Q))
-            return Q
+            res['Q'] = Q
         else:
-            return tools.display_result(F_argmax, labels)
+            tmp = tools.display_result(F_argmax, labels)
+            res['nmi'] = tmp[0]
+            res['ari'] = tmp[1]
+            res['pur'] = tmp[2]
+            res['F_argmax'] = tmp[3]
+        return res
 
     @staticmethod
     def prepare_data(read_data, missing_rate=0.2):
@@ -65,7 +73,7 @@ class Strategy(object):
             assert False, "Not right index"
 
     @staticmethod
-    def train_byMNDPEM(data):
+    def train_byMNDPEM(data, num_EM_iter=15):
         print('===========  Method:  MNDPEM  ===============')
         C = data['C']
         N = data['N']
@@ -76,6 +84,8 @@ class Strategy(object):
         num_del_edges = data.get('num_del_edges', 20)
         is_unknown = data['is_unknown']
         our_method = MNDPEM_model(N, C)
+        our_method.train_mode = 2
+        our_method.num_EM_iter = num_EM_iter
         return our_method.train(ob, labels, Z_noEdge_ori, Z_Edge_ori, num_del_edges, is_unknown)
 
     @classmethod
@@ -88,8 +98,6 @@ class Strategy(object):
         # F_ = MNDP.MNDP_EM(observe_graph, C, epoch=16)
         prob, F_ = MNDP.MNDP(data['adj_real'], C)
         F_argmax = np.argmax(F_, axis=1) + 1
-        ## 绘制 karate 示例专用，其他数据集报错
-        # draw_karate(observe_graph_, F_argmax)
         return cls.res_display(is_unknown, F_argmax, observe_graph, labels)
 
     @classmethod
@@ -121,7 +129,6 @@ class Strategy(object):
         F_ = model.get_memberships()
         F_ = np.array(list(F_.values()))
         F_argmax = F_ + 1
-
         return cls.res_display(is_unknown, F_argmax, observe_graph, labels)
 
     @classmethod
@@ -251,6 +258,38 @@ class Strategy(object):
         data['num_del_edges'] = 300
         cls.train_byMNDP_Missing(data)
 
+    @classmethod
+    def Experiment_case_study(cls, network, draw_network, epoch=1):
+        LINK_COLORs = {
+            'exist': '#5E5E5E',
+            'removed': '#D4D4D4',
+            'predict': '#9ACD32'}
+        data = cls.prepare_data(network)
+        observe_graph = data['observe_graph']
+        del_edges = data['del_edges']
+        res = cls.train_byMNDPEM(data, num_EM_iter=23)
+        cls.res2csv(res, '../res/case_study_' + str(epoch) +'.csv')
+        F_argmax = res['F_argmax']
+        with open(f'../res/case_study_F_argmax_{epoch}.txt', 'a') as f:
+            f.write('---------------------\n')
+            f.write(str(F_argmax))
+        g_res = res['graph_res']
+
+        for i, j in observe_graph.edges:
+            observe_graph.edges[i, j]['color'] = LINK_COLORs['exist']
+
+        observe_graph.add_edges_from(del_edges)
+        for i, j in del_edges:
+            observe_graph.edges[i, j]['color'] = LINK_COLORs['removed']
+
+        predicted_edges = list(set(g_res.edges) - set(observe_graph.edges))
+        observe_graph.add_edges_from(predicted_edges)
+        for i, j in predicted_edges:
+            observe_graph.edges[i, j]['color'] = LINK_COLORs['predict']
+
+        draw_network(observe_graph, F_argmax, fig_title='Our model', epoch=epoch)
+        # draw_network(isGround_trues=True)
+
 
 def main(stg_model):
     dataset = [
@@ -261,12 +300,27 @@ def main(stg_model):
 
 
 def main2(stg_model: Strategy):
-    stg_model.Experiment_DBLP_case()
+    for i in range(30):
+        stg_model.Experiment_case_study(
+            network=Read.read_dolphins,
+            draw_network=Draw.display_dolphins, epoch=i)
+
+
+def main_test_nothing(stg_model: Strategy):
+    data = Read.read_dolphins()
+    g = data['graph_real']
+    labels = data['labels']
+    node_color = Draw.get_color(labels)
+    pos = nx.spring_layout(g)
+    nx.draw(g, pos=pos, with_labels=True, node_color=node_color,  node_size=100, font_size=6)
+    plt.show()
+    print(pos)
 
 
 if __name__ == '__main__':
     stg_model = Strategy()
-    main(stg_model)
-    # main2(stg_model)
+    # main(stg_model)
+    main2(stg_model)
+    # main_test_nothing(stg_model)
     # main3(stg_model)
     # main4(stg_model)

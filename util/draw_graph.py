@@ -159,15 +159,64 @@ def draw_karate(g, labels, fig_title):
     plt.show()
 
 
-def display_dolphins(g, labels, fig_title):
-    color_list_ = get_color(labels)
-    edges_colors = []
-    for i, j in g.edges():
-        edges_colors.append(g.edges[i, j]['color'])
+def display_dolphins(g=None, labels=None, fig_title=None, isGround_trues=False, epoch=1):
+    pos = {0: array([-0.12335322, -0.19201138]), 1: array([0.17485701, 0.35671631]),
+           2: array([0.07919733, -0.38996203]),
+           3: array([-0.25453724, -0.14257345]), 4: array([-0.70788629, -0.39261314]),
+           5: array([0.34355124, 0.87321401]),
+           6: array([0.29277757, 0.77016971]), 7: array([0.13246678, 0.20705315]), 8: array([-0.15788977, -0.09206864]),
+           9: array([0.3918546, 0.76624491]), 10: array([-0.0367484, -0.28514571]),
+           11: array([-0.73136899, -0.29413094]),
+           12: array([-0.25099427, -0.69910759]), 13: array([0.37089148, 0.71279034]),
+           14: array([-0.15219012, -0.35684928]),
+           15: array([-0.34627505, -0.16290967]), 16: array([-0.05778825, -0.3721889]),
+           17: array([0.32353267, 0.64316626]),
+           18: array([-0.32107843, -0.28403897]), 19: array([0.21628986, 0.27836009]),
+           20: array([-0.04535174, -0.19664098]),
+           21: array([-0.32645092, -0.37411763]), 22: array([0.49275339, 0.82439663]),
+           23: array([-0.36080489, -0.06072352]),
+           24: array([-0.38289132, -0.32861059]), 25: array([0.44273158, 0.52166417]),
+           26: array([0.3888508, 0.41382776]),
+           27: array([0.29742865, 0.42469334]), 28: array([0.03747214, 0.05960392]),
+           29: array([-0.29685266, -0.42238225]),
+           30: array([0.14466974, 0.05244146]), 31: array([0.20270162, 0.85016152]),
+           32: array([0.59269948, 0.81615464]),
+           33: array([-0.15050031, -0.44591285]), 34: array([0.00492376, -0.51989721]),
+           35: array([-0.47929773, -0.6186459]),
+           36: array([-0.08272773, 0.05810827]), 37: array([-0.12488617, -0.308844]),
+           38: array([0.0201549, -0.44306772]),
+           39: array([0.03103741, 0.41470912]), 40: array([-0.09308744, -0.14669876]),
+           41: array([0.27261886, 0.60239032]),
+           42: array([0.03752446, -0.19113951]), 43: array([-0.1159973, -0.56173193]),
+           44: array([0.12974491, -0.39140766]),
+           45: array([-0.3117144, -0.22640841]), 46: array([0.00202912, -0.8055585]),
+           47: array([0.04190661, -0.09748699]),
+           48: array([0.23416479, 0.94125718]), 49: array([0.1099198, -0.76299817]),
+           50: array([-0.19647236, -0.28978145]),
+           51: array([-0.47278444, -0.28816666]), 52: array([-0.11851139, -0.39826541]),
+           53: array([-0.08187792, -0.7502496]),
+           54: array([0.23290362, 0.5117531]), 55: array([-0.57883631, -0.17574226]), 56: array([0.3226477, 1.]),
+           57: array([0.22828492, 0.69765793]), 58: array([0.25727796, -0.57987671]),
+           59: array([-0.27251882, -0.03056126]),
+           60: array([0.80375535, 0.85400456]), 61: array([-0.02194624, -0.57202305])}
 
-    nx.draw_networkx(g, node_color=color_list_, edge_color=edges_colors,
+    if isGround_trues:
+        data = Read.read_dolphins()
+        g = data['graph_real']
+        labels = data['labels']
+        fig_title = 'Dolphins with ground trues'
+        edges_colors = ['#5E5E5E' for _ in range(len(g.edges))]
+    else:
+        edges_colors = []
+        for i, j in g.edges():
+            edges_colors.append(g.edges[i, j]['color'])
+
+    color_list_ = get_color(labels)
+
+    nx.draw_networkx(g, pos=pos, node_color=color_list_, edge_color=edges_colors,
                      node_size=150, font_size=8, linewidths=0.7)
     plt.title(fig_title, fontsize=14)
+    plt.savefig('../res/case_study_dolphin_' + str(epoch) + '.png')
     plt.show()
 
 
@@ -207,7 +256,7 @@ def display_intro_case(mode=1):
 
     stg = Strategy()
 
-    ALL_COLORs = {
+    LINK_COLORs = {
         'exist': '#5E5E5E',
         'removed': '#D4D4D4',
         'predict': '#CD00CD'}
@@ -216,7 +265,7 @@ def display_intro_case(mode=1):
     g_ = res['graph_real']
     true_labels = res['labels']
     for i, j in g_.edges():
-        g_.edges[i, j]['color'] = ALL_COLORs['exist']
+        g_.edges[i, j]['color'] = LINK_COLORs['exist']
     draw_karate(g_, true_labels, fig_title='Louvain on complete karate network')
 
     # remove 10% edges
@@ -227,7 +276,7 @@ def display_intro_case(mode=1):
     else:
         # for displaying removed edges, so not really delete
         for i, j in del_edges:
-            g_.edges[i, j]['color'] = ALL_COLORs['removed']
+            g_.edges[i, j]['color'] = LINK_COLORs['removed']
     draw_karate(g_, true_labels, fig_title='Karate network with 10% missing edges')
 
     # Louvain
@@ -250,11 +299,11 @@ def display_intro_case(mode=1):
         # link prediction
         # predicted true edges: (1, 7), (29, 33), (1, 17)
         # predicted false edges: (10, 16)
-        g_clmc.edges[1, 7]['color'] = ALL_COLORs['predict']
-        g_clmc.edges[29, 33]['color'] = ALL_COLORs['predict']
-        g_clmc.edges[1, 17]['color'] = ALL_COLORs['predict']
+        g_clmc.edges[1, 7]['color'] = LINK_COLORs['predict']
+        g_clmc.edges[29, 33]['color'] = LINK_COLORs['predict']
+        g_clmc.edges[1, 17]['color'] = LINK_COLORs['predict']
         g_clmc.add_edge(10, 16)
-        g_clmc.edges[10, 16]['color'] = ALL_COLORs['predict']
+        g_clmc.edges[10, 16]['color'] = LINK_COLORs['predict']
     draw_karate(g_clmc, clmc_labels, fig_title='CLMC on incomplete karate network')
 
     # MNDPEM
@@ -278,7 +327,7 @@ def display_intro_case(mode=1):
         g_mndpem = g_.copy()
         g_mndpem.add_edges_from(tmp_add_edges)
         for i, j in tmp_add_edges:
-            g_mndpem.edges[i, j]['color'] = ALL_COLORs['predict']
+            g_mndpem.edges[i, j]['color'] = LINK_COLORs['predict']
         mndpem_labels = [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
                          2, 2]
     draw_karate(g_mndpem, mndpem_labels, fig_title='Our method on incomplete karate network')
@@ -290,38 +339,6 @@ def display_intro_case(mode=1):
     #     if mndp_res[0] < 1:
     #         break
     # g_mndp = g_.copy()
-
-
-def display_case_study(network, display_case):
-    from util import base_method as tools
-    from model.Strategy import Strategy
-
-    stg = Strategy()
-    ALL_COLORs = {
-        'exist': '#5E5E5E',
-        'removed': '#D4D4D4',
-        'predict': '#9ACD32'}
-    data = stg.prepare_data(network)
-    g_ori = data['graph_real']
-    observe_graph = data['observe_graph']
-    del_edges = data['del_edges']
-    res = stg.train_byMNDPEM(data)
-    F_argmax = res['F_argmax']
-    g_res = res['graph_res']
-
-    for i, j in observe_graph.edges:
-        observe_graph.edges[i, j]['color'] = ALL_COLORs['exist']
-
-    observe_graph.add_edges_from(del_edges)
-    for i, j in del_edges:
-        observe_graph.edges[i, j]['color'] = ALL_COLORs['removed']
-
-    predicted_edges = list(set(g_res.edges) - set(observe_graph.edges))
-    observe_graph.add_edges_from(predicted_edges)
-    for i, j in predicted_edges:
-        observe_graph.edges[i, j]['color'] = ALL_COLORs['predict']
-
-    display_case(observe_graph, F_argmax, fig_title='Our model')
 
 
 def _analyze_tmpTxt():
@@ -340,4 +357,4 @@ def _analyze_tmpTxt():
 if __name__ == '__main__':
     # display_rate_polblogs()
     # display_intro_case()
-    display_case_study(Read.read_dolphins, display_dolphins)
+    pass

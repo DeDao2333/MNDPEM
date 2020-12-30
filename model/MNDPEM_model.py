@@ -13,9 +13,10 @@ class MNDPEM_model(object):
     def __init__(self,
                  N: int, C: int, F: np.ndarray = None,
                  num_EM_iter=15, num_sample=500, num_warm_up=4000):
-        self.F = F
         self.C = C
         self.N = N
+        self.F = np.random.uniform(0, 1, size=(self.N, self.C)) if F is None else F
+        self.train_mode = 1
         self.num_EM_iter = num_EM_iter
         self.num_sample = num_sample
         self.num_warm_up = num_warm_up
@@ -132,9 +133,9 @@ class MNDPEM_model(object):
                     g.add_edge(u, v)
 
         find_lonely_node(G)  # 检测是否有孤立点
-
-        F = np.random.uniform(0, 1, size=(self.N, self.C))
-        self.F = MNDP.MNDP_EM(G, self.C, F, epoch=cur_epoch / 2)
+        if self.train_mode == 1:
+            self.F = np.random.uniform(0, 1, size=(self.N, self.C))
+        self.F = MNDP.MNDP_EM(G, self.C, self.F, epoch=cur_epoch / 2)
         F_argmax = np.argmax(self.F, axis=1) + 1  # 注意 twitter 数据不需要加1
         return F_argmax, G
 
@@ -152,7 +153,7 @@ class MNDPEM_model(object):
             # E 步Gibbs采样
             samples_Z_edge = self.E_step(Z_noEdge, Z_Edge)
             F_argmax, G = self.M_step(observe_graph, samples_Z_edge, epoch)
-
+            print(f'F_argmax: {F_argmax}')
             # 社团发现结果
             res['F_argmax'] = F_argmax
             res['graph_res'] = G
@@ -165,7 +166,6 @@ class MNDPEM_model(object):
                 res['nmi'].append(tmp[0])
                 res['ari'].append(tmp[1])
                 res['pur'].append(tmp[2])
-
         return res
 
     @staticmethod
