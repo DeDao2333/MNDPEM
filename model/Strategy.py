@@ -64,11 +64,11 @@ class Strategy(object):
         if 'nmi' in res.keys():
             # represent nmi, ari, pur
             df = pd.DataFrame(res, columns=['nmi', 'ari', 'pur'])
-            df.to_csv(path, mode='a')
+            df.to_csv(path, mode='a', index=False)
         elif 'Q' in res.keys():
             # represent Q
             df = pd.DataFrame(res, columns=['Q'])
-            df.to_csv(path, mode='a')
+            df.to_csv(path, mode='a', index=False)
         else:
             assert False, "Not right index"
 
@@ -175,12 +175,12 @@ class Strategy(object):
     @classmethod
     def Experiment_known_network(cls):
         dataset = [
-            Read.read_karate_club,
-            Read.read_dolphins,
-            Read.read_football,
-            # Read.read_wisconsin,
-            # Read.read_polbooks,
-            # Read.read_polblogs,
+            # Read.read_karate_club,
+            # Read.read_dolphins,
+            # Read.read_football,
+            Read.read_wisconsin,
+            Read.read_polbooks,
+            Read.read_polblogs,
         ]
 
         methods = [
@@ -222,18 +222,19 @@ class Strategy(object):
         ]
 
         methods = [
-            # cls.train_byMNDP_Missing,
-            cls.train_byMNDPEM,
-            # cls.train_byDANMF,
-            # cls.train_byGEMSEC,
-            # cls.train_byLouvain,
-            # cls.train_byBigClam
+            cls.train_byMNDP_Missing,
+            # cls.train_byMNDPEM,
+            cls.train_byDANMF,
+            cls.train_byGEMSEC,
+            cls.train_byLouvain,
+            cls.train_byBigClam
         ]
 
         for data_ in dataset:
             for method_ in methods:
                 res = defaultdict(list)
                 for i in range(15):
+                    np.random.seed(i)
                     data = cls.prepare_data(data_, missing_rate=0.2)
                     tmp = method_(data)
                     print(f'time -> {i}')
@@ -325,5 +326,5 @@ if __name__ == '__main__':
     # main_test_nothing(stg_model)
     # main3(stg_model)
     # main4(stg_model)
-    # stg_model.Experiment_known_network()
-    main_case_study(stg_model)
+    stg_model.Experiment_unknown_network()
+    # main_case_study(stg_model)
