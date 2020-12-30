@@ -4,6 +4,18 @@ from numpy.core._multiarray_umath import array
 from util import read_data as Read
 
 
+def get_color(labels):
+    color_list = []
+    for i in labels:
+        if i == 1:
+            color_list.append('#CD4F39')
+        elif i == 2:
+            color_list.append('#DAA520')
+        elif i == 3:
+            color_list.append('#96CDCD')
+    return color_list
+
+
 def display_rate_football():
     # football
     MNDP_M = [0.9254, 0.9008, 0.8883, 0.8517, 0.8516, 0.8297, 0.8080, 0.7857]
@@ -116,15 +128,6 @@ def display_rate_polblogs():
 
 
 def draw_karate(g, labels, fig_title):
-    def get_color(labels):
-        color_list = []
-        for i in labels:
-            if i == 1:
-                color_list.append('#CD4F39')
-            else:
-                color_list.append('#96CDCD')
-        return color_list
-
     pos = {0: array([0.04035086, -0.35842333]), 1: array([0.23988347, -0.23390369]), 2: array([-0.0759524, 0.08270998]),
            3: array([0.17775027, -0.36712044]), 4: array([-0.18152543, -0.59496255]),
            5: array([-0.01425569, -0.75517756]),
@@ -156,23 +159,26 @@ def draw_karate(g, labels, fig_title):
     plt.show()
 
 
-def display_polbooks(g, labels, fig_title):
-    def get_color(labels):
-        color_list = []
-        for i in labels:
-            if i == 1:
-                color_list.append('#CD4F39')
-            elif i == 2:
-                color_list.append('#DAA520')
-            elif i == 3:
-                color_list.append('#96CDCD')
-        return color_list
-
+def display_dolphins(g, labels, fig_title):
     color_list_ = get_color(labels)
     edges_colors = []
     for i, j in g.edges():
         edges_colors.append(g.edges[i, j]['color'])
-    nx.draw_networkx(g, node_color=color_list_, edge_color=edges_colors, width=1.7)
+
+    nx.draw_networkx(g, node_color=color_list_, edge_color=edges_colors,
+                     node_size=150, font_size=8, linewidths=0.7)
+    plt.title(fig_title, fontsize=14)
+    plt.show()
+
+
+def display_polbooks(g, labels, fig_title):
+    color_list_ = get_color(labels)
+    edges_colors = []
+    for i, j in g.edges():
+        edges_colors.append(g.edges[i, j]['color'])
+
+    nx.draw_networkx(g, node_color=color_list_, edge_color=edges_colors,
+                     node_size=100, font_size=6, linewidths=0.5)
     plt.title(fig_title, fontsize=14)
     plt.show()
 
@@ -286,7 +292,7 @@ def display_intro_case(mode=1):
     # g_mndp = g_.copy()
 
 
-def display_case_study():
+def display_case_study(network, display_case):
     from util import base_method as tools
     from model.Strategy import Strategy
 
@@ -294,8 +300,8 @@ def display_case_study():
     ALL_COLORs = {
         'exist': '#5E5E5E',
         'removed': '#D4D4D4',
-        'predict': '#CD00CD'}
-    data = stg.prepare_data(Read.read_polbooks)
+        'predict': '#9ACD32'}
+    data = stg.prepare_data(network)
     g_ori = data['graph_real']
     observe_graph = data['observe_graph']
     del_edges = data['del_edges']
@@ -315,7 +321,7 @@ def display_case_study():
     for i, j in predicted_edges:
         observe_graph.edges[i, j]['color'] = ALL_COLORs['predict']
 
-    display_polbooks(observe_graph, F_argmax, fig_title='Our model on Polbook')
+    display_case(observe_graph, F_argmax, fig_title='Our model')
 
 
 def _analyze_tmpTxt():
@@ -334,4 +340,4 @@ def _analyze_tmpTxt():
 if __name__ == '__main__':
     # display_rate_polblogs()
     # display_intro_case()
-    display_case_study()
+    display_case_study(Read.read_dolphins, display_dolphins)
