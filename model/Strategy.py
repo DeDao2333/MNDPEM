@@ -175,21 +175,21 @@ class Strategy(object):
     @classmethod
     def Experiment_known_network(cls):
         dataset = [
-            # Read.read_karate_club,
-            # Read.read_dolphins,
-            # Read.read_football,
-            Read.read_wisconsin,
-            Read.read_polbooks,
-            Read.read_polblogs,
+            Read.read_karate_club,
+            Read.read_dolphins,
+            Read.read_football,
+            # Read.read_wisconsin,
+            # Read.read_polbooks,
+            # Read.read_polblogs,
         ]
 
         methods = [
-            # cls.train_byMNDP_Missing,
-            # cls.train_byDANMF,
-            # cls.train_byGEMSEC,
-            # cls.train_byLouvain,
-            # cls.train_byBigClam,
-            cls.train_byMNDPEM,
+            cls.train_byMNDP_Missing,
+            cls.train_byDANMF,
+            cls.train_byGEMSEC,
+            cls.train_byLouvain,
+            cls.train_byBigClam,
+            # cls.train_byMNDPEM,
         ]
 
         for data_ in dataset:
@@ -204,9 +204,9 @@ class Strategy(object):
                         res['ari'].extend(tmp['ari'])
                         res['pur'].extend(tmp['pur'])
                     else:
-                        res['nmi'].append(tmp[0])
-                        res['ari'].append(tmp[1])
-                        res['pur'].append(tmp[2])
+                        res['nmi'].append(tmp['nmi'])
+                        res['ari'].append(tmp['ari'])
+                        res['pur'].append(tmp['pur'])
                 cls.res2csv(res,
                             path=f'../res/{data_.__name__.split("_")[1] + "_" + method_.__name__.split("_")[1]}.csv')
 
@@ -239,7 +239,7 @@ class Strategy(object):
                     if method_.__name__ == 'train_byMNDPEM':
                         res['Q'].extend(tmp['Q'])
                     else:
-                        res['Q'].append(tmp)
+                        res['Q'].append(tmp['Q'])
                 cls.res2csv(res,
                             path=f'../res/{data_.__name__.split("_")[1] + "_" + method_.__name__.split("_")[1]}.csv')
 
@@ -320,7 +320,8 @@ def main_test_nothing(stg_model: Strategy):
 if __name__ == '__main__':
     stg_model = Strategy()
     # main(stg_model)
-    main2(stg_model)
+    # main2(stg_model)
     # main_test_nothing(stg_model)
     # main3(stg_model)
     # main4(stg_model)
+    stg_model.Experiment_known_network()
