@@ -45,7 +45,8 @@ class Strategy(object):
         return res
 
     @classmethod
-    def paint_color_edges(cls, g_observe: nx.Graph, g_res: nx.Graph, test_edges: list):
+    def paint_color_edges(cls, g_observe_: nx.Graph, g_res: nx.Graph, test_edges: list) -> nx.Graph:
+        g_observe = g_observe_.copy()
         predicted_edges: set = set(g_res.edges) - set(g_observe.edges)
         predicted_edges_true: set = predicted_edges & set(test_edges)
         predicted_edges_wrong: set = predicted_edges - set(test_edges)
@@ -59,6 +60,7 @@ class Strategy(object):
             g_observe.edges[i, j]['color'] = CONF.LINK_COLORs['predict_true']
         for i, j in predicted_edges_wrong:
             g_observe.edges[i, j]['color'] = CONF.LINK_COLORs['predict_wrong']
+        return g_observe
 
     @classmethod
     def res_display(cls, is_unknown, F_argmax, graph, labels):
@@ -185,9 +187,47 @@ class Strategy(object):
         cls.train_byLouvain(data)
 
     @classmethod
-    def Experiment_intro_case(cls):
-        from util.draw_graph import display_intro_case
-        display_intro_case(mode=1)
+    def Experiment_intro_case(cls, mode=1):
+        """
+
+        :param mode: =1 -> search suitable cases; =2 -> display the specified case
+        :return:
+        """
+        data = Read.read_karate_club()
+        g_ori = data['graph_real']
+        true_labels = data['labels']
+        cls.paint_color_edges(g_ori, g_ori, [])
+        Draw.draw_karate(g_ori, labels=true_labels, fig_title='karate club network with ground trues')
+
+        if mode != 1:
+            del_edges = [(0, 6), (0, 8), (1, 7), (1, 17), (1, 30), (2, 3), (2, 32), (29, 33)]
+            g_obs = g_ori.remove_edges_from(del_edges)
+            g_painted = cls.paint_color_edges(g_obs, g_obs, del_edges)
+            Draw.draw_karate(g_painted, true_labels, fig_title='Karate network with 10% missing edges')
+
+            # CLMC on 10% edges removed network
+            # link prediction
+            # predicted true edges: (1, 7), (29, 33), (1, 17)
+            # predicted false edges: (10, 16)
+            clmc_labels = [
+                1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1,
+                2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+            ]
+            clmc_g_res = g_obs.copy()
+            clmc_g_res.add_edges_from([(1, 7), (29, 33), (1, 17), (10, 16)])
+            clmc_g_painted = cls.paint_color_edges(g_obs, clmc_g_res, del_edges)
+            Draw.draw_karate(clmc_g_painted, clmc_labels, 'CLMC on missing-edges network')
+
+            # MNDPEM
+            predicted_edges = [(0, 33), (2, 3), (13, 12)]
+            em_g = g_obs.copy()
+            em_g.add_edges_from(predicted_edges)
+            em_labels = [
+                1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1,
+                1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+            ]
+            em_g_painted = cls.paint_color_edges(g_obs, em_g, del_edges)
+            Draw.draw_karate(em_g_painted, em_labels, 'Our model on missing-edges network')
 
     @classmethod
     def Experiment_known_network(cls):
@@ -285,7 +325,7 @@ class Strategy(object):
         res = cls.train_byMNDPEM(data, num_EM_iter=23)
         # cls.res2csv(res, '../res/case_study_' + str(epoch) +'.csv')
         F_argmax = res['F_argmax']
-        with open('..res/case_study_metrics.csv', 'a') as f:
+        with open('../res/case_study_metrics.csv', 'a') as f:
             f.write(f'{epoch} {res["nmi"][-1]} {res["ari"][-1]} {res["pur"][-1]}\n')
         with open(f'../res/case_study_F_argmax.txt', 'a') as f:
             f.write(f'{epoch}-----------\n')
@@ -320,7 +360,7 @@ def main_test_nothing(stg_model: Strategy):
     labels = data['labels']
     node_color = Draw.get_color(labels)
     pos = nx.spring_layout(g)
-    nx.draw(g, pos=pos, with_labels=True, node_color=node_color,  node_size=100, font_size=6)
+    nx.draw(g, pos=pos, with_labels=True, node_color=node_color, node_size=100, font_size=6)
     plt.show()
     print(pos)
 

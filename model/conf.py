@@ -1,9 +1,9 @@
 
 LINK_COLORs = {
-    'exist': '#BFBFBF',
-    'removed': '#1C86EE',
-    'predict_true': '#00CD66',
-    'predict_wrong': '#CD3700'
+    'exist': '#BFBFBF',  # grey
+    'removed': '#1C86EE',  # blue
+    'predict_true': '#00CD66',  # green
+    'predict_wrong': '#CD3700'  # red
 }
 
 NODE_LABELs = {
