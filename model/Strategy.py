@@ -13,27 +13,12 @@ from util import read_data as Read
 from model.MNDPEM_model import MNDPEM_model
 from karateclub.community_detection.overlapping import NNSED, DANMF, MNMF, BigClam, SymmNMF
 from karateclub.community_detection.non_overlapping import GEMSEC, EdMot
+import model.conf as CONF
 
 
 class Strategy(object):
     def __init__(self):
         pass
-
-    @classmethod
-    def res_display(cls, is_unknown, F_argmax, graph, labels):
-        res = dict()
-        res['graph_res'] = graph
-        if is_unknown:
-            Q = tools.Modularity_Q(F_argmax, graph)
-            print("Modularity_Q: {:.4f}".format(Q))
-            res['Q'] = Q
-        else:
-            tmp = tools.display_result(F_argmax, labels)
-            res['nmi'] = tmp[0]
-            res['ari'] = tmp[1]
-            res['pur'] = tmp[2]
-            res['F_argmax'] = tmp[3]
-        return res
 
     @staticmethod
     def prepare_data(read_data, missing_rate=0.2):
@@ -57,6 +42,38 @@ class Strategy(object):
 
         res['N'] = N
         res['C'] = C
+        return res
+
+    @classmethod
+    def paint_color_edges(cls, g_observe: nx.Graph, g_res: nx.Graph, test_edges: list):
+        predicted_edges: set = set(g_res.edges) - set(g_observe.edges)
+        predicted_edges_true: set = predicted_edges & set(test_edges)
+        predicted_edges_wrong: set = predicted_edges - set(test_edges)
+        g_observe.add_edges_from(test_edges)
+        g_observe.add_edges_from(predicted_edges)
+        for i, j in g_observe.edges:
+            g_observe.edges[i, j]['color'] = CONF.LINK_COLORs['exist']
+        for i, j in test_edges:
+            g_observe.edges[i, j]['color'] = CONF.LINK_COLORs['removed']
+        for i, j in predicted_edges_true:
+            g_observe.edges[i, j]['color'] = CONF.LINK_COLORs['predict_true']
+        for i, j in predicted_edges_wrong:
+            g_observe.edges[i, j]['color'] = CONF.LINK_COLORs['predict_wrong']
+
+    @classmethod
+    def res_display(cls, is_unknown, F_argmax, graph, labels):
+        res = dict()
+        res['graph_res'] = graph
+        if is_unknown:
+            Q = tools.Modularity_Q(F_argmax, graph)
+            print("Modularity_Q: {:.4f}".format(Q))
+            res['Q'] = Q
+        else:
+            tmp = tools.display_result(F_argmax, labels)
+            res['nmi'] = tmp[0]
+            res['ari'] = tmp[1]
+            res['pur'] = tmp[2]
+            res['F_argmax'] = tmp[3]
         return res
 
     @classmethod
@@ -262,36 +279,22 @@ class Strategy(object):
 
     @classmethod
     def Experiment_case_study(cls, network, draw_network, epoch=1):
-        LINK_COLORs = {
-            'exist': '#5E5E5E',
-            'removed': '#D4D4D4',
-            'predict': '#9ACD32'}
         data = cls.prepare_data(network)
         observe_graph = data['observe_graph']
         del_edges = data['del_edges']
         res = cls.train_byMNDPEM(data, num_EM_iter=23)
-        cls.res2csv(res, '../res/case_study_' + str(epoch) +'.csv')
+        # cls.res2csv(res, '../res/case_study_' + str(epoch) +'.csv')
         F_argmax = res['F_argmax']
+        with open('..res/case_study_metrics.csv', 'a') as f:
+            f.write(f'{epoch} {res["nmi"][-1]} {res["ari"][-1]} {res["pur"][-1]}\n')
         with open(f'../res/case_study_F_argmax.txt', 'a') as f:
-            f.write(f'---------------------{epoch}\n')
+            f.write(f'{epoch}-----------\n')
             f.write(str(F_argmax))
             f.write('\n')
             f.write(str(del_edges))
             f.write('\n')
         g_res = res['graph_res']
-
-        for i, j in observe_graph.edges:
-            observe_graph.edges[i, j]['color'] = LINK_COLORs['exist']
-
-        observe_graph.add_edges_from(del_edges)
-        for i, j in del_edges:
-            observe_graph.edges[i, j]['color'] = LINK_COLORs['removed']
-
-        predicted_edges = list(set(g_res.edges) - set(observe_graph.edges))
-        observe_graph.add_edges_from(predicted_edges)
-        for i, j in predicted_edges:
-            observe_graph.edges[i, j]['color'] = LINK_COLORs['predict']
-
+        cls.paint_color_edges(observe_graph, g_res, del_edges)
         draw_network(observe_graph, F_argmax, fig_title='Our model', epoch=epoch)
         # draw_network(isGround_trues=True)
 
