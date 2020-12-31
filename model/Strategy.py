@@ -196,8 +196,8 @@ class Strategy(object):
         data = Read.read_karate_club()
         g_ori = data['graph_real']
         true_labels = data['labels']
-        cls.paint_color_edges(g_ori, g_ori, [])
-        Draw.draw_karate(g_ori, labels=true_labels, fig_title='karate club network with ground trues')
+        g_ori_painted = cls.paint_color_edges(g_ori, g_ori, [])
+        Draw.draw_karate(g_ori_painted, labels=true_labels, fig_title='karate club network with ground trues')
 
         if mode != 1:
             del_edges = [(0, 6), (0, 8), (1, 7), (1, 17), (1, 30), (2, 3), (2, 32), (29, 33)]
@@ -374,4 +374,5 @@ if __name__ == '__main__':
     # main4(stg_model)
     # stg_model.Experiment_unknown_network()
     # stg_model.Experiment_known_network()
-    main_case_study(stg_model)
+    # main_case_study(stg_model)
+    stg_model.Experiment_intro_case(mode=2)
