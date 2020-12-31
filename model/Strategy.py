@@ -2,6 +2,7 @@ from karateclub.community_detection.overlapping import BigClam
 import numpy as np
 import pandas as pd
 import networkx as nx
+import copy
 import random
 from community import community_louvain
 import matplotlib.pyplot as plt
@@ -334,8 +335,8 @@ class Strategy(object):
             f.write(str(del_edges))
             f.write('\n')
         g_res = res['graph_res']
-        cls.paint_color_edges(observe_graph, g_res, del_edges)
-        draw_network(observe_graph, F_argmax, fig_title='Our model', epoch=epoch)
+        res_g_painted = cls.paint_color_edges(observe_graph, g_res, del_edges)
+        draw_network(res_g_painted, F_argmax, fig_title='Our model', epoch=epoch)
         # draw_network(isGround_trues=True)
 
 
