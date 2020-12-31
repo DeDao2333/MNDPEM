@@ -175,21 +175,21 @@ class Strategy(object):
     @classmethod
     def Experiment_known_network(cls):
         dataset = [
-            # Read.read_karate_club,
-            # Read.read_dolphins,
-            # Read.read_football,
+            Read.read_karate_club,
+            Read.read_dolphins,
+            Read.read_football,
             Read.read_wisconsin,
             Read.read_polbooks,
             Read.read_polblogs,
         ]
 
         methods = [
-            cls.train_byMNDP_Missing,
-            cls.train_byDANMF,
-            cls.train_byGEMSEC,
-            cls.train_byLouvain,
-            cls.train_byBigClam,
-            # cls.train_byMNDPEM,
+            # cls.train_byMNDP_Missing,
+            # cls.train_byDANMF,
+            # cls.train_byGEMSEC,
+            # cls.train_byLouvain,
+            # cls.train_byBigClam,
+            cls.train_byMNDPEM,
         ]
 
         for data_ in dataset:
@@ -222,12 +222,12 @@ class Strategy(object):
         ]
 
         methods = [
-            cls.train_byMNDP_Missing,
-            # cls.train_byMNDPEM,
-            cls.train_byDANMF,
-            cls.train_byGEMSEC,
-            cls.train_byLouvain,
-            cls.train_byBigClam
+            # cls.train_byMNDP_Missing,
+            cls.train_byMNDPEM,
+            # cls.train_byDANMF,
+            # cls.train_byGEMSEC,
+            # cls.train_byLouvain,
+            # cls.train_byBigClam
         ]
 
         for data_ in dataset:
@@ -327,4 +327,5 @@ if __name__ == '__main__':
     # main3(stg_model)
     # main4(stg_model)
     stg_model.Experiment_unknown_network()
+    stg_model.Experiment_known_network()
     # main_case_study(stg_model)
