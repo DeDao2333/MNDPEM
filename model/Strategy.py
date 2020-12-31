@@ -2,8 +2,6 @@ from karateclub.community_detection.overlapping import BigClam
 import numpy as np
 import pandas as pd
 import networkx as nx
-import copy
-import random
 from community import community_louvain
 import matplotlib.pyplot as plt
 from util import draw_graph as Draw
@@ -202,7 +200,8 @@ class Strategy(object):
 
         if mode != 1:
             del_edges = [(0, 6), (0, 8), (1, 7), (1, 17), (1, 30), (2, 3), (2, 32), (29, 33)]
-            g_obs = g_ori.remove_edges_from(del_edges)
+            g_obs = g_ori.copy()
+            g_obs.remove_edges_from(del_edges)
             g_painted = cls.paint_color_edges(g_obs, g_obs, del_edges)
             Draw.draw_karate(g_painted, true_labels, fig_title='Karate network with 10% missing edges')
 
@@ -337,7 +336,6 @@ class Strategy(object):
         g_res = res['graph_res']
         res_g_painted = cls.paint_color_edges(observe_graph, g_res, del_edges)
         draw_network(res_g_painted, F_argmax, fig_title='Our model', epoch=epoch)
-        # draw_network(isGround_trues=True)
 
 
 def main(stg_model):
