@@ -272,9 +272,12 @@ class Strategy(object):
         res = cls.train_byMNDPEM(data, num_EM_iter=23)
         cls.res2csv(res, '../res/case_study_' + str(epoch) +'.csv')
         F_argmax = res['F_argmax']
-        with open(f'../res/case_study_F_argmax_{epoch}.txt', 'a') as f:
-            f.write('---------------------\n')
+        with open(f'../res/case_study_F_argmax.txt', 'a') as f:
+            f.write(f'---------------------{epoch}\n')
             f.write(str(F_argmax))
+            f.write('\n')
+            f.write(str(del_edges))
+            f.write('\n')
         g_res = res['graph_res']
 
         for i, j in observe_graph.edges:
@@ -326,6 +329,6 @@ if __name__ == '__main__':
     # main_test_nothing(stg_model)
     # main3(stg_model)
     # main4(stg_model)
-    stg_model.Experiment_unknown_network()
-    stg_model.Experiment_known_network()
-    # main_case_study(stg_model)
+    # stg_model.Experiment_unknown_network()
+    # stg_model.Experiment_known_network()
+    main_case_study(stg_model)
