@@ -17,6 +17,7 @@ class MNDPEM_model(object):
         self.N = N
         self.F = np.random.uniform(0, 1, size=(self.N, self.C)) if F is None else F
         self.train_mode = 1
+        self.alpha = 0.5
         self.num_EM_iter = num_EM_iter
         self.num_sample = num_sample
         self.num_warm_up = num_warm_up
@@ -119,7 +120,7 @@ class MNDPEM_model(object):
 
     def M_step(self, observe_graph: nx.Graph, samples_Z_edge, cur_epoch):
         # 融合 observe_graph + Z_edge = H
-        B = self.mergeAll_G_Z(observe_graph, samples_Z_edge)
+        B = self.mergeAll_G_Z(observe_graph, samples_Z_edge, self.alpha)
         G = nx.from_numpy_array(B)
         all_prob = self.get_allProb()
 

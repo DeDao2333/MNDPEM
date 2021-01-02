@@ -7,7 +7,8 @@ LINK_COLORs = {
 }
 
 NODE_LABELs = {
-    1: '#DDB822',
-    2: '#44BBBB',
-    3: '#B87CC7'
+    1: '#DDB822',  # yellow
+    2: '#E9395B',  # red
+    3: '#B87CC7',  # purple
+    -1: '#888888'  # grey, mean wrong label
 }
