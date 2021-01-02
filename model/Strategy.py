@@ -44,7 +44,7 @@ class Strategy(object):
         return res
 
     @classmethod
-    def paint_color_edges(cls, g_observe_: nx.Graph, g_res: nx.Graph, test_edges: list) -> nx.Graph:
+    def paint_color(cls, g_observe_: nx.Graph, g_res: nx.Graph, test_edges: list, label: list) -> nx.Graph:
         g_observe = g_observe_.copy()
         predicted_edges: set = set(g_res.edges) - set(g_observe.edges)
         predicted_edges_true: set = predicted_edges & set(test_edges)
@@ -59,6 +59,8 @@ class Strategy(object):
             g_observe.edges[i, j]['color'] = CONF.LINK_COLORs['predict_true']
         for i, j in predicted_edges_wrong:
             g_observe.edges[i, j]['color'] = CONF.LINK_COLORs['predict_wrong']
+        for i in g_observe.nodes:
+            g_observe.nodes[i]['color'] = CONF.NODE_LABELs[label[i]]
         return g_observe
 
     @classmethod
@@ -99,7 +101,7 @@ class Strategy(object):
         labels = data['labels']
         Z_noEdge_ori = data['Z_noEdge_ori']
         Z_Edge_ori = data['Z_Edge_ori']
-        num_del_edges = data.get('num_del_edges', 20)
+        num_del_edges = data['num_del_edges']
         is_unknown = data['is_unknown']
         our_method = MNDPEM_model(N, C)
         our_method.train_mode = 2
@@ -195,27 +197,29 @@ class Strategy(object):
         data = Read.read_karate_club()
         g_ori = data['graph_real']
         true_labels = data['labels']
-        g_ori_painted = cls.paint_color_edges(g_ori, g_ori, [])
+        g_ori_painted = cls.paint_color(g_ori, g_ori, [], true_labels)
         Draw.draw_karate(g_ori_painted, labels=true_labels, fig_title='karate club network with ground trues')
 
         if mode != 1:
             del_edges = [(0, 6), (0, 8), (1, 7), (1, 17), (1, 30), (2, 3), (2, 32), (29, 33)]
             g_obs = g_ori.copy()
             g_obs.remove_edges_from(del_edges)
-            g_painted = cls.paint_color_edges(g_obs, g_obs, del_edges)
+            g_painted = cls.paint_color(g_obs, g_obs, del_edges, true_labels)
             Draw.draw_karate(g_painted, true_labels, fig_title='Karate network with 10% missing edges')
 
             # CLMC on 10% edges removed network
             # link prediction
             # predicted true edges: (1, 7), (29, 33), (1, 17)
             # predicted false edges: (10, 16)
+            # node with wrong label: 2
             clmc_labels = [
                 1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1,
                 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
             ]
             clmc_g_res = g_obs.copy()
             clmc_g_res.add_edges_from([(1, 7), (29, 33), (1, 17), (10, 16)])
-            clmc_g_painted = cls.paint_color_edges(g_obs, clmc_g_res, del_edges)
+            clmc_g_painted = cls.paint_color(g_obs, clmc_g_res, del_edges, clmc_labels)
+            clmc_g_painted.nodes[2]['color'] = CONF.NODE_LABELs[-1]
             Draw.draw_karate(clmc_g_painted, clmc_labels, 'CLMC on missing-edges network')
 
             # MNDPEM
@@ -226,7 +230,7 @@ class Strategy(object):
                 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1,
                 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
             ]
-            em_g_painted = cls.paint_color_edges(g_obs, em_g, del_edges)
+            em_g_painted = cls.paint_color(g_obs, em_g, del_edges, em_labels)
             Draw.draw_karate(em_g_painted, em_labels, 'Our model on missing-edges network')
 
     @classmethod
@@ -319,7 +323,7 @@ class Strategy(object):
 
     @classmethod
     def Experiment_case_study(cls, network, draw_network, epoch=1):
-        data = cls.prepare_data(network)
+        data = cls.prepare_data(network, missing_rate=0.0)
         observe_graph = data['observe_graph']
         del_edges = data['del_edges']
         res = cls.train_byMNDPEM(data, num_EM_iter=23)
@@ -334,7 +338,7 @@ class Strategy(object):
             f.write(str(del_edges))
             f.write('\n')
         g_res = res['graph_res']
-        res_g_painted = cls.paint_color_edges(observe_graph, g_res, del_edges)
+        res_g_painted = cls.paint_color(observe_graph, g_res, del_edges, F_argmax)
         draw_network(res_g_painted, F_argmax, fig_title='Our model', epoch=epoch)
 
 
@@ -346,32 +350,35 @@ def main(stg_model):
     stg_model.Experiment_different_missing_rate(dataset)
 
 
-def main_case_study(stg_model: Strategy):
+def main_case_study():
+    import os
+    stg_model = Strategy()
+    if os.path.exists('../res/case_study_metrics.csv'):
+        os.remove('../res/case_study_metrics.csv')
+    if os.path.exists('../res/case_study_F_argmax.txt'):
+        os.remove('../res/case_study_F_argmax.txt')
     for i in range(30):
         stg_model.Experiment_case_study(
             network=Read.read_dolphins,
             draw_network=Draw.display_dolphins, epoch=i)
 
 
-def main_test_nothing(stg_model: Strategy):
-    data = Read.read_dolphins()
-    g = data['graph_real']
-    labels = data['labels']
-    node_color = Draw.get_color(labels)
-    pos = nx.spring_layout(g)
-    nx.draw(g, pos=pos, with_labels=True, node_color=node_color, node_size=100, font_size=6)
-    plt.show()
-    print(pos)
+def main_test_nothing():
+    res = Read.read_polbooks()
+    labels = res['labels']
+    F_argmax = [2, 1, 1, 3, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 3, 3, 3, 3, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 3, 3, 2, 2, 2,
+                2, 2, 2,
+                2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 1, 2, 2, 2, 1, 1, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3,
+                3, 3, 3,
+                1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1]
+    print(tools.display_result(F_argmax, labels))
+
+
+def main_intro_case():
+    Strategy.Experiment_intro_case(mode=2)
 
 
 if __name__ == '__main__':
-    stg_model = Strategy()
-    # main(stg_model)
-    # main2(stg_model)
-    # main_test_nothing(stg_model)
-    # main3(stg_model)
-    # main4(stg_model)
-    # stg_model.Experiment_unknown_network()
-    # stg_model.Experiment_known_network()
-    # main_case_study(stg_model)
-    stg_model.Experiment_intro_case(mode=2)
+    # main_case_study()
+    # main_case_study()
+    main_test_nothing()

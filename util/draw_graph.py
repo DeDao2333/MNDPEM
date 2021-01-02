@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from numpy.core._multiarray_umath import array
 from util import read_data as Read
+from model import conf as CONF
 
 
 def get_color(labels):
@@ -149,12 +150,16 @@ def draw_karate(g, labels, fig_title):
            32: array([-0.10773608, 0.41913559]), 33: array([0.02822436, 0.25828881])}
 
     plt.figure(figsize=(6, 8))
-    color_list_ = get_color(labels)
 
     edges_colors = []
     for i, j in g.edges():
         edges_colors.append(g.edges[i, j]['color'])
-    nx.draw_networkx(g, pos=pos, node_color=color_list_, edge_color=edges_colors, width=1.7)
+
+    nodes_colors = []
+    for i in g.nodes:
+        nodes_colors.append(g.nodes[i]['color'])
+    print(g.nodes[2])
+    nx.draw_networkx(g, pos=pos, node_color=nodes_colors, edge_color=edges_colors, width=1.7)
     plt.title(fig_title, fontsize=14)
     plt.show()
 
@@ -211,9 +216,11 @@ def display_dolphins(g=None, labels=None, fig_title=None, isGround_trues=False, 
         for i, j in g.edges():
             edges_colors.append(g.edges[i, j]['color'])
 
-    color_list_ = get_color(labels)
+    nodes_colors = []
+    for i in g.nodes():
+        nodes_colors.append(g.nodes[i]['color'])
 
-    nx.draw_networkx(g, pos=pos, node_color=color_list_, edge_color=edges_colors,
+    nx.draw_networkx(g, pos=pos, node_color=nodes_colors, edge_color=edges_colors,
                      node_size=150, font_size=8, linewidths=0.7)
     plt.title(fig_title, fontsize=14)
     plt.savefig('../res/case_study_dolphin_' + str(epoch) + '.png')
@@ -221,12 +228,62 @@ def display_dolphins(g=None, labels=None, fig_title=None, isGround_trues=False, 
 
 
 def display_polbooks(g, labels, fig_title):
+    pos = {0: array([0.38105335, -0.04789597]), 1: array([0.48557336, -0.13198612]), 2: array([0.29272891, 0.10509224]),
+           3: array([0.32684054, -0.36087755]), 4: array([0.12964891, 0.09694291]), 5: array([0.30269775, -0.04423845]),
+           6: array([0.32402415, -0.18215034]), 7: array([0.02382017, 0.05722355]), 8: array([0.26116179, -0.51759482]),
+           9: array([0.07335696, -0.3807549]), 10: array([0.39563629, -0.51223093]),
+           11: array([0.18202023, -0.44842959]), 12: array([0.34221197, -0.49046783]),
+           13: array([0.18483004, -0.55030662]), 14: array([0.13078881, -0.26369731]),
+           15: array([0.55844261, -0.48901774]), 16: array([0.62672383, -0.45019456]),
+           17: array([0.24019488, -0.60613676]), 18: array([0.52310669, -0.31096884]),
+           19: array([0.14294335, -0.32428287]), 20: array([0.06982515, -0.33841287]),
+           21: array([0.44957508, -0.45243083]), 22: array([0.19023258, -0.32210461]),
+           23: array([0.42979216, -0.57258946]), 24: array([0.17807291, -0.40451644]),
+           25: array([0.33132103, -0.29589505]), 26: array([0.21389195, -0.39508618]),
+           27: array([0.31202727, -0.46824372]), 28: array([-0.04247139, 0.33434255]),
+           29: array([0.21071314, -0.22056482]), 30: array([-0.19871829, 0.3375436]),
+           31: array([-0.17530407, 0.28647879]), 32: array([0.34413096, -0.68316623]),
+           33: array([0.44429754, -0.65577014]), 34: array([0.48500699, -0.89401445]),
+           35: array([0.34142377, -0.75616254]), 36: array([0.45942942, -0.72720424]),
+           37: array([0.42289493, -0.75272678]), 38: array([0.50594062, -0.74387163]),
+           39: array([0.38554413, -0.72562343]), 40: array([0.2337971, -0.50875608]),
+           41: array([0.31135796, -0.60072172]), 42: array([0.20940576, -0.71646866]),
+           43: array([0.13837383, -0.75646103]), 44: array([0.25679434, -0.70185396]),
+           45: array([0.11796759, -0.56028897]), 46: array([0.28598524, -0.17663198]),
+           47: array([0.29761664, -0.53893233]), 48: array([-0.11610632, -0.29775312]),
+           49: array([-0.11244037, -0.0484774]), 50: array([-0.11655749, -0.35199047]),
+           51: array([-0.29307636, -0.17905494]), 52: array([-0.14144694, -0.20049674]),
+           53: array([0.06570047, -0.1788419]), 54: array([0.471159, -0.57246465]),
+           55: array([0.41863738, -0.52790138]), 56: array([0.00984069, -0.58436255]),
+           57: array([-0.06624446, -0.4038259]), 58: array([-0.2132811, -0.04066517]),
+           59: array([-0.18157486, 0.98040807]), 60: array([-0.21858633, 0.86017468]),
+           61: array([-0.02101837, 0.87362047]), 62: array([-0.28852695, 0.87721561]), 63: array([-0.27628882, 1.]),
+           64: array([-0.36221546, 0.0614039]), 65: array([-0.43163806, -0.01096407]),
+           66: array([-0.28736097, 0.44506688]), 67: array([-0.53831458, 0.18910144]),
+           68: array([-0.41282898, 0.09462091]), 69: array([-0.50672245, -0.08092901]),
+           70: array([-0.3920082, 0.30720437]), 71: array([-0.24033574, 0.32619041]),
+           72: array([-0.28806531, 0.39693117]), 73: array([-0.20556411, 0.54279526]),
+           74: array([-0.29628085, 0.5065986]), 75: array([-0.26186918, 0.3832352]),
+           76: array([-0.13636491, 0.27478418]), 77: array([-0.11516432, 0.10778976]),
+           78: array([-0.36853457, 0.35791993]), 79: array([-0.33930675, 0.48386392]),
+           80: array([-0.43207078, 0.37051449]), 81: array([-0.10871876, 0.62651631]),
+           82: array([-0.17246782, 0.43154562]), 83: array([-0.23597028, 0.49177287]),
+           84: array([-0.2305091, 0.59176032]), 85: array([-0.26101025, 0.15854221]),
+           86: array([-0.16841091, 0.60644004]), 87: array([-0.39663749, 0.62820615]),
+           88: array([-0.43010902, 0.58949904]), 89: array([-0.33225831, 0.61741423]),
+           90: array([-0.45974698, 0.53373523]), 91: array([-0.37273481, 0.52278215]),
+           92: array([-0.46180991, 0.47792753]), 93: array([-0.06436954, 0.52895131]),
+           94: array([0.00201543, 0.63134324]), 95: array([0.08772375, 0.66271807]),
+           96: array([-0.15709556, 0.69795945]), 97: array([-0.21683613, 0.72237654]),
+           98: array([-0.40847087, 0.70732255]), 99: array([-0.24896048, 0.69423039]),
+           100: array([-0.28551129, 0.67248404]), 101: array([-0.10155884, 0.78950056]),
+           102: array([0.17066203, 0.3562595]), 103: array([-0.84484736, 0.13228666]),
+           104: array([-0.7446404, 0.02881975])}
     color_list_ = get_color(labels)
     edges_colors = []
     for i, j in g.edges():
-        edges_colors.append(g.edges[i, j]['color'])
-
-    nx.draw_networkx(g, node_color=color_list_, edge_color=edges_colors,
+        edges_colors.append(g.edges[i, j].get('color', CONF.LINK_COLORs['exist']))
+    nx.draw_networkx(g, pos=pos, node_color=color_list_, edge_color=edges_colors,
                      node_size=100, font_size=6, linewidths=0.5)
     plt.title(fig_title, fontsize=14)
     plt.show()
@@ -357,4 +414,6 @@ def _analyze_tmpTxt():
 if __name__ == '__main__':
     # display_rate_polblogs()
     # display_intro_case()
-    pass
+    data = Read.read_polbooks()
+
+    display_polbooks(data['graph_real'], data['labels'], "")
