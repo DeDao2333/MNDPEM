@@ -289,7 +289,7 @@ def display_polbooks(g, labels, fig_title, epoch=1):
     nx.draw_networkx(g, pos=pos, node_color=nodes_colors, edge_color=edges_colors,
                      node_size=100, font_size=6, linewidths=0.5)
     plt.title(fig_title, fontsize=14)
-    plt.savefig('../res/case_study_dolphin_' + str(epoch) + '.png')
+    plt.savefig('../res/case_study_polbook_' + str(epoch) + '.png')
 
 
 def draw_simple_graph(graph, labels):
