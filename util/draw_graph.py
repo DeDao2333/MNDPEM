@@ -224,10 +224,9 @@ def display_dolphins(g=None, labels=None, fig_title=None, isGround_trues=False, 
                      node_size=150, font_size=8, linewidths=0.7)
     plt.title(fig_title, fontsize=14)
     plt.savefig('../res/case_study_dolphin_' + str(epoch) + '.png')
-    plt.show()
 
 
-def display_polbooks(g, labels, fig_title):
+def display_polbooks(g, labels, fig_title, epoch=1):
     pos = {0: array([0.38105335, -0.04789597]), 1: array([0.48557336, -0.13198612]), 2: array([0.29272891, 0.10509224]),
            3: array([0.32684054, -0.36087755]), 4: array([0.12964891, 0.09694291]), 5: array([0.30269775, -0.04423845]),
            6: array([0.32402415, -0.18215034]), 7: array([0.02382017, 0.05722355]), 8: array([0.26116179, -0.51759482]),
@@ -279,14 +278,18 @@ def display_polbooks(g, labels, fig_title):
            100: array([-0.28551129, 0.67248404]), 101: array([-0.10155884, 0.78950056]),
            102: array([0.17066203, 0.3562595]), 103: array([-0.84484736, 0.13228666]),
            104: array([-0.7446404, 0.02881975])}
-    color_list_ = get_color(labels)
+
+    nodes_colors = []
+    for i in g.nodes():
+        nodes_colors.append(g.nodes[i]['color'])
     edges_colors = []
     for i, j in g.edges():
         edges_colors.append(g.edges[i, j].get('color', CONF.LINK_COLORs['exist']))
-    nx.draw_networkx(g, pos=pos, node_color=color_list_, edge_color=edges_colors,
+
+    nx.draw_networkx(g, pos=pos, node_color=nodes_colors, edge_color=edges_colors,
                      node_size=100, font_size=6, linewidths=0.5)
     plt.title(fig_title, fontsize=14)
-    plt.show()
+    plt.savefig('../res/case_study_dolphin_' + str(epoch) + '.png')
 
 
 def draw_simple_graph(graph, labels):

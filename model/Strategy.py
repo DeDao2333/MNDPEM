@@ -323,7 +323,7 @@ class Strategy(object):
 
     @classmethod
     def Experiment_case_study(cls, network, draw_network, epoch=1):
-        data = cls.prepare_data(network, missing_rate=0.0)
+        data = cls.prepare_data(network, missing_rate=0.2)
         observe_graph = data['observe_graph']
         del_edges = data['del_edges']
         res = cls.train_byMNDPEM(data, num_EM_iter=23)
@@ -359,8 +359,8 @@ def main_case_study():
         os.remove('../res/case_study_F_argmax.txt')
     for i in range(30):
         stg_model.Experiment_case_study(
-            network=Read.read_dolphins,
-            draw_network=Draw.display_dolphins, epoch=i)
+            network=Read.read_polbooks,
+            draw_network=Draw.display_polbooks, epoch=i)
 
 
 def main_test_nothing():
@@ -380,5 +380,5 @@ def main_intro_case():
 
 if __name__ == '__main__':
     # main_case_study()
-    # main_case_study()
-    main_test_nothing()
+    main_case_study()
+    # main_test_nothing()

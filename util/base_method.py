@@ -1,12 +1,19 @@
 from community import community_louvain
 import numpy as np
 import networkx as nx
+import pandas as pd
 
 
 def Modularity_Q(label, g):
     partition = {i: index for i, index in enumerate(label)}
     Q = community_louvain.modularity(partition, g)
     return Q
+
+
+def mean_variance(path):
+    df = pd.read_csv(path, usecols=[1,2,3])
+
+    print(df.describe())
 
 
 def display_result(F_argmax, target):
@@ -62,7 +69,7 @@ def get_train_test(graph: nx.Graph, fraction: float = 0.2) -> (np.ndarray, list)
     observe_graph.remove_edges_from(del_list)  # 此时虽然删除了些边，但是即使结点孤立，也保存在图中
 
     test_edge_list = del_list
-    # print("deleted edges: ", sorted(test_edge_list))
+    print("deleted edges: ", sorted(test_edge_list))
     return observe_graph, test_edge_list
 
 
@@ -81,3 +88,8 @@ def get_Z_init(graph) -> tuple:
     g_Z_noEdge = nx.Graph()
     g_Z_noEdge.add_edges_from(set(all_Edges) - set(graph.edges))  # 去掉已经存在的边，剩下是缺失边
     return nx.Graph(), g_Z_noEdge
+
+
+if __name__ == '__main__':
+    mean_variance('../res/karate_byGEMSEC.csv')
+
