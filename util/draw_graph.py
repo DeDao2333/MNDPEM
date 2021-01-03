@@ -226,7 +226,7 @@ def display_dolphins(g=None, labels=None, fig_title=None, isGround_trues=False, 
     plt.savefig('../res/case_study_dolphin_' + str(epoch) + '.png')
 
 
-def display_polbooks(g, labels, fig_title, epoch=1):
+def display_polbooks(g, labels, fig_title, epoch=1, show=False):
     pos = {0: array([0.38105335, -0.04789597]), 1: array([0.48557336, -0.13198612]), 2: array([0.29272891, 0.10509224]),
            3: array([0.32684054, -0.36087755]), 4: array([0.12964891, 0.09694291]), 5: array([0.30269775, -0.04423845]),
            6: array([0.32402415, -0.18215034]), 7: array([0.02382017, 0.05722355]), 8: array([0.26116179, -0.51759482]),
@@ -290,6 +290,8 @@ def display_polbooks(g, labels, fig_title, epoch=1):
                      node_size=100, font_size=6, linewidths=0.5)
     plt.title(fig_title, fontsize=14)
     plt.savefig('../res/case_study_polbook_' + str(epoch) + '.png')
+    if show:
+        plt.show()
 
 
 def draw_simple_graph(graph, labels):
@@ -413,10 +415,27 @@ def _analyze_tmpTxt():
             res.append((int(s[1]) - 1, int(s[0]) - 1))
     print(res)
 
+def main_case_study_display1():
+    from model.Strategy import Strategy
+    import util.base_method as tools
+    data = Read.read_polbooks()
+    g = data['graph_real']
+    g = Strategy.paint_color(g, g, [], data['labels'])
+    # display_polbooks(g, data['labels'], "")
+    F_argmax = [1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                1, 1, 1, 1, 1, 1, 3, 1, 3, 3, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 1, 2, 3, 3, 3, 3, 3, 2, 2, 3, 2, 2, 2,
+                3, 3, 3, 3, 3, 3, 2, 2, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3,
+                3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2]
+    index_label = dict()
+    for i, j in enumerate(F_argmax):
+        index_label[i] = j
+    tools.display_result(F_argmax, data['labels'])
+    F_argmax[36], F_argmax[34] = F_argmax[37], F_argmax[37]
+    tools.display_result(F_argmax, data['labels'])
+
+def main_case_study_mndp():
+    pass
 
 if __name__ == '__main__':
-    # display_rate_polblogs()
-    # display_intro_case()
-    data = Read.read_polbooks()
-
-    display_polbooks(data['graph_real'], data['labels'], "")
+    pass

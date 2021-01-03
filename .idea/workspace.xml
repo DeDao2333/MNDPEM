@@ -19,15 +19,44 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a52f5019-3a01-466b-bb7a-cf458ad57044" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/MNDPEM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MNDPEM.iml" afterDir="false" />
+    <list default="true" id="a52f5019-3a01-466b-bb7a-cf458ad57044" name="Default Changelist" comment="the result into csv file">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/PREOATOR.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/PREOATOR.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/MNDPEM_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/MNDPEM_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Strategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/dolphins_byMNDPEM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/football_byDANMF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/football_byDANMF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/football_byGEMSEC.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/football_byGEMSEC.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/football_byLouvain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/football_byLouvain.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/football_byMNDP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/football_byMNDP.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/football_byMNDPEM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/karate_byDANMF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byDANMF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/karate_byGEMSEC.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byGEMSEC.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/karate_byLouvain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byLouvain.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/karate_byMNDP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byMNDP.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/karate_byMNDPEM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/polblogs_byDANMF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/polblogs_byDANMF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/polblogs_byGEMSEC.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/polblogs_byGEMSEC.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/polblogs_byLouvain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/polblogs_byLouvain.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/polblogs_byMNDP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/polblogs_byMNDP.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/polbooks_byBigClam.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/polbooks_byBigClam.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/polbooks_byDANMF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/polbooks_byDANMF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/polbooks_byGEMSEC.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/polbooks_byGEMSEC.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/polbooks_byLouvain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/polbooks_byLouvain.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/polbooks_byMNDP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/polbooks_byMNDP.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/polbooks_byMNDPEM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/wisconsin_byBigClam.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/wisconsin_byBigClam.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/wisconsin_byDANMF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/wisconsin_byDANMF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/wisconsin_byGEMSEC.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/wisconsin_byGEMSEC.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/wisconsin_byLouvain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/wisconsin_byLouvain.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/wisconsin_byMNDP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/wisconsin_byMNDP.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/wisconsin_byMNDPEM.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/util/draw_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/draw_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/read_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/read_data.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,26 +70,45 @@
     <session id="2119105783">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="814" />
-          <entry key="txt" value="22" />
+          <entry key="conf" value="56" />
+          <entry key="csv" value="4" />
+          <entry key="py" value="14200" />
+          <entry key="tmp_dolp_mndp_label" value="1" />
+          <entry key="txt" value="577" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="814" />
+          <entry key="CSV" value="4" />
+          <entry key="PLAIN_TEXT" value="578" />
+          <entry key="Python" value="14256" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="7" />
-          <entry key="py" value="3" />
+          <entry key="csv" value="281" />
+          <entry key="png" value="30" />
+          <entry key="py" value="72" />
+          <entry key="tmp_dolp_mndp_label" value="2" />
+          <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="7" />
-          <entry key="Python" value="3" />
+          <entry key="CSV" value="281" />
+          <entry key="Image" value="30" />
+          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="Python" value="72" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -70,41 +118,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Strategy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+            <state relative-caret-position="208">
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
               <folding>
                 <element signature="e#0#62#0" expanded="true" />
-                <element signature="e#7174#8525#0" />
-                <element signature="e#8593#9679#0" />
-                <marker date="1609643440696" expanded="true" signature="7315:9274" ph="..." />
-                <marker date="1609643440696" expanded="true" signature="10687:11845" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/case_study_metrics.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/read_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-840">
-              <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/base_method.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="208">
+              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -122,25 +142,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/util/draw_graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1548">
-              <caret line="323" column="33" lean-forward="true" selection-start-line="323" selection-start-column="33" selection-end-line="323" selection-end-column="33" />
+            <state relative-caret-position="394">
+              <caret line="437" column="4" selection-start-line="437" selection-start-column="4" selection-end-line="437" selection-end-column="4" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
+                <marker date="1609655780160" expanded="true" signature="21601:21608" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/conf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/res/case_study_polbook_1.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -155,7 +172,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>print</find>
-      <find>CONF</find>
+      <find>re</find>
+      <find>draw_graph</find>
+      <find>save</find>
+      <find>res2csv</find>
+      <find>savefig</find>
+      <find>NODE</find>
+      <find>copy</find>
+      <find>paint_color_edges</find>
+      <find>paint_color</find>
     </findStrings>
   </component>
   <component name="Git.Pull.Settings">
@@ -170,12 +195,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/util/draw_graph.py" />
         <option value="$PROJECT_DIR$/res/train_byMNDP_Missing.csv" />
-        <option value="$PROJECT_DIR$/model/MNDPEM_model.py" />
-        <option value="$PROJECT_DIR$/util/read_data.py" />
-        <option value="$PROJECT_DIR$/model/Strategy.py" />
+        <option value="$PROJECT_DIR$/util/tmp.txt" />
+        <option value="$PROJECT_DIR$/util/base_method.py" />
+        <option value="$PROJECT_DIR$/tmp/tmp_dolp_mndp_label" />
+        <option value="$PROJECT_DIR$/res/case_study_F_argmax_1.txt" />
+        <option value="$PROJECT_DIR$/tmp/test.csv" />
         <option value="$PROJECT_DIR$/model/conf.py" />
+        <option value="$PROJECT_DIR$/util/read_data.py" />
+        <option value="$PROJECT_DIR$/model/MNDPEM_model.py" />
+        <option value="$PROJECT_DIR$/tmp/test.txt" />
+        <option value="$PROJECT_DIR$/tmp/tmp.py" />
+        <option value="$PROJECT_DIR$/model/Strategy.py" />
+        <option value="$PROJECT_DIR$/util/draw_graph.py" />
       </list>
     </option>
   </component>
@@ -261,11 +293,27 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ToolWindowPython Console.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/software/Tools/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings>
+        <option name="useSoftWraps" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ProjectAll\PycharmProjects\MNDPEM\dataset\complete_network\known_" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ProjectAll\PycharmProjects\MNDPEM\tmp" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -279,7 +327,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Strategy">
+  <component name="RunManager" selected="Python.draw_graph">
     <configuration name="Strategy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -321,6 +369,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="conf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MNDPEM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/conf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="draw_graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -332,28 +402,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/draw_graph.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MNDPEM" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -384,18 +432,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tmp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MNDPEM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tmp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tmp/tmp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Strategy" />
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.read_data" />
       <item itemvalue="Python.draw_graph" />
+      <item itemvalue="Python.tmp" />
+      <item itemvalue="Python.conf" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Strategy" />
         <item itemvalue="Python.draw_graph" />
+        <item itemvalue="Python.Strategy" />
+        <item itemvalue="Python.tmp" />
+        <item itemvalue="Python.conf" />
         <item itemvalue="Python.read_data" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -424,43 +493,206 @@
       <option name="project" value="LOCAL" />
       <updated>1608472615028</updated>
     </task>
-    <task id="LOCAL-00003" summary="case study polbook">
-      <created>1609638803349</created>
+    <task id="LOCAL-00003" summary="the result into csv file">
+      <created>1608626542537</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1609638803349</updated>
+      <updated>1608626542537</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="the result into csv file">
+      <created>1608637696879</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608637696879</updated>
+    </task>
+    <task id="LOCAL-00005" summary="adding Experiment_unknown_network">
+      <created>1608656299609</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608656299609</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add the known network results of csv">
+      <created>1608656702590</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608656702590</updated>
+    </task>
+    <task id="LOCAL-00007" summary="introduction case Figure">
+      <created>1608832699617</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608832699617</updated>
+    </task>
+    <task id="LOCAL-00008" summary="intro case graph">
+      <created>1609078963864</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609078963865</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adding case study about pol_book. v1">
+      <created>1609261835541</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609261835541</updated>
+    </task>
+    <task id="LOCAL-00010" summary="the case study">
+      <created>1609314600237</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609314600237</updated>
+    </task>
+    <task id="LOCAL-00011" summary="the case study">
+      <created>1609339800368</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1609339800368</updated>
+    </task>
+    <task id="LOCAL-00012" summary="modify experiment on known network">
+      <created>1609341583696</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1609341583696</updated>
+    </task>
+    <task id="LOCAL-00013" summary="res2csv -&gt; mode = 'a'">
+      <created>1609348893825</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1609348893825</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Experiment_unknown_network -&gt; add np.random.seed">
+      <created>1609350418433</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1609350418433</updated>
+    </task>
+    <task id="LOCAL-00015" summary="no index res">
+      <created>1609350550877</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1609350550877</updated>
+    </task>
+    <task id="LOCAL-00016" summary="the result into csv file">
+      <created>1609375922801</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1609375922801</updated>
+    </task>
+    <task id="LOCAL-00017" summary="lower the number of output files">
+      <created>1609376448979</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1609376448979</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add config for link and node-label color">
+      <created>1609395182708</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1609395182708</updated>
+    </task>
+    <task id="LOCAL-00019" summary="modify the way of painting color">
+      <created>1609395235986</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1609395235986</updated>
+    </task>
+    <task id="LOCAL-00020" summary="modify Experiment_intro_case">
+      <created>1609397706188</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1609397706188</updated>
+    </task>
+    <task id="LOCAL-00021" summary="modify Experiment_intro_case">
+      <created>1609397935872</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1609397935872</updated>
+    </task>
+    <task id="LOCAL-00022" summary="modify Experiment_intro_case">
+      <created>1609398088177</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1609398088177</updated>
+    </task>
+    <task id="LOCAL-00023" summary="modify Experiment_intro_case">
+      <created>1609398596421</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1609398596421</updated>
+    </task>
+    <task id="LOCAL-00024" summary="paint edge and node">
+      <created>1609604828389</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1609604828389</updated>
+    </task>
+    <task id="LOCAL-00025" summary="adding polbook display">
+      <created>1609604953482</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1609604953482</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27882037" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49308756" visible="true" weight="0.27882037" />
+      <window_info id="Structure" order="1" sideWeight="0.50691247" side_tool="true" weight="0.27882037" />
+      <window_info id="Favorites" order="2" sideWeight="0.50691247" side_tool="true" weight="0.27882037" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299566" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39942113" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.32850942" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299566" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.11595174" side_tool="true" weight="0.42547032" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" weight="0.329927" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.8840483" weight="0.8480463" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.113270774" side_tool="true" weight="0.42547032" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" weight="0.32850942" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.88672924" weight="0.6859624" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.7211796" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.4992764" type="SLIDING" weight="0.47050938" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.3297587" />
-      <window_info anchor="right" id="R Packages" order="5" weight="0.3297587" />
-      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="6" side_tool="true" weight="0.24396783" />
+      <window_info anchor="right" id="R Packages" order="5" weight="0.2386059" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="6" sideWeight="0.5007236" side_tool="true" weight="0.72922254" />
       <window_info anchor="right" id="Database" order="7" />
     </layout>
     <layout-to-restore>
@@ -517,95 +749,230 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding 0%, 5% missing  ratio into example" />
     <MESSAGE value="modify display and return nmi ari pur from train" />
-    <MESSAGE value="case study polbook" />
-    <option name="LAST_COMMIT_MESSAGE" value="case study polbook" />
+    <MESSAGE value="adding Experiment_unknown_network" />
+    <MESSAGE value="add the known network results of csv" />
+    <MESSAGE value="introduction case Figure" />
+    <MESSAGE value="intro case graph" />
+    <MESSAGE value="adding case study about pol_book. v1" />
+    <MESSAGE value="the case study" />
+    <MESSAGE value="modify experiment on known network" />
+    <MESSAGE value="res2csv -&gt; mode = 'a'" />
+    <MESSAGE value="Experiment_unknown_network -&gt; add np.random.seed" />
+    <MESSAGE value="no index res" />
+    <MESSAGE value="the result into csv file" />
+    <MESSAGE value="lower the number of output files" />
+    <MESSAGE value="add config for link and node-label color" />
+    <MESSAGE value="modify the way of painting color" />
+    <MESSAGE value="modify Experiment_intro_case" />
+    <MESSAGE value="paint edge and node" />
+    <MESSAGE value="adding polbook display" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding polbook display" />
   </component>
   <component name="WindowStateProjectService">
     <state x="697" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" />
     <state x="697" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/util/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_10.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_11.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_12.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_14.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_15.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_16.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_17.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_18.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_20.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_21.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_22.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_23.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_24.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_25.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_26.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_27.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_29.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_28.csv" />
+    <entry file="file://$PROJECT_DIR$/res/case_study_dolphin_4.png" />
+    <entry file="file://D:/software/Tools/Miniconda/envs/gluon3/Lib/site-packages/networkx/drawing/nx_pylab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="130" column="4" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Tools/Miniconda/envs/gluon3/Lib/site-packages/networkx/classes/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="1019" column="8" selection-start-line="1019" selection-start-column="8" selection-end-line="1019" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/method/community_detection/MNDP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/MNDPEM_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="160" column="17" lean-forward="true" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/train_byLouvain.csv" />
-    <entry file="file://$PROJECT_DIR$/res/train_byMNDPEM.csv" />
-    <entry file="file://$PROJECT_DIR$/res/train_byMNDP_Missing.csv" />
-    <entry file="file://$PROJECT_DIR$/res/train_byDANMF.csv" />
-    <entry file="file://$PROJECT_DIR$/util/read_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-840">
-          <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+        <state relative-caret-position="252">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/base_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/res/case_study_dolph.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/draw_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1548">
-          <caret line="323" column="33" lean-forward="true" selection-start-line="323" selection-start-column="33" selection-end-line="323" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/case_study_metrics.csv">
+    <entry file="file://$PROJECT_DIR$/res/dolphins_byMNDP.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="144">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/MNDPEM_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_F_argmax.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/753301100/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="3754" column="6" selection-start-line="3754" selection-start-column="6" selection-end-line="3754" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/tmp_dolp_mndp_label">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/tmp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/tmp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/read_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_8.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_24.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_21.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_25.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_26.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_27.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_metrics.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/case_study_polbook_0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/base_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/Strategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        <state relative-caret-position="208">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
           <folding>
             <element signature="e#0#62#0" expanded="true" />
-            <element signature="e#7174#8525#0" />
-            <element signature="e#8593#9679#0" />
-            <marker date="1609643440696" expanded="true" signature="7315:9274" ph="..." />
-            <marker date="1609643440696" expanded="true" signature="10687:11845" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/draw_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="437" column="4" selection-start-line="437" selection-start-column="4" selection-end-line="437" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <marker date="1609655780160" expanded="true" signature="21601:21608" ph="..." />
           </folding>
         </state>
       </provider>

@@ -7,9 +7,12 @@
       <w>dataset</w>
       <w>dblp</w>
       <w>gemsec</w>
+      <w>labe</w>
       <w>louvain</w>
       <w>mndp</w>
+      <w>mndpem</w>
       <w>polblogs</w>
+      <w>polbooks</w>
     </words>
   </dictionary>
 </component>
