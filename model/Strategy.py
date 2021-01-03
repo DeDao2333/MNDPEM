@@ -198,14 +198,14 @@ class Strategy(object):
         g_ori = data['graph_real']
         true_labels = data['labels']
         g_ori_painted = cls.paint_color(g_ori, g_ori, [], true_labels)
-        Draw.draw_karate(g_ori_painted, labels=true_labels, fig_title='karate club network with ground trues')
+        Draw.draw_karate(g_ori_painted, labels=true_labels, fig_title='A. karate club network with ground trues')
 
         if mode != 1:
             del_edges = [(0, 6), (0, 8), (1, 7), (1, 17), (1, 30), (2, 3), (2, 32), (29, 33)]
             g_obs = g_ori.copy()
             g_obs.remove_edges_from(del_edges)
             g_painted = cls.paint_color(g_obs, g_obs, del_edges, true_labels)
-            Draw.draw_karate(g_painted, true_labels, fig_title='Karate network with 10% missing edges')
+            Draw.draw_karate(g_painted, true_labels, fig_title='B. Karate network with 10% missing edges')
 
             # CLMC on 10% edges removed network
             # link prediction
@@ -219,8 +219,8 @@ class Strategy(object):
             clmc_g_res = g_obs.copy()
             clmc_g_res.add_edges_from([(1, 7), (29, 33), (1, 17), (10, 16)])
             clmc_g_painted = cls.paint_color(g_obs, clmc_g_res, del_edges, clmc_labels)
-            clmc_g_painted.nodes[2]['color'] = CONF.NODE_LABELs[-1]
-            Draw.draw_karate(clmc_g_painted, clmc_labels, 'CLMC on missing-edges network')
+            # clmc_g_painted.nodes[2]['color'] = CONF.NODE_LABELs[-1]
+            Draw.draw_karate(clmc_g_painted, clmc_labels, 'C. CLMC on missing-edges network')
 
             # MNDPEM
             predicted_edges = [(0, 33), (2, 3), (13, 12)]
@@ -231,7 +231,7 @@ class Strategy(object):
                 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
             ]
             em_g_painted = cls.paint_color(g_obs, em_g, del_edges, em_labels)
-            Draw.draw_karate(em_g_painted, em_labels, 'Our model on missing-edges network')
+            Draw.draw_karate(em_g_painted, em_labels, 'D. Our model on missing-edges network')
 
     @classmethod
     def Experiment_known_network(cls):
@@ -323,7 +323,7 @@ class Strategy(object):
 
     @classmethod
     def Experiment_case_study(cls, network, draw_network, epoch=1):
-        data = cls.prepare_data(network, missing_rate=0.2)
+        data = cls.prepare_data(network, missing_rate=0.0)
         observe_graph = data['observe_graph']
         del_edges = data['del_edges']
         res = cls.train_byMNDPEM(data, num_EM_iter=23)
@@ -380,5 +380,6 @@ def main_intro_case():
 
 if __name__ == '__main__':
     # main_case_study()
-    main_case_study()
+    # main_case_study()
     # main_test_nothing()
+    main_intro_case()
