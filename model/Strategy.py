@@ -20,10 +20,10 @@ class Strategy(object):
         pass
 
     @staticmethod
-    def prepare_data(read_data, missing_rate=0.2):
+    def prepare_data(read_data, missing_rate=0.2, del_list=None):
         res: dict = read_data()
         # 删除一定比例的边数，得到观测图
-        observe_graph, test_edges = tools.get_train_test(res['graph_real'], missing_rate)
+        observe_graph, test_edges = tools.get_train_test(res['graph_real'], missing_rate, del_list)
         num_del_edges = len(test_edges)
 
         # 在删除一定比例边后，得到 Z 区域所有可能边列表
@@ -93,7 +93,7 @@ class Strategy(object):
             assert False, "Not right index"
 
     @staticmethod
-    def train_byMNDPEM(data, num_EM_iter=15):
+    def train_byMNDPEM(data, num_EM_iter=15, alpha=0.5):
         print('===========  Method:  MNDPEM  ===============')
         C = data['C']
         N = data['N']
@@ -106,6 +106,7 @@ class Strategy(object):
         our_method = MNDPEM_model(N, C)
         our_method.train_mode = 2
         our_method.num_EM_iter = num_EM_iter
+        our_method.alpha = alpha
         return our_method.train(ob, labels, Z_noEdge_ori, Z_Edge_ori, num_del_edges, is_unknown)
 
     @classmethod
@@ -198,14 +199,14 @@ class Strategy(object):
         g_ori = data['graph_real']
         true_labels = data['labels']
         g_ori_painted = cls.paint_color(g_ori, g_ori, [], true_labels)
-        Draw.draw_karate(g_ori_painted, labels=true_labels, fig_title='A. karate club network with ground trues')
+        Draw.draw_karate(g_ori_painted, labels=true_labels, fig_title='karate club network with ground trues')
 
         if mode != 1:
             del_edges = [(0, 6), (0, 8), (1, 7), (1, 17), (1, 30), (2, 3), (2, 32), (29, 33)]
             g_obs = g_ori.copy()
             g_obs.remove_edges_from(del_edges)
             g_painted = cls.paint_color(g_obs, g_obs, del_edges, true_labels)
-            Draw.draw_karate(g_painted, true_labels, fig_title='B. Karate network with 10% missing edges')
+            Draw.draw_karate(g_painted, true_labels, fig_title='Karate network with 10% missing edges')
 
             # CLMC on 10% edges removed network
             # link prediction
@@ -217,10 +218,10 @@ class Strategy(object):
                 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
             ]
             clmc_g_res = g_obs.copy()
-            clmc_g_res.add_edges_from([(1, 7), (29, 33), (1, 17), (10, 16)])
+            clmc_g_res.add_edges_from([(1, 7), (29, 33), (1, 17), ])
             clmc_g_painted = cls.paint_color(g_obs, clmc_g_res, del_edges, clmc_labels)
             # clmc_g_painted.nodes[2]['color'] = CONF.NODE_LABELs[-1]
-            Draw.draw_karate(clmc_g_painted, clmc_labels, 'C. CLMC on missing-edges network')
+            Draw.draw_karate(clmc_g_painted, clmc_labels, 'A. CLMC on missing-edges network')
 
             # MNDPEM
             predicted_edges = [(0, 33), (2, 3), (13, 12)]
@@ -231,7 +232,7 @@ class Strategy(object):
                 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
             ]
             em_g_painted = cls.paint_color(g_obs, em_g, del_edges, em_labels)
-            Draw.draw_karate(em_g_painted, em_labels, 'D. Our model on missing-edges network')
+            Draw.draw_karate(em_g_painted, em_labels, 'B. Our model on missing-edges network')
 
     @classmethod
     def Experiment_known_network(cls):
@@ -322,15 +323,17 @@ class Strategy(object):
         cls.train_byMNDP_Missing(data)
 
     @classmethod
-    def Experiment_case_study(cls, network, draw_network, epoch=1):
-        data = cls.prepare_data(network, missing_rate=0.0)
+    def Experiment_case_study(cls, method, network, draw_network, epoch=1):
+        import tmp.deal_data as deal_data
+        clmc_del_edges_polbook = deal_data.read_del_edges_CLMC(path='../tmp/case_study/clmc_del_edges_polbook.txt')
+        data = cls.prepare_data(network, missing_rate=0.0, del_list=clmc_del_edges_polbook)
         observe_graph = data['observe_graph']
         del_edges = data['del_edges']
-        res = cls.train_byMNDPEM(data, num_EM_iter=23)
+        res = method(data)
         # cls.res2csv(res, '../res/case_study_' + str(epoch) +'.csv')
         F_argmax = res['F_argmax']
         with open('../res/case_study_metrics.csv', 'a') as f:
-            f.write(f'{epoch} {res["nmi"][-1]} {res["ari"][-1]} {res["pur"][-1]}\n')
+            f.write(f'{epoch} {res["nmi"]}\n')
         with open(f'../res/case_study_F_argmax.txt', 'a') as f:
             f.write(f'{epoch}-----------\n')
             f.write(str(F_argmax))
@@ -359,6 +362,7 @@ def main_case_study():
         os.remove('../res/case_study_F_argmax.txt')
     for i in range(30):
         stg_model.Experiment_case_study(
+            method=lambda data: stg_model.train_byMNDPEM(data, num_EM_iter=20),
             network=Read.read_polbooks,
             draw_network=Draw.display_polbooks, epoch=i)
 

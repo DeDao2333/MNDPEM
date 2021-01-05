@@ -53,18 +53,18 @@ def display_result(F_argmax, target):
     return nmi, ari, pur, F_argmax  # , f1_macro, f1_micro
 
 
-def get_train_test(graph: nx.Graph, fraction: float = 0.2) -> (np.ndarray, list):
-    b = list(graph.edges)
-    if fraction == 0:
-        return graph, []
-    num_del = int(len(b) * fraction)
-    # 随机删除原图中的边，按照比例
-    del_edges_index = np.random.choice([i for i in range(len(b))], size=num_del, replace=False)
+def get_train_test(graph: nx.Graph, fraction: float = 0.2, del_list: list=None) -> (np.ndarray, list):
+    if del_list is None:
+        b = list(graph.edges)
+        if fraction == 0:
+            return graph, []
+        num_del = int(len(b) * fraction)
+        # 随机删除原图中的边，按照比例
+        del_edges_index = np.random.choice([i for i in range(len(b))], size=num_del, replace=False)
 
-    del_list = []
-    for i in del_edges_index:
-        del_list.append(b[i])
-
+        del_list = []
+        for i in del_edges_index:
+            del_list.append(b[i])
     observe_graph = graph.copy()  # 提前 copy，为了让 obs 里面保持着原图中所有结点，只是边缺失而已
     observe_graph.remove_edges_from(del_list)  # 此时虽然删除了些边，但是即使结点孤立，也保存在图中
 
