@@ -3,6 +3,7 @@ import networkx as nx
 from numpy.core._multiarray_umath import array
 from util import read_data as Read
 from model import conf as CONF
+from conf import draw_graph_karate as conf_draw_karate
 
 
 def get_color(labels):
@@ -129,7 +130,7 @@ def display_rate_polblogs():
 
 
 def _draw_network(g, labels, pos, save_path, show, fig_title):
-    plt.figure(figsize=(6, 8))
+    plt.figure(figsize=(10, 12))
 
     nodes_colors = []
     for i in g.nodes():

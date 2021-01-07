@@ -46,6 +46,14 @@ class Strategy(object):
 
     @classmethod
     def paint_color(cls, g_observe_: nx.Graph, g_predicted: nx.Graph, test_edges: list, label: list) -> nx.Graph:
+        """
+        paint color for node label, edges.
+        :param g_observe_: observe graph
+        :param g_predicted: graph produced from algorithm
+        :param test_edges: deleted edges from real network
+        :param label: label for final graph
+        :return: painted graph
+        """
         g_observe = g_observe_.copy()
         predicted_edges: set = set(g_predicted.edges) - set(g_observe.edges)
         predicted_edges_true: set = predicted_edges & set(test_edges)
@@ -226,7 +234,7 @@ class Strategy(object):
             Draw.draw_karate(clmc_g_painted, clmc_labels, 'A. CLMC on missing-edges network')
 
             # MNDPEM
-            predicted_edges = [(0, 33), (2, 3), (13, 12)]
+            predicted_edges = [(0, 33), (2, 3), (13, 12), (5, 3)]
             em_g = g_obs.copy()
             em_g.add_edges_from(predicted_edges)
             em_labels = [
