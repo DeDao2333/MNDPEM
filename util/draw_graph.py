@@ -164,7 +164,7 @@ def draw_karate(g, labels, fig_title):
     plt.show()
 
 
-def display_dolphins(g=None, labels=None, fig_title=None, isGround_trues=False, epoch=1):
+def display_dolphins(g=None, labels=None, fig_title=None, show=True, save_path='dolphins.png'):
     pos = {0: array([-0.12335322, -0.19201138]), 1: array([0.17485701, 0.35671631]),
            2: array([0.07919733, -0.38996203]),
            3: array([-0.25453724, -0.14257345]), 4: array([-0.70788629, -0.39261314]),
@@ -205,25 +205,19 @@ def display_dolphins(g=None, labels=None, fig_title=None, isGround_trues=False, 
            59: array([-0.27251882, -0.03056126]),
            60: array([0.80375535, 0.85400456]), 61: array([-0.02194624, -0.57202305])}
 
-    if isGround_trues:
-        data = Read.read_dolphins()
-        g = data['graph_real']
-        labels = data['labels']
-        fig_title = 'Dolphins with ground trues'
-        edges_colors = ['#5E5E5E' for _ in range(len(g.edges))]
-    else:
-        edges_colors = []
-        for i, j in g.edges():
-            edges_colors.append(g.edges[i, j]['color'])
-
     nodes_colors = []
     for i in g.nodes():
-        nodes_colors.append(g.nodes[i]['color'])
+        nodes_colors.append(g.nodes[i].get('color', CONF.NODE_LABELs[labels[i]]))
+    edges_colors = []
+    for i, j in g.edges():
+        edges_colors.append(g.edges[i, j].get('color', CONF.LINK_COLORs['exist']))
 
     nx.draw_networkx(g, pos=pos, node_color=nodes_colors, edge_color=edges_colors,
                      node_size=150, font_size=8, linewidths=0.7)
     plt.title(fig_title, fontsize=14)
-    plt.savefig('../res/case_study_dolphin_' + str(epoch) + '.png')
+    plt.savefig(save_path)
+    if show:
+        plt.show()
 
 
 def display_polbooks(g, labels, fig_title='', epoch=1, show=False):
@@ -287,7 +281,7 @@ def display_polbooks(g, labels, fig_title='', epoch=1, show=False):
         edges_colors.append(g.edges[i, j].get('color', CONF.LINK_COLORs['exist']))
 
     nx.draw_networkx(g, pos=pos, node_color=nodes_colors, edge_color=edges_colors,
-                     node_size=100, font_size=6, linewidths=0.5)
+                     node_size=80, font_size=6, linewidths=0.1)
     plt.title(fig_title, fontsize=14)
     plt.savefig('../res/case_study_polbook_' + str(epoch) + '.png')
     if show:

@@ -15,6 +15,7 @@ from karateclub.community_detection.non_overlapping import GEMSEC, EdMot
 import model.conf as CONF
 
 
+
 class Strategy(object):
     def __init__(self):
         pass
@@ -44,9 +45,9 @@ class Strategy(object):
         return res
 
     @classmethod
-    def paint_color(cls, g_observe_: nx.Graph, g_res: nx.Graph, test_edges: list, label: list) -> nx.Graph:
+    def paint_color(cls, g_observe_: nx.Graph, g_predicted: nx.Graph, test_edges: list, label: list) -> nx.Graph:
         g_observe = g_observe_.copy()
-        predicted_edges: set = set(g_res.edges) - set(g_observe.edges)
+        predicted_edges: set = set(g_predicted.edges) - set(g_observe.edges)
         predicted_edges_true: set = predicted_edges & set(test_edges)
         predicted_edges_wrong: set = predicted_edges - set(test_edges)
         g_observe.add_edges_from(test_edges)
@@ -59,6 +60,7 @@ class Strategy(object):
             g_observe.edges[i, j]['color'] = CONF.LINK_COLORs['predict_true']
         for i, j in predicted_edges_wrong:
             g_observe.edges[i, j]['color'] = CONF.LINK_COLORs['predict_wrong']
+        print(f'nodes: {g_observe.nodes}')
         for i in g_observe.nodes:
             g_observe.nodes[i]['color'] = CONF.NODE_LABELs[label[i]]
         return g_observe
@@ -324,16 +326,17 @@ class Strategy(object):
 
     @classmethod
     def Experiment_case_study(cls, method, network, draw_network, epoch=1):
-        import tmp.deal_data as deal_data
-        clmc_del_edges_polbook = deal_data.read_del_edges_CLMC(path='../tmp/case_study/clmc_del_edges_polbook.txt')
-        data = cls.prepare_data(network, missing_rate=0.0, del_list=clmc_del_edges_polbook)
+        from Experiment_case_study import case_study
+        clmc_del_edges = case_study.read_del_edges_CLMC_dolph()
+        data = cls.prepare_data(network, missing_rate=0.0, del_list=clmc_del_edges)
         observe_graph = data['observe_graph']
         del_edges = data['del_edges']
+        print(f'del_edges: {del_edges}')
         res = method(data)
         # cls.res2csv(res, '../res/case_study_' + str(epoch) +'.csv')
         F_argmax = res['F_argmax']
         with open('../res/case_study_metrics.csv', 'a') as f:
-            f.write(f'{epoch} {res["nmi"]}\n')
+            f.write(f'{epoch} {res["nmi"][-1]}\n')
         with open(f'../res/case_study_F_argmax.txt', 'a') as f:
             f.write(f'{epoch}-----------\n')
             f.write(str(F_argmax))
@@ -342,7 +345,7 @@ class Strategy(object):
             f.write('\n')
         g_res = res['graph_res']
         res_g_painted = cls.paint_color(observe_graph, g_res, del_edges, F_argmax)
-        draw_network(res_g_painted, F_argmax, fig_title='Our model', epoch=epoch)
+        draw_network(res_g_painted, F_argmax, fig_title='Our model', save_path=f'../res/case_study_{epoch}.png')
 
 
 def main(stg_model):
@@ -362,9 +365,9 @@ def main_case_study():
         os.remove('../res/case_study_F_argmax.txt')
     for i in range(30):
         stg_model.Experiment_case_study(
-            method=lambda data: stg_model.train_byMNDPEM(data, num_EM_iter=20),
-            network=Read.read_polbooks,
-            draw_network=Draw.display_polbooks, epoch=i)
+            method=lambda data: stg_model.train_byMNDPEM(data, num_EM_iter=20, alpha=0.4),
+            network=Read.read_dolphins,
+            draw_network=Draw.display_dolphins, epoch=i)
 
 
 def main_test_nothing():

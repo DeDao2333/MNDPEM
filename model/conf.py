@@ -1,7 +1,8 @@
 
 LINK_COLORs = {
     'exist': '#BFBFBF',  # grey
-    'removed': '#1C86EE',  # blue
+    # 'removed': '#90B9F7',  # blue
+    'removed': '#F0BF76',  # yellow
     'predict_true': '#00CD66',  # green
     'predict_wrong': '#CD3700'  # red
 }
