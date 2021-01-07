@@ -128,7 +128,25 @@ def display_rate_polblogs():
     plt.show()
 
 
-def draw_karate(g, labels, fig_title):
+def _draw_network(g, labels, pos, save_path, show, fig_title):
+    plt.figure(figsize=(6, 8))
+
+    nodes_colors = []
+    for i in g.nodes():
+        nodes_colors.append(g.nodes[i].get('color', CONF.NODE_LABELs[labels[i]]))
+    edges_colors = []
+    for i, j in g.edges():
+        edges_colors.append(g.edges[i, j].get('color', CONF.LINK_COLORs['exist']))
+
+    nx.draw_networkx(g, pos=pos, node_color=nodes_colors, edge_color=edges_colors,
+                     node_size=150, font_size=8, linewidths=0.7)
+    plt.title(fig_title, fontsize=14)
+    plt.savefig(save_path)
+    if show:
+        plt.show()
+
+
+def draw_karate(g, labels, fig_title, save_path='./res/karate.png', show=True):
     pos = {0: array([0.04035086, -0.35842333]), 1: array([0.23988347, -0.23390369]), 2: array([-0.0759524, 0.08270998]),
            3: array([0.17775027, -0.36712044]), 4: array([-0.18152543, -0.59496255]),
            5: array([-0.01425569, -0.75517756]),
@@ -149,19 +167,7 @@ def draw_karate(g, labels, fig_title):
            30: array([0.1536715, 0.14563396]), 31: array([-0.16937923, -0.03755861]),
            32: array([-0.10773608, 0.41913559]), 33: array([0.02822436, 0.25828881])}
 
-    plt.figure(figsize=(6, 8))
-
-    edges_colors = []
-    for i, j in g.edges():
-        edges_colors.append(g.edges[i, j]['color'])
-
-    nodes_colors = []
-    for i in g.nodes:
-        nodes_colors.append(g.nodes[i]['color'])
-    print(g.nodes[2])
-    nx.draw_networkx(g, pos=pos, node_color=nodes_colors, edge_color=edges_colors, width=1.7)
-    plt.title(fig_title, fontsize=14)
-    plt.show()
+    _draw_network(g, labels, pos=pos, save_path=save_path, show=show, fig_title=fig_title)
 
 
 def display_dolphins(g=None, labels=None, fig_title=None, show=True, save_path='dolphins.png'):
@@ -205,22 +211,10 @@ def display_dolphins(g=None, labels=None, fig_title=None, show=True, save_path='
            59: array([-0.27251882, -0.03056126]),
            60: array([0.80375535, 0.85400456]), 61: array([-0.02194624, -0.57202305])}
 
-    nodes_colors = []
-    for i in g.nodes():
-        nodes_colors.append(g.nodes[i].get('color', CONF.NODE_LABELs[labels[i]]))
-    edges_colors = []
-    for i, j in g.edges():
-        edges_colors.append(g.edges[i, j].get('color', CONF.LINK_COLORs['exist']))
-
-    nx.draw_networkx(g, pos=pos, node_color=nodes_colors, edge_color=edges_colors,
-                     node_size=150, font_size=8, linewidths=0.7)
-    plt.title(fig_title, fontsize=14)
-    plt.savefig(save_path)
-    if show:
-        plt.show()
+    _draw_network(g, labels, pos=pos, save_path=save_path, show=show, fig_title=fig_title)
 
 
-def display_polbooks(g, labels, fig_title='', epoch=1, show=False):
+def display_polbooks(g, labels, fig_title='', save_path='polbooks.png', show=False):
     pos = {0: array([0.38105335, -0.04789597]), 1: array([0.48557336, -0.13198612]), 2: array([0.29272891, 0.10509224]),
            3: array([0.32684054, -0.36087755]), 4: array([0.12964891, 0.09694291]), 5: array([0.30269775, -0.04423845]),
            6: array([0.32402415, -0.18215034]), 7: array([0.02382017, 0.05722355]), 8: array([0.26116179, -0.51759482]),
@@ -273,19 +267,7 @@ def display_polbooks(g, labels, fig_title='', epoch=1, show=False):
            102: array([0.17066203, 0.3562595]), 103: array([-0.84484736, 0.13228666]),
            104: array([-0.7446404, 0.02881975])}
 
-    nodes_colors = []
-    for i in g.nodes():
-        nodes_colors.append(g.nodes[i].get('color', CONF.NODE_LABELs[labels[i]]))
-    edges_colors = []
-    for i, j in g.edges():
-        edges_colors.append(g.edges[i, j].get('color', CONF.LINK_COLORs['exist']))
-
-    nx.draw_networkx(g, pos=pos, node_color=nodes_colors, edge_color=edges_colors,
-                     node_size=80, font_size=6, linewidths=0.1)
-    plt.title(fig_title, fontsize=14)
-    plt.savefig('../res/case_study_polbook_' + str(epoch) + '.png')
-    if show:
-        plt.show()
+    _draw_network(g, labels, pos=pos, save_path=save_path, show=show, fig_title=fig_title)
 
 
 def draw_simple_graph(graph, labels):
@@ -434,6 +416,7 @@ def main_case_study_display1():
 
 
 def main_case_study_mndp():
+    a = []
     pass
 
 
