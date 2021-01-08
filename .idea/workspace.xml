@@ -19,15 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a52f5019-3a01-466b-bb7a-cf458ad57044" name="Default Changelist" comment="package the method of drawing network">
-      <change afterPath="$PROJECT_DIR$/Experiment_intro_case/karate_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/draw_graph_dolph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MNDPEM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MNDPEM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a52f5019-3a01-466b-bb7a-cf458ad57044" name="Default Changelist" comment="change the way of displaying case study graph">
+      <change afterPath="$PROJECT_DIR$/dataset/complete_network/known_/Pubmed_rlabels.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/complete_network/known_/pubmed.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/complete_network/known_/pubmed_labels.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiment_case_study/dolph_case_study.py" beforeDir="false" afterPath="$PROJECT_DIR$/Experiment_case_study/dolph_case_study.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Strategy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/draw_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/draw_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/read_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/read_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,25 +60,23 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/software/Tools/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dataset/complete_network/known_" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dataset/complete_network/known_" />
       <recent name="E:\ProjectAll\PycharmProjects\MNDPEM\Experiment_case_study\data" />
       <recent name="E:\ProjectAll\PycharmProjects\MNDPEM\tmp\case_study" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dolph_case_study">
+  <component name="RunManager" selected="Python.Strategy">
     <configuration name="Strategy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -177,6 +174,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="read_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MNDPEM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/read_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -196,43 +212,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tmp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MNDPEM" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tmp" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tmp/tmp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.dolph_case_study" />
       <item itemvalue="Python.Strategy" />
-      <item itemvalue="Python.tmp" />
       <item itemvalue="Python.case_study" />
       <item itemvalue="Python.karate_case" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.read_data" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Strategy" />
+        <item itemvalue="Python.read_data" />
         <item itemvalue="Python.karate_case" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.case_study" />
-        <item itemvalue="Python.Strategy" />
-        <item itemvalue="Python.tmp" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610012428411</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change the way of displaying case study graph">
+      <created>1610032518115</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610032518115</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -294,9 +295,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="case study using polbook" />
     <MESSAGE value="package the method of drawing network" />
-    <option name="LAST_COMMIT_MESSAGE" value="package the method of drawing network" />
+    <MESSAGE value="change the way of displaying case study graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="change the way of displaying case study graph" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="585" y="341" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610079873227">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state x="585" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1792.1038@0.25.1792.1038" timestamp="1610079873227" />
+    <state x="180" y="115" key="DiffContextDialog" timestamp="1610032530635">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state x="180" y="115" key="DiffContextDialog/0.25.1792.1038@0.25.1792.1038" timestamp="1610032530635" />
+    <state x="496" y="277" key="Vcs.Push.Dialog.v2" timestamp="1610032532585">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state x="496" y="277" key="Vcs.Push.Dialog.v2/0.25.1792.1038@0.25.1792.1038" timestamp="1610032532585" />
     <state x="561" y="255" width="670" height="676" key="search.everywhere.popup" timestamp="1610014105136">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>

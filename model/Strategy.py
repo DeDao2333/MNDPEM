@@ -15,7 +15,6 @@ from karateclub.community_detection.non_overlapping import GEMSEC, EdMot
 import model.conf as CONF
 
 
-
 class Strategy(object):
     def __init__(self):
         pass
@@ -393,7 +392,14 @@ def main_intro_case():
     Strategy.Experiment_intro_case(mode=2)
 
 
+def main_test():
+    data = Strategy.prepare_data(Read.read_pubmed)
+    res = Strategy.train_byLouvain(data)
+    print(res['nmi'])
+
+
 if __name__ == '__main__':
-    main_case_study()
+    # main_case_study()
     # main_test_nothing()
     # main_intro_case()
+    main_test()

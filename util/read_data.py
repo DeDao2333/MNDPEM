@@ -110,6 +110,38 @@ def read_wisconsin():
     return res
 
 
+def read_pubmed():
+    print("Dataset : pubmed ---------------------------------------------")
+    with open(pre_path_com_known + 'pubmed' + '.txt', 'r') as file:
+        lines = file.readlines()
+        new_lines = []
+        for line in lines:
+            line = line.split('\t')
+            new_line = [int(line[0]), int(line[1].split('\n')[0])]
+            new_lines.append(new_line)
+        # print(new_lines)
+    res_ = np.array(new_lines)
+    pd_res = pd.DataFrame(res_)
+    g = nx.from_pandas_edgelist(pd_res, 1, 0)
+    g.add_nodes_from([i for i in range(1, max(g.nodes) + 1)])  # 因为这里的点有的是孤立的，没在edge列表里，所以需要将缺失的孤立点补全
+    B = nx.to_numpy_array(g, nodelist=sorted(g.nodes))
+    g = nx.from_numpy_array(B)
+
+    with open(pre_path_com_known + 'pubmed_labels.txt', 'r') as f:
+        line = f.readline()
+        line = line[1:-1].split(',')
+        labels = list(map(int, line))
+
+    is_unknown = False
+    res = dict()
+    res['graph_real'] = g
+    res['adj_real'] = B
+    res['labels'] = labels
+    res['is_unknown'] = is_unknown
+    res['num_del_edges'] = 100
+    return res
+
+
 def _read_txt_graph(name):
     with open(pre_path_com_known + name + '.txt', 'r') as file:
         lines = file.readlines()

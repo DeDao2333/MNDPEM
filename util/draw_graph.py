@@ -3,7 +3,6 @@ import networkx as nx
 from numpy.core._multiarray_umath import array
 from util import read_data as Read
 from model import conf as CONF
-from conf import draw_graph_karate as conf_draw_karate
 
 
 def get_color(labels):
