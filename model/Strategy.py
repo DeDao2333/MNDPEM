@@ -1,4 +1,8 @@
 from karateclub.community_detection.overlapping import BigClam
+import os, sys
+
+sys.path.append(os.path.abspath('..'))
+
 import numpy as np
 import pandas as pd
 import networkx as nx
