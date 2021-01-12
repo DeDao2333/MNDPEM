@@ -125,8 +125,8 @@ class Strategy(object):
         observe_graph = data['observe_graph']
         labels = data['labels']
         is_unknown = data['is_unknown']
-        # F_ = MNDP.MNDP_EM(observe_graph, C, epoch=16)
-        prob, F_ = MNDP.MNDP(data['adj_real'], C)
+        F_ = MNDP.MNDP_EM(observe_graph, C, epoch=16)
+        # prob, F_ = MNDP.MNDP(data['adj_real'], C)
         F_argmax = np.argmax(F_, axis=1) + 1
         return cls.res_display(is_unknown, F_argmax, observe_graph, labels)
 
@@ -246,21 +246,20 @@ class Strategy(object):
     @classmethod
     def Experiment_known_network(cls):
         dataset = [
-            Read.read_karate_club,
-            Read.read_dolphins,
-            Read.read_football,
-            Read.read_wisconsin,
+            # Read.read_karate_club,
+            # Read.read_dolphins,
+            # Read.read_football,
             Read.read_polbooks,
-            Read.read_polblogs,
+            # Read.read_polblogs,
         ]
 
         methods = [
-            # cls.train_byMNDP_Missing,
+            cls.train_byMNDP_Missing,
             # cls.train_byDANMF,
             # cls.train_byGEMSEC,
             # cls.train_byLouvain,
             # cls.train_byBigClam,
-            cls.train_byMNDPEM,
+            # cls.train_byMNDPEM,
         ]
 
         for data_ in dataset:
@@ -402,4 +401,4 @@ if __name__ == '__main__':
     # main_case_study()
     # main_test_nothing()
     # main_intro_case()
-    main_test()
+    Strategy.Experiment_known_network()

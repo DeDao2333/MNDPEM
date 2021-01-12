@@ -146,26 +146,30 @@ def _draw_network(g, labels, pos, save_path, show, fig_title):
         plt.show()
 
 
-def draw_karate(g, labels, fig_title, save_path='./res/karate.png', show=True):
-    pos = {0: array([0.04035086, -0.35842333]), 1: array([0.23988347, -0.23390369]), 2: array([-0.0759524, 0.08270998]),
-           3: array([0.17775027, -0.36712044]), 4: array([-0.18152543, -0.59496255]),
-           5: array([-0.01425569, -0.75517756]),
-           6: array([0.10152675, -0.76973825]), 7: array([0.31943218, -0.34824782]), 8: array([0.00369568, 0.05416653]),
-           9: array([-0.21782102, 0.23451488]), 10: array([-0.08396947, -0.64399256]),
-           11: array([-0.25590924, -0.47912845]),
-           12: array([0.16543092, -0.57334954]), 13: array([0.07700945, -0.11461636]),
-           14: array([-0.33162734, 0.69163498]),
-           15: array([-0.08352861, 0.53054236]), 16: array([0.04001051, -1.00]), 17: array([0.26784617, -0.48463474]),
-           18: array([-0.41773533, 0.57434359]), 19: array([0.15999416, -0.04323504]),
-           20: array([0.35045052, 0.37016786]),
-           21: array([0.36654177, -0.43238517]), 22: array([-0.19627026, 0.75827933]),
-           23: array([-0.00512236, 0.59473913]),
-           24: array([-0.39940143, 0.14419955]), 25: array([0.06879779, 0.92014959]),
-           26: array([0.28224878, 0.50139926]),
-           27: array([-0.17682913, 0.32894827]), 28: array([-0.20932184, 0.11379152]),
-           29: array([0.08351973, 0.51382893]),
-           30: array([0.1536715, 0.14563396]), 31: array([-0.16937923, -0.03755861]),
-           32: array([-0.10773608, 0.41913559]), 33: array([0.02822436, 0.25828881])}
+def draw_karate(g, labels, fig_title, save_path='./res/karate.png', show=True, pos=None):
+    if pos is None:
+        pos = {0: array([0.04035086, -0.35842333]), 1: array([0.23988347, -0.23390369]),
+               2: array([-0.0759524, 0.08270998]),
+               3: array([0.17775027, -0.36712044]), 4: array([-0.18152543, -0.59496255]),
+               5: array([-0.01425569, -0.75517756]),
+               6: array([0.10152675, -0.76973825]), 7: array([0.31943218, -0.34824782]),
+               8: array([0.00369568, 0.05416653]),
+               9: array([-0.21782102, 0.23451488]), 10: array([-0.08396947, -0.64399256]),
+               11: array([-0.25590924, -0.47912845]),
+               12: array([0.16543092, -0.57334954]), 13: array([0.07700945, -0.11461636]),
+               14: array([-0.33162734, 0.69163498]),
+               15: array([-0.08352861, 0.53054236]), 16: array([0.04001051, -1.00]),
+               17: array([0.26784617, -0.48463474]),
+               18: array([-0.41773533, 0.57434359]), 19: array([0.15999416, -0.04323504]),
+               20: array([0.35045052, 0.37016786]),
+               21: array([0.36654177, -0.43238517]), 22: array([-0.19627026, 0.75827933]),
+               23: array([-0.00512236, 0.59473913]),
+               24: array([-0.39940143, 0.14419955]), 25: array([0.06879779, 0.92014959]),
+               26: array([0.28224878, 0.50139926]),
+               27: array([-0.17682913, 0.32894827]), 28: array([-0.20932184, 0.11379152]),
+               29: array([0.08351973, 0.51382893]),
+               30: array([0.1536715, 0.14563396]), 31: array([-0.16937923, -0.03755861]),
+               32: array([-0.10773608, 0.41913559]), 33: array([0.02822436, 0.25828881])}
 
     _draw_network(g, labels, pos=pos, save_path=save_path, show=show, fig_title=fig_title)
 
@@ -415,10 +419,33 @@ def main_case_study_display1():
     tools.display_result(F_argmax, data['labels'])
 
 
-def main_case_study_mndp():
-    a = []
-    pass
-
-
 if __name__ == '__main__':
-    data = Read.read_polbooks()
+    # data = Read.read_polbooks()
+    # display_rate_karate()
+    import pandas as pd
+    data = Read.read_karate_club()
+    g = data['graph_real']
+    labels = data['labels']
+
+    pd_input = {'Id': list(g.nodes),
+                'Label': list(g.nodes),
+                'Modularity Class': labels,
+                'Degree': [g.degree(i) for i in g.nodes]}
+    df = pd.DataFrame(pd_input)
+    df.to_csv('karate_node.csv')
+
+    pd_edges_input = {'Source': [],
+                      'Target': [],
+                      'Type': [],
+                      'Kind': [],
+                      'Id': []}
+
+    for i, e in enumerate(g.edges):
+        pd_edges_input['Id'].append(i)
+        pd_edges_input['Source'].append(e[0])
+        pd_edges_input['Target'].append(e[1])
+        pd_edges_input['Type'].append('Undirected')
+        pd_edges_input['Kind'].append('exist')
+    print(pd_edges_input)
+    df_edge = pd.DataFrame(pd_edges_input)
+    df_edge.to_csv('karate_edges.csv')

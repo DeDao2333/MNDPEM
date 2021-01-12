@@ -19,14 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a52f5019-3a01-466b-bb7a-cf458ad57044" name="Default Changelist" comment="change the way of displaying case study graph">
-      <change afterPath="$PROJECT_DIR$/dataset/complete_network/known_/Pubmed_rlabels.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/complete_network/known_/pubmed.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/complete_network/known_/pubmed_labels.txt" afterDir="false" />
+    <list default="true" id="a52f5019-3a01-466b-bb7a-cf458ad57044" name="Default Changelist" comment="add Pubmed dataset">
+      <change afterPath="$PROJECT_DIR$/Experiment_known_label/statistic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiment_intro_case/karate_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/Experiment_intro_case/karate_case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Strategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/karate_byDANMF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byDANMF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/karate_byGEMSEC.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byGEMSEC.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/karate_byLouvain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byLouvain.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/karate_byMNDP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byMNDP.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/polbooks_byMNDP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/polbooks_byMNDP.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/draw_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/draw_graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/read_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/read_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,19 +63,23 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dataset/complete_network/known_" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Experiment_known_label/data" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Experiment_known_label" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Experiment_known_label/data" />
       <recent name="$PROJECT_DIR$/dataset/complete_network/known_" />
       <recent name="E:\ProjectAll\PycharmProjects\MNDPEM\Experiment_case_study\data" />
       <recent name="E:\ProjectAll\PycharmProjects\MNDPEM\tmp\case_study" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Strategy">
+  <component name="RunManager" selected="Python.statistic (1)">
     <configuration name="Strategy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,28 +121,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="case_study" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MNDPEM" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Experiment_case_study" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Experiment_case_study/case_study.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="dolph_case_study" type="PythonConfigurationType" factoryName="Python">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,6 +132,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Experiment_case_study/dolph_case_study.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="draw_graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MNDPEM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/draw_graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,17 +178,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="read_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="statistic (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Experiment_known_unknown_label" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/read_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Experiment_known_unknown_label/statistic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -193,17 +197,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="statistic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Experiment_known_label" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Experiment_known_label/statistic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -215,18 +219,18 @@
     <list>
       <item itemvalue="Python.dolph_case_study" />
       <item itemvalue="Python.Strategy" />
-      <item itemvalue="Python.case_study" />
       <item itemvalue="Python.karate_case" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.read_data" />
+      <item itemvalue="Python.draw_graph" />
+      <item itemvalue="Python.statistic" />
+      <item itemvalue="Python.statistic (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.statistic (1)" />
+        <item itemvalue="Python.draw_graph" />
         <item itemvalue="Python.Strategy" />
-        <item itemvalue="Python.read_data" />
+        <item itemvalue="Python.statistic" />
         <item itemvalue="Python.karate_case" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.case_study" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610032518115</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add Pubmed dataset">
+      <created>1610082527895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610082527896</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -296,7 +307,8 @@
     <MESSAGE value="case study using polbook" />
     <MESSAGE value="package the method of drawing network" />
     <MESSAGE value="change the way of displaying case study graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="change the way of displaying case study graph" />
+    <MESSAGE value="add Pubmed dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Pubmed dataset" />
   </component>
   <component name="WindowStateProjectService">
     <state x="585" y="341" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610079873227">
@@ -307,10 +319,42 @@
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
     <state x="180" y="115" key="DiffContextDialog/0.25.1792.1038@0.25.1792.1038" timestamp="1610032530635" />
-    <state x="496" y="277" key="Vcs.Push.Dialog.v2" timestamp="1610032532585">
+    <state width="1771" height="342" key="GridCell.Tab.0.bottom" timestamp="1610379006546">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state x="496" y="277" key="Vcs.Push.Dialog.v2/0.25.1792.1038@0.25.1792.1038" timestamp="1610032532585" />
+    <state width="1771" height="342" key="GridCell.Tab.0.bottom/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006546" />
+    <state width="1771" height="342" key="GridCell.Tab.0.center" timestamp="1610379006545">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state width="1771" height="342" key="GridCell.Tab.0.center/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006545" />
+    <state width="1771" height="342" key="GridCell.Tab.0.left" timestamp="1610379006545">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state width="1771" height="342" key="GridCell.Tab.0.left/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006545" />
+    <state width="1771" height="342" key="GridCell.Tab.0.right" timestamp="1610379006545">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state width="1771" height="342" key="GridCell.Tab.0.right/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006545" />
+    <state width="1771" height="342" key="GridCell.Tab.1.bottom" timestamp="1610379006547">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state width="1771" height="342" key="GridCell.Tab.1.bottom/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006547" />
+    <state width="1771" height="342" key="GridCell.Tab.1.center" timestamp="1610379006546">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state width="1771" height="342" key="GridCell.Tab.1.center/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006546" />
+    <state width="1771" height="342" key="GridCell.Tab.1.left" timestamp="1610379006546">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state width="1771" height="342" key="GridCell.Tab.1.left/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006546" />
+    <state width="1771" height="342" key="GridCell.Tab.1.right" timestamp="1610379006547">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state width="1771" height="342" key="GridCell.Tab.1.right/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006547" />
+    <state x="496" y="277" key="Vcs.Push.Dialog.v2" timestamp="1610082530865">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state x="496" y="277" key="Vcs.Push.Dialog.v2/0.25.1792.1038@0.25.1792.1038" timestamp="1610082530865" />
     <state x="561" y="255" width="670" height="676" key="search.everywhere.popup" timestamp="1610014105136">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>

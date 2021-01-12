@@ -48,21 +48,28 @@ def main_display_result():
     clmc_predicted_false_edges = conf_draw_karate.CLMC_PREDICTED_EDGES['false']
     clmc_g_res = g_obs.copy()
     clmc_g_res.add_edges_from(clmc_predicted_false_edges)
-    plt.figure(1, figsize=(8, 10))
-    nx.draw_networkx(clmc_g_res, pos=conf_draw_karate.POS, edge_color=CONF.LINK_COLORs['exist'])
-    nx.draw_networkx_nodes(clmc_g_res, pos=conf_draw_karate.POS, nodelist=conf_draw_karate.NODE_SHAPE['o'],
+    node_size_l = []
+
+    plt.figure(1, figsize=(6, 8))
+    nx.draw_networkx(clmc_g_res, pos=nx.kamada_kawai_layout(clmc_g_res),
+                     edge_color=CONF.LINK_COLORs['exist'],
+                     node_size=[clmc_g_res.degree(i) * 100 for i in clmc_g_res.nodes],
+                     font_size=9)
+    nx.draw_networkx_nodes(clmc_g_res, pos=nx.kamada_kawai_layout(clmc_g_res), nodelist=conf_draw_karate.NODE_SHAPE['o'],
                            node_shape='o',
-                           node_color=CONF.NODE_LABELs[1])
-    nx.draw_networkx_nodes(clmc_g_res, pos=conf_draw_karate.POS, nodelist=conf_draw_karate.NODE_SHAPE['s'],
-                           node_shape='s',
-                           node_color=CONF.NODE_LABELs[1])
-    nx.draw_networkx_nodes(clmc_g_res, pos=conf_draw_karate.POS,
-                           nodelist=conf_draw_karate.CLMC_PREDICTED_LABEL['false'], node_shape='o',
-                           node_color=CONF.NODE_LABELs[2])
-    nx.draw_networkx_edges(clmc_g_res, pos=conf_draw_karate.POS, edgelist=del_edges, style='dashed')
-    nx.draw_networkx_edges(clmc_g_res, pos=conf_draw_karate.POS, edgelist=clmc_predicted_true_edges,
+                           node_color=CONF.NODE_LABELs[1],
+                           node_size=[clmc_g_res.degree(i) * 100 for i in conf_draw_karate.NODE_SHAPE['o']])
+    nx.draw_networkx_nodes(clmc_g_res, pos=nx.kamada_kawai_layout(clmc_g_res), nodelist=conf_draw_karate.NODE_SHAPE['s'],
+                           node_shape='o',
+                           node_color=CONF.NODE_LABELs[1],
+                           node_size=[clmc_g_res.degree(i) * 100 for i in conf_draw_karate.NODE_SHAPE['s']])
+    # nx.draw_networkx_nodes(clmc_g_res, pos=conf_draw_karate.POS,
+    #                        nodelist=conf_draw_karate.CLMC_PREDICTED_LABEL['false'], node_shape='o',
+    #                        node_color=CONF.NODE_LABELs[2])
+    nx.draw_networkx_edges(clmc_g_res, pos=nx.kamada_kawai_layout(clmc_g_res), edgelist=del_edges, style='dashed')
+    nx.draw_networkx_edges(clmc_g_res, pos=nx.kamada_kawai_layout(clmc_g_res), edgelist=clmc_predicted_true_edges,
                            edge_color=CONF.LINK_COLORs['predict_true'])
-    nx.draw_networkx_edges(clmc_g_res, pos=conf_draw_karate.POS, edgelist=clmc_predicted_false_edges,
+    nx.draw_networkx_edges(clmc_g_res, pos=nx.kamada_kawai_layout(clmc_g_res), edgelist=clmc_predicted_false_edges,
                            edge_color=CONF.LINK_COLORs['predict_wrong'])
     plt.title('CLMC on network with 10% edges removed')
     plt.show()
@@ -100,9 +107,9 @@ def main_display_result():
 if __name__ == '__main__':
     # for i in range(20):
     #     main_train(i)
-    data = read.read_karate_club()
-    labels = data['labels']
-    g = data['graph_real']
+    # data = read.read_karate_club()
+    # labels = data['labels']
+    # g = data['graph_real']
 
     # nx.draw_networkx_nodes(g, pos=conf_draw_karate.POS, nodelist=conf_draw_karate.NODE_SHAPE['s'])
     # nx.draw_networkx(g, pos=conf_draw_karate.POS)
