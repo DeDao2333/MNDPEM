@@ -33,6 +33,7 @@ class MNDPEM_model(object):
         """
         assert num_del_edge != 0, "num_del_edge can not be 0"
         all_prob = self.get_allProb()
+        print(f'all_prob: {all_prob}')
         prob_in_miss_edges = []
         index_edges = {}
 
