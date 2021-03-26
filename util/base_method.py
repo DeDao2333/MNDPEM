@@ -11,7 +11,7 @@ def Modularity_Q(label, g):
 
 
 def mean_variance(path):
-    df = pd.read_csv(path, usecols=[1,2,3])
+    df = pd.read_csv(path, usecols=[1, 2, 3])
 
     print(df.describe())
 
@@ -53,23 +53,46 @@ def display_result(F_argmax, target):
     return nmi, ari, pur, F_argmax  # , f1_macro, f1_micro
 
 
-def get_train_test(graph: nx.Graph, fraction: float = 0.2, del_list: list=None) -> (np.ndarray, list):
+def get_train_test(graph: nx.Graph, fraction: float = 0.2, del_list: list = None, isShuffle: bool = True) -> (
+np.ndarray, list):
+    # 提前 copy，为了让 obs 里面保持着原图中所有结点，只是边缺失而已
+    observe_graph = graph.copy()
+
     if del_list is None:
-        b = list(graph.edges)
+        all_edges = list(graph.edges)
+        num_total_edges = graph.number_of_edges()
+        del_list = []
+
         if fraction == 0:
             return graph, []
-        num_del = int(len(b) * fraction)
+        num_del = int(num_total_edges * fraction)
         # 随机删除原图中的边，按照比例
-        del_edges_index = np.random.choice([i for i in range(len(b))], size=num_del, replace=False)
-
-        del_list = []
-        for i in del_edges_index:
-            del_list.append(b[i])
-    observe_graph = graph.copy()  # 提前 copy，为了让 obs 里面保持着原图中所有结点，只是边缺失而已
-    observe_graph.remove_edges_from(del_list)  # 此时虽然删除了些边，但是即使结点孤立，也保存在图中
+        # del_edges_index = np.random.choice([i for i in range(len(all_edges))], size=num_del, replace=False)
+        if isShuffle:
+            np.random.shuffle(all_edges)
+            del_list = all_edges[:num_del + 1]
+            observe_graph.remove_edges_from(del_list)
+        else:
+            count = 0
+            i = 0
+            while count < num_del:
+                i += 1
+                np.random.seed(i)
+                index = np.random.random_integers(0, num_total_edges - 1)
+                edge = all_edges[index]
+                if edge in del_list:
+                    continue
+                observe_graph.remove_edge(edge[0], edge[1])
+                if nx.is_connected(observe_graph):
+                    del_list.append(edge)
+                    count += 1
+                else:
+                    observe_graph.add_edge(edge[0], edge[1])
+    else:
+        observe_graph.remove_edges_from(del_list)  # 此时虽然删除了些边，但是即使结点孤立，也保存在图中
 
     test_edge_list = del_list
-    print("deleted edges: ", sorted(test_edge_list))
+    # print("deleted edges: ", sorted(test_edge_list))
     return observe_graph, test_edge_list
 
 
@@ -92,4 +115,3 @@ def get_Z_init(graph) -> tuple:
 
 if __name__ == '__main__':
     mean_variance('../res/karate_byGEMSEC.csv')
-

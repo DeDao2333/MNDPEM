@@ -7,6 +7,7 @@ from collections import defaultdict
 from networkx.generators import ego_graph
 from networkx.algorithms.community import greedy_modularity_communities
 from community import community_louvain
+import graph_tool.all as gt
 from sklearn.preprocessing import Normalizer
 
 sys.path.append(os.path.abspath('..'))
@@ -141,6 +142,31 @@ def read_pubmed():
     res['num_del_edges'] = 100
     return res
 
+def read_pubmed_sub():
+    import re
+    with open(pre_path_com_known + 'pubmed_sub.txt', 'r') as f:
+        lines = f.readlines()
+        edges_list = []
+        for line in lines:
+            e = line.strip().split(' ')
+            edges_list.append((int(e[0]), int(e[1])))
+    g = nx.Graph()
+    g.add_edges_from(edges_list)
+    B = nx.to_numpy_array(g, nodelist=sorted(g.nodes))
+    g = nx.from_numpy_array(B)
+
+    with open(pre_path_com_known + 'pubmed_sub_labels.txt', 'r') as f:
+        res = re.findall(r"\d+", f.readline())
+        vals = list(map(int, res))
+
+    is_unknown = False
+    res = dict()
+    res['graph_real'] = g
+    res['adj_real'] = B
+    res['labels'] = vals
+    res['is_unknown'] = is_unknown
+    res['num_del_edges'] = 100
+    return res
 
 def _read_txt_graph(name):
     with open(pre_path_com_known + name + '.txt', 'r') as file:
@@ -286,20 +312,88 @@ def read_dblp_time1_subgraph():
 def main():
     import matplotlib.pyplot as plt
 
-    data = read_dblp_time1_subgraph()
+    data = read_pubmed()
     g = data['graph_real']
     labels = data['labels']
-    ori_labels = data['ori_labels']
-    print(ori_labels)
-    print(labels)
-    print(g.nodes.data())
-    plt.subplots(1, 1, figsize=(15, 13))
-    nx.draw_spring(g, with_labels=True, node_color=labels)
-    plt.show()
+    with open('pubmed_labels.txt', 'w') as f:
+        for i, j in enumerate(labels):
+            f.write(str(i + 1) + '\t' + str(j) + '\n')
 
 
-if __name__ == '__main__':
-    # res = read_dblp_time1()
-    # g = res['graph_real']
-    # print(g)
-    main()
+def main2():
+    from model.Strategy import Strategy
+    data = Strategy.prepare_data(read_pubmed)
+    graph_real = data['graph_real']
+    print(f'is connected : {nx.is_connected(graph_real)}')
+    print(f'node num: {len(graph_real.nodes)}, edges num: {len(graph_real.edges)}')
+    # main()
+    obser_g = data['observe_graph']
+    largest_ = max(nx.connected_components(obser_g), key=len)
+    miss_g_sub = nx.subgraph(obser_g, largest_)
+    print(f'is connected : {nx.is_connected(miss_g_sub)}')
+    print(f'node num: {len(obser_g.nodes)}, edges num: {len(obser_g.edges)}')
+    print(f'node num: {len(miss_g_sub.nodes)}, edges num: {len(miss_g_sub.edges)}')
+
+
+def main3():
+    import graph_tool.all as gt
+    import numpy as np
+
+    g = gt.collection.data["dolphins"].copy()
+    N = g.num_vertices()
+    E = g.num_edges()
+    q = g.new_ep("double", 0.8)
+
+    q_default = (E - q.a.sum()) / ((N * (N - 1)) / 2 - E)
+    state = gt.UncertainBlockState(g, q=q, q_default=q_default, nested=True)
+    gt.mcmc_equilibrate(state, wait=100, mcmc_args=dict(niter=1))
+
+    u = None
+    bs = []
+    cs = []
+
+    def collect_marginals(s):
+        global bs, u, cs
+        u = s.collect_marginal(u)
+        bstate = s.get_block_state()
+        bs.append(bstate.levels[0].b.a.copy())
+        cs.append(gt.local_clustering(s.get_graph()).fa.mean())
+
+    gt.mcmc_equilibrate(state, force_niter=2000, mcmc_args=dict(niter=7), callback=collect_marginals)
+    eprob = u.ep.eprob
+
+    print(state.get_block_state().get_bs()[0])
+    data = read_dolphins()
+    labels = data['labels']
+
+
+def main_pubmed():
+    res = read_pubmed()
+    g_real = res['graph_real']
+    # g_sub = nx.subgraph(g_real, [i for i in range(500)])
+    g_sub = nx.ego_graph(g_real, 0, 4)
+    print(len(g_sub.edges))
+    print(len(g_sub.nodes))
+
+    with open('pubmed_sub.txt', 'w') as f:
+        for i, j in g_sub.edges:
+            f.write(str(i))
+            f.write(' ')
+            f.write(str(j))
+            f.write('\n')
+
+    with open('pubmed_sub_labels.txt', 'w') as f:
+        labels = res['labels']
+        sub_labels = []
+        for i in g_sub.nodes:
+            sub_labels.append(labels[i])
+        f.write(str(sub_labels))
+
+
+if '__main__' == __name__:
+    # res = read_dolphins()
+    # print(res['labels'])
+    # main_pubmed()
+    # read_pubmed_sub()
+    res = read_pubmed_sub()
+    print(len(res['graph_real'].nodes))

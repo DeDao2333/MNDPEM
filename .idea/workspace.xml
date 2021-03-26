@@ -19,17 +19,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a52f5019-3a01-466b-bb7a-cf458ad57044" name="Default Changelist" comment="add Pubmed dataset">
-      <change afterPath="$PROJECT_DIR$/Experiment_known_label/statistic.py" afterDir="false" />
+    <list default="true" id="a52f5019-3a01-466b-bb7a-cf458ad57044" name="Default Changelist" comment="add sys.path">
+      <change afterPath="$PROJECT_DIR$/Experiment_known_unknown_label/data/adjnoun_byMNDPEM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment_known_unknown_label/data/celegansneural_byMNDPEM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment_known_unknown_label/data/dolphins_byMNDPEM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment_known_unknown_label/data/football_byMNDPEM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment_known_unknown_label/data/jazz_byMNDPEM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment_known_unknown_label/data/karate_byMNDPEM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment_known_unknown_label/data/lesmis_byMNDPEM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment_known_unknown_label/data/polbooks_byMNDPEM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/complete_network/known_/pubmed_sub.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/complete_network/known_/pubmed_sub_labels.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/football_byMNDPEM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/karate_byMNDPEM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/karate.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/karate_edges.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/karate_node.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/test.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiment_intro_case/karate_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/Experiment_intro_case/karate_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiment_case_study/dolph_case_study.py" beforeDir="false" afterPath="$PROJECT_DIR$/Experiment_case_study/dolph_case_study.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiment_known_unknown_label/statistic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Experiment_known_unknown_label/statistic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/draw_graph_dolph.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf/draw_graph_dolph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/MNDPEM_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/MNDPEM_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/karate_byDANMF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byDANMF.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/karate_byGEMSEC.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byGEMSEC.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/karate_byLouvain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byLouvain.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/karate_byMNDP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/karate_byMNDP.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/polbooks_byMNDP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/polbooks_byMNDP.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/base_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/base_method.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/draw_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/draw_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/read_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/read_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,30 +76,40 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="ProjectId" id="1n65YJzSV9wc7sku1p9mqhBLbcU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Experiment_known_label/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dataset/complete_network/known_" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Experiment_known_label" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Experiment_known_label/data" />
       <recent name="$PROJECT_DIR$/dataset/complete_network/known_" />
+      <recent name="$PROJECT_DIR$/Experiment_known_unknown_label/data" />
+      <recent name="$PROJECT_DIR$/Experiment_known_label/data" />
       <recent name="E:\ProjectAll\PycharmProjects\MNDPEM\Experiment_case_study\data" />
       <recent name="E:\ProjectAll\PycharmProjects\MNDPEM\tmp\case_study" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Experiment_known_label" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.statistic (1)">
+  <component name="RunManager" selected="Python.test">
     <configuration name="Strategy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -125,6 +151,9 @@
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Experiment_case_study" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -140,17 +169,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="draw_graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/draw_graph.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,17 +191,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="karate_case" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Experiment_intro_case" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Experiment_intro_case/karate_case.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,17 +213,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="statistic (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="read_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Experiment_known_unknown_label" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Experiment_known_unknown_label/statistic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/read_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,17 +235,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="statistic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MNDPEM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Experiment_known_label" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Experiment_known_label/statistic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -217,23 +258,24 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.dolph_case_study" />
       <item itemvalue="Python.Strategy" />
-      <item itemvalue="Python.karate_case" />
-      <item itemvalue="Python.draw_graph" />
-      <item itemvalue="Python.statistic" />
-      <item itemvalue="Python.statistic (1)" />
+      <item itemvalue="Python.dolph_case_study" />
+      <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.read_data" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.statistic (1)" />
-        <item itemvalue="Python.draw_graph" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.Strategy" />
-        <item itemvalue="Python.statistic" />
-        <item itemvalue="Python.karate_case" />
+        <item itemvalue="Python.read_data" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -273,7 +315,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610082527896</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="split experiment">
+      <created>1610442388140</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610442388140</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add sys.path">
+      <created>1610458962633</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610458962633</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -300,64 +356,71 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="case study using polbook" />
     <MESSAGE value="package the method of drawing network" />
     <MESSAGE value="change the way of displaying case study graph" />
     <MESSAGE value="add Pubmed dataset" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Pubmed dataset" />
+    <MESSAGE value="split experiment" />
+    <MESSAGE value="add sys.path" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sys.path" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="341" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610079873227">
+    <state x="576" y="334" key="#Log_Highlighting_(ideolog)" timestamp="1610704520376">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state x="585" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1792.1038@0.25.1792.1038" timestamp="1610079873227" />
+    <state x="576" y="334" key="#Log_Highlighting_(ideolog)/0.25.1792.1038@0.25.1792.1038" timestamp="1610704520376" />
+    <state x="585" y="341" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610700782468">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state x="585" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1792.1038@0.25.1792.1038" timestamp="1610700782468" />
     <state x="180" y="115" key="DiffContextDialog" timestamp="1610032530635">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
     <state x="180" y="115" key="DiffContextDialog/0.25.1792.1038@0.25.1792.1038" timestamp="1610032530635" />
-    <state width="1771" height="342" key="GridCell.Tab.0.bottom" timestamp="1610379006546">
+    <state width="1771" height="342" key="GridCell.Tab.0.bottom" timestamp="1610713815020">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state width="1771" height="342" key="GridCell.Tab.0.bottom/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006546" />
-    <state width="1771" height="342" key="GridCell.Tab.0.center" timestamp="1610379006545">
+    <state width="1771" height="342" key="GridCell.Tab.0.bottom/0.25.1792.1038@0.25.1792.1038" timestamp="1610713815020" />
+    <state width="1771" height="342" key="GridCell.Tab.0.center" timestamp="1610713815020">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state width="1771" height="342" key="GridCell.Tab.0.center/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006545" />
-    <state width="1771" height="342" key="GridCell.Tab.0.left" timestamp="1610379006545">
+    <state width="1771" height="342" key="GridCell.Tab.0.center/0.25.1792.1038@0.25.1792.1038" timestamp="1610713815020" />
+    <state width="1771" height="342" key="GridCell.Tab.0.left" timestamp="1610713815019">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state width="1771" height="342" key="GridCell.Tab.0.left/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006545" />
-    <state width="1771" height="342" key="GridCell.Tab.0.right" timestamp="1610379006545">
+    <state width="1771" height="342" key="GridCell.Tab.0.left/0.25.1792.1038@0.25.1792.1038" timestamp="1610713815019" />
+    <state width="1771" height="342" key="GridCell.Tab.0.right" timestamp="1610713815020">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state width="1771" height="342" key="GridCell.Tab.0.right/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006545" />
-    <state width="1771" height="342" key="GridCell.Tab.1.bottom" timestamp="1610379006547">
+    <state width="1771" height="342" key="GridCell.Tab.0.right/0.25.1792.1038@0.25.1792.1038" timestamp="1610713815020" />
+    <state width="1771" height="342" key="GridCell.Tab.1.bottom" timestamp="1610713839648">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state width="1771" height="342" key="GridCell.Tab.1.bottom/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006547" />
-    <state width="1771" height="342" key="GridCell.Tab.1.center" timestamp="1610379006546">
+    <state width="1771" height="342" key="GridCell.Tab.1.bottom/0.25.1792.1038@0.25.1792.1038" timestamp="1610713839648" />
+    <state width="1771" height="342" key="GridCell.Tab.1.center" timestamp="1610713839647">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state width="1771" height="342" key="GridCell.Tab.1.center/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006546" />
-    <state width="1771" height="342" key="GridCell.Tab.1.left" timestamp="1610379006546">
+    <state width="1771" height="342" key="GridCell.Tab.1.center/0.25.1792.1038@0.25.1792.1038" timestamp="1610713839647" />
+    <state width="1771" height="342" key="GridCell.Tab.1.left" timestamp="1610713839645">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state width="1771" height="342" key="GridCell.Tab.1.left/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006546" />
-    <state width="1771" height="342" key="GridCell.Tab.1.right" timestamp="1610379006547">
+    <state width="1771" height="342" key="GridCell.Tab.1.left/0.25.1792.1038@0.25.1792.1038" timestamp="1610713839645" />
+    <state width="1771" height="342" key="GridCell.Tab.1.right" timestamp="1610713839647">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state width="1771" height="342" key="GridCell.Tab.1.right/0.25.1792.1038@0.25.1792.1038" timestamp="1610379006547" />
-    <state x="496" y="277" key="Vcs.Push.Dialog.v2" timestamp="1610082530865">
+    <state width="1771" height="342" key="GridCell.Tab.1.right/0.25.1792.1038@0.25.1792.1038" timestamp="1610713839647" />
+    <state x="405" y="180" key="SettingsEditor" timestamp="1610455616328">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state x="496" y="277" key="Vcs.Push.Dialog.v2/0.25.1792.1038@0.25.1792.1038" timestamp="1610082530865" />
-    <state x="561" y="255" width="670" height="676" key="search.everywhere.popup" timestamp="1610014105136">
+    <state x="405" y="180" key="SettingsEditor/0.25.1792.1038@0.25.1792.1038" timestamp="1610455616328" />
+    <state x="496" y="277" key="Vcs.Push.Dialog.v2" timestamp="1610458964766">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
-    <state x="561" y="255" width="670" height="676" key="search.everywhere.popup/0.25.1792.1038@0.25.1792.1038" timestamp="1610014105136" />
+    <state x="496" y="277" key="Vcs.Push.Dialog.v2/0.25.1792.1038@0.25.1792.1038" timestamp="1610458964766" />
+    <state x="561" y="255" width="670" height="676" key="search.everywhere.popup" timestamp="1610711022561">
+      <screen x="0" y="25" width="1792" height="1038" />
+    </state>
+    <state x="561" y="255" width="670" height="676" key="search.everywhere.popup/0.25.1792.1038@0.25.1792.1038" timestamp="1610711022561" />
   </component>
 </project>

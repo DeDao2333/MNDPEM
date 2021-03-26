@@ -160,3 +160,5 @@ def main_display_result():
 if __name__ == '__main__':
     # main_dolph(train_mode=False)
     main_display_result()
+    # del_edges = case_study_tools.read_del_edges_CLMC_dolph()
+    # print(del_edges)

@@ -423,7 +423,12 @@ if __name__ == '__main__':
     # data = Read.read_polbooks()
     # display_rate_karate()
     import pandas as pd
-    data = Read.read_karate_club()
+    import sys, os
+
+    sys.path.append(os.path.abspath('..'))
+    from conf import draw_graph_dolph as conf_dolph
+
+    data = Read.read_dolphins()
     g = data['graph_real']
     labels = data['labels']
 
@@ -432,20 +437,36 @@ if __name__ == '__main__':
                 'Modularity Class': labels,
                 'Degree': [g.degree(i) for i in g.nodes]}
     df = pd.DataFrame(pd_input)
-    df.to_csv('karate_node.csv')
+    df.to_csv('dolphins_node.csv')
 
     pd_edges_input = {'Source': [],
                       'Target': [],
                       'Type': [],
                       'Kind': [],
-                      'Id': []}
+                      }
+    del_edges = set(conf_dolph.MISSING_NETWORK['removed'])
+
+    for u, v in conf_dolph.CLMC_PREDICTED_EDGES['true']:
+        pd_edges_input['Source'].append(u)
+        pd_edges_input['Target'].append(v)
+        pd_edges_input['Type'].append('Undirected')
+        pd_edges_input['Kind'].append('true')
+
+    for u, v in conf_dolph.CLMC_PREDICTED_EDGES['false']:
+        pd_edges_input['Source'].append(u)
+        pd_edges_input['Target'].append(v)
+        pd_edges_input['Type'].append('Undirected')
+        pd_edges_input['Kind'].append('false')
 
     for i, e in enumerate(g.edges):
-        pd_edges_input['Id'].append(i)
         pd_edges_input['Source'].append(e[0])
         pd_edges_input['Target'].append(e[1])
         pd_edges_input['Type'].append('Undirected')
-        pd_edges_input['Kind'].append('exist')
+        if (e[0], e[1]) in del_edges or (e[1], e[0]) in del_edges:
+            pd_edges_input['Kind'].append('removed')
+        else:
+            pd_edges_input['Kind'].append('exist')
+
     print(pd_edges_input)
     df_edge = pd.DataFrame(pd_edges_input)
-    df_edge.to_csv('karate_edges.csv')
+    df_edge.to_csv('dolphins_edges.csv')

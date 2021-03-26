@@ -64,9 +64,9 @@ class MNDPEM_model(object):
         samples_Z_edge = []  # 每个元素是一个 Z_Edge
 
         # 在 Z—noEdge 区域根据 F 选一条边
-        Z_noEdge_allProb = {}
-        for _, e in enumerate(Z_noEdge.edges):
-            Z_noEdge_allProb[str(e)] = all_prob[e[0], e[1]]
+        # Z_noEdge_allProb = {}
+        # for _, e in enumerate(Z_noEdge.edges):
+        #     Z_noEdge_allProb[str(e)] = all_prob[e[0], e[1]]
             # 以下需要迭代
         for epoch in range(self.num_warm_up + self.num_sample):
             if epoch >= self.num_warm_up:
@@ -80,26 +80,30 @@ class MNDPEM_model(object):
             pre_edge = edges_z[rdm]
             Z_Edge.remove_edge(pre_edge[0], pre_edge[1])
             Z_noEdge.add_edge(pre_edge[0], pre_edge[1])
-            Z_noEdge_allProb[str(pre_edge)] = all_prob[pre_edge[0], pre_edge[1]]
+            # Z_noEdge_allProb[str(pre_edge)] = all_prob[pre_edge[0], pre_edge[1]]
 
-            sample_index = np.random.choice(
-                list(Z_noEdge_allProb.keys()),
-                1,
-                replace=True,
-                p=np.array(list(Z_noEdge_allProb.values())) / sum(list(Z_noEdge_allProb.values())))
-
-            new_edge = sample_index[0]
-
+            # sample_index = np.random.choice(
+            #     list(Z_noEdge_allProb.keys()),
+            #     1,
+            #     replace=True,
+            #     p=np.array(list(Z_noEdge_allProb.values())) / sum(list(Z_noEdge_allProb.values())))
+            #
+            # new_edge = sample_index[0]
+            np.random.seed(epoch)
+            index_ = np.random.randint(0, len(Z_noEdge.edges))
+            new_edge = list(Z_noEdge.edges)[index_]
             # 判断是否是去掉的那条边, 如果是，将删除的边恢复，进行下一次采样
-            if new_edge == str(pre_edge):
+            # if new_edge == str(pre_edge):
+            if new_edge == pre_edge:
                 Z_Edge.add_edge(pre_edge[0], pre_edge[1])
                 Z_noEdge.remove_edge(pre_edge[0], pre_edge[1])
-                Z_noEdge_allProb.pop(str(pre_edge))
+                # Z_noEdge_allProb.pop(str(pre_edge))
                 continue
 
             # 如果不是，计算接受率
-            res = re.findall(r"\d+", new_edge)  # 获取字符串中的数字，也就是结点的序号，从而构成边，比如：res : ['47', '12']
-            e1, e2 = int(res[0]), int(res[1])
+            # res = re.findall(r"\d+", new_edge)  # 获取字符串中的数字，也就是结点的序号，从而构成边，比如：res : ['47', '12']
+            # e1, e2 = int(res[0]), int(res[1])
+            e1, e2 = new_edge[0], new_edge[1]
             x_prob = all_prob[pre_edge[0], pre_edge[1]]
             y_prob = all_prob[e1, e2]
             accept_rate = self.calculate_Accept(x_prob, y_prob)
@@ -108,12 +112,12 @@ class MNDPEM_model(object):
                 # 如果接受，添加到 Z—edge 中，在 Z—noEdge 中删除
                 Z_Edge.add_edge(e1, e2)
                 Z_noEdge.remove_edge(e1, e2)
-                Z_noEdge_allProb.pop(new_edge)
+                # Z_noEdge_allProb.pop(new_edge)
             else:
                 # 拒绝
                 Z_Edge.add_edge(pre_edge[0], pre_edge[1])
                 Z_noEdge.remove_edge(pre_edge[0], pre_edge[1])
-                Z_noEdge_allProb.pop(str(pre_edge))
+                # Z_noEdge_allProb.pop(str(pre_edge))
         end = time.time()
         print("Time -> E_Gibbs_every_step : {:.4f}".format(end - start))
         return samples_Z_edge

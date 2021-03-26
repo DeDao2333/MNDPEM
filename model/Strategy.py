@@ -18,6 +18,32 @@ from karateclub.community_detection.overlapping import NNSED, DANMF, MNMF, BigCl
 from karateclub.community_detection.non_overlapping import GEMSEC, EdMot
 import model.conf as CONF
 
+import logging  # 引入logging模块
+import os.path
+import time
+
+# 第一步，创建一个logger
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)  # Log等级总开关
+# 第二步，创建一个handler，用于写入日志文件
+rq = time.strftime('%Y%m%d%H', time.localtime(time.time()))
+log_path = os.path.dirname(os.getcwd()) + '/Logs/'
+log_name = log_path + rq + '.log'
+logfile = log_name
+fh = logging.FileHandler(logfile, mode='a')
+fh.setLevel(logging.DEBUG)  # 输出到file的log等级的开关
+# 第三步，定义handler的输出格式
+formatter = logging.Formatter("%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
+fh.setFormatter(formatter)
+# 第四步，将logger添加到handler里面
+logger.addHandler(fh)
+
+# 日志
+# logger.debug('this is a logger debug message')
+# logger.info('this is a logger info message')
+# logger.warning('this is a logger warning message')
+# logger.error('this is a logger error message')
+# logger.critical('this is a logger critical message')
 
 class Strategy(object):
     def __init__(self):
@@ -25,9 +51,9 @@ class Strategy(object):
 
     @staticmethod
     def prepare_data(read_data, missing_rate=0.2, del_list=None):
-        res: dict = read_data()
+        res = read_data()
         # 删除一定比例的边数，得到观测图
-        observe_graph, test_edges = tools.get_train_test(res['graph_real'], missing_rate, del_list)
+        observe_graph, test_edges = tools.get_train_test(res['graph_real'], missing_rate, del_list, )
         num_del_edges = len(test_edges)
 
         # 在删除一定比例边后，得到 Z 区域所有可能边列表
@@ -106,7 +132,7 @@ class Strategy(object):
             assert False, "Not right index"
 
     @staticmethod
-    def train_byMNDPEM(data, num_EM_iter=15, alpha=0.5):
+    def train_byMNDPEM(data, num_EM_iter=18, alpha=0.5):
         print('===========  Method:  MNDPEM  ===============')
         C = data['C']
         N = data['N']
@@ -130,7 +156,8 @@ class Strategy(object):
         labels = data['labels']
         is_unknown = data['is_unknown']
         F_ = MNDP.MNDP_EM(observe_graph, C, epoch=16)
-        # prob, F_ = MNDP.MNDP(data['adj_real'], C)
+        # ob_adj = nx.to_numpy_array(observe_graph, nodelist=sorted(observe_graph.nodes))
+        # prob, F_ = MNDP.MNDP(ob_adj, C)
         F_argmax = np.argmax(F_, axis=1) + 1
         return cls.res_display(is_unknown, F_argmax, observe_graph, labels)
 
@@ -157,7 +184,7 @@ class Strategy(object):
         observe_graph = data['observe_graph']
         labels = data['labels']
         is_unknown = data['is_unknown']
-        model = DANMF(layers=[16, 2], pre_iterations=320,
+        model = DANMF(layers=[32, 4], pre_iterations=320,
                       iterations=320, seed=42, lamb=0.01)
         model.fit(observe_graph)
         F_ = model.get_memberships()
@@ -253,44 +280,59 @@ class Strategy(object):
             # Read.read_karate_club,
             # Read.read_dolphins,
             # Read.read_football,
-            Read.read_polbooks,
+            # Read.read_polbooks,
             # Read.read_polblogs,
+            # Read.read_pubmed,
+            Read.read_pubmed_sub,
         ]
 
         methods = [
-            cls.train_byMNDP_Missing,
+            # cls.train_byMNDP_Missing,
             # cls.train_byDANMF,
             # cls.train_byGEMSEC,
             # cls.train_byLouvain,
             # cls.train_byBigClam,
-            # cls.train_byMNDPEM,
+            cls.train_byMNDPEM,
         ]
 
         for data_ in dataset:
             for method_ in methods:
                 res = defaultdict(list)
-                for i in range(15):
+                for i in range(3):
                     np.random.seed(i)
-                    data = cls.prepare_data(data_, missing_rate=0.2)
-                    tmp = method_(data)
                     print(f'time -> {i}')
+                    print(f'start prepare data : {data_.__name__}')
+                    # logger.debug(f'time -> {i}')
+                    # logger.debug(f'start prepare data : {data_.__name__}')
+                    data = cls.prepare_data(data_, missing_rate=0.2)
+                    print('Finished prepare')
+                    print(f'{method_.__name__} starts running')
+                    # logger.debug('Finished prepare')
+                    # logger.debug(f'{method_.__name__} starts running')
+                    tmp = method_(data)
+                    print(f'{method_.__name__} finished')
+                    # logger.debug(f'{method_.__name__} finished')
                     if method_.__name__ == 'train_byMNDPEM':
                         res['nmi'].extend(tmp['nmi'])
                         res['ari'].extend(tmp['ari'])
                         res['pur'].extend(tmp['pur'])
+                        # logger.debug(f'NMI: {tmp["nmi"]}, ari: {tmp["ari"]}, pur: {tmp["pur"]}')
+                        print(f'NMI: {tmp["nmi"]}, ari: {tmp["ari"]}, pur: {tmp["pur"]}')
                     else:
+                        # logger.debug(f'NMI: {tmp["nmi"]}, ari: {tmp["ari"]}, pur: {tmp["pur"]}')
+                        print(f'NMI: {tmp["nmi"]}, ari: {tmp["ari"]}, pur: {tmp["pur"]}')
                         res['nmi'].append(tmp['nmi'])
                         res['ari'].append(tmp['ari'])
                         res['pur'].append(tmp['pur'])
-                cls.res2csv(res,
-                            path=f'../res/{data_.__name__.split("_")[1] + "_" + method_.__name__.split("_")[1]}.csv')
+                # cls.res2csv(res,
+                #             path=f'../res/{data_.__name__.split("_")[1] + "_" + method_.__name__.split("_")[1]}.csv')
 
     @classmethod
     def Experiment_unknown_network(cls):
         dataset = [
-            Read.read_adjnoun,
-            Read.read_celegansneural,
-            Read.read_email,
+            # Read.read_adjnoun,
+            # Read.read_celegansneural,
+            # Read.read_email,
             Read.read_jazz,
             Read.read_lesmis,
         ]
@@ -307,7 +349,7 @@ class Strategy(object):
         for data_ in dataset:
             for method_ in methods:
                 res = defaultdict(list)
-                for i in range(15):
+                for i in range(7):
                     np.random.seed(i)
                     data = cls.prepare_data(data_, missing_rate=0.2)
                     tmp = method_(data)
@@ -375,7 +417,7 @@ def main_case_study():
         os.remove('../res/case_study_F_argmax.txt')
     for i in range(30):
         stg_model.Experiment_case_study(
-            method=lambda data: stg_model.train_byMNDPEM(data, num_EM_iter=20, alpha=0.4),
+            method=lambda data: stg_model.train_byMNDPEM(data, num_EM_iter=20, alpha=0.6),
             network=Read.read_dolphins,
             draw_network=Draw.display_dolphins, epoch=i)
 
@@ -405,4 +447,7 @@ if __name__ == '__main__':
     # main_case_study()
     # main_test_nothing()
     # main_intro_case()
+    # print('nihaodede')
     Strategy.Experiment_known_network()
+    # Strategy.Experiment_unknown_network()
+    # main_case_study()

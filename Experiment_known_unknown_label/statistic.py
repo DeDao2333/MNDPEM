@@ -22,4 +22,4 @@ def read_unknown_data(path, alpha1, alpha2):
 
 if __name__ == '__main__':
     # read_known_data('./data/polblogs_byGEMSEC.csv', 0.2, 0.55)
-    read_unknown_data('./data/celegansneural_byDANMF.csv', 0.1, 0.9)
+    read_known_data('./data/football_byDANMF.csv', 0.2, 1)
