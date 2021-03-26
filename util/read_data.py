@@ -283,6 +283,31 @@ def read_dblp_time1_subgraph():
     return res_
 
 
+def to_csv(B):
+    data = pd.DataFrame(B)
+    data.drop(0, axis=1)
+    data.drop([0, 1])
+    data.to_csv('B.csv')
+
+
+def edges_list2csv(edges_list, name):
+    df = pd.DataFrame(edges_list, index=None, columns=None)
+    df.to_csv(sys.path[-1] + '/dataset/data_missing/non_ground_truth/csv_file/' + name + '.csv', index=None, columns=None)
+
+
+def mat2csv(name):
+    # edges
+    path = sys.path[-1] + '/dataset/data_missing/non_ground_truth/mat_file/'
+    data = io.loadmat(path + name + '.mat')
+    B = np.array(data['train'], dtype=float)
+    g = nx.from_numpy_array(B)
+    edges_list2csv(g.edges(), name)
+
+
+def A_to_mat(A, name):
+    io.savemat(sys.path[-1] + '/dataset/data_missing/ground_truth/' + name + '.mat', {name + '_adj': A})
+
+
 def main():
     import matplotlib.pyplot as plt
 
@@ -302,4 +327,12 @@ if __name__ == '__main__':
     # res = read_dblp_time1()
     # g = res['graph_real']
     # print(g)
-    main()
+    # main()
+
+    # s = ['karate', 'dolphins', 'football', 'polblogs', 'polbooks']
+    # s = ['adjnoun', 'celegans', 'email', 'jazz', 'lesmis']
+    # for v in s:
+    #     for i in range(1, 21):
+    #         mat2csv(v + str(i))
+    res = read_pubmed()
+    A_to_mat(res["adj_real"], "pubmed")

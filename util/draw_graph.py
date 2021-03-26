@@ -33,10 +33,10 @@ def display_rate_football():
     plt.plot(rate, GEMSEC, c='#6B6B6B', marker='o', ms=9, label='GEMSEC')
     # plt.plot(rate, BigClam, marker='o', mec='r', mfc='w')
     plt.plot(rate, DANMF, c='#228B22', marker='o', ms=9, label='DANMF')
-    plt.plot(rate, Louvain, c='#DD6D22', marker='o', ms=9, label='Louvain')
+    # plt.plot(rate, Louvain, c='#DD6D22', marker='o', ms=9, label='Louvain')
     plt.plot(rate, CLMC, c='#A25EA2', marker='o', ms=9, label='CLMC')
-    plt.plot(rate, MNDP_M, c='#A0522D', marker='<', ms=9, label='MNDP-M')
-    plt.plot(rate, MNDP_EM, c='#2B91D5', marker='D', ms=8, label='MNDPEM')
+    # plt.plot(rate, MNDP_M, c='#A0522D', marker='<', ms=9, label='MNDP-M')
+    plt.plot(rate, MNDP_EM, c='#2B91D5', marker='D', ms=8, label='Our method')
     # fig.suptitle('Categorical Plotting')
     plt.xlabel('Different ratio of missing edges', fontsize=14)
     plt.ylabel('NMI', fontsize=14)
@@ -61,10 +61,10 @@ def display_rate_karate():
     plt.plot(rate, GEMSEC, c='#6B6B6B', marker='o', ms=9, label='GEMSEC')
     plt.plot(rate, BigClam, c='#6A5ACD', marker='o', ms=9, label='BigClam')
     plt.plot(rate, DANMF, c='#228B22', marker='o', ms=9, label='DANMF')
-    plt.plot(rate, Louvain, c='#DD6D22', marker='o', ms=9, label='Louvain')
+    # plt.plot(rate, Louvain, c='#DD6D22', marker='o', ms=9, label='Louvain')
     plt.plot(rate, CLMC, c='#A25EA2', marker='o', ms=9, label='CLMC')
-    plt.plot(rate, MNDP_M, c='#A0522D', marker='<', ms=9, label='MNDP-M')
-    plt.plot(rate, MNDP_EM, c='#2B91D5', marker='D', ms=8, label='MNDPEM')
+    # plt.plot(rate, MNDP_M, c='#A0522D', marker='<', ms=9, label='MNDP-M')
+    plt.plot(rate, MNDP_EM, c='#2B91D5', marker='D', ms=8, label='Our method')
     # fig.suptitle('Categorical Plotting')
     plt.xlabel('Different ratio of missing edges', fontsize=14)
     plt.ylabel('NMI', fontsize=14)
@@ -90,10 +90,10 @@ def display_rate_dolphins():
     plt.plot(rate, GEMSEC, c='#6B6B6B', marker='o', ms=9, label='GEMSEC')
     plt.plot(rate, BigClam, c='#6A5ACD', marker='o', ms=9, label='BigClam')
     plt.plot(rate, DANMF, c='#228B22', marker='o', ms=9, label='DANMF')
-    plt.plot(rate, Louvain, c='#DD6D22', marker='o', ms=9, label='Louvain')
+    # plt.plot(rate, Louvain, c='#DD6D22', marker='o', ms=9, label='Louvain')
     plt.plot(rate, CLMC, c='#A25EA2', marker='o', ms=9, label='CLMC')
-    plt.plot(rate, MNDP_M, c='#A0522D', marker='<', ms=9, label='MNDP-M')
-    plt.plot(rate, MNDP_EM, c='#2B91D5', marker='D', ms=8, label='MNDPEM')
+    # plt.plot(rate, MNDP_M, c='#A0522D', marker='<', ms=9, label='MNDP-M')
+    plt.plot(rate, MNDP_EM, c='#2B91D5', marker='D', ms=8, label='Our method')
     # fig.suptitle('Categorical Plotting')
     plt.xlabel('Different ratio of missing edges', fontsize=14)
     plt.ylabel('NMI', fontsize=14)
@@ -106,7 +106,6 @@ def display_rate_dolphins():
 def display_rate_polblogs():
     rate = ['0%', '5%', '10%', '15%', '20%', '25%', '30%', '35%']
 
-    # Dolphins
     MNDP_M = [54.73, 53.24, 52.79, 51.32, 51.08, 48.23, 43.71, 42.32]
     MNDP_EM = [54.90, 54.35, 53.78, 52.97, 52.07, 50.10, 46.51, 43.79]
     GEMSEC = [51.17, 50.91, 50.23, 49.30, 49.36, 47.03, 41.46, 40.02]
@@ -116,9 +115,9 @@ def display_rate_polblogs():
     plt.figure(figsize=(6, 4.3))
     plt.plot(rate, GEMSEC, c='#6B6B6B', marker='o', ms=9, label='GEMSEC')
     plt.plot(rate, DANMF, c='#228B22', marker='o', ms=9, label='DANMF')
-    plt.plot(rate, Louvain, c='#DD6D22', marker='o', ms=9, label='Louvain')
-    plt.plot(rate, MNDP_M, c='#A0522D', marker='<', ms=9, label='MNDP-M')
-    plt.plot(rate, MNDP_EM, c='#2B91D5', marker='D', ms=8, label='MNDPEM')
+    # plt.plot(rate, Louvain, c='#DD6D22', marker='o', ms=9, label='Louvain')
+    # plt.plot(rate, MNDP_M, c='#A0522D', marker='<', ms=9, label='MNDP-M')
+    plt.plot(rate, MNDP_EM, c='#2B91D5', marker='D', ms=8, label='Our method')
     # fig.suptitle('Categorical Plotting')
     plt.xlabel('Different ratio of missing edges', fontsize=14)
     plt.ylabel('NMI', fontsize=14)
@@ -419,9 +418,7 @@ def main_case_study_display1():
     tools.display_result(F_argmax, data['labels'])
 
 
-if __name__ == '__main__':
-    # data = Read.read_polbooks()
-    # display_rate_karate()
+def ouput2csv_Cyt():
     import pandas as pd
     data = Read.read_karate_club()
     g = data['graph_real']
@@ -449,3 +446,11 @@ if __name__ == '__main__':
     print(pd_edges_input)
     df_edge = pd.DataFrame(pd_edges_input)
     df_edge.to_csv('karate_edges.csv')
+
+
+if __name__ == '__main__':
+    # data = Read.read_polbooks()
+    display_rate_karate()
+    display_rate_dolphins()
+    display_rate_football()
+    display_rate_polblogs()

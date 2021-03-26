@@ -184,7 +184,7 @@ class Strategy(object):
         labels = data['labels']
         is_unknown = data['is_unknown']
         num_nodes = len(observe_graph.nodes)
-        model = BigClam(num_of_nodes=num_nodes, dimensions=8, iterations=300, learning_rate=0.003, seed=42)
+        model = BigClam(num_of_nodes=num_nodes, dimensions=64, iterations=500, learning_rate=0.003, seed=42)
         model.fit(observe_graph)
         F_ = model.get_memberships()
         F_ = np.array(list(F_.values()))
@@ -252,17 +252,17 @@ class Strategy(object):
         dataset = [
             # Read.read_karate_club,
             # Read.read_dolphins,
-            # Read.read_football,
-            Read.read_polbooks,
-            # Read.read_polblogs,
+            Read.read_football,
+            # Read.read_polbooks,
+            Read.read_polblogs,
         ]
 
         methods = [
-            cls.train_byMNDP_Missing,
+            # cls.train_byMNDP_Missing,
             # cls.train_byDANMF,
-            # cls.train_byGEMSEC,
+            cls.train_byGEMSEC,
             # cls.train_byLouvain,
-            # cls.train_byBigClam,
+            cls.train_byBigClam,
             # cls.train_byMNDPEM,
         ]
 
@@ -288,20 +288,20 @@ class Strategy(object):
     @classmethod
     def Experiment_unknown_network(cls):
         dataset = [
-            Read.read_adjnoun,
-            Read.read_celegansneural,
+            # Read.read_adjnoun,
+            # Read.read_celegansneural,
             Read.read_email,
-            Read.read_jazz,
-            Read.read_lesmis,
+            # Read.read_jazz,
+            # Read.read_lesmis,
         ]
 
         methods = [
             # cls.train_byMNDP_Missing,
-            cls.train_byMNDPEM,
+            # cls.train_byMNDPEM,
             # cls.train_byDANMF,
             # cls.train_byGEMSEC,
             # cls.train_byLouvain,
-            # cls.train_byBigClam
+            cls.train_byBigClam
         ]
 
         for data_ in dataset:
@@ -312,6 +312,7 @@ class Strategy(object):
                     data = cls.prepare_data(data_, missing_rate=0.2)
                     tmp = method_(data)
                     print(f'time -> {i}')
+                    print(tmp['Q'])
                     if method_.__name__ == 'train_byMNDPEM':
                         res['Q'].extend(tmp['Q'])
                     else:
@@ -405,4 +406,6 @@ if __name__ == '__main__':
     # main_case_study()
     # main_test_nothing()
     # main_intro_case()
-    Strategy.Experiment_known_network()
+    # Strategy.Experiment_known_network()
+    # Strategy.Experiment_unknown_network()
+    main_case_study()

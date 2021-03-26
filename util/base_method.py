@@ -61,7 +61,11 @@ def get_train_test(graph: nx.Graph, fraction: float = 0.2, del_list: list=None) 
         num_del = int(len(b) * fraction)
         # 随机删除原图中的边，按照比例
         del_edges_index = np.random.choice([i for i in range(len(b))], size=num_del, replace=False)
-
+        # cur_del = 0
+        # while cur_del < num_del:
+        #     tmp_index = np.random.randint(0, len(b))
+        #     edge = b[tmp_index]
+        #     if nx.degree()
         del_list = []
         for i in del_edges_index:
             del_list.append(b[i])
